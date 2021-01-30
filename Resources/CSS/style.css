@@ -30,6 +30,12 @@ h4 {
 a {
     color: #140d4f;
     font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /*Class's*/

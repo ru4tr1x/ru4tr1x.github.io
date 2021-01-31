@@ -102,6 +102,24 @@ a:hover {
     padding: 3rem;
 }
 
+#button {
+    background-color: #140d4f;
+    color: #fff;
+    border: 2px solid #140d4f;
+    border-radius: 10px;
+  }
+  
+  #button:hover {
+    background-color: #0c960c;
+    transition: background-color .15s, font-size .15s, width .30s;
+    font-size: 18px;
+    width: 300px;
+  }
+  
+  #button:active {
+    border-color: #fff;
+  }
+
 @media screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
@@ -187,7 +205,7 @@ a:hover {
 } 
 
 .infobox button {
-    width: 85%;
+    width: 100px;
     height: 3rem;
     font-family: Roboto, sans-serif;
     font-weight: 900;

@@ -73,6 +73,7 @@ a:hover {
     position: relative;
     display: flex;
     align-items: flex-end;
+    padding-right: 2rem;
 }
 
 .bigbox {

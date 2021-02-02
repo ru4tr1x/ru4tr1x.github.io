@@ -32,6 +32,7 @@ a {
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
+    text-align: center;
 }
 
 a:hover {
@@ -43,6 +44,7 @@ a:hover {
 .title {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .header {
@@ -97,9 +99,7 @@ a:hover {
     align-items: center;
     align-content: center;
     width: 98%;
-    height: 90%;
     position: relative;
-    padding: 3rem;
 }
 
 #button {
@@ -125,6 +125,10 @@ a:hover {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
+    }
+
+    #smlimg {
+        padding-bottom: 0rem;
     }
 
     #buttonmob {
@@ -185,6 +189,18 @@ a:hover {
     justify-content: center;
 }
 
+.vidbox {
+    height: 100%;
+    width: 80%;
+    min-width: 300px;
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .infobox {
     height: 100%;
     width: 60%;
@@ -194,14 +210,12 @@ a:hover {
     align-content: center;
     align-items: center;
     flex-direction: column;
-    padding-right: 1rem;
 } 
 
 .infobox2 {
     height: 90%;
     width: 52rem;
     display: flex;
-    padding-right: 6rem;
 } 
 
 .infobox button {
@@ -222,7 +236,7 @@ a:hover {
 }
 
 .thumbox {
-    width: 60%;
+    width: 100%;
     height: 300px;
     display: flex;
     align-content: center;
@@ -232,7 +246,6 @@ a:hover {
 .info {
     padding: 1rem;
     text-align: center;
-    width: 275px;
     min-width: 200px;
 }
 
@@ -243,12 +256,10 @@ a:hover {
 .smlimg {
     display: flex;
     flex-shrink: 2;
-    border-radius: 30px;
-    width: 100%;
-    min-height: 20rem;
-    min-width: 15rem;
-    padding: 1rem;
-}
+    border-radius: 15px;
+    width: 13rem;
+    margin: 6rem;
+    }
 
 .campus {
     background-color: lightgray;
@@ -285,6 +296,10 @@ a:hover {
 }
 
 /*ID's*/
+
+#about {
+    padding-left: 2rem;
+}
 
 #bigimg2 {
     height: 100%;

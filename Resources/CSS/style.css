@@ -65,8 +65,8 @@ a:hover {
 }
 
 .link {
-    padding-right: 2rem;
-    font-size: 1.8rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif
     ;
 }
@@ -86,6 +86,11 @@ a:hover {
     position: relative;
     width: 100%;
     background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.whitebox {
+    background-color: white;
 }
 
 .dark2 {
@@ -98,19 +103,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 98%;
     position: relative;
 }
 
 #button {
-    background-color: #140d4f;
+    background-color: #140d4fda;
     color: #fff;
     border: 2px solid #140d4f;
     border-radius: 10px;
   }
   
   #button:hover {
-    background-color: #0c960c;
+    background-color: #043904f0;
     transition: background-color .15s, font-size .15s, width .30s;
     font-size: 18px;
     width: 300px;
@@ -119,6 +123,12 @@ a:hover {
   #button:active {
     border-color: #fff;
   }
+  
+.bigimg {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 4rem;
+}
 
 @media screen and (max-width: 1000px) {
     .container {
@@ -127,12 +137,25 @@ a:hover {
         align-items: center;
     }
 
+    #bigimg {
+        margin-left: 0;
+    }
+
     #smlimg {
-        padding-bottom: 0rem;
+        display: none;
     }
 
     #buttonmob {
         width: 450px;
+    }
+
+    #map {
+        margin: 2rem;
+    }
+
+    #info {
+        padding: 0rem;
+        margin-bottom: 3rem;
     }
     
     #infoboxmob {
@@ -210,6 +233,7 @@ a:hover {
     align-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 2rem;
 } 
 
 .infobox2 {
@@ -219,7 +243,7 @@ a:hover {
 } 
 
 .infobox button {
-    width: 100px;
+    width: 10rem;
     height: 3rem;
     font-family: Roboto, sans-serif;
     font-weight: 900;
@@ -230,10 +254,13 @@ a:hover {
     margin: 0 auto;
 }
 
-.bigimg {
+
+
+.bigvid {
     width: 98%;
     border-radius: 15px;
 }
+
 
 .thumbox {
     width: 100%;
@@ -244,7 +271,7 @@ a:hover {
 }
     
 .info {
-    padding: 1rem;
+    padding: 3rem;
     text-align: center;
     min-width: 200px;
 }
@@ -258,7 +285,7 @@ a:hover {
     flex-shrink: 2;
     border-radius: 15px;
     width: 13rem;
-    margin: 6rem;
+    margin: 3rem;
     }
 
 .campus {

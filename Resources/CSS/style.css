@@ -10,8 +10,6 @@ text-align: center;
 h2 {
     align-content: center;
 }
-    
-
 
 h3 {
     display: flex;
@@ -47,7 +45,10 @@ a:hover {
 
 /*Class's*/
 
-
+.mainbody { 
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
 
 .img {
     height: 15rem;
@@ -98,12 +99,11 @@ a:hover {
     justify-content: center;
     position: relative;
     width: 100%;
-    background-color: whitesmoke;
     border-radius: 15px;
 }
 
 .whitebox {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .dark2 {

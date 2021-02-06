@@ -8,7 +8,7 @@ text-align: center;
 }
 
 h2 {
-    align-content: center;
+    text-align: center;
 }
 
 h3 {
@@ -162,10 +162,6 @@ a:hover {
         width: 450px;
     }
 
-    #map {
-        margin: 2rem;
-    }
-
     #info {
         padding: 0rem;
         margin-bottom: 3rem;
@@ -298,7 +294,8 @@ a:hover {
     flex-shrink: 2;
     border-radius: 15px;
     width: 13rem;
-    margin: 3rem;
+    height: 14rem;
+    margin: 2rem;
     }
 
 .campus {
@@ -371,6 +368,83 @@ a:hover {
 
 .faqs {
     padding: 2rem;
+    text-align: center;
 }
 
+.faq {
+    padding: 0.2rem;
+}
 
+.question {
+    padding: 1rem;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 33%;
+
+}
+
+/*booknow*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+  }
+
+input {
+    text-align: center;
+    align-content: center;
+    width: 30%;
+    cursor: pointer;
+  }
+
+#submit {
+width: 6rem;
+background-color: blue;
+color: white;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+cursor: pointer;
+  }
+
+#number {
+    width: 3rem;
+}  
+
+.inputbox {
+    width: 460px;
+}
+
+label {
+    margin-bottom: 00.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .radio {
+      text-align: center;
+      width: 300px;
+  }
+
+  /*calendar*/
+
+  #calendar {
+      display: flex;
+      justify-content: center;
+  }
+  
+
+
+  

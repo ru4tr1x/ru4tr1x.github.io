@@ -1,5 +1,4 @@
 body {
-    display: flexbox;
     margin: 2rem;
 }
 
@@ -9,20 +8,6 @@ text-align: center;
 
 h2 {
     text-align: center;
-}
-
-h3 {
-    display: flex;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-h4 {
-    font-size: 2rem;
-    font-family: a;
 }
 
 a {
@@ -37,15 +22,50 @@ p {
     text-align: center;
 }
 
+video {
+    width: 100%;
+    min-width: 550px;
+    border-radius: 15px;
+}
 
+button:hover {
+    background-color: #043904f0;
+    transition: background-color .15s, font-size .15s, width .30s;
+    font-size: 18px;
+    width: 300px;
+}
+
+button:active {
+    border-color: #fff;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: large;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #140d4fda;
+    border: 2px solid #140d4f;
+    cursor: pointer;
+}
 
 a:hover {
     text-decoration: none;
 }
 
+
 /*Class's*/
 
-.mainbody { 
+.topbox { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    position: relative;
     background-color: whitesmoke;
     border-radius: 15px;
 }
@@ -76,23 +96,24 @@ a:hover {
     align-items: center;
     left: 14px;
     top: 5px;
+    padding-left: 0.5rem;
+
 }
 
 .link {
     padding: 1rem;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif
-    ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .linksbox {
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
 }
 
-.bigbox {
+.bottombox {
     display: flex;
     flex-shrink: 2;
     align-items: center;
@@ -100,113 +121,21 @@ a:hover {
     position: relative;
     width: 100%;
     border-radius: 15px;
-}
-
-.whitebox {
     background-color: whitesmoke;
-}
-
-.dark2 {
-    background-color: lightgray;
-    height: 730px;
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     position: relative;
 }
-
-#button {
-    background-color: #140d4fda;
-    color: #fff;
-    border: 2px solid #140d4f;
-    border-radius: 10px;
-  }
-  
-  #button:hover {
-    background-color: #043904f0;
-    transition: background-color .15s, font-size .15s, width .30s;
-    font-size: 18px;
-    width: 300px;
-  }
-  
-  #button:active {
-    border-color: #fff;
-  }
   
 .bigimg {
     width: 100%;
     border-radius: 15px;
-    margin-left: 4rem;
-}
-
-@media screen and (max-width: 1000px) {
-    .container {
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-    }
-
-    #bigimg {
-        margin-left: 0;
-    }
-
-    #smlimg {
-        display: none;
-    }
-
-    #buttonmob {
-        width: 450px;
-    }
-
-    #info {
-        padding: 0rem;
-        margin-bottom: 3rem;
-    }
-    
-    #infoboxmob {
-        width: 375px;
-        padding: 15px;
-        align-items: center;
-        background-color: darkgray;
-        border-radius: 30px;
-    }
-
-    #infoboxmob2 {
-        width: 482px;
-        padding-left: 15px;
-        padding-top: 15px;
-    }
-
-    #imgboxmob {
-        width: 450px;
-    }
-
-    #imgboxmob2 {
-        width: 450px;
-        padding-bottom: 15px;
-    }
-
-    #vidboxmob {
-        width: 450px;
-    }
-
-    #box4 {
-        height: 300px;
-    }
-
-    #colmar {
-        display: none;
-    }
-} 
-
-.container2 {
-    width: 98%;
-    height: 90%;
-    position: relative;
+    min-width: 380px;
 }
 
 .imgbox {
@@ -233,44 +162,6 @@ a:hover {
     justify-content: center;
 }
 
-.infobox {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-shrink: 2;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 2rem;
-} 
-
-.infobox2 {
-    height: 90%;
-    width: 52rem;
-    display: flex;
-} 
-
-.infobox button {
-    width: 10rem;
-    height: 3rem;
-    font-family: Roboto, sans-serif;
-    font-weight: 900;
-    font-size: large;
-    background-color: #140d4f;
-    color: whitesmoke;
-    border-radius: 15px;
-    margin: 0 auto;
-}
-
-
-
-.bigvid {
-    width: 98%;
-    border-radius: 15px;
-}
-
-
 .thumbox {
     width: 100%;
     height: 300px;
@@ -293,9 +184,9 @@ a:hover {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    width: 13rem;
-    height: 14rem;
-    margin: 2rem;
+    max-width: 11rem;
+    max-height: 12rem;
+    width: 100%;
     }
 
 .campus {
@@ -332,6 +223,7 @@ a:hover {
     border-radius: 15px 15px 0 0;
 }
 
+
 /*ID's*/
 
 #about {
@@ -345,6 +237,69 @@ a:hover {
 #urban {
     font-weight: 501;
 }
+  
+
+/*Mobile screen*/
+
+@media screen and (max-width: 850px) {
+    
+    .container {
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .topbox {
+       
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        
+    }
+
+    #buttonmob {
+        width: 450px;
+    }
+
+    #info {
+        padding: 0rem;
+        margin-bottom: 3rem;
+    }
+    
+    #infoboxmob2 {
+        width: 482px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    #imgboxmob {
+        width: 450px;
+        margin: 0rem;
+        padding-top: 2rem;
+    }
+
+    #imgboxmob2 {
+        width: 450px;
+        padding-bottom: 15px;
+    }
+
+    #vidboxmob {
+        width: 450px;
+    }
+
+    #box4 {
+        height: 400px;
+    }
+
+    #colmar {
+        display: none;
+    }
+} 
+
 
 /*Index2*/
 
@@ -389,6 +344,7 @@ a:hover {
 
 }
 
+
 /*booknow*/
 
 form {
@@ -402,11 +358,16 @@ form {
   }
 
 input {
-    text-align: center;
     align-content: center;
-    width: 30%;
+    width: 400px;
     cursor: pointer;
   }
+
+
+.radio {
+    text-align: center;
+    width: 300px;
+}
 
 #submit {
 width: 6rem;
@@ -422,10 +383,6 @@ cursor: pointer;
     width: 3rem;
 }  
 
-.inputbox {
-    width: 460px;
-}
-
 label {
     margin-bottom: 00.5rem;
     padding: 0.5rem;
@@ -433,10 +390,6 @@ label {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .radio {
-      text-align: center;
-      width: 300px;
-  }
 
   /*calendar*/
 

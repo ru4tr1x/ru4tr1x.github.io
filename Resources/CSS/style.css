@@ -94,9 +94,9 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    left: 14px;
-    top: 5px;
-    padding-left: 0.5rem;
+    left: 0;
+    top: 0;
+    padding-left: 0;
 
 }
 

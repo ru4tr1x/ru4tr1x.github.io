@@ -50,7 +50,7 @@ p {
 
 video {
     width: 100%;
-    min-width: 550px;
+    min-width: 600px;
     border-radius: 15px;
 }
 
@@ -308,7 +308,7 @@ a:hover {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
-        
+        height: 1050px;
     }
 
     .link {
@@ -352,7 +352,7 @@ a:hover {
     }
 
     #box4 {
-        height: 500px;
+        height: 600px;
     }
 
     #colmar {

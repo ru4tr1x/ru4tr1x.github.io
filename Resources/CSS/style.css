@@ -10,6 +10,7 @@ font-family: Arial, Helvetica, sans-serif;
 h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
 
 h3 {
@@ -39,10 +40,12 @@ a {
     text-decoration: underline;
     cursor: pointer;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 video {
@@ -269,11 +272,13 @@ a:hover {
 @media screen and (max-width: 1000px) {
 
     p {
-        font-size: x-large;
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     h2 {
-        font-size: xx-large;
+        font-size: 3rem;
     }
     
     h3 { display: none;
@@ -283,7 +288,8 @@ a:hover {
     h4 {display: block;}
 
     a {
-        font-size: x-large;
+        font-size: 2rem;
+        font-weight: 800;
         padding-top: 1rem;
     }
 
@@ -307,6 +313,11 @@ a:hover {
 
     .link {
         padding-bottom: 0;
+    }
+
+    button {
+        width: 300px;
+        font-size: xx-large;
     }
 
     #buttonmob {
@@ -340,7 +351,7 @@ a:hover {
     }
 
     #box4 {
-        height: 400px;
+        height: 450px;
     }
 
     #colmar {
@@ -388,7 +399,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    width: 33%;
+    width: 50%;
 
 }
 

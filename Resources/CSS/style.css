@@ -10,6 +10,27 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+
+    
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h4 {
+    display: none;
+}
+
 a {
     color: #140d4f;
     font-weight: bold;
@@ -94,8 +115,9 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     left: 0;
-    top: 0;
+    padding-top: 0.5rem;
     padding-left: 0;
 
 }
@@ -241,8 +263,14 @@ a:hover {
 
 /*Mobile screen*/
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     
+    h3 { display: none;
+        
+    }
+
+    h4 {display: block;}
+
     .container {
         flex-direction: column;
         overflow: hidden;
@@ -261,6 +289,10 @@ a:hover {
         
     }
 
+    .link {
+        padding-bottom: 0;
+    }
+
     #buttonmob {
         width: 450px;
     }
@@ -277,9 +309,9 @@ a:hover {
     }
 
     #imgboxmob {
-        width: 450px;
-        margin: 0rem;
-        padding-top: 2rem;
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
     }
 
     #imgboxmob2 {

@@ -4,10 +4,12 @@ body {
 
 h1 {
 text-align: center;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -265,12 +267,25 @@ a:hover {
 /*Mobile screen*/
 
 @media screen and (max-width: 1000px) {
+
+    p {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
     
     h3 { display: none;
         
     }
 
     h4 {display: block;}
+
+    a {
+        font-size: x-large;
+        padding-top: 1rem;
+    }
 
     .container {
         flex-direction: column;

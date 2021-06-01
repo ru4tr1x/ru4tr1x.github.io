@@ -14,12 +14,10 @@ h2 {
 }
 
 h3 {
+    display: none;
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
-
-    
+  
 }
 
 h4 {
@@ -30,9 +28,6 @@ h4 {
 
 }
 
-h4 {
-    display: none;
-}
 
 a {
     color: #140d4f;
@@ -87,6 +82,12 @@ a:hover {
 
 /*Class's*/
 
+.subheading {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .topbox { 
     display: flex;
     justify-content: space-evenly;
@@ -123,8 +124,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     left: 0;
-    padding-top: 0.5rem;
-    padding-left: 0;
+  padding-top: 1rem;
 
 }
 
@@ -137,8 +137,15 @@ a:hover {
 .linksbox {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     padding-right: 0.5rem;
+}
+
+.powered {
+    display: flex;
+    font-size: 10px;
+    padding-left: 0rem;
 }
 
 .bottombox {
@@ -256,7 +263,7 @@ a:hover {
 /*ID's*/
 
 #about {
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 #bigimg2 {
@@ -329,6 +336,10 @@ a:hover {
     #info {
         padding: 0rem;
         margin-bottom: 3rem;
+    }
+
+    #powered {
+        display: none;
     }
     
     #infoboxmob2 {

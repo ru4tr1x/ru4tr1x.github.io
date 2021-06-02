@@ -84,7 +84,7 @@ a:hover {
 
 .subheading {
     display: flex;
-    justify-content: space-between;
+   
 
 }
 
@@ -258,6 +258,17 @@ a:hover {
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights {
+    display: flex;
+    justify-content: right;
+}
+
 
 
 /*ID's*/

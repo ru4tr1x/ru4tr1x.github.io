@@ -83,9 +83,12 @@ a:hover {
 /*Class's*/
 
 .subheading {
-    display: flex;
-   
+    display: flex; 
+}
 
+.bold {
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 .topbox { 
@@ -254,9 +257,17 @@ a:hover {
     border-radius: 15px
 }
 
+
+
 .wrapimg img {
     width: 100%;
     border-radius: 15px 15px 0 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
 }
 
 .footer {
@@ -312,6 +323,9 @@ a:hover {
         padding-top: 1rem;
     }
 
+    .questions {
+        display: none;
+    }
     .container {
         flex-direction: column;
         overflow: hidden;

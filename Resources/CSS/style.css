@@ -82,8 +82,21 @@ a:hover {
 
 /*Class's*/
 
+.holding {
+    display: flex;
+    flex-direction: column;
+}
+
+.holdingimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .subheading {
     display: flex; 
+    justify-content: space-between;
 }
 
 .bold {
@@ -123,9 +136,7 @@ a:hover {
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    align-items: baseline;
     left: 0;
   padding-top: 1rem;
 

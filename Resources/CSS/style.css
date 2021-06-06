@@ -115,7 +115,7 @@ a:hover {
 }
 
 .img {
-    height: 15rem;
+    height: 30rem;
     border-radius: 15px;
     margin: 1rem;
 }
@@ -426,8 +426,6 @@ a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
-    
 }
 
 .abox p {

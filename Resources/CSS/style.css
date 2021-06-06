@@ -162,6 +162,12 @@ a:hover {
     padding-left: 0rem;
 }
 
+.rights {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .bottombox {
     display: flex;
     flex-shrink: 2;
@@ -380,9 +386,13 @@ a:hover {
     }
 
     #powered {
-        display: none;
+        font-size: medium;
     }
     
+    #toppower {
+    display: none;
+    }
+
     #infoboxmob2 {
         width: 482px;
         padding-left: 15px;

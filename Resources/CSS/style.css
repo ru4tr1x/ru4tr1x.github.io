@@ -291,6 +291,11 @@ a:hover {
     justify-content: right;
 }
 
+.terms {
+    display: flex;
+    flex-direction: column;
+
+}
 
 
 /*ID's*/

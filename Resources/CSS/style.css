@@ -103,14 +103,20 @@ thead, tfoot {
 
 .gifbox {
     display: inline-flex;
-    flex-shrink: inherit;
+    flex-shrink: 2;
 }
 
 .gif {
     border-radius: 15px;
-    height: 450px;
+    max-height: 450px;
     margin: 2rem;
 } 
+
+.gifs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .holding {
     display: flex;
@@ -197,8 +203,8 @@ thead, tfoot {
     display: flex;
     flex-shrink: 2;
     align-items: center;
+    align-content: center;
     justify-content: center;
-    position: relative;
     width: 100%;
     border-radius: 15px;
     background-color: whitesmoke;
@@ -448,7 +454,9 @@ thead, tfoot {
         width: 450px;
     }
 
-   
+   #gif3 {
+       display: none;
+   }
 
     #colmar {
         display: none;

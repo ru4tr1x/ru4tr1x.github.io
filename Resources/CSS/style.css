@@ -298,7 +298,7 @@ thead, tfoot {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    max-width: 11rem;
+    max-width: 14rem;
     max-height: 12rem;
     width: 100%;
     }
@@ -433,7 +433,7 @@ thead, tfoot {
 
     .topbox {
        
-        background-image: url(Resources/Images/NaturesTemple.JPG);
+        
         flex-direction: column;
         overflow: hidden;
         align-items: center;

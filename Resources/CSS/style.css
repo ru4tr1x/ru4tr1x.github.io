@@ -382,8 +382,10 @@ thead, tfoot {
 @media screen and (max-width: 1000px) {
 
     #reset {
-        font-size: small;
+        font-size: medium;
     }
+
+
 
     p {
         font-size: 2rem;
@@ -447,7 +449,7 @@ thead, tfoot {
         font-size: xx-large;
     }
 
-    footer, p {
+    .footer p {
     font-size: medium;
     padding-top: 1.7rem;
     }

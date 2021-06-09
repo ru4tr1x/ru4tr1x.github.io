@@ -1,3 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+* {
+    box-sizing: border-box;
+  }
+html,
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 2rem;
 }
@@ -5,7 +14,7 @@ body {
 h1 {
 text-align: center;
 font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 0px;
+margin-bottom: 1rem;
 }
 
 h2 {
@@ -96,9 +105,20 @@ thead, tfoot {
 
 
 /*Class's*/
+
+.reset {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
 .events {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.store {
+    padding-top: 16px;
 }
 
 .gifbox {
@@ -146,8 +166,8 @@ thead, tfoot {
     align-items: center;
     align-content: center;
     position: relative;
-    background-color: whitesmoke;
-    border-radius: 15px;
+    background-color: white;
+    
 }
 
 .img {
@@ -164,10 +184,15 @@ thead, tfoot {
 .header {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    height: 120px;
+    justify-content: center;
+    height: 100px;
     z-index: 100;
     width: 100%;
+}
+
+.header, p {
+    margin: 0px;
+    padding-left: 0px;
 }
 
 .logo {
@@ -179,7 +204,7 @@ thead, tfoot {
 }
 
 .link {
-    padding: 1rem;
+    padding-left: 1rem;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -196,6 +221,7 @@ thead, tfoot {
     display: flex;
     font-size: 10px;
     padding-left: 0rem;
+
 }
 
 
@@ -207,7 +233,7 @@ thead, tfoot {
     justify-content: center;
     width: 100%;
     border-radius: 15px;
-    background-color: whitesmoke;
+    background-color: white;
     overflow: hidden;
     flex-direction: column;
 }
@@ -222,8 +248,8 @@ thead, tfoot {
   
 .bigimg {
     width: 100%;
-    border-radius: 15px;
-    min-width: 380px;
+    border-radius: 0px;
+    min-width: 580px;
 }
 
 .imgbox {
@@ -342,10 +368,6 @@ thead, tfoot {
 
 /*ID's*/
 
-#about {
-    padding-left: 1rem;
-}
-
 #bigimg2 {
     height: 100%;
 }
@@ -359,13 +381,17 @@ thead, tfoot {
 
 @media screen and (max-width: 1000px) {
 
+    #reset {
+        font-size: small;
+    }
+
     p {
         font-size: 2rem;
         font-weight: 400;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .header h1 {
+    .header p {
         display: none;
     }
 
@@ -385,6 +411,13 @@ thead, tfoot {
         padding-top: 1rem;
     }
 
+    .events {
+      
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+
     .questions {
         display: none;
     }
@@ -394,16 +427,14 @@ thead, tfoot {
         align-items: center;
     }
 
-    .icon {
-        width: 100%;
-    }
+   
 
     .topbox {
        
+        background-image: url(Resources/Images/NaturesTemple.JPG);
         flex-direction: column;
         overflow: hidden;
         align-items: center;
-        height: 1050px;
     }
 
     .link {
@@ -416,6 +447,11 @@ thead, tfoot {
         font-size: xx-large;
     }
 
+    footer, p {
+    font-size: medium;
+    padding-top: 1.7rem;
+    }
+
     #buttonmob {
         width: 450px;
     }
@@ -423,14 +459,6 @@ thead, tfoot {
     #info {
         padding: 0rem;
         margin-bottom: 3rem;
-    }
-
-    #powered {
-        font-size: medium;
-    }
-    
-    #toppower {
-    display: none;
     }
 
     #infoboxmob2 {
@@ -499,7 +527,9 @@ thead, tfoot {
 .icon {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    align-content: center;
     padding: 2rem;
     width: 50%;
 
@@ -560,5 +590,7 @@ label {
   }
   
 
+/*Basket*/
 
-  
+
+

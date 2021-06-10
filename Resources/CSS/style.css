@@ -5,6 +5,9 @@
 html,
 body {
    font-family: 'Roboto', sans-serif;
+   border-radius: 15px;
+   outline-style: hidden;
+   border-style: hidden;
 }
 
 body {
@@ -274,6 +277,7 @@ thead, tfoot {
     margin: 2rem;
     align-items: center;
     justify-content: center;
+
 }
 
 .thumbox {

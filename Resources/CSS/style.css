@@ -172,6 +172,8 @@ thead, tfoot {
     align-content: center;
     position: relative;
     background-image: url("Images/NaturesTemple.JPG");
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
     
 }
 
@@ -260,7 +262,7 @@ thead, tfoot {
 .imgbox {
     height: 100%;
     width: 50%;
-    min-width: 300px;
+    min-width: 100%;
     flex-shrink: 2;
     display: flex;
     flex-direction: column;
@@ -355,7 +357,7 @@ thead, tfoot {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer p {
@@ -364,7 +366,7 @@ thead, tfoot {
 
 .rights {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .terms {
@@ -396,8 +398,8 @@ thead, tfoot {
 
 
     p {
-        font-size: 2rem;
-        font-weight: 400;
+        font-size: 2.5rem;
+        font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -406,7 +408,7 @@ thead, tfoot {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     
     h3 { display: none;
@@ -420,6 +422,10 @@ thead, tfoot {
         font-weight: 800;
         padding-top: 1rem;
     }
+    
+    .subtitle {
+    padding-bottom: 2rem;
+}
 
     .events {
       

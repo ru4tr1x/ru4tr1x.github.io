@@ -165,12 +165,13 @@ thead, tfoot {
 }
 
 .topbox { 
+    border-radius: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
     position: relative;
-    background-color: white;
+    background-image: url("Images/NaturesTemple.JPG");
     
 }
 

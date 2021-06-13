@@ -381,6 +381,7 @@ thead, tfoot {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .footer {
@@ -496,6 +497,10 @@ thead, tfoot {
     padding-top: 1.7rem;
     }
 
+    .mobilehide {
+        display: none;
+    }
+
     #buttonmob {
         width: 450px;
     }
@@ -535,6 +540,13 @@ thead, tfoot {
     }
 } 
 
+@media screen and (min-width: 1000px) {
+
+    .desktophide {
+        display: none;
+    }
+}
+
 
 /*Index2*/
 
@@ -551,7 +563,7 @@ thead, tfoot {
 }
 
 .abox p {
-    width: 82%;
+    width:60%;
 }
 
 .faqs {

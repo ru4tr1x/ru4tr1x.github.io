@@ -129,23 +129,6 @@ thead, tfoot {
     padding-top: 16px;
 }
 
-.gifbox {
-    display: inline-flex;
-    flex-shrink: 2;
-}
-
-.gif {
-    border-radius: 15px;
-    max-height: 450px;
-    margin: 2rem;
-} 
-
-.gifs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .holding {
     display: flex;
     flex-direction: column;
@@ -246,6 +229,43 @@ thead, tfoot {
     background-color: white;
     overflow: hidden;
     flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    flex-shrink: 2;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.gifbox {
+    display: inline-flex;
+    flex-shrink: 2;
+}
+
+.gif {
+    border-radius: 15px;
+    max-height: 450px;
+    margin: 2rem;
+} 
+
+.photo {
+    border-radius: 15px;
+    max-height: 450px;
+    margin: 2rem;
+} 
+
+
+.gifs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container {

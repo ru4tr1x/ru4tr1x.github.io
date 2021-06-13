@@ -332,8 +332,8 @@ thead, tfoot {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    max-width: 14rem;
-    max-height: 12rem;
+    max-width: 16rem;
+    max-height: 14rem;
     width: 100%;
     }
 

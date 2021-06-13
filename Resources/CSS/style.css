@@ -420,6 +420,10 @@ thead, tfoot {
 
 @media screen and (max-width: 1000px) {
 
+    h1 {
+        font-size: 3rem;
+    }
+
     #reset {
         font-size: medium;
     }
@@ -435,6 +439,8 @@ thead, tfoot {
     .header p {
         display: none;
     }
+
+
 
     h2 {
         font-size: 4rem;

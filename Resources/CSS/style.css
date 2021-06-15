@@ -234,6 +234,7 @@ thead, tfoot {
 .gallery {
     display: flex;
     flex-shrink: 2;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -241,7 +242,7 @@ thead, tfoot {
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
-    flex-direction: column;
+    
 }
 
 .gifbox {
@@ -336,8 +337,8 @@ thead, tfoot {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    max-width: 16rem;
-    max-height: 14rem;
+    max-width: 5rem;
+    max-height: 5rem;
     width: 100%;
     }
 
@@ -389,13 +390,27 @@ thead, tfoot {
     flex-direction: column;
 }
 
+.inline {
+    display: flex;
+    justify-content: space-evenly;
+align-content: center;
+align-items: center;
+}
+
+
+
 .footer p {
     margin: 0mm;
+}
+
+.findthe {
+    padding-top: 1rem;
 }
 
 .rights {
     display: flex;
     justify-content: center;
+    padding-bottom: 2.5rem;
 }
 
 .terms {
@@ -431,7 +446,7 @@ thead, tfoot {
 
 
     p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -439,8 +454,6 @@ thead, tfoot {
     .header p {
         display: none;
     }
-
-
 
     h2 {
         font-size: 4rem;
@@ -505,6 +518,11 @@ thead, tfoot {
 
     .mobilehide {
         display: none;
+    }
+
+    .inline {
+        display: flex;
+        flex-direction: row;
     }
 
     #buttonmob {
@@ -592,7 +610,6 @@ thead, tfoot {
     align-items: center;
     align-content: center;
     padding: 2rem;
-    width: 50%;
 
 }
 

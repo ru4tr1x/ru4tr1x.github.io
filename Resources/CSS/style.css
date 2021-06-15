@@ -392,9 +392,9 @@ thead, tfoot {
 
 .inline {
     display: flex;
-    justify-content: space-evenly;
-align-content: center;
-align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
 
@@ -610,6 +610,8 @@ align-items: center;
     align-items: center;
     align-content: center;
     padding: 2rem;
+    max-width: 17rem;
+    min-width: 17rem;
 
 }
 

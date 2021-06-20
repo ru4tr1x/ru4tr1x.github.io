@@ -4,7 +4,7 @@
   }
 html,
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
    outline-style: hidden;
    border-style: hidden;
@@ -16,26 +16,27 @@ body {
 
 h1 {
 text-align: center;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 margin-bottom: 1rem;
+font-weight: 600;
 }
 
 h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
 }
 
 h3 {
     display: none;
     font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
 
 h4 {
     font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 
@@ -48,12 +49,12 @@ a {
     text-decoration: underline;
     cursor: pointer;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 video {
@@ -77,8 +78,8 @@ button:active {
 button {
     width: 10rem;
     height: 3rem;
-    font-family: Roboto, sans-serif;
-    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
     font-size: large;
     color: whitesmoke;
     border-radius: 10px;
@@ -98,7 +99,7 @@ table, td {
 }
 
 table, th {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 thead, tfoot {
@@ -199,7 +200,7 @@ thead, tfoot {
 .link {
     padding-left: 1rem;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .linksbox {
@@ -229,6 +230,7 @@ thead, tfoot {
     background-color: white;
     overflow: hidden;
     flex-direction: column;
+    margin-top: 4rem;
 }
 
 .gallery {
@@ -448,7 +450,7 @@ thead, tfoot {
     p {
         font-size: 1.5rem;
         font-weight: 600;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .header p {
@@ -467,7 +469,7 @@ thead, tfoot {
 
     a {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: 600;
         padding-top: 1rem;
     }
     
@@ -645,7 +647,7 @@ width: 6rem;
 background-color: blue;
 color: white;
 font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 1rem;
 cursor: pointer;
   }
@@ -658,7 +660,7 @@ label {
     margin-bottom: 00.5rem;
     padding: 0.5rem;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
 

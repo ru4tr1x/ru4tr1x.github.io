@@ -110,9 +110,6 @@ thead, tfoot {
 
 /*Class's*/
 
-.imgbox a {
-    padding-bottom: 2rem;
-}
 
 .reset {
     display: flex;
@@ -434,6 +431,10 @@ thead, tfoot {
 
 #urban {
     font-weight: 501;
+}
+
+#dismore {
+    margin-bottom: 1rem;
 }
   
 

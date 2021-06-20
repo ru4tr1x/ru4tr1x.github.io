@@ -148,7 +148,7 @@ thead, tfoot {
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
@@ -385,6 +385,10 @@ thead, tfoot {
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 1rem;
+}
+
+.fa, .fas {
+    padding-top: 1rem;
 }
 
 .footer {

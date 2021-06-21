@@ -46,7 +46,7 @@ h4 {
 a {
     color: #140d4f;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -110,6 +110,28 @@ thead, tfoot {
 
 /*Class's*/
 
+.logotext {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+.topcontact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.topicon {
+    padding-left: 1rem;
+}
+
+.spacer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
 
 .reset {
     display: flex;
@@ -175,8 +197,8 @@ thead, tfoot {
 .header {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    height: 120px;
+    justify-content: space-between;
+    height: 40px;
     z-index: 100;
     width: 100%;
 }
@@ -480,6 +502,10 @@ thead, tfoot {
         font-size: 2rem;
         font-weight: 600;
         padding-top: 1rem;
+    }
+
+    .topcontact {
+        justify-content: center;
     }
     
     .subtitle {

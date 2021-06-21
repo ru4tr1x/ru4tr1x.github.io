@@ -388,6 +388,10 @@ thead, tfoot {
     padding-top: 1rem;
 }
 
+.whatsapp {
+    padding-top: 1rem;
+}
+
 .footer {
     display: flex;
     flex-direction: column;

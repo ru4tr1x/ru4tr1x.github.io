@@ -138,6 +138,7 @@ thead, tfoot {
     flex-direction: column;
     justify-content: center;
     font-size: small;
+
 }
 .events {
     display: flex;
@@ -358,8 +359,8 @@ thead, tfoot {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 3rem;
+    max-height: 3rem;
     width: 100%;
     }
 
@@ -417,6 +418,7 @@ thead, tfoot {
 .footer {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 .inline {
@@ -424,6 +426,8 @@ thead, tfoot {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    background-color: whitesmoke;
+    margin-top: 2rem;
 }
 
 

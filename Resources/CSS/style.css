@@ -279,13 +279,13 @@ thead, tfoot {
 
 .gif {
     border-radius: 15px;
-    max-height: 450px;
+    max-height:300px;
     margin: 2rem;
 } 
 
 .photo {
     border-radius: 15px;
-    max-height: 450px;
+    max-height: 300px;
     margin: 2rem;
 } 
 

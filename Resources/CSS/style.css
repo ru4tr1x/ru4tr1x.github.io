@@ -5,13 +5,12 @@
 html,
 body {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
    outline-style: hidden;
    border-style: hidden;
 }
 
 body {
-    margin: 2rem;
+    margin: 6rem;
 }
 
 footer {
@@ -249,7 +248,7 @@ thead, tfoot {
     flex-shrink: 2;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     border-radius: 15px;
     background-color: white;

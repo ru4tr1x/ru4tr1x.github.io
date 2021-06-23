@@ -238,9 +238,8 @@ thead, tfoot {
 
 .products {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-content: center;
-    align-items: stretch;
 }
 
 .productcontainer {
@@ -483,6 +482,10 @@ thead, tfoot {
     margin-bottom: 1rem;
 }
 
+.ecsp {
+    min-width: 1000px;
+    font-size: 2rem;
+}
   
 
 /*Mobile screen*/
@@ -524,10 +527,6 @@ thead, tfoot {
         font-size: 2rem;
         font-weight: 600;
         padding-top: 1rem;
-    }
-
-    .products {
-        flex-direction: column;
     }
 
     .gallery {
@@ -598,6 +597,12 @@ thead, tfoot {
     .inline {
         display: flex;
         flex-direction: column;
+    }
+
+    .ecsp {
+
+        min-width: 1000px;
+
     }
 
     #buttonmob {

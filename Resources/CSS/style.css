@@ -503,6 +503,7 @@ thead, tfoot {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
+
     .header p {
         display: none;
     }
@@ -521,6 +522,14 @@ thead, tfoot {
         font-size: 2rem;
         font-weight: 600;
         padding-top: 1rem;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gif {
+        max-height: 600px;
     }
 
     .topcontact {
@@ -578,7 +587,7 @@ thead, tfoot {
 
     .inline {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     #buttonmob {

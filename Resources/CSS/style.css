@@ -235,6 +235,7 @@ thead, tfoot {
     padding-right: 0.5rem;
 }
 
+
 .products {
     display: flex;
     justify-content: start;
@@ -481,6 +482,7 @@ thead, tfoot {
 #dismore {
     margin-bottom: 1rem;
 }
+
   
 
 /*Mobile screen*/
@@ -522,6 +524,10 @@ thead, tfoot {
         font-size: 2rem;
         font-weight: 600;
         padding-top: 1rem;
+    }
+
+    .products {
+        flex-direction: column;
     }
 
     .gallery {
@@ -581,6 +587,10 @@ thead, tfoot {
     padding-top: 1.7rem;
     }
 
+    .your {
+        font-size: 2rem;
+    }
+
     .mobilehide {
         display: none;
     }
@@ -592,6 +602,10 @@ thead, tfoot {
 
     #buttonmob {
         width: 450px;
+    }
+
+    #bng {
+        display: none;
     }
 
     #info {

@@ -235,6 +235,17 @@ thead, tfoot {
     padding-right: 0.5rem;
 }
 
+.products {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items: stretch;
+}
+
+.productcontainer {
+    padding: 1rem;
+}
+
 .powered {
     display: flex;
     font-size: 10px;

@@ -513,6 +513,12 @@ thead, tfoot {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
+    .tworem {
+
+        font-size: 2rem;
+
+    }
+
 
     .header p {
         display: none;

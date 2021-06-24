@@ -427,6 +427,10 @@ thead, tfoot {
     padding-bottom: 1rem;
 }
 
+.details {
+    width: 500px;
+}
+
 .fa, .fas {
     padding-top: 1rem;
 }

@@ -113,6 +113,11 @@ thead, tfoot {
 
 /*Class's*/
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 .logotext {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;

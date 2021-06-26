@@ -498,6 +498,11 @@ thead, tfoot {
     min-width: 1000px;
     font-size: 2rem;
 }
+
+.justifycenter {
+    display: flex;
+    justify-content: center;
+}
   
 
 /*Mobile screen*/
@@ -580,7 +585,7 @@ thead, tfoot {
         align-items: center;
     }
 
-   
+  
 
     .topbox {
        
@@ -615,7 +620,8 @@ thead, tfoot {
 
     .inline {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .ecsp {

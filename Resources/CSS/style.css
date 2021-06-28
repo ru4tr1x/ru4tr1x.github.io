@@ -517,6 +517,10 @@ thead, tfoot {
         font-size: medium;
     }
 
+    #three {
+        font-size: 3em;
+    }
+
 
     p {
         font-size: 1.5rem;

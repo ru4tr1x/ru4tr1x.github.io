@@ -13,6 +13,28 @@ body {
     margin: 6rem;
 }
 
+/* header */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0.3rem;
+    background-color: white;
+}
+
+
+.header, p {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+
 footer {
     border-radius: 15px;
 }
@@ -127,6 +149,17 @@ thead, tfoot {
 
 }
 
+.weak {
+        font-weight: lighter;
+}
+
+.large {
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 1rem;
+
+}
+
 .topcontact {
     display: flex;
     justify-content: flex-end;
@@ -205,20 +238,6 @@ thead, tfoot {
     text-align: center;
 }
 
-.header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 40px;
-    z-index: 100;
-    width: 100%;
-    padding: 0.3rem;
-}
-
-.header, p {
-    margin: 0px;
-    padding-left: 0px;
-}
 
 .logo {
     display: flex;
@@ -604,8 +623,8 @@ thead, tfoot {
     }
 
     button {
-        width: 300px;
-        font-size: xx-large;
+        width: 200px;
+        font-size: x-large;
     }
 
     .footer p {

@@ -21,8 +21,9 @@ header {
     left: 0px;
     z-index: 1001;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0.3rem;
     background-color: white;
@@ -33,6 +34,15 @@ header {
     margin: 0px;
     padding-left: 0px;
 }
+
+.topcontact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 1.4rem;
+}
+
+/* footer */
 
 
 footer {
@@ -160,14 +170,9 @@ thead, tfoot {
 
 }
 
-.topcontact {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-}
 
 .topicon {
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .spacer {
@@ -224,6 +229,7 @@ thead, tfoot {
     position: relative;
     background-image: url("Images/NaturesTemple.JPG");
     margin-bottom: 1rem;
+    top: 2.5rem;
     
 }
 
@@ -241,9 +247,13 @@ thead, tfoot {
 
 .logo {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column-reverse;
     left: 0;
-  padding-top: 1rem;
+    justify-content: center;
+   align-content: center;
+
+
 
 }
 

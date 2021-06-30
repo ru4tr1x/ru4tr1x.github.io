@@ -82,11 +82,12 @@ header {
 footer {
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     align-items: center;
     background-color: whitesmoke;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .ftbox {
@@ -96,10 +97,11 @@ footer {
     align-items: center;
     align-content: center;
     padding: 2rem;
+    margin: 0 40px;
     max-width: 17rem;
-    min-width: 17rem;
     flex-shrink: 2;
     line-height: 1.4;
+    flex-wrap: wrap;
 }
 
 .weak {

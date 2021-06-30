@@ -10,6 +10,9 @@ body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 6rem;
 }
 
@@ -48,7 +51,41 @@ header {
     padding: 0.5rem;
 }
 
-.booknow { 
+
+button:hover {
+    background-color: #043904f0;
+    transition: background-color .15s, font-size .15s, width .30s;
+    font-size: 18px;
+    width: 300px;
+}
+
+button:active {
+    border-color: #fff;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #140d4fda;
+    border: 2px solid #140d4f;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    button:hover {
+        transition: none;
+    }
+    
+}
+
+
+.enquirenow { 
     position: relative;
     top: 30px;
     left: 5px;
@@ -145,6 +182,7 @@ footer {
 
 /**/
 
+
 h1 {
 text-align: center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -197,53 +235,24 @@ video {
     margin-top: 2.5rem;
 }
 
-button:hover {
-    background-color: #043904f0;
-    transition: background-color .15s, font-size .15s, width .30s;
-    font-size: 18px;
-    width: 300px;
-}
 
-button:active {
-    border-color: #fff;
-}
 
-button {
-    width: 10rem;
-    height: 3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    font-size: large;
-    color: whitesmoke;
-    border-radius: 10px;
-    margin: 0 auto;
-    background-color: #140d4fda;
-    border: 2px solid #140d4f;
-    cursor: pointer;
-}
+
+
+
+
+
+/*link*/
 
 a:hover {
     text-decoration: none;
 }
+/**/
 
-table, td {
-    border: none;
-    text-align: center;
-}
 
-table, th {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-thead, tfoot {
-    background-color: #333;
-    color: #fff;
-}
 
 
 /*Class's*/
-
-
 
 .center {
     display: flex;
@@ -257,6 +266,11 @@ thead, tfoot {
     padding: 1rem;
 
 }
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+} 
 
 .spacer {
     margin-left: 2rem;
@@ -373,7 +387,6 @@ thead, tfoot {
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
-    
 }
 
 .gifbox {
@@ -444,7 +457,6 @@ thead, tfoot {
     margin: 2rem;
     align-items: center;
     justify-content: center;
-
 }
 
 .thumbox {
@@ -460,8 +472,6 @@ thead, tfoot {
     text-align: center;
     min-width: 200px;
 }
-
-
 
 .campus {
     background-color: lightgray;
@@ -479,7 +489,6 @@ thead, tfoot {
     overflow: scroll;
     background-color: whitesmoke;
     border-radius: 30px;
-
 }
 
 .wrapimg {
@@ -491,8 +500,6 @@ thead, tfoot {
     margin: 10px 10px;
     border-radius: 15px
 }
-
-
 
 .wrapimg img {
     width: 100%;
@@ -506,10 +513,12 @@ thead, tfoot {
     padding-bottom: 1rem;
 }
 
+
+
 /* whyus */
 
 .whyus {
-    width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -637,8 +646,6 @@ thead, tfoot {
         align-items: center;
     }
 
-  
-
     .topbox {
        
         
@@ -712,18 +719,12 @@ thead, tfoot {
         padding-bottom: 15px;
     }
 
-    #vidboxmob {
-        width: 450px;
-    }
-
-   #gif3 {
-       display: none;
-   }
-
-    #colmar {
-        display: none;
-    }
+   
+  
+    
 } 
+
+
 
 @media screen and (min-width: 1000px) {
 
@@ -766,6 +767,8 @@ thead, tfoot {
 
 
 /*booknow*/
+
+
 
 form {
     display: flex;
@@ -811,15 +814,6 @@ label {
   }
 
 
-  /*calendar*/
-
-  #calendar {
-      display: flex;
-      justify-content: center;
-  }
-  
-
-/*Basket*/
 
 
 

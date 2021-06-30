@@ -132,6 +132,16 @@ footer {
     font-size: medium;
 }
 
+.smlimg {
+    display: flex;
+    flex-shrink: 2;
+    border-radius: 15px;
+    max-width: 4rem;
+    max-height: 6rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    }
+
 
 /**/
 
@@ -451,18 +461,7 @@ thead, tfoot {
     min-width: 200px;
 }
 
-.smlimgbox {
-    width: 180px;
-}
 
-.smlimg {
-    display: flex;
-    flex-shrink: 2;
-    border-radius: 15px;
-    max-width: 4rem;
-    max-height: 6rem;
-    width: 100%;
-    }
 
 .campus {
     background-color: lightgray;

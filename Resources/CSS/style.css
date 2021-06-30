@@ -81,7 +81,34 @@ header {
 
 footer {
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-top: 2rem;
 }
+
+.ftbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2rem;
+    max-width: 17rem;
+    min-width: 17rem;
+    flex-shrink: 2;
+    line-height: 1.4;
+}
+
+.weak {
+    font-weight: lighter;
+    font-size: medium;
+}
+
+
+/**/
 
 h1 {
 text-align: center;
@@ -188,9 +215,6 @@ thead, tfoot {
     justify-content: center;
 }
 
-.weak {
-        font-weight: lighter;
-}
 
 .large {
     font-weight: bolder;
@@ -494,47 +518,6 @@ thead, tfoot {
 /**/
 
 
-.whatsapp {
-    padding-top: 1rem;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-}
-
-.inline {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    margin-top: 2rem;
-}
-
-
-
-.footer p {
-    margin: 0mm;
-}
-
-.findthe {
-    padding-top: 1rem;
-}
-
-.rights {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2.5rem;
-}
-
-.terms {
-    display: flex;
-    flex-direction: column;
-
-}
-
 
 /*ID's*/
 
@@ -768,18 +751,6 @@ thead, tfoot {
 .question {
     padding: 1rem;
     text-align: center;
-}
-
-.icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 2rem;
-    max-width: 17rem;
-    min-width: 17rem;
-
 }
 
 

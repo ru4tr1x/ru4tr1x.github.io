@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     width: 100%;
     padding: 0.3rem;
     background-color: white;
@@ -35,12 +35,46 @@ header {
     padding-left: 0px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    left: 0;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 15px;
+    padding: 0.5rem;
+}
+
+.booknow { 
+    position: relative;
+    top: 30px;
+    left: 5px;
+    padding: 0.5rem;
+}
+
 .topcontact {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 22px;
     font-size: 1.4rem;
-}
+    }
+
+    .contact {
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 1rem;
+    }
+
+    .topicon {
+        padding: 0rem;
+    }
 
 /* footer */
 
@@ -147,16 +181,11 @@ thead, tfoot {
 
 /*Class's*/
 
+
+
 .center {
     display: flex;
     justify-content: center;
-}
-
-.logotext {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-
 }
 
 .weak {
@@ -168,11 +197,6 @@ thead, tfoot {
     font-size: 3rem;
     padding: 1rem;
 
-}
-
-
-.topicon {
-    padding: 1rem;
 }
 
 .spacer {
@@ -244,18 +268,6 @@ thead, tfoot {
     text-align: center;
 }
 
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    left: 0;
-    justify-content: center;
-   align-content: center;
-
-
-
-}
 
 .link {
     padding-left: 1rem;
@@ -459,13 +471,28 @@ thead, tfoot {
     padding-bottom: 1rem;
 }
 
+/* whyus */
+
 .whyus {
     width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.fa, .fas {
-    padding-top: 1rem;
+.whyus div {
+    flex-basis: 40px;
 }
+
+.shrink {
+    display: flex;
+    flex-shrink: 2;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/**/
+
 
 .whatsapp {
     padding-top: 1rem;
@@ -581,7 +608,6 @@ thead, tfoot {
     a {
         font-size: 2rem;
         font-weight: 600;
-        padding-top: 1rem;
     }
 
     .gallery {

@@ -13,6 +13,7 @@ body {
     margin: 6rem;
 }
 
+
 /* header */
 
 header {
@@ -75,6 +76,28 @@ header {
     .topicon {
         padding: 0rem;
     }
+
+
+
+/*Banner*/
+
+.topbox { 
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    background-image: url("Images/NaturesTemple.JPG");
+    margin-bottom: 3rem;
+    top: 2.5rem;   
+}
+
+
+/**/
+
+
+
 
 /* footer */
 
@@ -268,19 +291,6 @@ thead, tfoot {
 .bold {
     font-weight: 700;
     font-size: 1.5rem;
-}
-
-.topbox { 
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    background-image: url("Images/NaturesTemple.JPG");
-    margin-bottom: 1rem;
-    top: 2.5rem;
-    
 }
 
 .img {

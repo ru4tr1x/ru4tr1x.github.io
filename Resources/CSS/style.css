@@ -54,9 +54,9 @@ header {
 
 button:hover {
     background-color: #043904f0;
-    transition: background-color .15s, font-size .15s, width .30s;
-    font-size: 18px;
-    width: 300px;
+    transition: background-color .15s, font-size .15s;
+    font-size: 20px;
+    
 }
 
 button:active {
@@ -73,23 +73,28 @@ button {
     border-radius: 10px;
     margin: 0 auto;
     background-color: #140d4fda;
-    border: 2px solid #140d4f;
+    border: none;
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
-    button:hover {
-        transition: none;
-    }
-    
+.cart {
+    position: relative;
+    top: 20px;
 }
 
 
+    
+
+ 
+.home {
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+}
+
 .enquirenow { 
     position: relative;
-    top: 30px;
-    left: 5px;
-    padding: 0.5rem;
+    top: 8px;
 }
 
 .topcontact {
@@ -102,16 +107,23 @@ button {
     font-size: 1.4rem;
     }
 
-    .contact {
-        line-height: 1.4;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 1rem;
+.contact {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+        
+
     }
 
-    .topicon {
-        padding: 0rem;
+    .topicon:hover {
+        padding: 0;
+        color: #043904f0;
+        transition: background-color .15s, font-size .15s;
+        font-size: 25px;
     }
 
 
@@ -417,14 +429,6 @@ a:hover {
     padding-bottom: 1rem;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    padding-bottom: 3rem;
-}
   
 .bigimg {
     width: 100%;
@@ -506,16 +510,21 @@ a:hover {
     border-radius: 15px 15px 0 0;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
 
 
 
 /* whyus */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 3rem;
+}
 
 .whyus {
     width: 100%;

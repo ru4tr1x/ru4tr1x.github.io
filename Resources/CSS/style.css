@@ -307,6 +307,7 @@ a:hover {
 
 .white {
     color: white;
+    font-size: 50px;
 }
 
 .center {
@@ -669,6 +670,10 @@ a:hover {
     a {
         font-size: 2rem;
         font-weight: 600;
+    }
+
+    #stickyhome {
+        font-size: 50px;
     }
 
     .gallery {

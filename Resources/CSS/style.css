@@ -163,7 +163,7 @@ button {
 
 .eye:hover {
     color: white;
-    font-size: xx-large;
+    font-size: 4rem;
     transition: background-color .15s, font-size .15s;
 
 }

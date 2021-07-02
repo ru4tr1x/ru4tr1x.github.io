@@ -616,6 +616,10 @@ a:hover {
 
     }
 
+    .weak {
+        font-size: larger;
+    }
+
     header {
         position: relative;
         top: -35px;

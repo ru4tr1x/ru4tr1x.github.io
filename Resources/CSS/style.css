@@ -97,6 +97,20 @@ button {
     top: 8px;
 }
 
+.enquiremob {
+    width: 100%;
+    position: fixed;
+    z-index: 1002;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    left: 0px;
+    }
+
+    
+
 .topcontact {
     display: flex;
     justify-content: flex-end;
@@ -602,6 +616,10 @@ a:hover {
 
     }
 
+    header {
+        position: relative;
+        top: -35px;
+    }
 
     .header p {
         display: none;

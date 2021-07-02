@@ -30,7 +30,8 @@ header {
     flex-wrap: wrap-reverse;
     width: 100%;
     padding: 0.3rem;
-    background-color: white;
+    background-color: rgba(255,255,255,0.6);
+    
 }
 
 
@@ -47,8 +48,12 @@ header {
     justify-content: center;
     align-content: center;
     position: relative;
-    top: 15px;
     padding: 0.5rem;
+
+}
+
+.logosize {
+    height: 100px;
 }
 
 
@@ -94,7 +99,7 @@ button {
 
 .enquirenow { 
     position: relative;
-    top: 8px;
+    top: 16px;
 }
 
 .enquiremob {
@@ -117,7 +122,7 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    top: 22px;
+    top: 33px;
     font-size: 1.4rem;
     }
 
@@ -191,7 +196,7 @@ footer {
 
 .weak {
     font-weight: lighter;
-    font-size: medium;
+    font-size: large;
 }
 
 .smlimg {
@@ -616,9 +621,6 @@ a:hover {
 
     }
 
-    .weak {
-        font-size: larger;
-    }
 
     header {
         position: relative;
@@ -654,6 +656,11 @@ a:hover {
 
     .topcontact {
         justify-content: center;
+        top: 22px;
+    }
+
+    .logo {
+        height: 100px
     }
     
     .subtitle {

@@ -164,7 +164,7 @@ button {
 .eye:hover {
     color: white;
     font-size: xx-large;
-    text-replace: background-color .15s, font-size .15s;
+    transition: background-color .15s, font-size .15s;
 
 }
 
@@ -303,6 +303,10 @@ a:hover {
     align-items: center;
     left: -20px;
     font-size: xx-large;
+}
+
+.white {
+    color: white;
 }
 
 .center {

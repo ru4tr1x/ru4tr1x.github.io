@@ -284,6 +284,19 @@ a:hover {
 
 /*Class's*/
 
+.stickyhome {
+    width: 100%;
+    position: fixed;
+    z-index: 1002;
+    bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    left: -20px;
+    font-size: xx-large;
+}
+
 .center {
     display: flex;
     justify-content: center;

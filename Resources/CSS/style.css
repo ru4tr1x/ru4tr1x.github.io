@@ -58,7 +58,7 @@ header {
 
 
 button:hover {
-    background-color: #043904f0;
+    background-color: green;
     transition: background-color .15s, font-size .15s;
     font-size: 20px;
     
@@ -598,11 +598,12 @@ a:hover {
 /*ID's*/
 
 #snipcart {
-    position: relative;
+    z-index: 1020;
 }
 
-.snipcart-modal {
-    top: 100px;
+#snipcart button:hover {
+    transition: none;
+
 }
 
 #bigimg2 {

@@ -495,7 +495,7 @@ a:hover {
     justify-content: center;
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
-    z-index: 100;
+
 }
 
 .vidbox {
@@ -596,6 +596,14 @@ a:hover {
 
 
 /*ID's*/
+
+#snipcart {
+    position: relative;
+}
+
+.snipcart-modal {
+    top: 100px;
+}
 
 #bigimg2 {
     height: 100%;

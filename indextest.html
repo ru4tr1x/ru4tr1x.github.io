@@ -320,6 +320,18 @@
                     </p>
                 </div>
             </payment>
+            <script>
+            try {
+                await Snipcart.api.cart.items.add({
+                    id: '1',
+                    name: 'Private Canyoning',
+                    price: 50,
+                    url: '/',
+                    quantity: 1,
+                });
+            } catch (error) {
+                console.log(error)
+            }</script>
         </div>
     
     
@@ -328,7 +340,8 @@
         document.addEventListener('snipcart.ready', function() {
             Snipcart.api.session.setLanguage('en', {
                 "item": {
-                  "quantity": "group size"
+                  "quantity": "group size",
+                  "increment-quantity": "50",
                 }
             });
         });

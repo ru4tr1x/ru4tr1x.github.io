@@ -181,8 +181,20 @@ button {
     background-blend-mode: lighten;
 
 }
+ .dismore {
+     font-size: medium;
+ }
 
 /*Product*/
+
+#snipcart {
+    z-index: 1020;
+}
+
+#snipcart button:hover {
+    transition: none;
+
+}
 
 .productcontainer {
     position: relative;
@@ -221,7 +233,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 300px;
+    padding-top: 250px;
     position: absolute;
 }
 
@@ -321,7 +333,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2rem;
+    padding: 4rem;
     max-width: 17rem;
     flex-shrink: 2;
     line-height: 1.4;
@@ -337,9 +349,8 @@ footer {
     display: flex;
     flex-shrink: 2;
     border-radius: 15px;
-    max-width: 6rem;
-    max-height: 8rem;
-    width: 100%;
+    max-width: 8rem;
+    height: 8rem;
     padding-bottom: 1rem;
     }
 
@@ -660,14 +671,7 @@ a:hover {
 
 /*ID's*/
 
-#snipcart {
-    z-index: 1020;
-}
 
-#snipcart button:hover {
-    transition: none;
-
-}
 
 #bigimg2 {
     height: 100%;
@@ -708,18 +712,23 @@ a:hover {
         font-size: 3em;
     }
 
-
-    p {
-        font-size: 1.5rem;
-        font-weight: 600;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 0 10px;
-    }
-
     .tworem {
 
         font-size: 2rem;
 
+    }
+
+    .imagetitle {
+        font-size: 4rem;
+    }
+
+    
+    .dismore {
+        font-size: 3.2rem;
+    }
+    .shrink p {
+        padding-bottom: 1rem;
+        font-size: 2.2rem;
     }
 
 
@@ -750,6 +759,10 @@ a:hover {
     #stickyhome {
         font-size: 50px;
     }
+
+  .ftbox p {
+font-size: 2rem;
+  }
 
     .gallery {
         flex-wrap: wrap;
@@ -800,13 +813,6 @@ a:hover {
     .link {
         padding-bottom: 0;
         font-size: 2rem;
-    }
-
-    
-
-    .footer p {
-    font-size: medium;
-    padding-top: 1.7rem;
     }
 
     .your {
@@ -875,8 +881,11 @@ a:hover {
     .abox p {
         width: 80%;
     }
+    .ftbox p {
+        font-size: medium;
+    }
 }
-
+    
 
 /*Index2*/
 

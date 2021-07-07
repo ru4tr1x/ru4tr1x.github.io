@@ -167,6 +167,21 @@ button {
 
 }
 
+
+.imgbox {
+    height: 100%;
+    width: 50%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+
+}
+
 /*Product*/
 
 .productcontainer {
@@ -174,6 +189,7 @@ button {
     top: 20px;
     left: -15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
@@ -183,23 +199,37 @@ button {
 .imagecontainer {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-bottom: 100px;
     
 
 }
 
 .productimage {
     border-radius: 15px;
-    width: 450px;
+    width: 800px;
     flex-grow: 2;
+    opacity: 0.8;
 }
 
 .imagetitle {
-    padding: 30px;
-    position: absolute;
-    font-size: xx-large;
-    color: whitesmoke;
+    font-size: 2.5rem;
+    color: white;
     font-weight: 700;
+    text-shadow: black 0 0 4px ;
+}
+
+.imagedescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 300px;
+    position: absolute;
+}
+
+.price {
+    font-weight: 600; 
+    font-size: 2rem; 
+    margin-bottom: 10px;
 }
 
 
@@ -382,7 +412,8 @@ a {
 }
 
 a:hover {
-    color: #043904f0;
+    color: green;
+    text-shadow: none;
 }
 /**/
 
@@ -406,7 +437,7 @@ a:hover {
 
 .white {
     color: white;
-    font-size: 50px;
+    text-shadow: black 0 0 4px ;
 }
 
 .center {
@@ -475,9 +506,10 @@ a:hover {
 }
 
 .img {
-    height: 30rem;
+    height: 40rem;
     border-radius: 15px;
     margin: 1rem;
+    opacity: 0.9;
 }
 .title {
     display: flex;
@@ -581,40 +613,6 @@ a:hover {
     min-width: 580px;
 }
 
-.imgbox {
-    height: 100%;
-    width: 50%;
-    min-width: 100%;
-    flex-shrink: 2;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255,255,255,0.6);
-    background-blend-mode: lighten;
-
-}
-
-.vidbox {
-    height: 100%;
-    width: 80%;
-    min-width: 300px;
-    flex-shrink: 2;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.thumbox {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
     
 .info {
     padding: 3rem;

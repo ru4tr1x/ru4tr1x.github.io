@@ -310,11 +310,13 @@
     
     </body>
     <script>
-        { 
-            "item": {
-                "quantity": "group size",
-            }
-        },
+        document.addEventListener('snipcart.ready', function() {
+            Snipcart.api.session.setLanguage('en', {
+                "item": {
+                  "quantity": "group size"
+                }
+            });
+        });
     </script>
     
 </html>

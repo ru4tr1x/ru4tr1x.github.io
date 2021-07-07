@@ -122,7 +122,7 @@
         <!--Banner-->
 
 
-        <div class="topbox" style="background-image: url(Resources/Images/NaturesTemple.JPG);" opac>
+        <div class="topbox" style="background-image: url(resources/Images/cheese.JPG); background-size: cover; background-repeat: no-repeat;">
 
           
             <div class="imgbox" id="buttonmob">
@@ -137,8 +137,47 @@
               
         </div>
 
-        <div class="product">
-            <img src="resources/Images/OurEquipment.jpeg" width="200px" alt="testproduct">
+        <div class="productcontainer">
+            
+            <div class="imagecontainer">
+              <img class="productimage" src="resources/Images/OurEquipment.jpeg"  alt="testproduct">
+              <p class="imagetitle">Private Guiding</p>
+            </div>
+            <div class="imagecontainer">
+                <img class="productimage" src="resources/Images/Whatwedo.JPG"  alt="testproduct">
+                <p class="imagetitle">Events</p>
+              </div>
+            
+            <div class="description">
+                <h1>Private Canyoning</h1>
+                <p></i>&nbsp;Starting from &#163;230</p>
+                <br>
+                <p>We offer private canyoning adventures for one or a group. We provide quality equipment, clothing and tastey snacks. You're experience will be tailored to suit you.</p>
+                <div id="bookbutton">
+                 <button class="buy-button snipcart-add-item" 
+                 data-item-id="1" 
+                 data-item-price="80" 
+                 data-item-url="/" 
+                 data-item-name="testproduct"
+                 data-item-image="resources/Images/OurEquipment.jpeg"
+                 >Book Now</button>
+
+                 <div class="description">
+                    <h1>Events</h1>
+                    <p></i>&nbsp;Starting from &#163;230</p>
+                    <br>
+                    <p>We offer bespoke canyoning events. We use adventure logic to deliver leadrship, teambuilding and self improvment training. What you discover you'll use forever.</p>
+                    <div id="bookbutton">
+                     <button class="buy-button snipcart-add-item" 
+                     data-item-id="1" 
+                     data-item-price="80" 
+                     data-item-url="/" 
+                     data-item-name="testproduct"
+                     data-item-image="resources/Images/OurEquipment.jpeg"
+                     >Book Now</button>
+                </div>
+            </div>
+
         </div>
     
         
@@ -146,13 +185,7 @@
 
         
     
-        <button class="buy-button snipcart-add-item" 
-        data-item-id="1" 
-        data-item-price="80" 
-        data-item-url="/" 
-        data-item-name="testproduct"
-        data-item-image="resources/Images/OurEquipment.jpeg"
-        >Book Now</button>
+        
 
         <!--Store-->
 
@@ -276,6 +309,12 @@
     
     
     </body>
-    
+    <script>
+        { 
+            "item": {
+                "quantity": "group size",
+            }
+        },
+    </script>
     
 </html>

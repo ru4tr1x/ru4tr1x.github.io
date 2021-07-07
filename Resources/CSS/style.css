@@ -122,7 +122,7 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    top: 33px;
+    top: 20px;
     font-size: 1.4rem;
     }
 
@@ -156,7 +156,6 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    background-image: url("Images/NaturesTemple.JPG");
     margin-bottom: 3rem;
     top: 2.5rem;   
 }
@@ -166,6 +165,103 @@ button {
     font-size: 4rem;
     transition: background-color .15s, font-size .15s;
 
+}
+
+/*Product*/
+
+.productcontainer {
+    position: relative;
+    top: 20px;
+    left: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    }
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+
+}
+
+.productimage {
+    border-radius: 15px;
+    width: 450px;
+    
+    flex-grow: 2;
+}
+
+.imagetitle {
+    padding: 30px;
+    position: absolute;
+    top: 30px;
+    font-size: xx-large;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: -20px;
+
+
+}
+
+#bookbutton {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+
+}
+
+
+
+/**/
+
+
+
+/* whyus */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    padding-bottom: 3rem;
+    top: 40px;
+}
+
+.whyus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whyus div {
+    flex-basis: 40px;
+}
+
+.shrink {
+    display: flex;
+    flex-shrink: 2;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /**/
@@ -560,38 +656,6 @@ a:hover {
 
 
 
-/* whyus */
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    padding-bottom: 3rem;
-}
-
-.whyus {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.whyus div {
-    flex-basis: 40px;
-}
-
-.shrink {
-    display: flex;
-    flex-shrink: 2;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/**/
 
 
 

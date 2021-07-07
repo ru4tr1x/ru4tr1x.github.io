@@ -191,7 +191,6 @@ button {
 .productimage {
     border-radius: 15px;
     width: 450px;
-    
     flex-grow: 2;
 }
 

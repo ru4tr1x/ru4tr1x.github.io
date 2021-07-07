@@ -183,7 +183,7 @@ button {
 .imagecontainer {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
     
 
 }
@@ -211,6 +211,7 @@ button {
     align-content: center;
     position: relative;
     top: -20px;
+    max-width: 80%;
 
 
 }
@@ -223,6 +224,9 @@ button {
     top: 40px;
 
 }
+
+
+
 
 
 

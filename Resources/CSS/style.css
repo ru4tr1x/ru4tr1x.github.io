@@ -263,7 +263,7 @@ button {
 
 .productimage {
     border-radius: 15px;
-    width: 800px;
+    width: 100%;
     flex-grow: 2;
     opacity: 0.8;
 }
@@ -279,7 +279,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 250px;
+    padding-top: 150px;
     position: absolute;
 }
 
@@ -318,7 +318,11 @@ button {
 
 }
 
-
+@media screen and (min-width: 1000px) {
+    .productimage {
+        width: 70%;
+    }
+}
 
 
 

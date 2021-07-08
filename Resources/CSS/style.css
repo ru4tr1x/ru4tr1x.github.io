@@ -427,13 +427,29 @@ footer {
 /*Mobile enquire now banner*/
 
 @media screen and (max-width: 1000px) {
-#stickyhome {
+
+    .enquiremob button {
+        height: 150px; 
+        width: 100%; 
+        font-size: xx-large; 
+        border-radius: 0px;
+    }
+
+    #stickyhome {
     font-size: 50px;
 }
 
 .home {
     font-size: 4rem;
     padding: 2rem;
+}
+
+.enquiremob a {
+    width: 100%;
+}
+
+#home {
+    
 }
 
 }
@@ -516,7 +532,6 @@ a:hover {
 /*Class's*/
 
 .stickyhome {
-    width: 100%;
     position: fixed;
     z-index: 1002;
     bottom: 10px;
@@ -524,8 +539,8 @@ a:hover {
     justify-content: flex-end;
     align-content: center;
     align-items: center;
-    left: -20px;
     font-size: xx-large;
+    left: 0px;
 }
 
 

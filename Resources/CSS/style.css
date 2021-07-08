@@ -197,8 +197,18 @@ button {
     align-content: center;
     position: relative;
     margin-bottom: 6rem;
-    top: 2.5rem;   
+    top: 4rem;  
+    align-self: center;
+    width: 80%; 
 }
+
+@media screen and (max-width: 1000px) {
+    .topbox {
+        width: 100%;
+        top: 2.5rem;
+    }
+}
+
 
 .eye:hover {
     color: white;
@@ -268,6 +278,13 @@ button {
     opacity: 0.8;
 }
 
+@media screen and (min-width: 1000px) {
+    .productimage {
+        width: 80%;
+    }
+}
+
+
 .imagetitle {
     font-size: 2.5rem;
     color: white;
@@ -279,9 +296,16 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 200px;
     position: absolute;
 }
+
+@media screen and (min-width: 1000px) {
+    .imagedescription {
+        padding-top: 250px;
+    }
+}
+
 
 .white {
     color: white;
@@ -318,11 +342,6 @@ button {
 
 }
 
-@media screen and (min-width: 1000px) {
-    .productimage {
-        width: 70%;
-    }
-}
 
 
 
@@ -640,9 +659,7 @@ a:hover {
     align-content: center;
 }
 
-.productcontainer {
-    padding: 1rem;
-}
+
 
 .powered {
     display: flex;

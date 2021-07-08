@@ -448,10 +448,6 @@ footer {
     width: 100%;
 }
 
-#home {
-    
-}
-
 }
 
 /**/
@@ -540,7 +536,8 @@ a:hover {
     align-content: center;
     align-items: center;
     font-size: xx-large;
-    left: 0px;
+    right: 0px;
+    padding: 1rem;
 }
 
 

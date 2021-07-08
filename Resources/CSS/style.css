@@ -224,6 +224,12 @@ button {
  .dismore {
      font-size: medium;
  }
+ @media screen and (max-width: 1000px) {
+ .dismore {
+    font-size: 2.2rem;
+}
+
+ }
 
 /*Product*/
 
@@ -794,9 +800,7 @@ a:hover {
     }
 
     
-    .dismore {
-        font-size: 3.2rem;
-    }
+  
     .shrink p {
         padding-bottom: 1rem;
         font-size: 2.2rem;

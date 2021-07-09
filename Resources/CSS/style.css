@@ -3,14 +3,12 @@
     box-sizing: border-box;
   }
 
-  /*Global*/
+/*Global*/
 
-
-html,
-body {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   outline-style: hidden;
-   border-style: hidden;
+html, body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        outline-style: hidden;
+        border-style: hidden;
 }
 
 body {
@@ -20,68 +18,54 @@ body {
     margin: 6rem 3rem;
 }
 
-
 h1 {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 1rem;
     font-weight: 600;
-    }
+}
     
-    h2 {
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 700;
-        font-size: 2rem;
-    }
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
     
-    h3 {
-        display: none;
-        font-size: 2.5rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      
-    }
+h3 {
+    display: none;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
     
-    h4 {
-        font-size: 2.5rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 0;
-        padding: 0;
+h4 {
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
     
-    }
+p {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
     
+a {
+    color: #140d4f;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
     
-    
-    
-    p {
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.5rem;
-    }
-    
-    video {
-        width: 100%;
-        min-width: 600px;
-        border-radius: 15px;
-        margin-top: 2.5rem;
-    }
-    
-    
-    
-    a {
-        color: #140d4f;
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
-    a:hover {
-        color: green;
-        text-shadow: none;
-    }
-    /**/
+a:hover {
+    color: green;
+    text-shadow: none;
+}
+
+/**/
 
 /* header */
 
@@ -100,12 +84,10 @@ header {
    
     }
 
-
 .header, p {
     margin: 0px;
     padding-left: 0px;
 }
-
 
 @media screen and (max-width: 1000px) {
 
@@ -146,7 +128,6 @@ header {
     }
 }
 
-
 button:hover {
     background-color: green;
     transition: background-color .15s, font-size .15s;
@@ -176,10 +157,6 @@ button {
     position: relative;
     top: 20px;
 }
-
-
-    
-
  
 .home {
     position: relative;
@@ -202,9 +179,7 @@ button {
     align-content: center;
     align-items: center;
     left: 0px;
-    }
-
-    
+}
 
 .topcontact {
     display: flex;
@@ -214,15 +189,13 @@ button {
     position: relative;
     top: 20px;
     font-size: 1.4rem;
-    }
+}
 
-    @media screen and (max-width: 1000px) {
-        .topcontact {
-            justify-content: center;
-            
-        }
-    
+@media screen and (max-width: 1000px) {
+    .topcontact {
+        justify-content: center;   
     }
+}
 
 .contact {
     line-height: 1.4;
@@ -232,12 +205,11 @@ button {
     padding: 0 1.5rem;
     display: flex;
     flex-direction: column;
-        
-
     }
-    @media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1000px) {
     .contact {
-    padding: 0 3.2rem;
+        padding: 0 3.2rem;
     }
 
     .contact a {
@@ -245,13 +217,14 @@ button {
     }
 }
 
-    .topicon:hover {
-        padding: 0;
-        color: #043904f0;
-        transition: background-color .15s, font-size .15s;
-        font-size: 25px;
-    }
+.topicon:hover {
+    padding: 0;
+    color: #043904f0;
+    transition: background-color .15s, font-size .15s;
+    font-size: 25px;
+}
 
+/**/
 
 /*Banner*/
 
@@ -272,17 +245,17 @@ button {
     .topbox {
         width: 100%;
         top: 2.5rem;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
     }
 }
-
 
 .eye:hover {
     color: white;
     font-size: 4rem;
     transition: background-color .15s, font-size .15s;
-
 }
-
 
 .imgbox {
     height: 100%;
@@ -295,17 +268,20 @@ button {
     justify-content: center;
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
-
-}
- .dismore {
-     font-size: medium;
- }
- @media screen and (max-width: 1000px) {
- .dismore {
-    font-size: 2.2rem;
 }
 
+.dismore {
+    font-size: medium;
+    margin-bottom: 1rem;
  }
+
+@media screen and (max-width: 1000px) {
+    .dismore {
+        font-size: 2.2rem;
+    }
+}
+
+/**/
 
 /*Product*/
 
@@ -315,7 +291,6 @@ button {
 
 #snipcart button:hover {
     transition: none;
-
 }
 
 .productcontainer {
@@ -327,14 +302,12 @@ button {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    }
+}
 
 .imagecontainer {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
-    
-
 }
 
 .productimage {
@@ -350,7 +323,6 @@ button {
     }
 }
 
-
 .imagetitle {
     font-size: 2.5rem;
     color: white;
@@ -358,6 +330,12 @@ button {
     text-shadow: black 0 0 1px ;
 }
 
+@media screen and (max-width: 1000px) {
+    .imagetitle {
+        font-size: 4rem;
+    }
+}
+ 
 .imagedescription {
     display: flex;
     flex-direction: column;
@@ -372,7 +350,6 @@ button {
     }
 }
 
-
 .white {
     color: white;
     text-shadow: black 0 0 3px ;
@@ -385,7 +362,6 @@ button {
     margin-bottom: 10px;
 }
 
-
 .description {
     display: flex;
     justify-content: center;
@@ -395,8 +371,6 @@ button {
     position: relative;
     top: -20px;
     max-width: 80%;
-
-
 }
 
 #bookbutton {
@@ -405,15 +379,11 @@ button {
     justify-content: center;
     position: relative;
     top: 40px;
-
 }
 
 /**/
 
-
-
 /* whyus */
-
 
 .container {
     display: flex;
@@ -446,11 +416,7 @@ button {
 
 /**/
 
-
-
-
 /* footer */
-
 
 footer {
     border-radius: 15px;
@@ -483,6 +449,15 @@ footer {
     .ftbox {
         max-width: 30rem;
     }
+    .ftbox p {
+        font-size: 2rem;
+          }
+}
+
+@media screen and (min-width: 1000px) {
+    .ftbox p {
+        font-size: medium;
+    }
 }
 
 .weak {
@@ -504,9 +479,6 @@ footer {
             height: 12rem;
         }
     }
-
-
-
 
 /**/
 
@@ -539,267 +511,20 @@ footer {
     }
 
     #stickyhome {
-    font-size: 50px;
-}
+        font-size: 50px;
+    }
 
-.home {
-    font-size: 4rem;
-    padding: 2rem;
-}
+   .home {
+        font-size: 4rem;
+        padding: 2rem;
+    }
 
-.enquiremob a {
-    width: 100%;
-}
-
+    .enquiremob a {
+        width: 100%;
+    }    
 }
 
 /**/
-
-
-
-
-/*Generic Class's*/
-
-
-.center {
-    display: flex;
-    justify-content: center;
-}
-
-
-.large {
-    font-weight: bolder;
-    font-size: 3rem;
-    padding: 1rem;
-
-}
-
-.icon {
-    display: flex;
-    justify-content: space-evenly;
-} 
-
-.spacer {
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-}
-
-.reset {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: small;
-
-}
-.events {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.store {
-    padding: 16px;
-}
-
-.holding {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 50px;
-}
-
-.holdingimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.subheading {
-    display: flex; 
-    justify-content: space-between;
-}
-
-.bold {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-
-
-.title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-
-.link {
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.linksbox {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 0.5rem;
-}
-
-
-.products {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-
-
-.powered {
-    display: flex;
-    font-size: 10px;
-    padding-left: 0rem;
-
-}
-
-
-.bottombox {
-    display: flex;
-    flex-shrink: 2;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    border-radius: 15px;
-    background-color: white;
-    overflow: hidden;
-    flex-direction: column;
-    margin-top: 4rem;
-}
-
-.gallery {
-    display: flex;
-    flex-shrink: 2;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    border-radius: 15px;
-    background-color: white;
-    overflow: hidden;
-}
-
-.gifbox {
-    display: inline-flex;
-    flex-shrink: 2;
-}
-
-.gif {
-    border-radius: 15px;
-    max-height:300px;
-    margin: 2rem;
-} 
-
-.photo {
-    border-radius: 15px;
-    max-height: 300px;
-    margin: 2rem;
-} 
-
-
-.gifs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.your {
-    padding-bottom: 1rem;
-}
-
-  
-.bigimg {
-    width: 100%;
-    border-radius: 15px;
-    min-width: 580px;
-}
-
-    
-.info {
-    padding: 3rem;
-    text-align: center;
-    min-width: 200px;
-}
-
-.campus {
-    background-color: lightgray;
-    border-radius: 30px;
-}
-
-.wrapbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 85%;
-    max-height: 600px;
-    margin: 2rem auto;
-    position: relative;
-    overflow: scroll;
-    background-color: whitesmoke;
-    border-radius: 30px;
-}
-
-.wrapimg {
-    flex-shrink: 2;
-    width: 260px;
-    height: 250px;
-    background-color: white;
-    text-align: center;
-    margin: 10px 10px;
-    border-radius: 15px
-}
-
-.wrapimg img {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-}
-
-
-
-
-
-
-
-/*ID's*/
-
-
-
-#bigimg2 {
-    height: 100%;
-}
-
-#urban {
-    font-weight: 501;
-}
-
-#dismore {
-    margin-bottom: 1rem;
-}
-
-.ecsp {
-    min-width: 1000px;
-    font-size: 2rem;
-}
-
-.justifycenter {
-    display: flex;
-    justify-content: center;
-}
-  
 
 /*Mobile screen Generic*/
 
@@ -809,153 +534,23 @@ footer {
         font-size: 3rem;
     }
 
-    #reset {
-        font-size: medium;
-    }
-
-    #three {
-        font-size: 3em;
-    }
-
-
-   
-    .tworem {
-
-        font-size: 2rem;
-
-    }
-
-    .imagetitle {
-        font-size: 4rem;
-    }
-
-    
-  
-    .shrink p {
-        padding-bottom: 1rem;
-        font-size: 2.2rem;
-    }
-
-
-  
-
     h2 {
         font-size: 4rem;
     }
-    
-    h3 { display: none;
-        
-    }
 
-    h4 {display: block;}
-
-   
-
-  .ftbox p {
-font-size: 2rem;
-  }
-
-    .gallery {
-        flex-wrap: wrap;
-    }
-
-    .gif {
-        max-height: 600px;
-    }
-
-  
-   
-    
-    .subtitle {
-    padding-bottom: 2rem;
-    font-size: 2.5rem;
-}
-
-    .events {
-      
-        display: flex;
-        justify-content: center;
-        width: 200px;
-    }
-
-    .questions {
-        display: none;
-    }
     .container {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
     }
 
-    .topbox {
-       
-        
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-    }
-
-    .link {
-        padding-bottom: 0;
-        font-size: 2rem;
-    }
-
-    .your {
-        font-size: 2rem;
-    }
-
     .mobilehide {
         display: none;
     }
-
-    .inline {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .ecsp {
-
-        min-width: 1000px;
-
-    }
-
-    #buttonmob {
-        width: 450px;
-    }
-
-    #bng {
-        display: none;
-    }
-
-    #info {
-        padding: 0rem;
-        margin-bottom: 3rem;
-    }
-
-    #infoboxmob2 {
-        width: 482px;
-        padding-left: 15px;
-        padding-top: 15px;
-    }
-
-    #imgboxmob {
-        width: 100%;
-        margin: 0;
-        padding-top: 0;
-    }
-
-    #imgboxmob2 {
-        width: 450px;
-        padding-bottom: 15px;
-    }
-
-   
-  
-    
 } 
+/**/
 
-
+/*Desktopscreen Generic*/
 
 @media screen and (min-width: 1000px) {
 
@@ -963,16 +558,11 @@ font-size: 2rem;
         display: none;
     }
     
-    .abox p {
-        width: 80%;
-    }
-    .ftbox p {
-        font-size: medium;
-    }
 }
-    
 
-/*Index2*/
+/**/
+
+/* about us | discover more */
 
 .bbox {
     display: flex;
@@ -984,6 +574,7 @@ font-size: 2rem;
     position: relative;
     top: 30px;
 }
+
 .abox {
     display: flex;
     align-items: center;
@@ -995,6 +586,20 @@ font-size: 2rem;
     padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .abox p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .abox p {
+        width: 80%;
+    }
+}
+
 .img {
     height: 40rem;
     border-radius: 15px;
@@ -1002,77 +607,7 @@ font-size: 2rem;
     opacity: 0.9;
     max-width: 100%;
 }
-
-@media screen and (max-width: 1000px) {
-    .abox p {
-font-size: 2rem;
-    }
-}
-
-
-
-.faqs {
-    padding: 2rem;
-    text-align: center;
-}
-
-.faq {
-    padding: 0.2rem;
-}
-
-.question {
-    padding: 1rem;
-    text-align: center;
-}
-
-
-/*booknow*/
-
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    line-height: 30px;
-    height: 80%;
-    overflow: auto;
-  }
-
-input {
-    align-content: center;
-    width: 400px;
-    cursor: pointer;
-  }
-
-
-.radio {
-    text-align: center;
-    width: 300px;
-}
-
-#submit {
-width: 6rem;
-background-color: blue;
-color: white;
-font-weight: bold;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 1rem;
-cursor: pointer;
-  }
-
-#number {
-    width: 3rem;
-}  
-
-label {
-    margin-bottom: 00.5rem;
-    padding: 0.5rem;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
+  
 
 
 

@@ -608,7 +608,23 @@ footer {
     max-width: 100%;
 }
   
+/*Enquire now*/
 
+#enquirebanner {
+    margin-bottom: 0px;
+}
 
+/* Terms and policy */
 
+.holding {
+    position: relative;
+    top: 50px;
+}
+
+.holdingimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
 

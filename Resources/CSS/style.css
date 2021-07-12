@@ -249,7 +249,7 @@ button {
 @media screen and (max-width: 1000px) {
     .topbox {
         width: 100%;
-        top: 2.5rem;
+        top: 145px;
         flex-direction: column;
         overflow: hidden;
         align-items: center;
@@ -307,6 +307,13 @@ button {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .productcontainer {
+        top: 100px;
+    }
+   
 }
 
 .imagecontainer {

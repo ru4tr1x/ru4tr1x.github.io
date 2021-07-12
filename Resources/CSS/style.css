@@ -646,6 +646,18 @@ footer {
     margin-bottom: 0px;
 }
 
+.form {
+    position: relative;
+    top: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+    .form {
+        top: 160px;
+    }
+}
+
+
 /* Terms and policy */
 
 .holding {

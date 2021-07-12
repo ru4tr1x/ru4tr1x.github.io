@@ -92,8 +92,7 @@ header {
 @media screen and (max-width: 1000px) {
 
     header {
-        position: relative;
-        top: -35px;
+       
         justify-content: center;
     }
 
@@ -121,7 +120,7 @@ header {
 @media screen and (max-width: 1000px) {
     .logo {
         position: relative;
-        top: 25px;
+        top: -10px;
         left: 0px;
     }
 

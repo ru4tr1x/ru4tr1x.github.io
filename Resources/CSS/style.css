@@ -198,7 +198,8 @@ button {
 
 @media screen and (max-width: 1000px) {
     .topcontact {
-        justify-content: center;   
+        justify-content: center;
+        left: 0px;   
     }
 }
 

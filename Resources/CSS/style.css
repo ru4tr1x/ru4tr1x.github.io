@@ -238,7 +238,7 @@ button {
     margin-bottom: 6rem;
     top: 4rem;  
     align-self: center;
-    width: 80%; 
+    width: 60%; 
 }
 
 @media screen and (max-width: 1000px) {

@@ -346,13 +346,13 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 250px;
     position: absolute;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .imagedescription {
-        padding-top: 250px;
+        padding-top: 300px;
     }
 }
 
@@ -379,6 +379,15 @@ button {
     max-width: 80%;
 }
 
+@media screen and (max-width: 1000px) {
+    .description {
+         max-width: 100%;
+    }
+    .description p {
+        font-size: 2.8rem;
+    }
+}
+
 #bookbutton {
 
     display: flex;
@@ -401,6 +410,16 @@ button {
     padding-bottom: 3rem;
     top: 40px;
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+         max-width: 100%;
+    }
+    .container p {
+        font-size: 2.8rem;
+    }
+}
+
 
 .whyus {
     width: 100%;
@@ -512,7 +531,7 @@ footer {
     .enquiremob button {
         height: 150px; 
         width: 100%; 
-        font-size: xx-large; 
+        font-size: 3.5rem; 
         border-radius: 0px;
         right: 0px;
     }
@@ -522,8 +541,8 @@ footer {
     }
 
    .home {
-        font-size: 4rem;
-        padding: 2rem;
+        font-size: 5rem;
+        padding: 1rem;
     }
 
     .enquiremob a {

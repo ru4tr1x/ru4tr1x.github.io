@@ -504,6 +504,14 @@ footer {
     padding-bottom: 1rem;
     }
 
+    .adlog {
+        display: flex;
+        flex-shrink: 2;
+        max-width: 3rem;
+        height: 3rem;
+        padding-bottom: 1rem;
+    }
+
     @media screen and (max-width: 1000px) {
         #map {
             max-width: 12rem;

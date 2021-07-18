@@ -231,6 +231,39 @@ button {
 
 /**/
 
+/*leftproduct*/
+
+.promotion {
+    position: fixed;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 330px;
+    align-items: center;
+    align-content: center;
+    top: 130px;
+    left: 17px;
+    width: 250px;
+    text-align: center;
+}
+
+.mobilepromotion {
+    position: fixed;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 193px;
+    align-items: center;
+    align-content: center;
+    bottom: 2px;
+    left: -16px;
+    width: 250px;
+    text-align: center;
+}
+
+
 /*Banner*/
 
 .topbox { 
@@ -470,9 +503,9 @@ footer {
     align-items: center;
     align-content: center;
     padding: 4rem;
-    max-width: 17rem;
+    max-width: 19rem;
     flex-shrink: 2;
-    line-height: 1.4;
+    line-height: 1.8;
     flex-wrap: wrap;
 }
 
@@ -622,7 +655,7 @@ footer {
     width: 80%;
 }
 
-.abox, p {
+.abox p {
     padding-bottom: 2rem;
 }
 

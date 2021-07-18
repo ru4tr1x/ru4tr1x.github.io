@@ -231,7 +231,7 @@ button {
 
 /**/
 
-/*leftproduct*/
+/*PROMOTION*/
 
 .promotion {
     position: fixed;
@@ -254,7 +254,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 193px;
+    height: 300px;
     align-items: center;
     align-content: center;
     bottom: 2px;

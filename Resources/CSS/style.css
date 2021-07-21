@@ -360,6 +360,14 @@ button {
         margin-bottom: 100px;
         background-color: whitesmoke;
     }
+
+    .wheretogo p {
+        font-size: 2rem;
+    }
+
+    .wheretogo a {
+        font-size: 2rem;
+    }
 }
 
 /*Product*/

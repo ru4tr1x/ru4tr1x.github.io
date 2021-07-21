@@ -63,6 +63,7 @@ a {
 a:hover {
     color: green;
     text-shadow: none;
+    text-decoration: none;
 }
 
 /**/
@@ -101,7 +102,7 @@ header {
     }
 }
 
-.logo {
+.title {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
@@ -109,11 +110,12 @@ header {
     justify-content: center;
     align-content: center;
     position: relative;
+    height: 100px;
  
 
 }
 
-.logosize {
+.logo {
     height: 100px;
 }
 
@@ -242,8 +244,8 @@ button {
     height: 330px;
     align-items: center;
     align-content: center;
-    top: 130px;
-    left: 17px;
+    top: 160px;
+    right: 17px;
     width: 250px;
     text-align: center;
 }
@@ -320,6 +322,15 @@ button {
 }
 
 /**/
+
+/*wheretogo*/
+
+.wheretogo {
+    position: absolute;
+    top: 160px;
+    left: 35px;
+
+}
 
 /*Product*/
 
@@ -458,7 +469,6 @@ button {
         font-size: 2.8rem;
     }
 }
-
 
 .whyus {
     width: 100%;
@@ -720,3 +730,18 @@ footer {
     align-content: center;
     }
 
+/*map*/
+
+.where {
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+}

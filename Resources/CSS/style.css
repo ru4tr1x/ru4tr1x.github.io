@@ -351,7 +351,11 @@ button {
     font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
 }
 
-#wheretogolink {
+.wheretogo p {
+    font-size: 1rem;
+}
+
+.wheretogolink {
     width: 200px;
 }
 
@@ -366,13 +370,15 @@ button {
     }
 
     .wheretogo p {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
-    .wheretogo a {
+    .wheretogolink {
         font-size: 2rem;
         width: 600px;
     }
+
+    
 }
 
 /*Product*/

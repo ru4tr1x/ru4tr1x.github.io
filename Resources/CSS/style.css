@@ -351,6 +351,10 @@ button {
     font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
 }
 
+#wheretogolink {
+    width: 200px;
+}
+
 @media screen and (max-width: 1000px) {
     .wheretogo {
         position: relative;
@@ -367,6 +371,7 @@ button {
 
     .wheretogo a {
         font-size: 2rem;
+        width: 600px;
     }
 }
 

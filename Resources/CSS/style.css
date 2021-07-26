@@ -381,6 +381,61 @@ button {
     
 }
 
+/*ourguests*/
+
+.ourguests {
+    position: absolute;
+    top: 770px;
+    left: -20px;
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 220px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .ourguests {
+        position: relative;
+        top: -50px;
+        left: 0px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        background: #FFFFFF;
+        border: none;
+        box-shadow: none;
+        border-radius: 15px;
+        font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+    }
+
+    .ourguests a {
+        width: 100%;
+    }
+
+    .ourguests p {
+        width: 100%;
+    }
+}
+
+
+.formFooter {
+    display: none;
+}
+
+
+
+
 /*Product*/
 
 #snipcart {
@@ -730,6 +785,13 @@ footer {
     .abox p {
         width: 80%;
     }
+}
+
+.cbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
 }
 
 .img {

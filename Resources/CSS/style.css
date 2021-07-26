@@ -531,6 +531,7 @@ button {
     position: relative;
     top: -20px;
     max-width: 80%;
+    z-index: 3003;
 }
 
 @media screen and (max-width: 1000px) {

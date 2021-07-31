@@ -422,6 +422,10 @@ button {
     .ourguests p {
         width: 100%;
     }
+
+    .ourguests img {
+        max-width: 60%;
+    }
 }
 
 
@@ -605,6 +609,7 @@ footer {
     margin-top: 2rem;
     flex-wrap: wrap;
     margin-bottom: 80px; 
+    
 }
 
 .ftbox {
@@ -621,6 +626,11 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+    .footer {
+        position: relative;
+        top: 150px;
+    }
+
     .ftbox {
         max-width: 30rem;
     }
@@ -731,6 +741,22 @@ footer {
     .mobilehide {
         display: none;
     }
+
+    .fbcenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 50px; 
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
 } 
 /**/
 
@@ -741,8 +767,23 @@ footer {
     .desktophide {
         display: none;
     }
+
+    .left {
+        position: relative;
+        left: -115px;
+    }
+
+   .fbembed {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       left: -105px;
+   }
     
 }
+
+
 
 /**/
 

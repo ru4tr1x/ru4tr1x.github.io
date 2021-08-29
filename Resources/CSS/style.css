@@ -433,6 +433,11 @@ button {
     display: none;
 }
 
+/*Calandar*/
+.calandar {
+    width: 60%;
+    align-self: center;
+}
 
 
 

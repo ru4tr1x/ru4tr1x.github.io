@@ -294,6 +294,7 @@ button {
     top: 3rem;  
     align-self: center;
     width: 95%; 
+    background-attachment: scroll;
 }
 
 @media screen and (max-width: 1000px) {
@@ -303,6 +304,7 @@ button {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
+        background-attachment: ;
     }
 }
 

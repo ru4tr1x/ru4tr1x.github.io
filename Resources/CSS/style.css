@@ -116,8 +116,9 @@ header {
 }
 
 .logo {
-    height: 100px;
+    height: 300px;
     z-index: 3002;
+    padding: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

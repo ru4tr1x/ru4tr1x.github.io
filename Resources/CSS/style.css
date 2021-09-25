@@ -470,6 +470,7 @@ button {
 @media screen and (max-width: 1000px) {
     .productcontainer {
         top: 50px;
+        left: -25;
     }
    
 }
@@ -897,7 +898,7 @@ footer {
 
 
 .img {
-    height: 40rem;
+    height: 35rem;
     border-radius: 15px;
     margin: 1rem;
     opacity: 0.9;

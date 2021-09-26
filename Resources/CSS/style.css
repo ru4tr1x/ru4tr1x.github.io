@@ -587,9 +587,10 @@ button {
 /* Events */
 
 .calandar {
-    width: 95%;
     position: relative;
     border-radius: 15px;
+    height: 1208px;
+    padding: 1.5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -617,7 +618,7 @@ button {
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: -57px;
+    top: -13px;
 }
 
 @media screen and (max-width: 1000px) {

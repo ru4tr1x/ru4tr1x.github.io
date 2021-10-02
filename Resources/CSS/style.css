@@ -291,13 +291,12 @@ button {
     margin-bottom: 6rem;
     top: 6rem;  
     align-self: center;
-    width: 95%; 
+    width: 100%; 
     background-attachment: scroll;
 }
 
 @media screen and (max-width: 1000px) {
     .topbox {
-        width: 100%;
         top: 70px;
         flex-direction: column;
         overflow: hidden;
@@ -459,17 +458,16 @@ button {
 
 .productcontainer {
     position: relative;
-    top: 20px;
+    top: 45px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
 }
 
 @media screen and (max-width: 1000px) {
     .productcontainer {
-        top: 50px;
         left: -25;
     }
    
@@ -478,7 +476,6 @@ button {
 .product {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
 }
 
 .imagecontainer {
@@ -496,7 +493,7 @@ button {
 
 @media screen and (min-width: 1000px) {
     .productimage {
-        width: 535px;
+        width: 565px;
     }
 }
 
@@ -518,7 +515,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 65px;
     position: absolute;
     align-items: center;
     z-index: 1;
@@ -561,6 +558,7 @@ button {
     .description p {
         font-size: 2.8rem;
         font-weight: 700;
+        line-height: 1.5;
         text-shadow: black 0 0 6px;
     }
 }
@@ -578,18 +576,32 @@ button {
 /* GiftVoucher */
 
 .giftvoucher {
-    padding: 1.5rem;
-   
+    width: 535px;
+}
 
+@media screen and (max-width: 1000px) {
+    .giftvoucher {
+        width: 100%;
+    }
 }
 
 
 /* Events */
 
+.events {
+    width: 610px;
+}
+
+@media screen and (max-width: 1000px) {
+    .events {
+        width: 100%;
+    }
+}
+
 .calandar {
     position: relative;
     border-radius: 15px;
-    height: 1245px;
+    height: 1175px;
     padding: 1.5rem;
 }
 
@@ -612,14 +624,7 @@ button {
     }
 }
 
-.events {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: -13px;
-}
+
 
 @media screen and (max-width: 1000px) {
     .events {
@@ -631,7 +636,7 @@ button {
 
 .fbcenter {
     position: relative;
-    top: 0px;
+    top: 50px;
 }
 
 @media screen and (max-width: 1000px) {

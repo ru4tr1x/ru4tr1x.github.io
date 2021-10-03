@@ -169,6 +169,7 @@ button {
     cursor: pointer;
     position: relative;
     box-shadow: 0 0 1px black;
+    text-rendering: optimizeLegibility;
 }
 
 @media screen and (max-width: 1000px) {
@@ -527,7 +528,8 @@ button {
     font-size: 2.5rem;
     color: whitesmoke;
     font-weight: 700;
-    text-shadow: black 2px 2px 2px ;
+    text-shadow: black 1px 1px 5px ;
+    text-rendering: optimizeLegibility;
 }
 
 @media screen and (max-width: 1000px) {
@@ -556,7 +558,8 @@ button {
 
 .white {
     color: white;
-    text-shadow: black 2px 2px 5px ;
+    text-shadow: black 1px 1px 5px ;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -576,7 +579,8 @@ button {
     top: 10px;
     z-index: 3003;
     color: whitesmoke;
-    text-shadow: black 2px 2px 2px;
+    text-shadow: black 1px 0px 5px;
+    text-rendering: optimizeLegibility;
 }
 
 @media screen and (max-width: 1000px) {
@@ -603,6 +607,7 @@ button {
     padding: 2rem 0;
     color: #070610f0;
     text-shadow: 2px 2px 5px whitesmoke;
+    text-rendering: optimizeLegibility;
 }
 
 /* GiftVoucher */

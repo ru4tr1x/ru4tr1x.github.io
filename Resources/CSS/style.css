@@ -73,16 +73,14 @@ a:hover {
 header {
     position: fixed;
     top: 0px;
-    left: -60px;
     z-index: 1001;
     display: flex;
     align-items: center;
     align-self: center;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
-    width: 105%;
+    width: 100%;
     background-color: rgba(255,255,255,0.6);
-    border-radius: 15px;
     height: 140px;
    
     }
@@ -101,6 +99,22 @@ header {
 
     .header p {
         display: none;
+    }
+}
+
+.home {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    position: relative;
+    font-size: 2rem; 
+    width: 170px;
+}
+
+@media screen and (max-width: 1000px) {
+    .home {
+        font-size: 2.3rem;
+        padding: 1rem;
     }
 }
 
@@ -164,22 +178,25 @@ button {
     }
 }
 
+.buttonicon {
+    width: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+     .buttonicon {
+         width: 75px;
+     }
+}
+
 
 .cart {
     position: relative;
     top: 20px;
 }
- 
-.home {
-    position: relative;
-    top: 20px;
-    font-size: 24px;
-}
 
 .enquirenow { 
     position: relative;
-    top: 16px;
-    ;
+    top: 5px;
 }
 
 .enquiremob {
@@ -617,7 +634,7 @@ button {
 .calandar {
     position: relative;
     border-radius: 15px;
-    height: 1217px;
+    height: 1196px;
     padding: 1.5rem;
 }
 
@@ -816,11 +833,6 @@ footer {
         font-size: 50px;
     }
 
-   .home {
-        font-size: 5rem;
-        padding: 1rem;
-    }
-
     .enquiremob a {
         width: 100%;
     }    
@@ -909,6 +921,8 @@ footer {
 @media screen and (max-width: 1000px) {
     .bbox {
         top: 100px;
+        margin-bottom: 100px;
+        padding-bottom: 40px;
     }
 }
 

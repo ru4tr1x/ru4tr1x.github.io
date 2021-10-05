@@ -149,7 +149,7 @@ header {
 button:hover {
     background-color: green;
     transition: background-color .15s, font-size .15s;
-    font-size: 1.7rem;
+    /*font-size: 1.7rem;*/
 }
 
 button:active {
@@ -158,11 +158,11 @@ button:active {
 
 button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 10px 20px;
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0 auto;
     background-color: #140d4fda;
     border: none;
@@ -174,18 +174,26 @@ button {
 
 @media screen and (max-width: 1000px) {
     button {
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding: 1.5rem;
+        border-radius: 10px;
+       
     }
 }
 
+#deskfont {
+    font-size: 2rem;
+}
+
 .buttonicon {
-    width: 25px;
+    width: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
      .buttonicon {
-         width: 75px;
+         width: 5rem;
+         position: relative;
+         top: 6px;
      }
 }
 
@@ -613,7 +621,7 @@ button {
 /* GiftVoucher */
 
 .giftvoucher {
-    width: 535px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -626,6 +634,7 @@ button {
 /* Events */
 
 .events {
+    display: none;
     width: 610px;
     padding-right: 10px;
 }
@@ -680,11 +689,18 @@ button {
 .fbcenter {
     position: relative;
     top: 50px;
+    width: 100%;
+    padding-bottom: 50px;
+
 }
 
 @media screen and (max-width: 1000px) {
     .fbcenter {
         top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
     }
 }
 
@@ -867,12 +883,6 @@ footer {
         display: none;
     }
 
-    .fbcenter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative; 
-    }
     .row {
         display: flex;
         flex-direction: row;

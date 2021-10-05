@@ -18,6 +18,7 @@ body {
     margin: 6rem 3rem;
 }
 
+
 h1 {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -179,6 +180,16 @@ button {
         border-radius: 10px;
        
     }
+
+    
+}
+
+@media screen and (max-width: 660px) {
+    button {
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+    }
 }
 
 #deskfont {
@@ -195,6 +206,14 @@ button {
          position: relative;
          top: 6px;
      }
+}
+
+@media screen and (max-width: 660px) {
+    .buttonicon {
+        width: 2rem;
+        position: relative;
+        top: 2px;
+    }
 }
 
 
@@ -234,6 +253,11 @@ button {
 @media screen and (max-width: 1000px) {
     .topcontact {
         left: 15px;   
+    }
+}
+@media screen and (max-width: 940px) {
+    .topcontact {
+        display: none;   
     }
 }
 
@@ -498,6 +522,8 @@ button {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
+    width: 100%;
+    align-self: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -506,6 +532,15 @@ button {
     }
    
 }
+
+@media screen and (max-width: 1225px) {
+    .productcontainer {
+        justify-content: center;
+    }
+}
+
+
+
 
 .product {
     display: flex;
@@ -546,6 +581,12 @@ button {
         text-shadow: black 2px 2px 2px;
     }
 }
+@media screen and (max-width: 700px) {
+    .imagetitle {
+        font-size: 1.5rem;
+        text-shadow: black 1px 1px 2px;
+    }
+}
  
 .imagedescription {
     display: flex;
@@ -560,6 +601,12 @@ button {
 @media screen and (max-width: 1000px) {
     .imagedescription {
         padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .imagedescription {
+        padding-top: 40px;
     }
 }
 
@@ -598,6 +645,12 @@ button {
         font-weight: 700;
         line-height: 1.5;
         text-shadow: black 2px 2px 2px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .description {
+        display: none;
     }
 }
 

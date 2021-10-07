@@ -827,6 +827,7 @@ footer {
     flex-shrink: 2;
     line-height: 1.8;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -838,6 +839,13 @@ footer {
     .ftbox p {
         font-size: 2rem;
           }
+}
+@media screen and (max-width: 660px) {
+
+    .ftbox p {
+        font-size: 1rem;
+    }
+    
 }
 
 @media screen and (min-width: 1000px) {

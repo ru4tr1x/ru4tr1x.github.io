@@ -284,8 +284,8 @@ button {
 .topicon:hover {
     padding: 0;
     color: #043904f0;
-    transition: background-color .15s, font-size .15s;
-    font-size: 25px;
+    transition: background-color .15s, 
+    
 }
 
 /**/

@@ -382,6 +382,16 @@ button {
     background-blend-mode: lighten;
 }
 
+@media screen and (max-width: 1000px) {
+    .topbox2 {
+        top: 70px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        background-position: bottom;
+    }
+}
+
 
 
 .topbox3 { 
@@ -409,7 +419,6 @@ button {
         overflow: hidden;
         align-items: center;
         background-position: bottom;
-        background-size: 1300px;
     }
 }
 

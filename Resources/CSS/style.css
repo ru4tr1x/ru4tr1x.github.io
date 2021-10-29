@@ -178,7 +178,8 @@ button {
     button {
         font-size: 3rem;
         padding: 1.5rem;
-        border-radius: 10px;
+        border-radius: 0px;
+        width: 100%;
        
     }
 
@@ -370,8 +371,8 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    margin-bottom: 3rem;
-    top: 6rem;  
+    margin-bottom: 2rem;
+    top: 4rem;  
     align-self: center;
     width: 100%; 
     box-shadow: 0 0 5px ghostwhite; 
@@ -909,9 +910,8 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    .footer {
-        position: relative;
-        top: 150px;
+    footer {
+        padding-bottom: 8rem;
     }
 
     .ftbox p {

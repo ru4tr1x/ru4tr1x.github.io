@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 6rem 3rem;
+    margin: 2.9rem 0 0 0;
 }
 
 
@@ -96,6 +96,7 @@ header {
     header {
         width: 110%;
         justify-content: center;
+        height: 116px;
     }
 
     .header p {
@@ -340,7 +341,7 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     top: 6rem;  
     align-self: center;
     width: 100%; 
@@ -358,18 +359,54 @@ button {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
-        background-size: contain;
+    }
+}
+
+.topbox3 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+    top: 6rem;  
+    align-self: center;
+    width: 100%; 
+    box-shadow: 0 0 5px ghostwhite; 
+    background-position-x: center; 
+    background-size: cover; background-attachment: fixed; 
+    border-radius: 0px; background-position-y: -400px; background-repeat: no-repeat; 
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+}
+
+@media screen and (max-width: 1000px) {
+    .topbox3 {
+        top: 70px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        background-position: bottom;
+    }
+}
+
+.eye {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .eye {
+        font-size: 2rem;
     }
 }
 
 .eye:hover {
     color: white;
-    font-size: 4rem;
     transition: background-color .15s, font-size .15s;
 }
 
 .imgbox {
-    height: 100%;
+    height: 400px;
     width: 50%;
     min-width: 100%;
     display: flex;
@@ -380,6 +417,27 @@ button {
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 }
+
+.imgbox2 {
+    height: 400px;
+    width: 50%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+}
+
+@media screen and (max-width: 1000px) {
+    .imgbox2 {
+        height: 600px;
+    }
+}
+
+
 
 .dismore {
     font-size: medium;
@@ -665,7 +723,6 @@ button {
 /**/
 
 .producttitle {
-    padding: 2rem 0;
     color: #070610f0;
     text-shadow: 2px 2px 5px whitesmoke;
     text-rendering: optimizeLegibility;
@@ -803,7 +860,7 @@ button {
 /* footer */
 
 footer {
-    border-radius: 15px;
+    border-radius: 0px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -813,7 +870,6 @@ footer {
     background-color: gainsboro;
     margin-top: 2rem;
     flex-wrap: wrap;
-    margin-bottom: 80px; 
     
 }
 
@@ -991,7 +1047,7 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
     position: relative;
-    top: 45px;
+    top: 94px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1042,6 +1098,11 @@ footer {
 
 #enquirebanner {
     margin-bottom: 0px;
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
 }
 
 .form {

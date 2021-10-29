@@ -363,6 +363,26 @@ button {
     }
 }
 
+.topbox2 {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+    top: 6rem;  
+    align-self: center;
+    width: 100%; 
+    box-shadow: 0 0 5px ghostwhite; 
+    width: 100%; border-radius: 0px; background-repeat: no-repeat; background-position: center; background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+}
+
+
+
 .topbox3 { 
     display: flex;
     justify-content: center;

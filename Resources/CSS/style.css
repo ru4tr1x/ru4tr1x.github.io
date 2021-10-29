@@ -389,6 +389,7 @@ button {
         overflow: hidden;
         align-items: center;
         background-position: bottom;
+        background-size: auto;
     }
 }
 

@@ -393,6 +393,7 @@ button {
         background-position-y: -300px;
         background-size: auto;
         background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
@@ -423,6 +424,8 @@ button {
         overflow: hidden;
         align-items: center;
         background-position: bottom;
+        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 

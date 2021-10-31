@@ -1135,6 +1135,13 @@ footer {
     opacity: 0.9;
     width: 35rem;
 }
+
+@media  screen and (max-width: 1000px) {
+    .img {
+        width: 100%;
+    }
+    
+}
   
 /*Enquire now*/
 

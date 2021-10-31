@@ -364,6 +364,7 @@ button {
         background-size: 1000px;
         background-position-x: 26%;
         background-attachment: scroll;
+        width: 100%;
 
     }
 }

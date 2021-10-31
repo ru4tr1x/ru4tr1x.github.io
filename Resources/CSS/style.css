@@ -1270,20 +1270,14 @@ footer {
 
 .nav {
   height: 50px;
-  width: 1400px;
+  width: 100%;
   margin: 0px 20px !important;
   background-color: transparent;
   color: #00175c;
   position: relative;
 }
 
-@media  screen and (max-width: 1000px) {
 
-    .nav {
-        max-width: 100%;
-    }
-    
-}
 
 .nav > .nav-header {
   display: inline;

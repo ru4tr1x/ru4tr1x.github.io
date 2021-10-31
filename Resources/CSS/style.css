@@ -1327,9 +1327,9 @@ footer {
     height: 50px;
     padding: 13px;
   }
-  .img{
+/*.img{
     height: 100% !important;
-  }
+  }*/
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }

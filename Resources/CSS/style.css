@@ -348,7 +348,8 @@ button {
     width: 100%; 
     box-shadow: 0 0 5px ghostwhite; 
     background-position-x: center; background-repeat: repeat; 
-    background-size: cover; background-attachment: fixed; 
+    background-size: 125%; background-attachment: fixed; background-position-x: 0%;
+    background-position-y: -180%;
     border-radius: 15px; 
     background-color: rgba(255,255,255,0.1);
     background-blend-mode: lighten;
@@ -361,6 +362,7 @@ button {
         overflow: hidden;
         align-items: center;
         background-size: 1000px;
+        background-position-x: 26%;
     }
 }
 

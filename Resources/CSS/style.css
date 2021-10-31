@@ -421,7 +421,7 @@ button {
         flex-direction: column;
         overflow: hidden;
         align-items: center;
-        background-position-y: 0px;
+        background-position-y: 500px;
         background-position-x: center;
         background-size: 1000px;
     }

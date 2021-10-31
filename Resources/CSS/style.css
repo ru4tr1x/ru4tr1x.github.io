@@ -422,6 +422,7 @@ button {
         overflow: hidden;
         align-items: center;
         background-position: bottom;
+        background-size: auto;
     }
     body{
         margin-top: 1.1rem !important;

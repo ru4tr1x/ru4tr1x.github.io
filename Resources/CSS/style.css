@@ -1129,7 +1129,7 @@ footer {
 
 .img {
     max-height: 35rem;
-   
+   overflow: hidden;
     border-radius: 15px;
     margin: 1rem;
     opacity: 0.9;

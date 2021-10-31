@@ -1124,7 +1124,8 @@ footer {
 
 
 .img {
-    height: 35rem;
+    max-height: 35rem;
+   
     border-radius: 15px;
     margin: 1rem;
     opacity: 0.9;

@@ -388,8 +388,8 @@ button {
               flex-direction: column;
         overflow: hidden;
         align-items: center;
-        background-position-y: -300px;
-        background-size: auto;
+        background-position-y: 0px;
+        background-size: 1000px;
     }
 }
 

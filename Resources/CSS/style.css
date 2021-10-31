@@ -396,6 +396,7 @@ button {
         background-attachment: scroll;
         background-attachment: fixed;*/
         background-attachment: scroll;
+        width: 100%;
     }
 }
 
@@ -424,6 +425,7 @@ button {
         top: 80px;
         background-position: 0;
         background-attachment: scroll;
+        width: 100%;
     }
 
     body{

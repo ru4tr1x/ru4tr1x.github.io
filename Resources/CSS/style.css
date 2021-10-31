@@ -1302,7 +1302,7 @@ footer {
 }
 .en-btn{
      background-color: #00175c !important;
-     color: white !important !important;
+     color: white !important; 
      padding:10px 20px !important;
      font-size: 16px !important;
 }

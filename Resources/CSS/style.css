@@ -1277,6 +1277,14 @@ footer {
   position: relative;
 }
 
+@media  screen and (max-width: 1000px;) {
+
+    .nav {
+        max-width: 100%;
+    }
+    
+}
+
 .nav > .nav-header {
   display: inline;
 }

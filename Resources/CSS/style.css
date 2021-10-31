@@ -1129,7 +1129,7 @@ footer {
     border-radius: 15px;
     margin: 1rem;
     opacity: 0.9;
-    max-width: 100%;
+    width: 35rem;
 }
   
 /*Enquire now*/

@@ -19,6 +19,12 @@ body {
     margin: 0.2rem 0 0 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .mobbody {
+        display: flex; align-content: center; justify-content: center; width: max-content; flex-direction: column;
+    }
+}
+
 
 h1 {
     text-align: center;
@@ -83,7 +89,7 @@ header {
     flex-wrap: wrap-reverse;
     width: 100%;
     background-color: rgba(255,255,255,0.6);
-    height: 100px;
+    height: 99px;
    
     }
 
@@ -97,7 +103,7 @@ header {
     header {
         width: 100%;
         justify-content: center;
-        height: 116px;
+        height: 114px;
     }
 
     .header p {

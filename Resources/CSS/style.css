@@ -19,11 +19,7 @@ body {
     margin: 0.2rem 0 0 0;
 }
 
-@media screen and (max-width: 1000px) {
-    .mobbody {
-        display: flex; align-content: center; justify-content: center; width: max-content; flex-direction: column;
-    }
-}
+
 
 
 h1 {

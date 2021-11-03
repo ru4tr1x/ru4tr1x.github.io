@@ -628,7 +628,7 @@ button {
 
 .productcontainer {
     position: relative;
-    top: 45px;
+    padding-top: 65px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -641,6 +641,7 @@ button {
 @media screen and (max-width: 1000px) {
     .productcontainer {
         left: -25;
+        padding-top: 45px; 
     }
    
 }
@@ -938,6 +939,7 @@ footer {
 @media (max-width: 867px){
     footer{
         display: block !important;
+        margin-top: 10px;
     }
     .ftbox{
         width: 100% !important;

@@ -189,6 +189,8 @@ button {
         padding: 1.5rem;
         border-radius: 0px;
         width: 100%;
+        position: relative;
+        top: -4px
        
     }
 
@@ -199,7 +201,7 @@ button {
     button {
         font-size: 1rem;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: 0px;
     }
 }
 

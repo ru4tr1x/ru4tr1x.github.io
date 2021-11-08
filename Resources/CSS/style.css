@@ -1377,7 +1377,8 @@ footer {
     height: 100% !important;
   }*/
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:darkslategray;
+    opacity: 0.8;
     border-radius: 8px;
   }
   .nav > .nav-btn > label > span {

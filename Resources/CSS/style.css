@@ -1390,7 +1390,8 @@ footer {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: lightgray;
+    background-color: black;
+    opacity: 0.95;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;

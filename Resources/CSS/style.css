@@ -1165,6 +1165,21 @@ footer {
     margin-bottom: 0px;
 }
 
+.whatsappbutton {
+    display: flex; 
+    justify-content: center; 
+    position: relative; 
+    top: 100px; 
+    z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .whatsappbutton {
+        top: 0px;
+    }
+}
+
+
 .formcontainer {
     display: flex;
     justify-content: center;

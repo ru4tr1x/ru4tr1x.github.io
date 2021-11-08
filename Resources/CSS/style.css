@@ -1390,8 +1390,8 @@ footer {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: black;
-    opacity: 0.95;
+    background-color: darkslategray;
+    opacity: 0.98;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -1401,6 +1401,7 @@ footer {
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    padding: 12px;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -1420,4 +1421,6 @@ footer {
           border-radius: 10px;
           max-height: 300px;
     }
+
+
 }

@@ -1352,6 +1352,7 @@ footer {
      color: white !important; 
      padding:10px 20px !important;
      font-size: 22px !important;
+     border-radius: 10px;
 }
 
 .nav > #nav-check {
@@ -1377,6 +1378,7 @@ footer {
   }*/
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -1414,5 +1416,7 @@ footer {
     }
     .nav-links{
           margin-top: 25px !important;
+          border-radius: 10px;
+          max-height: 300px;
     }
 }

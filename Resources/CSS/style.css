@@ -71,9 +71,10 @@ a {
 }
     
 a:hover {
-    color: green;
+    color: darkslategray;
     text-shadow: none;
     text-decoration: none;
+    opacity: 0.6;
 }
 
 /**/
@@ -455,7 +456,6 @@ button {
 }
 
 .eye:hover {
-    color: white;
     transition: background-color .15s, font-size .15s;
 }
 

@@ -192,12 +192,13 @@ button {
 
 @media screen and (max-width: 1000px) {
     button {
-        font-size: 3rem;
-        padding: 1.5rem;
-        border-radius: 0px;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
         width: 100%;
         position: relative;
-        top: -4px
+        top: -4px;
+        opacity: 0.9;
        
     }
 
@@ -208,7 +209,7 @@ button {
     button {
         font-size: 1rem;
         padding: 1rem;
-        border-radius: 0px;
+        border-radius: 5px;
     }
 }
 
@@ -971,6 +972,15 @@ footer {
     }
 
 /**/
+
+/*Fareharbour*/
+
+.fareharbour {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
 
 /*stickyhome*/
 

@@ -945,6 +945,10 @@ footer {
      text-align: center;
 }
 
+.bottom-footer p {
+    font-size: 1rem;
+}
+
 .weak {
     font-weight: lighter;
     font-size: large;
@@ -979,7 +983,6 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
-
 }
 
 /*stickyhome*/
@@ -1087,7 +1090,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    border-radius: 15px;
     align-items: center;
     margin-bottom: 2rem;
     position: relative;

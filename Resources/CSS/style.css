@@ -1093,7 +1093,7 @@ footer {
     align-items: center;
     margin-bottom: 2rem;
     position: relative;
-    top: 94px;
+    top: 96px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1445,3 +1445,9 @@ footer {
 
 
 }
+
+.voucher {
+    filter: drop-shadow(2px 2px 10px black);
+    border-radius: 15px;
+}
+ 

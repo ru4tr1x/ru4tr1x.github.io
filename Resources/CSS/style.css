@@ -454,6 +454,9 @@ button {
 
 .eye {
     font-size: 1rem;
+    position: relative;
+    top: -80px;
+    padding: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -494,7 +497,20 @@ button {
 
 @media screen and (max-width: 1000px) {
     .imgbox2 {
-        height: 600px;
+        height: 500px;
+    }
+}
+
+.producttitle {
+    height: 300px;
+    opacity: 0.9;
+    position: relative;
+    top: -30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .producttitle {
+        top: 0px;
     }
 }
 
@@ -510,6 +526,23 @@ button {
         font-size: 2.2rem;
     }
 }
+
+.indexdescription {
+    position: relative;
+    z-index: 2;
+    top: -80px;
+    font-style: italic; 
+    width: 80%;
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 1000px) {
+    .description {
+        display: none;
+    }
+}
+
+
 
 /**/
 
@@ -938,6 +971,11 @@ footer {
     flex-wrap: wrap;
     width: 33.33%;
 }
+
+.ftmark {
+    height: 100px; 
+    margin: 3rem
+}
 .bottom-footer{
      background-color: gainsboro;
      border-top: 1px solid gray;
@@ -1139,6 +1177,7 @@ footer {
     margin: 1rem;
     opacity: 0.9;
     width: 35rem;
+    filter: drop-shadow(2px 2px 3px darkgray);
 }
 
 @media  screen and (max-width: 1000px) {
@@ -1178,6 +1217,26 @@ footer {
         padding: 1rem;
     }
 }
+/*Price tables*/
+
+
+th {
+    width: 10rem;
+    height: 5rem;
+    color: white;
+}
+tr {
+    width: 80%;
+    height: 2rem;
+}
+
+td {
+    text-align: center;
+    font-weight: bold;
+    height: 2rem;
+    color: white;
+}
+
 
 /*Enquire now*/
 

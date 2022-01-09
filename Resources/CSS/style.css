@@ -946,6 +946,8 @@ footer {
     margin-top: 2rem;
     flex-wrap: wrap;
     z-index: 1;
+    position: relative;
+    top: 30px
 }
 @media (max-width: 867px){
     footer{
@@ -1021,6 +1023,7 @@ footer {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 3;
 }
 
 /*stickyhome*/

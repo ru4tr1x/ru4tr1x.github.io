@@ -943,11 +943,10 @@ footer {
     align-self: center;
     width: 100%;
     background-color: gainsboro;
-    margin-top: 2rem;
     flex-wrap: wrap;
     z-index: 1;
     position: relative;
-    top: 30px
+    top: 30px;
 }
 @media (max-width: 867px){
     footer{
@@ -967,11 +966,16 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 4rem;
     flex-shrink: 2;
     line-height: 1.8;
     flex-wrap: wrap;
     width: 33.33%;
+}
+
+.ftlogo {
+    margin-top: 2rem;
+    height: 100px;
+
 }
 
 .ftmark {
@@ -1185,6 +1189,24 @@ footer {
 
 @media  screen and (max-width: 1000px) {
     .img {
+        width: 100%;
+    }
+    
+}
+
+.price {
+    max-height: 35rem;
+   overflow: hidden;
+    border-radius: 15px;
+    margin: 1rem;
+    opacity: 0.9;
+    width: 35rem;
+    filter: drop-shadow(2px 2px 3px darkgray);
+    font-size: 1rem;
+}
+
+@media  screen and (max-width: 1000px) {
+    .price {
         width: 90%;
     }
     
@@ -1401,7 +1423,7 @@ td {
 }
 .logok{
     width: 200px;
-    margin-top: -35px;
+    margin-top: -30px;
 }
 .nav > .nav-header > .nav-title {
   display: inline-block;
@@ -1418,6 +1440,8 @@ td {
   display: inline;
   float: right;
   font-size: 18px;
+  position: relative;
+  top: 10px;
 }
 
 .nav > .nav-links > a {

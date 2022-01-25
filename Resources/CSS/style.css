@@ -1179,7 +1179,7 @@ footer {
 
 .img {
     max-height: 35rem;
-   overflow: hidden;
+    overflow: hidden;
     border-radius: 15px;
     margin: 1rem;
     opacity: 0.9;
@@ -1404,6 +1404,15 @@ td {
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
+}
+
+/*gear*/
+
+.geargal {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
 }
 
 

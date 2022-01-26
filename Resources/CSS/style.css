@@ -1144,8 +1144,7 @@ footer {
 @media screen and (max-width: 1000px) {
     .bbox {
         top: 100px;
-        margin-bottom: 100px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 }
 
@@ -1414,6 +1413,15 @@ td {
     height: 400px;
     align-items: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .geargal {
+        flex-direction: column;
+        height: 600px;
+        width: 200px;
+    }
+}
+
 
 
 .nav {

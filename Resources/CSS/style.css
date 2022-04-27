@@ -529,6 +529,8 @@ button {
 
 .indexdescription {
     position: relative;
+    color: darkslategray;
+    font-size: 2rem;
     z-index: 2;
     top: -80px;
     font-style: italic; 

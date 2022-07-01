@@ -370,7 +370,7 @@ button {
     background-size: 125%; background-attachment: fixed; background-position-x: 0%;
     background-position-y: -180%;
     border-radius: 15px; 
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
 }
 
@@ -401,7 +401,7 @@ button {
     box-shadow: 0 0 5px ghostwhite; 
     width: 100%; border-radius: 0px; background-repeat: no-repeat; background-position: center; background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
 }
 
@@ -435,7 +435,7 @@ button {
     background-position-x: center; 
     background-size: cover; background-attachment: fixed; 
     border-radius: 0px; background-position-y: -400px; background-repeat: no-repeat; 
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
 }
 
@@ -480,6 +480,7 @@ button {
     justify-content: center;
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
+    padding: 3rem;
 }
 
 .imgbox2 {
@@ -493,6 +494,7 @@ button {
     justify-content: center;
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
+    padding: 3rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -529,13 +531,21 @@ button {
 
 .indexdescription {
     position: relative;
-    color: darkslategray;
+    color: white;
     font-size: 2rem;
     z-index: 2;
     top: -80px;
     font-style: italic; 
-    width: 80%;
+    line-height: 1.4;
+    width: 110%;
+    left: -15px;
     text-rendering: optimizeLegibility;
+    background-color: rgba(0,23,92,1);
+    border-radius: 15px;
+    background-blend-mode: lighten;
+    font-weight: 500;
+    margin-top: 2rem;
+    padding: 0 4px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -543,6 +553,7 @@ button {
         display: none;
     }
 }
+
 
 
 
@@ -1460,7 +1471,7 @@ td {
   float: right;
   font-size: 18px;
   position: relative;
-  top: 10px;
+  top: -3px;
 }
 
 .nav > .nav-links > a {

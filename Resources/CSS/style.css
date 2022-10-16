@@ -1368,7 +1368,25 @@ td {
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-}
+    
+        position: relative;
+        padding-bottom: 32%;
+        height: 0;
+        overflow: hidden;
+    }
+    @media screen and (max-width: 1000px) {
+        .map {
+            padding-bottom: 98%;
+        }
+    }
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        
+    }
+
 
 .tag {
     position: relative;

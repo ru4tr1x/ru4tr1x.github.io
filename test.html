@@ -239,100 +239,125 @@
             </div>
 
 
-                <template id="product-catalog-widget-styles"> 
-                    <style>
-                    .regiondo-catalog-filters-categories-input, .regiondo-catalog-filters-location-input, .regiondo-catalog-filters-dates-input, .regiondo-catalog-filters-more-button, .regiondo-catalog-filters-mobile-button {
-                    
-                    display: none;
-                    }
-                    .regiondo-list-product-button,
-                    .regiondo-button-addtocart,
-                    .regiondo-booking-mobile-button {
-                    background-color: #082567
-                    }
-                    .regiondo-list-product-button,
-                    .regiondo-button-addtocart,
-                    .regiondo-booking-mobile-button {
-                    color: #ffffff;
-                    }
-                    .regiondo-list-product-button:hover,
-                    .regiondo-button-addtocart:hover,
-                    .regiondo-booking-mobile-button:hover {
-                    background-color: #082567bf;
-                    }
-                    .regiondo-list-product-label-bestseller {
-                    
-                    display: none;
-                    
-                    }
-                    .regiondo-list-product,
-                    .regiondo-list-product-header,
-                    .regiondo-list-product-description,
-                    .regiondo-list-product-short-info,
-                    .regiondo-list-product-duration,
-                    .regiondo-list-product-price-label,
-                    .regiondo-list-product-button,
-                    .regiondo-product-short-description > div,
-                    .regiondo-product-short-description > ul,
-                    .regiondo-collapsible-content-closed,
-                    .regiondo-collapsible-content-open,
-                    .regiondo-product-description-body,
-                    .regiondo-product-details,
-                    .regiondo-product-header,
-                    .regiondo-booking-header,
-                    .regiondo-collapsible-header svg{
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-                    
-                    }
-                    .regiondo-product-gallery-slide.regiondo-product-image > img {
-                     max-width: none;
-                     max-height: none;
-                     width: 100%;
-                     height: auto;
-                    }
-                    .regiondo-product-gallery-slide.regiondo-product-image {
-                     width: 100%;
-                     height: auto;
-                    }
-                    
-                    .regiondo-list-product-button {
-                    color: #ffffff;
-                    }
-                    
-                    /*.regiondo-list-product-description {
-                    display: none
-                    }*/
-                  
-                    /*Ru's Styling*/
-                    .regiondo-catalog {
-                        position: relative;
-                        top: 62px;
-                        padding: 30px;
-                        max-width: 100%;
-                        background-color: #f5f5f5;
-                    }
-    
-                    .regiondo-product-details {
-                        position: relative;
-                        top: 62px;
-                        padding: 30px;
-                        max-width: 100%;
-                    }
-    
-                    .regiondo-product-header, .regiondo-booking-header, .regiondo-product-details, .regiondo-widget, .regiondo-product-short-description .regiondo-product-short-description {
-                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                        background-color: #f5f5f5;
-    
-                    }
-    
-                   
+            <template id="product-catalog-widget-styles"> 
+                <style>
+                .regiondo-list-product-button,
+                .regiondo-button-addtocart,
+                .regiondo-booking-mobile-button {
+                background-color: #082567
+                }
+                .regiondo-list-product-button,
+                .regiondo-button-addtocart,
+                .regiondo-booking-mobile-button {
+                color:    #ffffff;
+                }
+                .regiondo-list-product-button:hover,
+                .regiondo-button-addtocart:hover,
+                .regiondo-booking-mobile-button:hover {
+                background-color: #082567bf;
 
-                  
-                     
-                   
-                    
-                    </style>
-                    </template>
+            }
+                .regiondo-list-product,
+                .regiondo-list-product-header,
+                .regiondo-list-product-description,
+                .regiondo-list-product-short-info,
+                .regiondo-list-product-duration,
+                .regiondo-list-product-price-label,
+                .regiondo-list-product-button,
+                .regiondo-product-short-description > div,
+                .regiondo-product-short-description > ul,
+                .regiondo-collapsible-content-closed,
+                .regiondo-collapsible-content-open,
+                .regiondo-product-description-body,
+                .regiondo-product-details,
+                .regiondo-product-header,
+                .regiondo-booking-header,
+                .regiondo-collapsible-header svg{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                .regiondo-booking-header > h1 {
+                font-size: 0px
+                }
+                .regiondo-booking-header > h1:after {
+                content: "Book Here";
+                font-size: 34px
+                }
+                .regiondo-list-product-button > span:first-child:after, .regiondo-booking-mobile-button > span:first-child:after {
+                content: "Book Here!";
+                font-size: 14px;
+                }
+
+                
+
+                .regiondo-list-product-button > span, .regiondo-booking-mobile-button > span {
+                font-size: 0px;
+                }
+            /*Ru's Stuff*/
+             
+             .regiondo-catalog {
+                position: relative;
+                top: 0px;
+                padding: 0 20px;
+                max-width: 100%;
+                background-color: #f5f5f5;
+            }
+
+            .regiondo-product-details {
+                position: relative;
+                top: 62px;
+                padding: 30px;
+                max-width: 100%;
+            }
+
+            .regiondo-product-header, .regiondo-booking-header, .regiondo-product-details, .regiondo-widget, .regiondo-product-short-description .regiondo-product-short-description {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #f5f5f5;
+        
+            }
+
+
+            .regiondo-catalog-list {
+                justify-content: center;
+            }
+
+
+
+.regiondo-list-product-button {
+margin-left: 6rem;
+}
+
+/*Regiondo label*/
+
+#Subtract {
+display: none;
+}
+.regiondo-widget {
+--regiondo-tab-color: #00175c;
+                --regiondo-tab-color-text: #00175c; 
+                z-index: 4;
+}
+
+.regiondo-catalog-filters-location-input, .regiondo-catalog-filters-dates-input, .regiondo-catalog-filters-mobile-button, .regiondo-catalog-filters-more-button {
+display: none;
+}
+
+.regiondo-catalog {
+z-index: 4;
+position: relative;
+top: 40px;
+
+}
+.regiondo-product-details {
+z-index: 4;
+}           
+.regiondo-product-description {
+display: none;
+}
+
+
+                </style>
+        </template>
                 
                   <product-details-widget widget-id="4c098f27-d9ee-478d-a054-3e1bfe18f556" styles-template-id="product-catalog-widget-styles"></product-details-widget><script type="text/javascript" src="https://widgets.regiondo.net/product/v1/product-widget.min.js"></script>
                

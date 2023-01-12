@@ -1,2 +1,3 @@
 user-agent: *
 Disallow: /test.html/
+Disallow: /bhtest.html/

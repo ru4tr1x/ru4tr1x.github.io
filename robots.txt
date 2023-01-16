@@ -1,3 +1,4 @@
 user-agent: *
 Disallow: /test.html/
-Disallow: /bhtest.html/
+Disallow: /BHtest.html/
+Disallow: /privatecanyoningBHtest.html/

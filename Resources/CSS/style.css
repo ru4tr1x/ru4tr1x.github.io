@@ -388,7 +388,7 @@ button {
         overflow: hidden;
         align-items: center;
         background-size: cover;
-        background-attachmet: scroll;
+        background-attachment: scroll;
         width: 100%;
 
     }

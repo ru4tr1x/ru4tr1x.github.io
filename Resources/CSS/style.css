@@ -388,7 +388,7 @@ button {
         overflow: hidden;
         align-items: center;
         background-size: cover;
-       
+        background-attachmet: scroll;
         width: 100%;
 
     }
@@ -420,7 +420,7 @@ button {
         background-size: 1000px;
         background-attachment: scroll;
         background-attachment: fixed;*/
- 
+        background-attachment: scroll;
         width: 100%;
     }
 }
@@ -449,7 +449,7 @@ button {
     .topbox3 {
        
         background-position: center;
-        
+        background-attachment: scroll;
         width: 100%;
     }
 

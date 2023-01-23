@@ -374,8 +374,8 @@ button {
     width: 100%; 
     box-shadow: 0 0 5px ghostwhite; 
     background-position-x: center; background-repeat: repeat; 
-    background-size: 125%; background-attachment: fixed; background-position-x: 0%;
-    background-position-y: -180%;
+    background-size: cover; background-attachment: fixed;
+    background-position-y: center;
     border-radius: 15px; 
     background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
@@ -388,7 +388,6 @@ button {
         overflow: hidden;
         align-items: center;
         background-size: 1000px;
-        background-position-x: 26%;
         background-attachment: scroll;
         width: 100%;
 
@@ -441,7 +440,7 @@ button {
     box-shadow: 0 0 5px ghostwhite; 
     background-position-x: center; 
     background-size: cover; background-attachment: fixed; 
-    border-radius: 0px; background-position-y: -400px; background-repeat: no-repeat; 
+    border-radius: 0px; background-position-y: center; background-repeat: no-repeat; 
     background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
 }
@@ -479,13 +478,13 @@ button {
 .imgbox {
     height: 400px;
     width: 50%;
-    min-width: 100%;
+    min-width: 110%;
     display: flex;
     flex-direction: column;
     margin: 2rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.4);
     background-blend-mode: lighten;
     padding: 3rem;
 }
@@ -499,7 +498,7 @@ button {
     margin: 2rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.4);
     background-blend-mode: lighten;
     padding: 3rem;
 }
@@ -553,6 +552,7 @@ button {
     font-weight: 500;
     margin-top: 2rem;
     padding: 0 4px;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 1000px) {

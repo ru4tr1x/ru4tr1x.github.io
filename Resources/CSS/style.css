@@ -5,6 +5,10 @@
 
 /*Global*/
 
+/*Scroll overide*/
+
+
+
 html, body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         outline-style: hidden;
@@ -24,6 +28,7 @@ body {
     align-content: center;
     margin: 0.2rem 0 0 0;
 }
+
 
 
 
@@ -363,7 +368,7 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     top: 6rem;  
     align-self: center;
     width: 100%; 
@@ -548,6 +553,12 @@ button {
     font-weight: 500;
     margin-top: 2rem;
     padding: 0 4px;
+}
+
+@media screen and (max-width: 1000px) {
+    .indexdescription {
+        top: -40px;
+    } 
 }
 
 @media screen and (max-width: 1000px) {
@@ -1040,8 +1051,8 @@ footer {
 
 .fareharbour {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 25px;
+    right: 25px;
     z-index: 3;
 }
 
@@ -1192,6 +1203,11 @@ footer {
     }
 }
 
+.more {
+    position: relative;
+    top: px;
+}
+
 
 
 .img {
@@ -1234,6 +1250,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
+    margin: 0 20px;
 }
 
 .description p {
@@ -1364,6 +1381,7 @@ td {
 
 .map {
     display: flex;
+    z-index: 1;
     width: 100%;
     justify-content: center;
     align-content: center;
@@ -1372,15 +1390,12 @@ td {
     padding: 2rem;
     
         position: relative;
-        padding-bottom: 32%;
+        padding-bottom: 322px;
         height: 0;
         overflow: hidden;
+        margin-bottom: 50px;
     }
-    @media screen and (max-width: 1000px) {
-        .map {
-            padding-bottom: 98%;
-        }
-    }
+   
     .map iframe {
         position: absolute;
         top: 0;
@@ -1388,6 +1403,18 @@ td {
         width: 100% !important;
         
     }
+
+    .overlay {
+        background: transparent; 
+        position:relative; 
+        width:1152px;
+        height:373px; /* your iframe height */
+        top:420px;  /* your iframe height */
+        margin-top:-568px;  /* your iframe height */
+        z-index: 20;
+     }
+
+    
 
 
 .tag {

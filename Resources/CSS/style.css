@@ -539,6 +539,7 @@ button {
 @media screen and (max-width: 1000px) {
     .indexdescription {
         top: -40px;
+        font-size: 1.5rem;
     } 
 }
 

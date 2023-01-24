@@ -372,7 +372,7 @@ button {
     top: 6rem;  
     align-self: center;
     width: 100%; 
-    box-shadow: 0 0 5px black; 
+    box-shadow: 0 0 12px black; 
     background-position-x: center; background-repeat: repeat; 
     background-size: cover; background-attachment: fixed;
     background-position-y: center;
@@ -404,7 +404,7 @@ button {
     top: 4rem;  
     align-self: center;
     width: 100%; 
-    box-shadow: 0 0 5px black; 
+    box-shadow: 0 0 12px black; 
     width: 100%; border-radius: 0px; background-repeat: no-repeat; background-position: center; background-size: cover;
     background-attachment: fixed;
     background-color: rgba(255,255,255,0);
@@ -413,13 +413,7 @@ button {
 
 @media screen and (max-width: 1000px) {
     .topbox2 {
-             /* flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-        background-position-y: 500px;
-        background-size: 1000px;
-        background-attachment: scroll;
-        background-attachment: fixed;*/
+             
         background-attachment: scroll;
         width: 100%;
     }
@@ -433,11 +427,11 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    
+    z-index: 1;
     top: 4rem;  
     align-self: center;
     width: 100%; 
-    box-shadow: 0 0 5px black; 
+    box-shadow: 0 0 12px black; 
     background-position-x: center; 
     background-size: cover; background-attachment: fixed; 
     border-radius: 0px; background-position-y: center; background-repeat: no-repeat; 
@@ -476,41 +470,21 @@ button {
 }
 
 .imgbox {
-    height: 400px;
+    height: 600px;
     width: 50%;
     min-width: 110%;
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 0rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.3);
     background-blend-mode: lighten;
     padding: 3rem;
 }
 
 @media screen and (max-width: 1000px) {
     .imgbox {
-        height: 500px;
-    }
-}
-
-.imgbox2 {
-    height: 400px;
-    width: 50%;
-    min-width: 110%;
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255,255,255,0.4);
-    background-blend-mode: lighten;
-    padding: 3rem;
-}
-
-@media screen and (max-width: 1000px) {
-    .imgbox2 {
         height: 500px;
     }
 }
@@ -549,15 +523,15 @@ button {
     top: -80px;
     font-style: italic; 
     line-height: 1.4;
-    width: 110%;
-    left: -15px;
+    min-width: 400px;
+    left: 0px;
     text-rendering: optimizeLegibility;
     background-color: rgba(0,23,92,1);
     border-radius: 15px;
     background-blend-mode: lighten;
     font-weight: 500;
-    margin-top: 2rem;
-    padding: 0 4px;
+    margin: 2rem;
+    padding: 4px 20px;
     opacity: 0.8;
     box-shadow: 0 0 5px black;
 }
@@ -886,7 +860,7 @@ footer {
     width: 100%;
     background-color: gainsboro;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 0;
     position: relative;
     top: 50px;
 }

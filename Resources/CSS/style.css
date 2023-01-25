@@ -489,19 +489,36 @@ button {
     }
 }
 
+.titlebackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    width: 150px;;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 15px
+
+}
+
 .producttitle {
     height: 300px;
     opacity: 0.9;
     position: relative;
-    top: -30px;
 }
 
 @media screen and (max-width: 1000px) {
     .producttitle {
-        top: 0px;
-        display: none;
+        top: -70px;
+        
     }
+    .icon1 {
+        padding-bottom: 45px;
+       
+    }
+  
 }
+
+
 
 
 
@@ -539,7 +556,7 @@ button {
 
 @media screen and (max-width: 1000px) {
     .indexdescription {
-        top: -180px;
+        top: 40px;
         font-size: 1.5rem;
     } 
 }

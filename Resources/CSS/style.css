@@ -22,6 +22,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0.2rem 0 0 0;
+    background-color: whitesmoke;
 }
 
 h1 {
@@ -214,8 +215,8 @@ button {
 
 @media screen and (max-width: 660px) {
     button {
-        font-size: 1.6rem;
-        padding: 1rem;
+        font-size: 1.4rem;
+        padding: 0.8rem;
         border-radius: 5px;
     }
 }

@@ -198,6 +198,8 @@ button {
     text-rendering: optimizeLegibility;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     button {
         font-size: 2rem;
@@ -206,16 +208,13 @@ button {
         width: 100%;
         position: relative;
         top: -4px;
-        opacity: 0.9;
-       
+        opacity: 0.9;  
     }
-
-    
 }
 
 @media screen and (max-width: 660px) {
     button {
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 1rem;
         border-radius: 5px;
     }
@@ -264,6 +263,7 @@ button {
       width: 200px;
       margin-top: -30px;
   }
+
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 21px;
@@ -311,7 +311,7 @@ button {
     display: none;
   }
   
-  @media (max-width: 1200px) {
+  @media (max-width: 1050px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -364,7 +364,7 @@ button {
       overflow-y: auto;
     }
   }
-  @media (max-width: 1100px){
+  @media (max-width: 1050px){
       header a {
           color: white !important;
         
@@ -565,6 +565,7 @@ button {
 footer {
     border-radius: 0px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
@@ -574,7 +575,8 @@ footer {
     flex-wrap: wrap;
     z-index: 0;
     position: relative;
-    top: 50px;
+    top: 4rem;
+    padding: 55px 0px;
 }
 @media (max-width: 867px){
     footer{
@@ -588,6 +590,14 @@ footer {
     }
 
 }
+
+.ftcontainer {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    min-width: 100%;
+}
+
 .ftbox {
     display: flex;
     flex-direction: column;
@@ -615,10 +625,17 @@ footer {
      border-top: 1px solid gray;
      padding: 50px 0px;
      text-align: center;
+     position: relative;
+     top: 50px;
 }
 
 .bottom-footer p {
     font-size: 1rem;
+}
+
+.bottompad {
+    background-color: gainsboro; 
+    height: 125px;
 }
 
 .weak {

@@ -92,8 +92,6 @@ a:hover {
     opacity: 0.6; 
 }
 
-/**/
-
 /*---------header-------------*/
 
 header {
@@ -253,30 +251,31 @@ button {
     margin: 0px 20px !important;
     background-color: transparent;
     color: rgba(0,23,92,1);
-    
     position: relative;
   }
   
-  .nav > .nav-header {
+
+.nav > .nav-header {
     display: inline;
   }
-  .logok{
+
+.logok {
       width: 200px;
       margin-top: -30px;
   }
 
-  .nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 21px;
     color: rgba(0,23,92,1);
     padding: 10px 10px 10px 10px;
   }
   
-  .nav > .nav-btn {
+.nav > .nav-btn {
     display: none;
   }
   
-  .nav > .nav-links {
+.nav > .nav-links {
     display: inline;
     float: right;
     font-size: 17px;
@@ -284,23 +283,23 @@ button {
     top: -3px;
   }
   
-  .nav > .nav-links > a {
+.nav > .nav-links > a {
     display: inline-block;
     padding: 8px 10px 8px 10px;
     text-decoration: none;
     color: #00175c;
   }
-  .active{
+.active{
         background-color: rgba(0,23,92,1);
         color: white !important;
         border-radius: 5px !important;
   }
-  .nav > .nav-links > a:hover {
+.nav > .nav-links > a:hover {
     background-color: rgba(0,23,92,1);
     color: white;
     border-radius: 5px !important;
   }
-  .en-btn{
+.en-btn{
        background-color: rgba(0,23,92,1) !important;
        color: white !important; 
        padding:10px 20px !important;
@@ -308,11 +307,11 @@ button {
        border-radius: 10px;
   }
   
-  .nav > #nav-check {
+.nav > #nav-check {
     display: none;
   }
   
-  @media (max-width: 1050px) {
+@media (max-width: 1050px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -365,7 +364,8 @@ button {
       overflow-y: auto;
     }
   }
-  @media (max-width: 1050px){
+
+@media (max-width: 1050px){
       header a {
           color: white !important;
         
@@ -380,7 +380,7 @@ button {
   }
   
 
-/*----------*/
+  /*Landing Page*/
 
 .topbox { 
     border-radius: 15px;
@@ -558,9 +558,6 @@ button {
     }
 }
 
-
-/**/
-
 /* footer */
 
 footer {
@@ -596,19 +593,20 @@ footer {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-evenly; 
+    align-items: center;
     min-width: 100%;
 }
 
 .ftbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    align-content: center;
     flex-shrink: 2;
     line-height: 1.8;
     flex-wrap: wrap;
     width: 33.33%;
+    min-height: 360px;
 }
 
 .ftlogo {
@@ -665,8 +663,6 @@ footer {
         }
     }
 
-/**/
-
 /*Fareharbour*/
 
 .fareharbour {
@@ -685,71 +681,14 @@ footer {
 
 }
 
-/*stickyhome*/
-
-.stickyhome {
-    position: fixed;
-    z-index: 3002;
-    bottom: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-    font-size: xx-large;
-    left: 0px;
-    padding: 1rem;
-}
-
-/**/
-
-/*Mobile enquire now banner*/
-
-@media screen and (max-width: 1000px) {
-
-    .enquiremob button {
-        height: 150px; 
-        width: 100%; 
-        font-size: 3.5rem; 
-        border-radius: 0px;
-        right: 0px;
-    }
-
-    #stickyhome {
-        font-size: 50px;
-    }
-
-    .enquiremob a {
-        width: 100%;
-    }    
-}
-
-/**/
-
 /*Mobile screen Generic*/
 
 @media screen and (max-width: 1000px) {
 
-
-    .container {
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-    }
-
     .mobilehide {
         display: none;
     }
-
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-        margin-bottom: 100px;
-
-    }
 } 
-/**/
 
 /*Desktopscreen Generic*/
 
@@ -758,25 +697,9 @@ footer {
     .desktophide {
         display: none;
     }
-
-    .left {
-        position: relative;
-        left: -115px;
-    }
-
-   .fbembed {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       position: relative;
-   }
-    
 }
 
-
-/*-----------------------------*/
-
-/* about us */
+/* info pages */
 
 .bbox {
     display: flex;
@@ -817,11 +740,6 @@ footer {
     .abox p {
         width: 90%;
     }
-}
-
-.more {
-    position: relative;
-    top: px;
 }
 
 .img {
@@ -933,34 +851,7 @@ footer {
     }
 }
 
-
-/*-------------------*/
-/* Terms and policy */
-
-.holding {
-    position: relative;
-    top: 50px;
-}
- 
-@media screen and (max-width: 1000px) {
-    .holding {
-        top: 120px;
-    }
-}
-
-
-.holdingimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    }
-
 /*map*/
-
-.where {
-    text-align: center;
-}
 
 .map {
     display: flex;
@@ -989,18 +880,13 @@ footer {
 
 .overlay {
         background: transparent; 
-        position:relative; 
-        width:1152px;
-        height:373px; /* your iframe height */
-        top:420px;  /* your iframe height */
-        margin-top:-568px;  /* your iframe height */
+        position: relative; 
+        width: 1152px;
+        height: 373px; /* your iframe height */
+        top: 420px;  /* your iframe height */
+        margin-top: -568px;  /* your iframe height */
         z-index: 20;
      }
-
-.tag {
-    position: relative;
-    height: 30px;
-}
 
 
 

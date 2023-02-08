@@ -197,8 +197,6 @@ button {
     text-rendering: optimizeLegibility;
 }
 
-
-
 @media screen and (max-width: 1000px) {
     button {
         font-size: 2rem;
@@ -712,6 +710,12 @@ footer {
     top: 96px;
 }
 
+.youtube {
+    display: flex; 
+    justify-content: center; 
+    max-width: 100%;
+}
+
 @media screen and (max-width: 1000px) {
     .bbox {
         top: 100px;
@@ -753,6 +757,14 @@ footer {
     box-shadow: 0 0 5px black;
 }
 
+@media  screen and (max-width: 1000px) {
+    .img {
+        width: 400px;
+        max-width: 100%;
+    }
+    
+}
+
 .ataglance {
     display: flex;
     align-items: center;
@@ -787,13 +799,6 @@ footer {
     }
 }
 
-
-@media  screen and (max-width: 1000px) {
-    .img {
-        min-width: 400px;
-    }
-    
-}
 .price {
     max-height: 35rem;
    overflow: hidden;

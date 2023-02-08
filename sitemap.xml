@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  created with sitemap generator https://octopus.do  -->
+
+    <url>
+        <loc>https://scotlandscanyons.com</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/index.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/aboutus.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/discovercanyoning.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/privatecanyoning.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/giftvouchers.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/blog.html</loc>
+        <lastmod>2023-02-08</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

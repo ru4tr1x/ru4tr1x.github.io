@@ -3,3 +3,4 @@ Disallow: /test.html/
 Disallow: /BHtest.html/
 Disallow: /privatecanyoningBHtest.html/
 Disallow: /Blogtest.html/
+Dissalow: /blog.html/

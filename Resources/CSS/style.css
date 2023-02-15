@@ -498,7 +498,7 @@ button {
 
 @media screen and (max-width: 1000px) {
     .producttitle {
-        top: -70px;
+        top: -40px;
         
     }
     .icon1 {
@@ -761,7 +761,7 @@ footer {
     border-radius: 100%;
     margin: 1rem;
     opacity: 0.9;
-    width: 60%;
+    width: 200px;
     box-shadow: 0 0 5px black;
 }
 

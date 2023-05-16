@@ -55,11 +55,11 @@ h4 {
 @media screen and (max-width: 1000px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size:2rem;
     } 
 }
     
@@ -519,7 +519,7 @@ button {
     top: -80px;
     font-style: italic; 
     line-height: 1.4;
-    min-width: 400px;
+    min-width: 380px;
     left: 0px;
     text-rendering: optimizeLegibility;
     background-color: rgba(0,23,92,1);
@@ -536,7 +536,7 @@ button {
 @media screen and (max-width: 1000px) {
     .indexdescription {
         top: 40px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 4px 0px;;
     } 
 }
@@ -553,7 +553,7 @@ button {
 
 @media  screen and (max-width: 1000px) {
     .description {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -736,7 +736,7 @@ footer {
 @media screen and (max-width: 1000px) {
 
     .abox p {
-        font-size: 2rem;
+        font-size: 1,5rem;
     }
 }
 

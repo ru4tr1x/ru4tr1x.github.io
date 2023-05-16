@@ -578,7 +578,6 @@ footer {
 @media (max-width: 867px){
     footer{
         display: block !important;
-        margin-top: 10px;
     }
     .ftbox{
         width: 100% !important;

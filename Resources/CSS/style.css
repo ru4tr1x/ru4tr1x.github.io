@@ -309,7 +309,7 @@ button {
     display: none;
   }
   
-@media (max-width: 1050px) {
+@media (max-width: 1210px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -799,6 +799,10 @@ footer {
     
 }
 
+.lml {
+    padding: 2rem;
+}
+
 .ataglance {
     display: flex;
     align-items: center;
@@ -850,6 +854,42 @@ footer {
     }
     
 }
+
+.pathway {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+@media  screen and (max-width: 1000px) {
+    .pathway {
+        flex-direction: column;
+    }
+}
+
+.lts { 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+    width: 80%;
+    padding-bottom: 4rem;
+}
+
+.gallery {
+    position: relative; 
+    top: 64px
+}
+
+@media  screen and (max-width: 1000px) {
+    .gallery {
+        top: 17px;
+    }
+}
+
+
 
 /*--------------------*/
 /*Enquire now*/

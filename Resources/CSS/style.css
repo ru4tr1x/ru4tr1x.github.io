@@ -399,6 +399,7 @@ button {
     border-radius: 15px; 
     background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
+    height: 620px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -410,6 +411,7 @@ button {
         background-size: cover;
         background-attachment: scroll;
         width: 100%;
+        height: 500px
 
     }
 }
@@ -471,7 +473,7 @@ button {
 }
 
 .imgbox {
-    height: 600px;
+    height: 620px;
     width: 50%;
     min-width: 110%;
     display: flex;

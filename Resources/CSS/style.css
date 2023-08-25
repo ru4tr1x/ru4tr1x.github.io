@@ -423,7 +423,7 @@ button {
     align-items: center;
     align-content: center;
     position: relative;
-    top: 4rem;  
+    top: 6rem;  
     align-self: center;
     width: 100%; 
     box-shadow: inset 0 0 1px darkgray;; 
@@ -448,7 +448,7 @@ button {
     align-content: center;
     position: relative;
     z-index: 1;
-    top: 4rem;  
+    top: 6rem;  
     align-self: center;
     width: 100%; 
     box-shadow: inset 0 0 1px darkgray; 
@@ -465,6 +465,7 @@ button {
         background-position: center;
         background-attachment: scroll;
         width: 100%;
+        height:34rem;
     }
 
     body{
@@ -488,19 +489,20 @@ button {
 
 @media screen and (max-width: 1000px) {
     .imgbox {
-        height: 500px;
+        height: 34rem;
     }
 }
 
 .producttitle {
-    height: 300px;
+    height: 8rem;
     opacity: 0.9;
     position: relative;
+    margin-bottom: 70px;
 }
 
 @media screen and (max-width: 1000px) {
     .producttitle {
-        top: -40px;
+        top: -3rem;
         
     }
     .icon1 {
@@ -518,7 +520,7 @@ button {
     color: white;
     font-size: 2rem;
     z-index: 2;
-    top: -80px;
+    top: 1rem;
     font-style: italic; 
     line-height: 1.4;
     min-width: 380px;

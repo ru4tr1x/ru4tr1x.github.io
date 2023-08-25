@@ -752,7 +752,7 @@ footer {
     overflow: hidden;
     border-radius: 15px;
     margin: 1rem;
-    opacity: 0.9;
+    opacity: 1;
     width: 80%;
     box-shadow: 0 0 5px black;
 }

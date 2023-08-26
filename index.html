@@ -9,6 +9,13 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQZ4VTW');</script>
     <!-- End Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41HGCCBDCY"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-41HGCCBDCY');
+</script>
         <title>Scotland's Canyons, canyoning adventure experiences in Scotland</title>    
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g" />
@@ -264,7 +271,68 @@
             var dib_recent_posts = 2;
         </script>
         <script loading="lazy" src="https://io.dropinblog.com/embedjs/c271366a-658c-466a-8855-dc75fbffff85.js"></script>
-    
+    <script>
+function sendEvent(config) {
+if (typeof ga !== "undefined") {
+ga('send', 'event', {
+eventAction: config.action,
+eventCategory: config.category,
+eventLabel: config.label
+});
+}
+if (typeof gtag !== "undefined") {
+gtag('event', config.action, {
+'event_category': config.category,
+'event_label': config.label
+});
+}
+}
+
+document.addEventListener(
+"click",
+function (event) {
+function isHitClass(e, selector) {
+return e.target && e.target.closest(selector);
+}
+
+if (
+isHitClass(
+event,
+'[class^="FloatingButton__FloatingButtonContainer-sc"][class^="ButtonBase__ButtonContainer-sc"]'
+)
+) {
+sendEvent({
+action: "click",
+category: "Elfsight Open Form Button",
+label: "Submit Button Click",
+});
+}
+
+if (
+isHitClass(
+event,
+'[class*="ButtonBase__ButtonContainer"][aria-label="Submit"]'
+)
+) {
+const requiredFields = document.querySelectorAll(
+'[class*="FormLayout__Container-sc"] input[aria-required="true"]'
+);
+const isFieldsFilled = [...requiredFields].every(
+(field) => field.value
+);
+
+if (isFieldsFilled) {
+sendEvent({
+action: "click",
+category: "Elfsight Form Submit Button",
+label: "Submit Button Click",
+});
+}
+}
+},
+true
+);
+</script>
     </body>
     
 </html>

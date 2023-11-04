@@ -11,6 +11,25 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MQZ4VTW');</script>
     <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+<script>
+    // Helper function to delay opening a URL until a gtag event is sent.
+    // Call it in response to an action that should navigate to a URL.
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'manual_conversion_PURCHASE', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+        // <event_parameters>
+      });
+      return false;
+    }
+  </script>
+  
 </script>
         <meta property="og:image:secure_url" content="https://scotlandscanyons.com/Resources/Images/uge/https://scotlandscanyons.com/Resources/Images/waterfallsmiles.webp">   
         <meta name="description" content="Unique gift experience idea in Scotland. Expert lead adventures in stunning nature">

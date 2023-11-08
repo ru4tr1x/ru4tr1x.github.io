@@ -719,12 +719,8 @@ footer {
     max-width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-    .bbox {
-        top: 100px;
-        padding-bottom: 60px;
-    }
-}
+
+
 .abox {
     display: flex;
     align-items: center;
@@ -973,7 +969,21 @@ footer {
      }
 
 
+  /* Style for the dropdown menu */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
 
+/* Show the dropdown when hovering over the parent container */
+.abox:hover .dropdown {
+    display: block;
+}
 
 
 

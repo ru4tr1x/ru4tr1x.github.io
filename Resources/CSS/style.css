@@ -627,7 +627,7 @@ footer {
      padding: 50px 0px;
      text-align: center;
      position: relative;
-     top: 30px;
+     top: 0px;
 }
 
 .bottom-footer p {
@@ -708,7 +708,6 @@ footer {
     flex-direction: column;
     background-color: whitesmoke;
     align-items: center;
-    margin-bottom: 2rem;
     position: relative;
     top: 96px;
 }

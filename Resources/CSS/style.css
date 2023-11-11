@@ -6,7 +6,7 @@
 /*-------Global---------*/
 
 html, body {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Roboto', sans-serif;
         outline-style: hidden;
         border-style: hidden;
         width: 100%;
@@ -21,67 +21,79 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 0.2rem 0 0 0;
-    background-color: whitesmoke;
+    background-color: #000925;
 }
 
-h1 {
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    color: white;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
 }
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+}
+
+
+
+
     
 h2 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     font-weight: 600;
     font-size: 2rem;
+    color: white;
 }
     
 h3 {
     font-size: 2rem;
     font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+   
     text-align: center;
+    color: white;
 }
     
 h4 {
     font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
+
 }
 
 @media screen and (max-width: 1000px) {
 
-    h1 {
+    .h1 {
         font-size: 2rem;
     }
 
-    h2 {
+    .h2 {
         font-size:2rem;
     } 
 }
     
 p {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
+    color: white;
+    padding: 0 2rem;
+    line-height: 1.5;
 }
 
 li {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
 }
     
 a {
-    color: rgba(0,23,92,1);
+    color: green;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
     
@@ -96,30 +108,21 @@ a:hover {
 
 header {
     position: fixed;
-    top: 0px;
+    top: 45px;
     z-index: 1001;
     display: flex;
-    align-items: center;
-    align-self: center;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
     width: 100%;
-    background-color: rgba(255,255,255,0.6);
-    height: 96px;
+
    
     }
-
-.header, p {
-    margin: 0px;
-    padding-left: 0px;
-}
 
 @media screen and (max-width: 1000px) {
 
     header {
         width: 100%;
         justify-content: center;
-        height: 114px;
+        height: 82px;
     }
 
     .header p {
@@ -189,7 +192,7 @@ button {
     color: whitesmoke;
     border-radius: 5px;
     margin: 0 auto;
-    background-color: rgba(0,23,92,1);
+    background-color: green;
     border: none;
     cursor: pointer;
     position: relative;
@@ -246,7 +249,6 @@ button {
 .nav {
     height: 50px;
     width: 100%;
-    margin: 0px 20px !important;
     background-color: transparent;
     color: rgba(0,23,92,1);
     position: relative;
@@ -258,8 +260,7 @@ button {
   }
 
 .logok {
-      width: 200px;
-      margin-top: -30px;
+      margin-top: -10px;
   }
 
 .nav > .nav-header > .nav-title {
@@ -274,11 +275,13 @@ button {
   }
   
 .nav > .nav-links {
-    display: inline;
+    display: flex;
     float: right;
     font-size: 17px;
     position: relative;
     top: -3px;
+    justify-content: space-evenly;
+    width: 80%;
   }
   
 .nav > .nav-links > a {
@@ -309,7 +312,9 @@ button {
     display: none;
   }
   
-@media (max-width: 1210px) {
+
+
+   
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -319,9 +324,9 @@ button {
     }
     .nav > .nav-btn > label {
       display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
+      width: 55px;
+      height: 55px;
+      padding: 10px;
     }
   /*.img{
       height: 100% !important;
@@ -333,20 +338,20 @@ button {
     }
     .nav > .nav-btn > label > span {
       display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #000;
+      width: 35px;
+      height: 15px;
+      border-top: 5px solid white;
     }
     .nav > .nav-links {
-      position: absolute;
+      position: fixed;
       display: block;
       width: 100%;
-      background-color: darkslategray;
+      background-color: #000925;
       opacity: 0.98;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 50px;
+      top: 80px;
       left: 0px;
     }
     .nav > .nav-links > a {
@@ -360,138 +365,109 @@ button {
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
-      padding-top: 35px;
+      border: 5px solid white;
     }
-  }
+  
 
-@media (max-width: 1050px){
+
       header a {
           color: white !important;
         
       }
       .nav-links{
-            margin-top: 25px !important;
+            margin-top: 30px !important;
             border-radius: 10px;
             max-height: 300px;
       }
   
   
-  }
+  
 
 
   /*Landing Page*/
 
 .topbox { 
-    border-radius: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    margin-bottom: 2rem;
-    top: 6rem;  
-    align-self: center;
-    width: 100%; 
-    box-shadow: inset 0 0 1px darkgray;; 
-    background-position-x: center; background-repeat: repeat; 
-    background-size: cover; background-attachment: fixed;
-    background-position-y: center;
-    border-radius: 15px; 
-    background-color: rgba(255,255,255,0);
-    background-blend-mode: lighten;
-    height: 620px;
-}
-
-@media screen and (max-width: 1000px) {
-    .topbox {
-        
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
-        background-size: cover;
-        background-attachment: scroll;
-        width: 100%;
-        height: 500px
-
-    }
-}
-
-.topbox2 {
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    top: 6rem;  
-    align-self: center;
-    width: 100%; 
-    box-shadow: inset 0 0 1px darkgray;; 
-    width: 100%; border-radius: 0px; background-repeat: no-repeat; background-position: center; background-size: cover;
     background-attachment: fixed;
     background-color: rgba(255,255,255,0);
     background-blend-mode: lighten;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Make the body height cover the whole viewport */
 }
 
 @media screen and (max-width: 1000px) {
-    .topbox2 {
-             
-        background-attachment: scroll;
-        width: 100%;
-    }
-}
-
-.topbox3 { 
-    display: flex;
-    justify-content: center;
+    .topbox {    
+    overflow: hidden;
     align-items: center;
-    align-content: center;
-    position: relative;
-    z-index: 1;
-    top: 6rem;  
-    align-self: center;
-    width: 100%; 
-    box-shadow: inset 0 0 1px darkgray; 
-    background-position-x: center; 
-    background-size: cover; background-attachment: fixed; 
-    border-radius: 0px; background-position-y: center; background-repeat: no-repeat; 
-    background-color: rgba(255,255,255,0);
-    background-blend-mode: lighten;
-}
-
-@media screen and (max-width: 1000px) {
-    .topbox3 {
-       
-        background-position: center;
-        background-attachment: scroll;
-        width: 100%;
-        height:34rem;
-    }
-
-    body{
-        margin-top: 1.1rem !important;
+    background-size: cover;
+    background-attachment: scroll;
     }
 }
+
 
 .imgbox {
-    height: 620px;
-    width: 50%;
-    min-width: 110%;
     display: flex;
     flex-direction: column;
     margin: 0rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
     background-blend-mode: lighten;
     padding: 3rem;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
 }
 
 @media screen and (max-width: 1000px) {
-    .imgbox {
-        height: 34rem;
+    .titlebox {
+        margin: 20px;
     }
 }
+    
+
+.textbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.h1 {
+    
+    font-size: 2rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff; /* White color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 139, 0.7);; /* Text shadow for legibility */
+    transition: transform 0.3s ease-in-out; /* Transition for the hover effect */
+}
+
+.h1:hover {
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
+}
+
+.titlebox {
+    text-align: center; /* Center the title */
+    padding: 20px; /* Add some padding around the text */
+    border-radius: 10px; /* Rounded corners for the title box */
+    display: inline-block; /* Adjust display for padding and border-radius */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
 
 .producttitle {
     height: 8rem;
@@ -525,15 +501,11 @@ button {
     line-height: 1.4;
     min-width: 380px;
     left: 0px;
-    text-rendering: optimizeLegibility;
-    background-color: rgba(0,23,92,1);
     border-radius: 15px;
     background-blend-mode: lighten;
     font-weight: 500;
-    margin: 2rem;
     padding: 4px 20px;
     opacity: 0.9;
-    box-shadow: 0 0 2px black;
     
 }
 
@@ -545,21 +517,9 @@ button {
     } 
 }
 
-.description {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0rem;
-    margin: 0 20px;
-    font-size: 2rem;
-    font-weight: 400; 
-}
 
-@media  screen and (max-width: 1000px) {
-    .description {
-        font-size: 1.2rem;
-    }
-}
+
+
 
 /* footer */
 
@@ -572,7 +532,7 @@ footer {
     align-items: center;
     align-self: center;
     width: 100%;
-    background-color: gainsboro;
+    background-color: black;
     flex-wrap: wrap;
     z-index: 0;
     position: relative;
@@ -622,7 +582,7 @@ footer {
     margin: 3rem
 }
 .bottom-footer{
-     background-color: gainsboro;
+     background-color: black;
      border-top: 1px solid gray;
      padding: 50px 0px;
      text-align: center;
@@ -635,7 +595,7 @@ footer {
 }
 
 .bottompad {
-    background-color: gainsboro; 
+    background-color: black; 
     height: 125px;
 }
 
@@ -644,33 +604,13 @@ footer {
     font-size: large;
 }
 
-.smlimg {
-    display: flex;
-    flex-shrink: 2;
-    max-width: 8rem;
-    height: 8rem;
-    padding-bottom: 1rem;
-    }
-
-    .adlog {
-        display: flex;
-        flex-shrink: 2;
-        height: 70px;
-    }
-
-    @media screen and (max-width: 1000px) {
-        #map {
-            max-width: 12rem;
-            height: 12rem;
-        }
-    }
 
 /*Fareharbour*/
 
 .fareharbour {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 12px;
+    right: 15px;
     z-index: 3;
 }
 
@@ -724,10 +664,7 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 90%;
-    padding-bottom: 2rem;
-}
-.abox p {
-    padding-bottom: 2rem;
+    padding: 4rem 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -737,19 +674,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 1000px) {
-
-    .abox p {
-        width: 90%;
-    }
-}
 
 .img {
     overflow: hidden;
     border-radius: 15px;
     margin: 1rem;
     opacity: 1;
-    width: 80%;
     box-shadow: 0 0 5px black;
 }
 
@@ -787,14 +717,6 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-}
-
-@media  screen and (max-width: 1000px) {
-    .img {
-        width: 400px;
-        max-width: 100%;
-    }
-    
 }
 
 .lml {
@@ -966,22 +888,6 @@ footer {
         z-index: 20;
      }
 
-
-  /* Style for the dropdown menu */
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-}
-
-/* Show the dropdown when hovering over the parent container */
-.abox:hover .dropdown {
-    display: block;
-}
 
 
 

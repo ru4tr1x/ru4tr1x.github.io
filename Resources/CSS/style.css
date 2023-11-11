@@ -101,7 +101,7 @@ a:hover {
     color: darkslategray;
     text-shadow: none;
     text-decoration: none;
-    opacity: 0.6; 
+    font-size: 1.2rem; 
 }
 
 /*---------header-------------*/
@@ -250,7 +250,7 @@ button {
     height: 50px;
     width: 100%;
     background-color: transparent;
-    color: rgba(0,23,92,1);
+    color: green;
     position: relative;
   }
   
@@ -266,7 +266,7 @@ button {
 .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 21px;
-    color: rgba(0,23,92,1);
+    color: green;
     padding: 10px 10px 10px 10px;
   }
   
@@ -288,16 +288,17 @@ button {
     display: inline-block;
     padding: 8px 10px 8px 10px;
     text-decoration: none;
-    color: #00175c;
+    color: green;
   }
 .active{
-        background-color: rgba(0,23,92,1);
-        color: white !important;
+        
+        font-size: 1.2rem;
+        color: green !important;
         border-radius: 5px !important;
   }
 .nav > .nav-links > a:hover {
-    background-color: rgba(0,23,92,1);
-    color: white;
+    
+    color: green;
     border-radius: 5px !important;
   }
 .en-btn{

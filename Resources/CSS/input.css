@@ -24,6 +24,15 @@ body {
     background-color: #000925;
 }
 
+h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff; /* White color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);; /* Text shadow for legibility */
+    transition: transform 0.3s ease-in-out; /* Transition for the hover effect */
+}
+
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700; 
@@ -64,16 +73,6 @@ h4 {
 
 }
 
-@media screen and (max-width: 1000px) {
-
-    .h1 {
-        font-size: 2rem;
-    }
-
-    .h2 {
-        font-size:2rem;
-    } 
-}
     
 p {
     text-align: center;
@@ -447,19 +446,7 @@ button {
     padding-top: 4rem;
 }
 
-.h1 {
-    
-    font-size: 2rem;
-    padding: 0 10px;
-    border-radius: 5px;
-    color: #fff; /* White color for the text */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);; /* Text shadow for legibility */
-    transition: transform 0.3s ease-in-out; /* Transition for the hover effect */
-}
 
-.h1:hover {
-    transform: scale(1.05); /* Slightly enlarge the text on hover */
-}
 
 .titlebox {
     text-align: center; /* Center the title */

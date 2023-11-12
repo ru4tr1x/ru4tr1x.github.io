@@ -453,7 +453,7 @@ button {
     padding: 0 10px;
     border-radius: 5px;
     color: #fff; /* White color for the text */
-    text-shadow: 2px 2px 8px rgba(0, 0, 139, 0.7);; /* Text shadow for legibility */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);; /* Text shadow for legibility */
     transition: transform 0.3s ease-in-out; /* Transition for the hover effect */
 }
 

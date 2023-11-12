@@ -388,7 +388,7 @@ button {
     display: flex;
     justify-content: center;
     background-attachment: fixed;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255,255,255,0.1);
     background-blend-mode: lighten;
     background-image: url('path-to-your-image.jpg');
     background-size: cover; /* Cover the entire viewport */
@@ -407,33 +407,23 @@ button {
 }
 
 
-.imgbox {
-    display: flex;
+.titlebox {
     flex-direction: column;
     margin: 0rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0.1);
-    background-blend-mode: lighten;
     padding: 3rem;
     height: 100vh;
     width: 100%;
-}
-
-
-.titlebox {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: 140px;
+    text-align: center;
+
 }
 
-@media screen and (max-width: 1000px) {
-    .titlebox {
-        margin: 20px;
-    }
-}
     
 
 .textbox {
@@ -443,17 +433,7 @@ button {
     align-items: center;
     padding-top: 4rem;
 }
-
-
-
-.titlebox {
-    text-align: center; /* Center the title */
-    padding: 20px; /* Add some padding around the text */
-    border-radius: 10px; /* Rounded corners for the title box */
-    display: inline-block; /* Adjust display for padding and border-radius */
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
+ 
 
 .producttitle {
     height: 8rem;

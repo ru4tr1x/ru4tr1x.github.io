@@ -14,12 +14,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://scotlandscanyons.com/blog.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://scotlandscanyons.com/discovercanyoning.html</loc>
         <lastmod>2023-08-11</lastmod>
         <changefreq>always</changefreq>
@@ -39,6 +33,24 @@
     </url>
      <url>
         <loc>https://scotlandscanyons.com/adventurepathway.html</loc>
+        <lastmod>2023-08-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/booknow.html</loc>
+        <lastmod>2023-08-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/map.html</loc>
+        <lastmod>2023-08-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://scotlandscanyons.com/blog.html</loc>
         <lastmod>2023-08-11</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

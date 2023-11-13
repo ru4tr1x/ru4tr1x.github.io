@@ -45,10 +45,6 @@ p {
     font-weight: 400; 
 }
 
-
-
-
-    
 h2 {
     text-align: center;
     
@@ -167,20 +163,6 @@ header {
 
 }
 
-.logo {
-    height: 170px;
-    z-index: 3002;
-    padding: 0rem 0;
-    position: relative;
-    top: 22px;
-}
-
-@media screen and (max-width: 1000px) {
-    .logo {
-       display: none;
-    }
-}
-
 button:hover {
     background-color: green;
     transition: background-color .15s, font-size .15s;
@@ -227,29 +209,6 @@ button {
     }
 }
 
-#deskfont {
-    font-size: 2rem;
-}
-
-.buttonicon {
-    width: 2rem;
-}
-
-@media screen and (max-width: 1000px) {
-     .buttonicon {
-         width: 5rem;
-         position: relative;
-         top: 6px;
-     }
-}
-
-@media screen and (max-width: 660px) {
-    .buttonicon {
-        width: 2rem;
-        position: relative;
-        top: 2px;
-    }
-}
 
 /*NAV*/
 
@@ -269,6 +228,7 @@ button {
 .logok {
       margin-top: -10px;
       margin-left: 10px;
+      width: 40%; height: auto;
   }
 
 .nav > .nav-header > .nav-title {
@@ -443,59 +403,6 @@ button {
     align-items: center;
     padding-top: 4rem;
 }
- 
-
-.producttitle {
-    height: 8rem;
-    opacity: 0.9;
-    position: relative;
-    margin-bottom: 70px;
-}
-
-@media screen and (max-width: 1000px) {
-    .producttitle {
-        top: -3rem;
-        
-    }
-    .icon1 {
-        padding-bottom: 45px;
-       
-    }
-  
-}
-
-.indexdescription {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    font-size: 2rem;
-    z-index: 2;
-    top: 1rem;
-    font-style: italic; 
-    line-height: 1.4;
-    min-width: 380px;
-    left: 0px;
-    border-radius: 15px;
-    background-blend-mode: lighten;
-    font-weight: 500;
-    padding: 4px 20px;
-    opacity: 0.9;
-    
-}
-
-@media screen and (max-width: 1000px) {
-    .indexdescription {
-        top: 40px;
-        font-size: 1rem;
-        padding: 4px 0px;;
-    } 
-}
-
-
-
-
 
 /* footer */
 
@@ -632,6 +539,17 @@ footer {
     opacity: 1;
     box-shadow: 0 0 5px black;
     border: 10px solid white;
+    width: 80%; height: auto;
+}
+
+.logo {
+    width: 40%; 
+    height: auto;
+}
+
+.icon {
+    width: 15%; 
+    height: auto;
 }
 
 .imgportrait {

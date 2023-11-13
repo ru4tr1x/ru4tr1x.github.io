@@ -548,16 +548,6 @@ footer {
     min-height: 360px;
 }
 
-.ftlogo {
-    margin-top: 2rem;
-    height: 100px;
-
-}
-
-.ftmark {
-    height: 100px; 
-    margin: 3rem
-}
 .bottom-footer{
      background-color: black;
      border-top: 1px solid gray;
@@ -619,22 +609,6 @@ footer {
 }
 
 /* info pages */
-
-.bbox {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    align-items: center;
-    position: relative;
-    top: 96px;
-}
-
-.youtube {
-    display: flex; 
-    justify-content: center; 
-    max-width: 100%;
-}
-
 
 .abox {
     display: flex;

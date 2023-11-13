@@ -37,10 +37,23 @@ gtag('config', 'G-41HGCCBDCY');
         <link rel="canonical" href="https://scotlandscanyons.com"/>
         <!--Elfsight Apps-->
         <script defer src="https://apps.elfsight.com/p/platform.js"></script>
+        <script src="path/to/google-tag-manager.js"></script>
+<!--conditional Loading-->
+    <script>
+        function loadConditionalScripts() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 768) { // Example breakpoint for mobile screens
+                var script = document.createElement('script');
+                script.src = 'path/to/your/other/script.js'; // Replace with your script's URL
+                document.head.appendChild(script);
+            }
+        }
+    </script>
         
     </head>
 
-    <body>
+    <body onload="loadConditionalScripts();">
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe defer src="https://www.googletagmanager.com/ns.html?id=GTM-MQZ4VTW"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

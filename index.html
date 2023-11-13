@@ -3,7 +3,11 @@
     <head>
         <!-- Start cookieyes banner --> <script defer id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js"></script> <!-- End cookieyes banner -->
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Your code here will run after the DOM is fully loaded
+    });
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -12,6 +16,9 @@
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-41HGCCBDCY"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here will run after the DOM is fully loaded
+});
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -236,7 +243,7 @@ gtag('config', 'G-41HGCCBDCY');
 
     
         <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
-        <script class="mobilehide" async src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+        <script class="mobilehide" defer src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
           
         <div class="bottompad" >
 

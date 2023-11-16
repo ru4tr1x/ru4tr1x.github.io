@@ -543,12 +543,14 @@ footer {
 }
 
 .logo {
-    width: 40%; 
+    width: 50%; 
     height: auto;
+    max-width: 300px;
 }
 
 .icon {
     width: 15%; 
+    max-width: 100px;
     height: auto;
 }
 

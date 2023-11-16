@@ -545,12 +545,12 @@ footer {
 .logo {
     width: 50%; 
     height: auto;
-    max-width: 300px;
+    max-width: 275px;
 }
 
 .icon {
     width: 15%; 
-    max-width: 100px;
+    max-width: 75px;
     height: auto;
 }
 

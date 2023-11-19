@@ -176,9 +176,9 @@ button:active {
 button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 10px 20px;
-    color: whitesmoke;
+    color: white;
     border-radius: 5px;
     margin: 0 auto;
     background-color: limegreen;
@@ -191,7 +191,6 @@ button {
 
 @media screen and (max-width: 1000px) {
     button {
-        font-size: 2rem;
         padding: 1rem;
         border-radius: 5px;
         width: 100%;
@@ -203,7 +202,6 @@ button {
 
 @media screen and (max-width: 660px) {
     button {
-        font-size: 1.4rem;
         padding: 0.8rem;
         border-radius: 5px;
     }

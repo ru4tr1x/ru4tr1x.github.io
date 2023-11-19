@@ -196,6 +196,7 @@ button {
         position: relative;
         top: -4px;
         opacity: 0.9;  
+        font-size: 2rem;
     }
 }
 
@@ -203,6 +204,7 @@ button {
     button {
         padding: 0.8rem;
         border-radius: 5px;
+        font-size: 1.4rem;
     }
 }
 

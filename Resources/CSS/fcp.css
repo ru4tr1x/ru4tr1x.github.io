@@ -1,0 +1,186 @@
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    color: green;
+    position: relative;
+  }
+  
+
+.nav > .nav-header {
+    display: inline;
+  }
+
+.logok {
+      margin-top: -10px;
+      margin-left: 10px;
+      width: 40%; height: auto;
+  }
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 21px;
+    color: green;
+    padding: 10px 10px 10px 10px;
+  }
+  
+.nav > .nav-btn {
+    display: none;
+  }
+  
+.nav > .nav-links {
+    display: flex;
+    float: right;
+    font-size: 17px;
+    position: relative;
+    top: -3px;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    color: green;
+  }
+.active{
+        
+        font-size: 1.2rem;
+        color: green !important;
+        border-radius: 5px !important;
+  }
+.nav > .nav-links > a:hover {
+    
+    color: green;
+    border-radius: 5px !important;
+  }
+.en-btn{
+       background-color: rgba(0,23,92,1) !important;
+       color: white !important; 
+       padding:10px 20px !important;
+       font-size: 21px !important;
+       border-radius: 10px;
+  }
+  
+.nav > #nav-check {
+    display: none;
+  }
+  
+
+
+   
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      margin-right: 20px !important;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+    }
+  /*.img{
+      height: 100% !important;
+    }*/
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: transparent;
+      opacity: 0.7;
+      border-radius: 8px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 35px;
+      height: 15px;
+      border-top: 5px solid white;
+    }
+    .nav > .nav-links {
+      position: fixed;
+      display: block;
+      width: 100%;
+      background-color: #000925;
+      opacity: 0.98;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      padding: 12px;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      border: 5px solid white;
+    }
+  
+
+
+      header a {
+          color: white !important;
+        
+      }
+      .nav-links{
+            margin-top: 30px !important;
+            border-radius: 10px;
+            max-height: 300px;
+      }
+  
+  
+  
+
+
+  /*Landing Page*/
+
+.topbox { 
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Make the body height cover the whole viewport */
+}
+
+@media screen and (max-width: 1000px) {
+    .topbox {    
+    overflow: hidden;
+    align-items: center;
+    background-size: cover;
+    background-attachment: scroll;
+    }
+}
+
+
+.titlebox {
+    flex-direction: column;
+    margin: 0rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 140px;
+    text-align: center;
+
+}
+
+
+
+

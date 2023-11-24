@@ -31,29 +31,39 @@ h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);; /* Text shadow for legibility */
 }
 
+.h1 {
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff; /* White color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);; /* Text shadow for legibility */
+}
+
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
     font-weight: 700; 
     color: white;
     text-align: center;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400; 
-}
-
 h2 {
-    text-align: center;
-    
-    font-weight: 600;
+
+    text-align: center; 
+    font-weight: 500;
     font-size: 2rem;
     color: white;
 }
     
 h3 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
    
     text-align: center;
     color: white;
@@ -61,6 +71,7 @@ h3 {
     
 h4 {
     font-size: 1.5rem;
+    font-weight: 500;
     color: white;
     margin: 0;
     padding: 0;
@@ -100,7 +111,7 @@ a {
     
 a:hover {
     text-shadow: none;
-    font-size: 2rem; 
+    color: aquamarine;
 }
 
 /*---------header-------------*/
@@ -160,7 +171,7 @@ header {
 }
 
 button:hover {
-    background-color: green;
+    background-color: aquamarine;
     transition: background-color .15s, font-size .15s;
     /*font-size: 1.7rem;*/
 }
@@ -205,11 +216,40 @@ button {
     }
 }
 
+/* Learn More */
 
-/*NAV*/
+.learn-more-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.hidden-content {
+    display: none;
+    /* Additional styling for your content */
+}
+
+.learn-more-checkbox:checked + .learn-more-btn + .hidden-content {
+    display: inline; /* or 'block', depending on your layout needs */
+}
+
+.learn-more-checkbox:checked + .learn-more-btn {
+    display: none;
+}
 
 
-    
+/* Optional: Style for the label to make it look like a clickable link */
+.learn-more-btn {
+    cursor: pointer;
+    color: silver;
+    font-size: 1rem;
+}
+
+.collapse-btn { 
+    cursor: pointer;    
+    color: silver;
+    font-size: 1rem;    
+    display: block; /* Optional: to put it on a new line */    
+    margin-top: 10px; /* Optional: for some spacing */
+}     
 
 .textbox {
     display: flex;

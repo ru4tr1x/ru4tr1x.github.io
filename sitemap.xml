@@ -55,5 +55,17 @@
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
+     <url>
+        <loc>https://scotlandscanyons.com/dollarglencalendar.html</loc>
+        <lastmod>2023-25-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+     <url>
+        <loc>https://scotlandscanyons.com/calendar.html</loc>
+        <lastmod>2023-25-11</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
     
 </urlset>

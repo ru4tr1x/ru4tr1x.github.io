@@ -91,7 +91,7 @@
                 </div>
             </div>
             
-            <div class="elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849" data-elfsight-app-lazy></div>  
+            <div class="elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849 fareharbour" data-elfsight-app-lazy></div>  
 
             <div class="textbox">
                 <div class="abox">
@@ -159,7 +159,7 @@
            
         <!-- FareHarbor book button -->
   
-        <a class=fareharbour href="booknow.html"><button>Book online</button></a>
+        <a class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>
     
        
           
@@ -175,10 +175,38 @@
           
         <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script> <!-- End cookieyes banner -->
  
-        <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
-        <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" defer></script>
-
-        </div>
+        <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ 
+        <script loading="lazy" src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" defer></script>-->
+        
+        <script type="text/javascript" src="https://fareharbor.com/embeds/api/v1/"></script>
+        <script type="text/javascript">
+          // Customizing the activation of Lightframes
+          FH.autoLightframe({
+            className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
+            callback: function(linkElement){
+              console.log('FareHarbor link was clicked');
+            }
+          });
+        
+          // Example function to manually open the Lightframe
+          function openFareHarborLightframe(shortname) {
+            FH.open({
+              shortname: scotlandscanyons, // Replace with your company's FareHarbor shortname
+              // Add other options as needed, like 'flow', 'language', etc.
+            });
+          }
+        
+          // Function to close the Lightframe
+          function closeFareHarborLightframe() {
+            if (FH.close()) {
+              console.log('Lightframe closed');
+            } else {
+              console.log('Lightframe was not open');
+            }
+          }
+        </script>
+        
+          
         
     </body>
     

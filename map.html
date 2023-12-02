@@ -162,7 +162,7 @@
 
         <!-- FareHarbor book button -->
   
-        <a class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
           
         <div class="bottompad">
 
@@ -180,8 +180,29 @@
  
             <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ 
             <script loading="lazy" src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes" defer></script>-->
-        
-            <script type="text/javascript" src="https://fareharbor.com/embeds/api/v1/"></script>
+            <script type="text/javascript">
+                document.getElementById("bookNowLink").addEventListener("click", function(event) {
+                    event.preventDefault(); // Prevent the default action of the link
+            
+                    // Check if the script is already loaded
+                    if (!window.FH) {
+                        // Create the script element for FareHarbor Lightframe API
+                        var script = document.createElement('script');
+                        script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                        script.defer = true;
+                        script.onload = function() {
+                            // Once the script is loaded, open the Lightframe
+                            FH.open({shortname: 'scotlandscanyons'});
+                        };
+            
+                        document.body.appendChild(script);
+                    } else {
+                        // If the script is already loaded, just open the Lightframe
+                        FH.open({shortname: 'scotlandscanyons'});
+                    }
+                });
+            </script>
+            
             <script type="text/javascript">
           // Customizing the activation of Lightframes
           FH.autoLightframe({

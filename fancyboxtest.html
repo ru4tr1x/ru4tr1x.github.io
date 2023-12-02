@@ -17,22 +17,18 @@
         <meta property="og:image" content="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/465aae7b-adde-459e-a05c-5d459859a274/stunning-waterfall-at-birks-of-aberfeldy-canyoning-adventute.webp"/>
         <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
         
-        <script type="module" src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
-        <script type="module" src="./node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js"></script>
-
-        
-
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            Fancybox.bind("[data-fancybox]", {
-              iframe: true,
-              // Other custom options here
+        <script type="module">
+            import $ from './node_modules/jquery/dist/jquery.min.js';
+            import './node_modules/@fancyapps/ui/dist/fancybox/fancybox.css';
+            import Fancybox from './node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js';
+          
+            $(document).ready(function() {
+              $("a.register").fancybox({
+                'type' : 'iframe'
+              });
             });
-          });
-        </script>
-        
-        
+          </script>
+          
 
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">

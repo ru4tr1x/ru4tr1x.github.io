@@ -17,17 +17,17 @@
         <meta property="og:image" content="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/465aae7b-adde-459e-a05c-5d459859a274/stunning-waterfall-at-birks-of-aberfeldy-canyoning-adventute.webp"/>
         <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
         
-        <script type="module">
-            import $ from './node_modules/jquery/dist/jquery.min.js';
-            import './node_modules/@fancyapps/ui/dist/fancybox/fancybox.css';
-            import Fancybox from './node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js';
-          
-            $(document).ready(function() {
-              $("a.register").fancybox({
-                'type' : 'iframe'
-              });
-            });
-          </script>
+        <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.esm.js"></script>
+<script>
+  $(document).ready(function() {
+    $("a.register").fancybox({
+      'type' : 'iframe'
+    });
+  });
+</script>
+
           
 
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">

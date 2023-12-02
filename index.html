@@ -191,14 +191,16 @@
 
                 <div class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
-                <h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
-
-                <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for enthusiasts of all skill levels.</p>
+                    <h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
+                    <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for enthusiasts of all skill levels.</p>
+                    <!-- Button to load the Elfsight widget -->            
+                    <button id="loadElfsightWidget">Search Map</button>             
+                </div> 
+            </div>
             
-                <a href="map.html"><button>Search Map Now</button></a>
-                </div>
+            <!-- Container where the widget will be loaded -->
+            <div id="elfsightWidgetContainer"></div>
 
-            </div>    
                
             <!--Quote-->
             <div class="textbox">
@@ -271,7 +273,41 @@
         
         <!-- Start cookieyes banner --> 
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script> <!-- End cookieyes banner -->
-       
+        <script>
+            document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+    var container = document.getElementById("elfsightWidgetContainer");
+
+    // Check if the widget has already been loaded
+    if (container.children.length === 0) {
+        // Create the message element
+        var message = document.createElement('p');
+        message.style.fontStyle = "italic";
+        message.className = "mobilehide";
+        message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+        message.style.marginBottom = "20px"; // 20px space above the widget
+
+        // Create the script element for Elfsight Platform
+        var script = document.createElement('script');
+        script.src = "https://static.elfsight.com/platform/platform.js";
+        script.defer = true;
+
+        // Create the div container for the widget
+        var widgetDiv = document.createElement('div');
+        widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
+
+        // Append the message, script, and div to the container
+        container.appendChild(message);
+        container.appendChild(script);
+        container.appendChild(widgetDiv);
+
+        // Hide the button after loading the widget
+        this.style.display = "none";
+    }
+});
+
+
+
+          </script>
     
     </body>
     

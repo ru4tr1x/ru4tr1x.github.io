@@ -20,10 +20,18 @@
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
         <link rel="stylesheet" href="Resources/CSS/jquery.fancybox.min.css">
-        <script src="Resources/js/jquery.fancybox.min.js"></script>
+        <script type="module" src="Resources/js/jquery.fancybox.min.js"></script>
 
-
-
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            Fancybox.bind("[data-fancybox]", {
+              iframe: true,
+              // Other custom options here
+            });
+          });
+        </script>
+        
+        
 
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -176,9 +184,7 @@
       
        
 
-        <script>Fancybox.bind("[data-fancybox]", {
-          // Your custom options
-        });</script>
+       
         
  
   

@@ -15,7 +15,6 @@
   .content {
     background: white;
     width: 80%;
-    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 5px;
@@ -26,18 +25,7 @@
     display: none;
   }
   </style>
-  <script>
-    // Open lightframe when the button is clicked
-document.getElementById("openLightframe").addEventListener("click", function() {
-  document.getElementById("lightframe").style.display = "block";
-});
-
-// Close lightframe when the close button is clicked
-document.getElementById("closeLightframe").addEventListener("click", function() {
-  document.getElementById("lightframe").style.display = "none";
-});
-
-  </script>
+ 
 
 
 </head>
@@ -46,13 +34,24 @@ document.getElementById("closeLightframe").addEventListener("click", function() 
   <button id="openLightframe">Open Lightframe</button>
 <div id="lightframe" class="hidden">
   <div class="content">
-    <iframe src="https://a2bae3e40f864389984ef94f27fd6849.elf.site"></iframe>
+    <iframe src="https://a2bae3e40f864389984ef94f27fd6849.elf.site" height="500px" width="100%"></iframe>
     <button id="closeLightframe">Close</button>
   </div>
 </div>
 
 
  
-  
+<script>
+  // Open lightframe when the button is clicked
+document.getElementById("openLightframe").addEventListener("click", function() {
+document.getElementById("lightframe").style.display = "block";
+});
+
+// Close lightframe when the close button is clicked
+document.getElementById("closeLightframe").addEventListener("click", function() {
+document.getElementById("lightframe").style.display = "none";
+});
+
+</script>
 </body>
 </html>

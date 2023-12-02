@@ -16,14 +16,12 @@
         <meta property="og:description" content="Explore Scotland's Premier Canyoning Destinations with our Interactive Map. Handpicked for their unique beauty and challenges, each location promises an unforgettable canyoning experience. From beginner-friendly spots to advanced challenges, our map guides you to the ideal adventure. Book your journey today and immerse yourself in the stunning, diverse landscapes of Scotland's canyons under expert guidance." />
         <meta property="og:image" content="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/465aae7b-adde-459e-a05c-5d459859a274/stunning-waterfall-at-birks-of-aberfeldy-canyoning-adventute.webp"/>
         <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
-       <!---- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />-->
         
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="Resources/CSS/jquery.fancybox.min.css">
+        <script src="Resources/js/jquery.fancybox.min.js"></script>
+
 
 
 
@@ -102,7 +100,7 @@
                     
                   </div>
             </div>
-            <a data-fancybox="google-map" href="https://a2bae3e40f864389984ef94f27fd6849.elf.site">View Map</a>
+            <a data-fancybox="iframe" href="https://a2bae3e40f864389984ef94f27fd6849.elf.site">View Map</a>
          
            
 
@@ -176,16 +174,11 @@
 
           
       
-        <script>
-          $(document).ready(function() {
-            $("[data-fancybox='google-map']").fancybox({
-              type: 'iframe', // Specify the type as 'iframe' to display the Google Maps widget.
-              iframe: {
-                preload: false // You can customize iframe options here.
-              }
-            });
-          });
-        </script>
+       
+
+        <script>Fancybox.bind("[data-fancybox]", {
+          // Your custom options
+        });</script>
         
  
   

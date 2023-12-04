@@ -126,7 +126,7 @@
  
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon"> 
                     <h2 style="line-height: 0.2;">Gallery</h2>
-                    <p style="font-size: 15px;">Photo's from recent adventures</p>
+                    <p style="font-size: 15px;">Photos from recent adventures</p>
                     
                 </div>
 
@@ -151,32 +151,30 @@
                         <br><br>
                         <span style="color: goldenrod;">&#9733;</span> <span style="font-weight: 600; color: green;">Extended Validity<br></span> Enjoy 18 months to find your perfect day
                         <br><br>
-                        <span style="color: goldenrod;">&#9733;</span> <span style="font-weight: 600; color: green;">100% Five Star Reviews<br></span> Unparalelled, tailor made experiences that make your gift unforgettable
+                        <span style="color: goldenrod;">&#9733;</span> <span style="font-weight: 600; color: green;">100% Five Star Reviews<br></span> Unparalleled, tailor-made experiences that make your gift unforgettable
                     </p>
 
                 </div>
                 
+                <!--MAP-->
+
                 <div class="abox">
-                    
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
-                    <h2><span style="color: goldenrod;">&#9733;</span> Our Experiences At a Glance</h2>
-                    
-                    <p><span style="color: goldenrod;">&#9733;</span><span style="color: green;"> Adventure at Your Pace<br></span>
-                    Choose from our half-day (4 hours) or full-day (6 - 8 hours) canyoning adventures, complete with a delightful picnic lunch.<br><br>           
-                    <span style="color: goldenrod;">&#9733;</span><span style="color: green;"> A Warm Welcome<br></span>
-                    Each tour kicks off with a welcome meeting at a place and time confirmed by the guide.<br><br>                                     
-                    <span style="color: goldenrod;">&#9733;</span><span style="color: green;"> Get Ready for Action<br></span>         
-                    After a skills practice session, guests embark on an exhilarating canyon descent, uncovering hidden waterfalls and wild swimming pools.<br><br>                                      
-                    <span style="color: goldenrod;">&#9733;</span><span style="color: green;"> Recharge with Snacks<br></span>
-                    Following the adventure, unless otherwise arranged, the group will regather at the meeting point to indulge in home-baked snacks and refreshing drinks thoughtfully provided by us.</p>                                  
-                    
-                </div>        
-                
-                <div class="abox">
-                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">            
-                    <h2>Explore Our Top Gift Experience Locations</h2>
-                    <a href="map.html"><Button>Seach Map Now</Button></a>
+                    <h3>Explore Map of Scotland's Top Canyoning Locations</h3>
+                    <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for enthusiasts of all skill levels.</p>
+                    <!-- Button to load the Elfsight widget -->            
+                    <button style="max-width: 250px;" id="loadElfsightWidget">Search Map</button>          
                 </div> 
+            
+            </div>
+
+            <div id="elfsightWidgetContainer"></div>
+
+            <div class="textbox">
+
+                       
+                
+                
 
                 <div class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
@@ -268,7 +266,7 @@
                
                 <div class="ftbox">
                     
-                    <img loading="lazy" class="logo" width="683" height="275" src="Resources/Images/working-with-visit-scotland.webp" srcset="Resources/Images/working-with-visit-scotland-400.webp, 400w, Resources/Images/working-with-visit-scotland-250.webp, 250w, Resources/Images/working-with-visit-scotland-180.webp, 180w" sizes="(max-width: 660px) 170px, (max-width: 1000px), 250px, (max-width: 1500px), 300px," alt="working with visti scotland stamp">
+                    <img loading="lazy" class="logo" width="683" height="275" src="Resources/Images/working-with-visit-scotland.webp" srcset="Resources/Images/working-with-visit-scotland-400.webp, 400w, Resources/Images/working-with-visit-scotland-250.webp, 250w, Resources/Images/working-with-visit-scotland-180.webp, 180w" sizes="(max-width: 660px) 170px, (max-width: 1000px), 250px, (max-width: 1500px), 300px," alt="working with Visit Scotland stamp">
                     <br>
                     <img loading="lazy" class="logo" width="340" height="180" src="Resources/Images/aim-logo.webp" alt="Member of Activities Industry Mutual"> 
               
@@ -293,8 +291,81 @@
        
         </div>  
 
-         <!-- FareHarbor book button for item #345799 -->
-         <a class="fareharbour" href="ordergiftvouchers.html"><button>Order online</button></a>
+         <!-- FareHarbor book button for item #345799
+         <a class="fareharbour" href="ordergiftvouchers.html"><button>Order online</button></a>-->
+
+               <!--FH Button-->
+
+        <a id="bookNowLink" class="fareharbour" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes&flow=660908">    
+            <button>Order online</button>
+        </a>  
+
+        <script type="text/javascript">
+        document.getElementById("bookNowLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default action of the link
+
+        // Check if the script is already loaded
+        if (!window.FH) {
+            // Create the script element for FareHarbor Lightframe API
+            var script = document.createElement('script');
+            script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+            script.defer = true;
+            script.onload = function() {
+                // Once the script is loaded, open the Lightframe with specific flow
+                FH.open({
+                    shortname: 'scotlandscanyons',
+                    flow: 660908 // Add the specific flow ID here
+                });
+            };
+
+            document.body.appendChild(script);
+        } else {
+            // If the script is already loaded, open the Lightframe with specific flow
+            FH.open({
+                shortname: 'scotlandscanyons',
+                flow: 660908 // Add the specific flow ID here
+            });
+        }
+        });
+        </script>
+
+        <!--Map Dynamic-->
+        <script async>
+            document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+    var container = document.getElementById("elfsightWidgetContainer");
+
+    // Check if the widget has already been loaded
+    if (container.children.length === 0) {
+        // Create the message element
+        var message = document.createElement('p');
+        message.style.fontStyle = "italic";
+        message.className = "mobilehide";
+        message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+        message.style.marginBottom = "20px"; // 20px space above the widget
+
+        // Create the script element for Elfsight Platform
+        var script = document.createElement('script');
+        script.src = "https://static.elfsight.com/platform/platform.js";
+        script.defer = true;
+
+        // Create the div container for the widget
+        var widgetDiv = document.createElement('div');
+        widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
+
+        // Append the message, script, and div to the container
+        container.appendChild(message);
+        container.appendChild(script);
+        container.appendChild(widgetDiv);
+
+        // Hide the button after loading the widget
+        this.style.display = "none";
+    }
+});
+
+
+
+        </script>
+
   
         <!-- Start cookieyes banner --> 
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script>

@@ -88,15 +88,41 @@
                 <div class="abox">
                     <img class="logo" width="352" height="202" src="Resources/Images/white-transparent-logo.webp" srcset="Resources/Images/white-transparent-logo.webp 350w, Resources/Images/white-transparent-logo-350.webp 220w, Resources/Images/white-transparent-logo-250.webp 150w" sizes="(max-width: 660px) 150px, (max-width: 1000px), 220px, (max-width: 1500px) 350px" alt="Scotland's Canyons logo">
                     <h1>Current Canyoning Adventure Availability: Live Calendar</h1>
-                    <p>Our live calendar showcases available time slots for our most popular canyons. For availability in other locations, please reach out to us directly. Note: Private tour timings are flexible to suit your transportation requirements.<br><br>Ready to explore? Click a date to book your adventure online now!</p>    
-                </div>
+                    <p>Our live calendar showcases available time slots for our most popular canyons. For availability in other locations, please reach out to us directly. Note: Private tour timings are flexible to suit your transportation requirements.</p>    
+                    <!-- Button to load the FareHarbor calendar -->
+                    <button id="loadCalendarButton">Load Calendar</button></div>
             </div>
+
+   <!-- Container for the text and FareHarbor iframe -->
+   <div id="fareHarborCalendarContainer" style="position: relative;">
+       <!-- Text to be displayed above the calendar -->
+       <p style="position: absolute; top: -10px; left: 0; width: 100%; text-align: center;">
+           Ready to explore? Click a date to book your adventure online now!
+       </p>
+       <!-- The iframe will be appended here -->
+   </div>
+
+   <script>
+       document.getElementById('loadCalendarButton').addEventListener('click', function() {
+           var container = document.getElementById('fareHarborCalendarContainer');
+           var button = this;
+           
+           // Check if the iframe already exists
+           if (container.getElementsByTagName('iframe').length === 0) {
+               var iframe = document.createElement('iframe');
+               iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?full-items=yes";
+               iframe.width = "100%";
+               iframe.height = "600"; // Set this to the desired height
+               iframe.frameBorder = "0";
+               container.appendChild(iframe);
+
+               // Hide the button
+               button.style.display = 'none';
+           }
+       });
+   </script>
             
-
-            <!-- FareHarbor calendar -->
-            <script src="https://fareharbor.com/embeds/script/calendar/scotlandscanyons/?fallback=simple&full-items=yes"></script>
-
-        
+            
             <!--Social Icons-->
             <div style="padding-top: 4rem;" class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91" data-elfsight-app-lazy></div>
            

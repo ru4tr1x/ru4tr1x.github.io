@@ -252,8 +252,8 @@
             <p style="font-size: 1rem;">© 2023 Scotland's Canyons. All Rights Reserved.</p>
         </div>  
            
-        <!--book button -->        
-        <a class="fareharbour" href="booknow.html"><button>Book online</button></a>
+        <!--book button        
+        <a class="fareharbour" href="booknow.html"><button>Book online</button></a>-->
 
         <!--Bottom Pad-->
         <div class="bottompad" >
@@ -266,10 +266,65 @@
             
             <div class="elfsight-app-0192265a-b137-4d13-b12e-aef679f203aa" data-elfsight-app-lazy></div>       
         
-        </div>  
+        </div>
         
+        
+    
         <!-- Start cookieyes banner --> 
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script> <!-- End cookieyes banner -->
+       
+        <!--FH Button-->
+        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+        
+        <script type="text/javascript">
+            document.getElementById("bookNowLink").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the default action of the link
+        
+                // Check if the script is already loaded
+                if (!window.FH) {
+                    // Create the script element for FareHarbor Lightframe API
+                    var script = document.createElement('script');
+                    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                    script.defer = true;
+                    script.onload = function() {
+                        // Once the script is loaded, open the Lightframe
+                        FH.open({shortname: 'scotlandscanyons'});
+                    };
+        
+                    document.body.appendChild(script);
+                } else {
+                    // If the script is already loaded, just open the Lightframe
+                    FH.open({shortname: 'scotlandscanyons'});
+                }
+            });
+        </script>
+        
+        <script type="text/javascript">
+      // Customizing the activation of Lightframes
+      FH.autoLightframe({
+        className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
+        callback: function(linkElement){
+          console.log('FareHarbor link was clicked');
+        }
+      });
+    
+      // Example function to manually open the Lightframe
+      function openFareHarborLightframe(shortname) {
+        FH.open({
+          shortname: scotlandscanyons, // Replace with your company's FareHarbor shortname
+          // Add other options as needed, like 'flow', 'language', etc.
+        });
+      }
+    
+      // Function to close the Lightframe
+      function closeFareHarborLightframe() {
+        if (FH.close()) {
+          console.log('Lightframe closed');
+        } else {
+          console.log('Lightframe was not open');
+        }
+      }
+        </script>
         
         <!--Map Dynamic-->
         <script async>
@@ -306,7 +361,7 @@
 
 
 
-          </script>
+        </script>
     
     </body>
     

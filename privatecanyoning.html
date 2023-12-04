@@ -9,6 +9,7 @@
         <!--GTM-->
         <script src="https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW" async></script>
         <title>Exclusive canyoning experiences, Scotland's best adventures</title>
+        <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g" />
         <meta property="og:image:secure_url" content="https://scotlandscanyons.com/Resources/Images/AlvaAbseilRoss.webp"/>
         <meta name="description" content="Experience bespoke private canyoning adventures with Scotland's Canyons, tailored for individuals, families, and small groups. Enjoy half or full-day excursions with personalized planning, top-notch equipment, and the highest safety standards. Our private trips offer a unique blend of excitement and comfort, including skill practice, canyon descent, and delightful snacks. Book your customized canyoning journey today and create unforgettable memories in Scotland's majestic landscapes."/>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -133,8 +134,7 @@
             <!--Gallery-->
             <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" alt="Gallery of the most recent photos taken on Scotland's Canyons adventures" data-elfsight-app-lazy></div>
 
-            <div class="textbox">
-                
+            <div class="textbox">    
                 <div class="abox" title="Canyoning Adventure Description">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h3>Your Adventure at a Glance</h3>
@@ -156,9 +156,16 @@
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <br><h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
                     <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for enthusiasts of all skill levels.</p>
-                    <a href="map.html"><button>Search Map Now</button></a>
+                    <button style="max-width: 250px;" id="loadElfsightWidget">Search Map</button>
                     
                 </div>
+
+            </div>
+
+             <!-- Container where the widget will be loaded -->
+             <div id="elfsightWidgetContainer"></div>
+            
+            <div class="textbox">
 
                 <!--Calendar Button-->
      
@@ -168,10 +175,11 @@
                     <p>Available throughout the year, our private canyoning experiences can be tailored to your schedule. Contact us anytime to start planning your adventure. We offer guidance on weather conditions and assist in selecting the ideal canyon location for your experience. For added convenience, our local pickup service ensures easy access to your canyoning adventure. For our most popular canyons, check live availability and easily book your preferred date online.</p>
                     
                     <p style="font-style: italic;">For families and groups larger than 6, or for more information on our pickup service, please reach out to us directly to discuss availability and options.</p>
-                    <a href="calendar.html"><button>View Live Calendar</button></a>
+                    <a id="loadfareharborcalendar" href="calendar.html"><button>View Live Calendar</button></a>
                 </div>
-                
-                
+
+                <div id="fareharborcalendar"></div>
+                    
                 <div class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h4><span style="color: goldenrod; font-size: 3rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h4>
@@ -232,7 +240,7 @@
                     </div>
 
                 </div>
-
+               
             </div>
 
             <!--Youtube Channel-->
@@ -277,8 +285,8 @@
 
         <!-- FareHarbor book button for flow #795828 -->
         
-        <!--book button -->        
-        <a class="fareharbour" href="booknow.html"><button>Book online</button></a>
+        <!--book button        
+        <a class="fareharbour" href="booknow.html"><button>Book online</button></a>-->
     
         <div class="bottompad">
 
@@ -293,7 +301,100 @@
         </div>  
         
         <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js"></script> <!-- End cookieyes banner -->
+    <!--FH Button-->
+    <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+        
+    <script type="text/javascript">
+        document.getElementById("bookNowLink").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+    
+            // Check if the script is already loaded
+            if (!window.FH) {
+                // Create the script element for FareHarbor Lightframe API
+                var script = document.createElement('script');
+                script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                script.defer = true;
+                script.onload = function() {
+                    // Once the script is loaded, open the Lightframe
+                    FH.open({shortname: 'scotlandscanyons'});
+                };
+    
+                document.body.appendChild(script);
+            } else {
+                // If the script is already loaded, just open the Lightframe
+                FH.open({shortname: 'scotlandscanyons'});
+            }
+        });
+    </script>
+    
+    <script type="text/javascript">
+  // Customizing the activation of Lightframes
+  FH.autoLightframe({
+    className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
+    callback: function(linkElement){
+      console.log('FareHarbor link was clicked');
+    }
+  });
 
+  // Example function to manually open the Lightframe
+  function openFareHarborLightframe(shortname) {
+    FH.open({
+      shortname: scotlandscanyons, // Replace with your company's FareHarbor shortname
+      // Add other options as needed, like 'flow', 'language', etc.
+    });
+  }
+
+  // Function to close the Lightframe
+  function closeFareHarborLightframe() {
+    if (FH.close()) {
+      console.log('Lightframe closed');
+    } else {
+      console.log('Lightframe was not open');
+    }
+  }
+    </script>
+
+    <!--Map Dynamic-->
+    <script async>
+        document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+var container = document.getElementById("elfsightWidgetContainer");
+
+// Check if the widget has already been loaded
+if (container.children.length === 0) {
+    // Create the message element
+    var message = document.createElement('p');
+    message.style.fontStyle = "italic";
+    message.className = "mobilehide";
+    message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+    message.style.marginBottom = "20px"; // 20px space above the widget
+
+    // Create the script element for Elfsight Platform
+    var script = document.createElement('script');
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.defer = true;
+
+    // Create the div container for the widget
+    var widgetDiv = document.createElement('div');
+    widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
+
+    // Append the message, script, and div to the container
+    container.appendChild(message);
+    container.appendChild(script);
+    container.appendChild(widgetDiv);
+
+    // Hide the button after loading the widget
+    this.style.display = "none";
+}
+});
+
+
+
+    </script>
+
+
+
+   
+   
     </body>
     
 

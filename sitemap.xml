@@ -38,8 +38,8 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://scotlandscanyons.com/booknow.html</loc>
-        <lastmod>2023-08-11</lastmod>
+        <loc>https://scotlandscanyons.com/calendar.html</loc>
+        <lastmod>2023-04-12</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -52,18 +52,6 @@
     <url>
         <loc>https://scotlandscanyons.com/blog.html</loc>
         <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-     <url>
-        <loc>https://scotlandscanyons.com/dollarglencalendar.html</loc>
-        <lastmod>2023-25-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-     <url>
-        <loc>https://scotlandscanyons.com/calendar.html</loc>
-        <lastmod>2023-25-11</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>

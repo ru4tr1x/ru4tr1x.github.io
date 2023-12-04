@@ -124,14 +124,6 @@
         <div class="bottom-footer">
             <p style="font-size: 1rem;">© 2023 Scotland's Canyons. All Rights Reserved.</p>
         </div>  
-
-    
-           
-        <!-- FareHarbor book button -->
-  
-        <a class=fareharbour href="booknow.html"><button>Book online</button></a>
-    
-       
           
         <div class="bottompad">
 
@@ -145,6 +137,32 @@
           
           
         </div>
+
+        <!--FH Button-->
+        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+        
+        <script type="text/javascript">
+            document.getElementById("bookNowLink").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the default action of the link
+        
+                // Check if the script is already loaded
+                if (!window.FH) {
+                    // Create the script element for FareHarbor Lightframe API
+                    var script = document.createElement('script');
+                    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                    script.defer = true;
+                    script.onload = function() {
+                        // Once the script is loaded, open the Lightframe
+                        FH.open({shortname: 'scotlandscanyons'});
+                    };
+        
+                    document.body.appendChild(script);
+                } else {
+                    // If the script is already loaded, just open the Lightframe
+                    FH.open({shortname: 'scotlandscanyons'});
+                }
+            });
+        </script>
         
            <script src="https://io.dropinblog.com/embedjs/c271366a-658c-466a-8855-dc75fbffff85.js" async></script>
         

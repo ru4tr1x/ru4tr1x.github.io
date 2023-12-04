@@ -63,7 +63,7 @@
                     <a href="privatecanyoning.html">Private<br><span style="font-weight: 100;">Groups & families</span></a>
                     <a href="giftvouchers.html">Gift certificate<br><span style="font-weight: 100;">Gift experiences</span></a>
                     <a href="adventurepathway.html">Training<br><span style="font-weight: 100;">The adventure pathway</span></a>
-                    <a href="booknow.html">Book Now<br><span style="font-weight: 100;">Live Availibility</span></a> 
+                    <a href="calendar.html">Calendar<br><span style="font-weight: 100;">Live Availibility</span></a> 
                     <a href="map.html">Map<br><span style="font-weight: 100;">Find a location</span></a> 
                     <a href="blog.html">Blog<br><span style="font-weight: 100;">Discover more</span></a>    
                 </div>
@@ -219,9 +219,6 @@
         <div class="bottom-footer">
             <p>© 2023 Scotland's Canyons. All Rights Reserved.</p>
         </div>
-  
-        <!--book button -->        
-        <a class="fareharbour" href="booknow.html"><button>Book online</button></a>
          
         <div class="bottompad">
          
@@ -233,8 +230,33 @@
             
            <div class="elfsight-app-0192265a-b137-4d13-b12e-aef679f203aa" data-elfsight-app-lazy></div>   
          
-        </div>   
+        </div>  
 
+<!--FH Button-->
+<a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+        
+<script type="text/javascript">
+    document.getElementById("bookNowLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default action of the link
+
+        // Check if the script is already loaded
+        if (!window.FH) {
+            // Create the script element for FareHarbor Lightframe API
+            var script = document.createElement('script');
+            script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+            script.defer = true;
+            script.onload = function() {
+                // Once the script is loaded, open the Lightframe
+                FH.open({shortname: 'scotlandscanyons'});
+            };
+
+            document.body.appendChild(script);
+        } else {
+            // If the script is already loaded, just open the Lightframe
+            FH.open({shortname: 'scotlandscanyons'});
+        }
+    });
+</script>
         <!-- Start cookieyes banner --> 
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script>
        

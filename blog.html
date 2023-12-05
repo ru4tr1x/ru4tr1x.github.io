@@ -81,9 +81,17 @@
             </header>
 
         <main>
+            <div class="textbox">
+                <div class="abox">
+                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">            
+
+                    <p>The best Canyoning adventures in Scotland. Unique and personal experiences in small groups with Expert guides.</p>
+
+                    <button id="loadButton" onclick="loadScriptAndHideButton()">Load Articles</button>
+    <div id="dib-posts"></div>
+                </div>
+            </div>
             
-            <!--Blog-->
-            <div style="position: relative; top: 90px;" id="dib-posts"></div>
 
             <!--Social Icons-->
             <div style="padding-top: 4rem;" class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91" data-elfsight-app-lazy></div>
@@ -164,10 +172,21 @@
             });
         </script>
         
-           <script src="https://io.dropinblog.com/embedjs/c271366a-658c-466a-8855-dc75fbffff85.js" async></script>
         
              <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script> <!-- End cookieyes banner -->
-   
+             <script>
+                function loadScriptAndHideButton() {
+                    // Create a new script element
+                    var script = document.createElement('script');
+                    script.src = 'https://io.dropinblog.com/embedjs/c271366a-658c-466a-8855-dc75fbffff85.js';
+        
+                    // Append the script to the body
+                    document.body.appendChild(script);
+        
+                    // Hide the button after the script is loaded
+                    document.getElementById('loadButton').style.display = 'none';
+                }
+            </script>
     </body>
     
 </html>

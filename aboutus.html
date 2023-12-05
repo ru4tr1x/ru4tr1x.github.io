@@ -78,7 +78,7 @@
 
         <main>
 
-            <div class="topbox" title="Our Assion For Adventure" style="background-image: url(Resources/Images/stunning-waterfall-at-birks-of-aberfeldy-canyoning-adventute.webp);">
+            <section class="topbox" title="Our Assion For Adventure" style="background-image: url(Resources/Images/stunning-waterfall-at-birks-of-aberfeldy-canyoning-adventute.webp);">
                     
                 <div class="titlebox">
    
@@ -86,14 +86,14 @@
                 
                 </div>    
             
-            </div>
+            </section>
             
 
-            <div class="textbox" title="Main body of information about Scotland's Canyons">
+            <section class="textbox" title="Main body of information about Scotland's Canyons">
 
               
 
-                <div class="abox">
+                <article class="abox">
                     <img loading="lazy" class="logo" width="352" height="202" src="Resources/Images/white-transparent-logo.webp" srcset="Resources/Images/white-transparent-logo.webp 350w, Resources/Images/white-transparent-logo-350.webp 220w, Resources/Images/white-transparent-logo-250.webp 150w" sizes="(max-width: 660px) 150px, (max-width: 1000px), 220px, (max-width: 1500px) 350px" alt="Scotland's Canyons logo">
                     <h2>Experience the Best of Scottish Canyoning with Diana and Ruaridh</h2>
                     <p>Join Diana and Ruaridh, seasoned canyoning enthusiasts with decades of global experience, for an unforgettable adventure in Scotland's breathtaking canyons. Their journey through diverse canyons and cultures has fueled a passion for creating personalised and memorable experiences for each guest. Are you ready to dive into the exhilarating world of canyoning?
@@ -104,25 +104,25 @@
                     <p style="font-style: italic;">Ruaridh and Diana</p>
                                  <h2 href="#whatweoffer" title="whatweoffer" id="whatweoffer">Scotland's Canyons: A Natural Playground for Adventure</h2>
                     <p><span style="font-style: italic;">"Each of our adventures is tailor-made to fit our guests, and that's what we find most engaging – meeting new people and facing new challenges. Among all the activities we've guided over the years, canyoning stands out as the quickest path to a true adventure. By teaching a few simple skills, our guests quickly find themselves immersed in a magical world of hidden waterfalls and serene wild swimming pools. It's a privilege to guide these incredible personal journeys and a joy to unlock authentic adventures for our guests. Whether you're seeking a challenge, eager to learn a new skill, or just looking for a fun day out in the stunning Scottish nature, canyoning here offers something for everyone." </span> Diana and Ruaridh, 24th November 2023</p>
-                </div>
+                </article>
             
             
                  <!--Box 4 Galery-->
                 
-                <div class="textbox">
+                <article class="textbox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h2>Photo's From Recent Adventures</h2>
-                </div>
+                </article>
 
-            </div>                       
+            </section>                       
                 
             <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" data-elfsight-app-lazy></div>
             
             <!--Our Service-->
 
-            <div class="textbox">
+            <section class="textbox">
                 
-                <div class="abox">
+                <article class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h2><span style="color: goldenrod; font-size: 3rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h2>
                     <p>Discover some of the aspects that help make our adventures truly unforgettable:<br></p>
@@ -171,9 +171,9 @@
                  </div>
                  <img loading="lazy" width="1067" height="1600" class="img desktophide" src="Resources/Images/diana-and-ruaridh-in-alva-glen-canyoning-guides.webp" srcset="Resources/Images/diana-and-ruaridh-in-alva-glen-canyoning-guides-500.webp, 400w, Resources/Images/diana-and-ruaridh-in-alva-glen-canyoning-guides-300.webp, 280w" sizes="(max-width: 660px) 280px, 400px" alt="Diana and ruaridh Scotland's Canyons Canyoning guiding couple share a laugh in Alva Glen">
    
-                </div>
+                </article>
 
-            </div>
+            </section>
 
              
     
@@ -232,31 +232,56 @@
          
         </div>  
 
-<!--FH Button-->
-<a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
-        
-<script type="text/javascript">
-    document.getElementById("bookNowLink").addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the default action of the link
+   <!--FH Button-->
+   <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
 
-        // Check if the script is already loaded
-        if (!window.FH) {
-            // Create the script element for FareHarbor Lightframe API
-            var script = document.createElement('script');
-            script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
-            script.defer = true;
-            script.onload = function() {
-                // Once the script is loaded, open the Lightframe
-                FH.open({shortname: 'scotlandscanyons'});
-            };
-
-            document.body.appendChild(script);
-        } else {
-            // If the script is already loaded, just open the Lightframe
-            FH.open({shortname: 'scotlandscanyons'});
-        }
-    });
-</script>
+   <script type="text/javascript">
+       document.getElementById("bookNowLink").addEventListener("click", function(event) {
+           event.preventDefault(); // Prevent the default action of the link
+   
+           // Function to open the Lightframe
+           function openFareHarborLightframe() {
+               FH.open({
+                   shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                   fallback: 'simple'
+               });
+           }
+   
+           // Check if the script is already loaded
+           if (!window.FH) {
+               // Create the script element for FareHarbor Lightframe API
+               var script = document.createElement('script');
+               script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+               script.onload = function() {
+                   // Set up FH methods and open the Lightframe
+                   setupFareHarborMethods();
+                   openFareHarborLightframe();
+               };
+               document.body.appendChild(script);
+           } else {
+               // If the script is already loaded, just open the Lightframe
+               openFareHarborLightframe();
+           }
+       });
+   
+       function setupFareHarborMethods() {
+           FH.autoLightframe({
+               className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
+               callback: function(linkElement){
+                   console.log('FareHarbor link was clicked');
+               }
+           });
+   
+           // Function to close the Lightframe
+           function closeFareHarborLightframe() {
+               if (FH.close()) {
+                   console.log('Lightframe closed');
+               } else {
+                   console.log('Lightframe was not open');
+               }
+           }
+       }
+   </script>
         <!-- Start cookieyes banner --> 
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script>
        

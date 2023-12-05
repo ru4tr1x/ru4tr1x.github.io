@@ -77,15 +77,15 @@
         </header>
 
         <main>
-            <div class="textbox">
-                <div class="abox">
+            <section class="textbox">
+                <article class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h1>Discover the Beauty of Scotland's Canyons</h1>
                     <p>Welcome to our dedicated space for the latest updates and insights from our adventures in Scotland's breathtaking canyons. Here, you will find a rich collection of articles, each offering unique insights into picturesque locations, expert advice for the best adventurers, and updates on the latest events happening in and around Scotland's canyons. Immerse yourself in the splendour of Scotland's natural landscapes and start planning your next adventure today!</p>
                     <button id="loadButton" onclick="loadScriptAndHideButton()">Load Articles</button>
                     <div id="dib-posts"></div>
-                </div>
-            </div>
+                </article>
+            </section>
             
             <!--Social Icons-->
             <div style="padding-top: 4rem;" class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91" data-elfsight-app-lazy></div>
@@ -139,31 +139,56 @@
             
         </div>
 
-        <!--FH Button-->
-        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
-        
-        <script type="text/javascript">
-            document.getElementById("bookNowLink").addEventListener("click", function(event) {
-                event.preventDefault(); // Prevent the default action of the link
-        
-                // Check if the script is already loaded
-                if (!window.FH) {
-                    // Create the script element for FareHarbor Lightframe API
-                    var script = document.createElement('script');
-                    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
-                    script.defer = true;
-                    script.onload = function() {
-                        // Once the script is loaded, open the Lightframe
-                        FH.open({shortname: 'scotlandscanyons'});
-                    };
-        
-                    document.body.appendChild(script);
-                } else {
-                    // If the script is already loaded, just open the Lightframe
-                    FH.open({shortname: 'scotlandscanyons'});
-                }
-            });
-        </script>
+         <!--FH Button-->
+       <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+
+       <script type="text/javascript">
+           document.getElementById("bookNowLink").addEventListener("click", function(event) {
+               event.preventDefault(); // Prevent the default action of the link
+       
+               // Function to open the Lightframe
+               function openFareHarborLightframe() {
+                   FH.open({
+                       shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                       fallback: 'simple'
+                   });
+               }
+       
+               // Check if the script is already loaded
+               if (!window.FH) {
+                   // Create the script element for FareHarbor Lightframe API
+                   var script = document.createElement('script');
+                   script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                   script.onload = function() {
+                       // Set up FH methods and open the Lightframe
+                       setupFareHarborMethods();
+                       openFareHarborLightframe();
+                   };
+                   document.body.appendChild(script);
+               } else {
+                   // If the script is already loaded, just open the Lightframe
+                   openFareHarborLightframe();
+               }
+           });
+       
+           function setupFareHarborMethods() {
+               FH.autoLightframe({
+                   className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
+                   callback: function(linkElement){
+                       console.log('FareHarbor link was clicked');
+                   }
+               });
+       
+               // Function to close the Lightframe
+               function closeFareHarborLightframe() {
+                   if (FH.close()) {
+                       console.log('Lightframe closed');
+                   } else {
+                       console.log('Lightframe was not open');
+                   }
+               }
+           }
+       </script>
         
         <script>
                 function loadScriptAndHideButton() {

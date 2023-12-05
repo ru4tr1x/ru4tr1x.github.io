@@ -79,20 +79,20 @@
 
         <main>
            
-            <div class="textbox">
-                <div class="abox">
+            <section class="textbox">
+                <article class="abox">
                     <img loading="lazy" class="logo" width="352" height="202" src="Resources/Images/white-transparent-logo.webp" srcset="Resources/Images/white-transparent-logo.webp 350w, Resources/Images/white-transparent-logo-350.webp 220w, Resources/Images/white-transparent-logo-250.webp 150w" sizes="(max-width: 660px) 150px, (max-width: 1000px), 220px, (max-width: 1500px) 350px" alt="Scotland's Canyons logo">
                     <h1>Explore Scotland's Premier Canyoning Destinations</h1>
                     <p>Our interactive map guides you through the most stunning canyoning locations Scotland has to offer. Each spot is handpicked for its unique blend of natural beauty and exhilarating challenges, and, along with our expert guidance, ensures an unforgettable experience.</p>    
                     <!-- Button to load the Elfsight widget -->            
                     <button style="max-width: 250px;" id="loadElfsightWidget">Load Map</button>           
-                </div>
-            </div>
+                </article>
+            </section>
             
              <!-- Container where the widget will be loaded -->
              <div id="elfsightWidgetContainer"></div>  
 
-            <div class="textbox">
+            <section class="textbox">
                 <div class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">            
                     <h2>Why Choose Scotland for Canyoning?</h2>    
@@ -105,16 +105,16 @@
                         <p><span style="color: goldenrod;">&#9733;</span>&nbsp;</span>&nbsp;<span style="font-weight: 600; color: green">Advanced Challenges:</span>&nbsp; For the experienced adventurer, tackle our more challenging routes, featuring rugged terrains and adrenaline-pumping descents.</p>
                         <p><span style="color: goldenrod;">&#9733;</span>&nbsp;</span>&nbsp;<span style="font-weight: 600; color: green">Family Adventures:</span>&nbsp; Enjoy bonding time with family-friendly canyoning tours, suitable for all ages and skill levels.</p>
                 </div>
-            </div>
+            </section>
 
-            <div class="textbox">
-                <div class="abox">
+            <section class="textbox">
+                <article class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">            
                     <h2>Book Your Canyoning Adventure Today</h2>
                     <p>Ready for an unforgettable Scottish adventure? Browse our map, select your ideal canyoning location, and book your journey with us. Experience the thrill of Scotland's canyons, all while under the guidance of our canyoning experts.
                 </p>
-                </div>
-            </div>
+                </article>
+            </section>
         
             <!--Social Icons-->
             <div class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91" data-elfsight-app-lazy></div>
@@ -172,31 +172,56 @@
 
             <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script> <!-- End cookieyes banner -->
  
-           <!--FH Button-->
-        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
-        
-        <script type="text/javascript">
-            document.getElementById("bookNowLink").addEventListener("click", function(event) {
-                event.preventDefault(); // Prevent the default action of the link
-        
-                // Check if the script is already loaded
-                if (!window.FH) {
-                    // Create the script element for FareHarbor Lightframe API
-                    var script = document.createElement('script');
-                    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
-                    script.defer = true;
-                    script.onload = function() {
-                        // Once the script is loaded, open the Lightframe
-                        FH.open({shortname: 'scotlandscanyons'});
-                    };
-        
-                    document.body.appendChild(script);
-                } else {
-                    // If the script is already loaded, just open the Lightframe
-                    FH.open({shortname: 'scotlandscanyons'});
-                }
-            });
-        </script>
+         <!--FH Button-->
+       <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
+
+       <script type="text/javascript">
+           document.getElementById("bookNowLink").addEventListener("click", function(event) {
+               event.preventDefault(); // Prevent the default action of the link
+       
+               // Function to open the Lightframe
+               function openFareHarborLightframe() {
+                   FH.open({
+                       shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                       fallback: 'simple'
+                   });
+               }
+       
+               // Check if the script is already loaded
+               if (!window.FH) {
+                   // Create the script element for FareHarbor Lightframe API
+                   var script = document.createElement('script');
+                   script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+                   script.onload = function() {
+                       // Set up FH methods and open the Lightframe
+                       setupFareHarborMethods();
+                       openFareHarborLightframe();
+                   };
+                   document.body.appendChild(script);
+               } else {
+                   // If the script is already loaded, just open the Lightframe
+                   openFareHarborLightframe();
+               }
+           });
+       
+           function setupFareHarborMethods() {
+               FH.autoLightframe({
+                   className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
+                   callback: function(linkElement){
+                       console.log('FareHarbor link was clicked');
+                   }
+               });
+       
+               // Function to close the Lightframe
+               function closeFareHarborLightframe() {
+                   if (FH.close()) {
+                       console.log('Lightframe closed');
+                   } else {
+                       console.log('Lightframe was not open');
+                   }
+               }
+           }
+       </script>
             
            
         <!--Map Dynamic Load-->

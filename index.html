@@ -278,10 +278,9 @@
                     // Create the script element for FareHarbor Lightframe API
                     var script = document.createElement('script');
                     script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
-                    script.defer = true;
                     script.onload = function() {
-                        // Once the script is loaded, open the Lightframe
-                        FH.open({shortname: 'scotlandscanyons'});
+                        // Once the script is loaded, open the Lightframe and set up FH methods
+                        setupFareHarborMethods();
                     };
         
                     document.body.appendChild(script);
@@ -290,7 +289,26 @@
                     FH.open({shortname: 'scotlandscanyons'});
                 }
             });
+        
+            function setupFareHarborMethods() {
+                FH.autoLightframe({
+                    className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
+                    callback: function(linkElement){
+                      console.log('FareHarbor link was clicked');
+                    }
+                });
+        
+                // Function to close the Lightframe
+                function closeFareHarborLightframe() {
+                    if (FH.close()) {
+                      console.log('Lightframe closed');
+                    } else {
+                      console.log('Lightframe was not open');
+                    }
+                }
+            }
         </script>
+        
         
         <script type="text/javascript">
       // Customizing the activation of Lightframes

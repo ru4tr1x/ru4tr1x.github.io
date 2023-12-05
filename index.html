@@ -268,10 +268,18 @@
        
         <!--FH Button-->
         <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes"><button>Book online</button></a>  
-        
+
         <script type="text/javascript">
             document.getElementById("bookNowLink").addEventListener("click", function(event) {
                 event.preventDefault(); // Prevent the default action of the link
+        
+                // Function to open the Lightframe
+                function openFareHarborLightframe() {
+                    FH.open({
+                        shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                        fallback: 'simple'
+                    });
+                }
         
                 // Check if the script is already loaded
                 if (!window.FH) {
@@ -279,63 +287,37 @@
                     var script = document.createElement('script');
                     script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
                     script.onload = function() {
-                        // Once the script is loaded, open the Lightframe and set up FH methods
+                        // Set up FH methods and open the Lightframe
                         setupFareHarborMethods();
+                        openFareHarborLightframe();
                     };
-        
                     document.body.appendChild(script);
                 } else {
                     // If the script is already loaded, just open the Lightframe
-                    FH.open({shortname: 'scotlandscanyons'});
+                    openFareHarborLightframe();
                 }
             });
         
             function setupFareHarborMethods() {
                 FH.autoLightframe({
-                    className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
+                    className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
                     callback: function(linkElement){
-                      console.log('FareHarbor link was clicked');
+                        console.log('FareHarbor link was clicked');
                     }
                 });
         
                 // Function to close the Lightframe
                 function closeFareHarborLightframe() {
                     if (FH.close()) {
-                      console.log('Lightframe closed');
+                        console.log('Lightframe closed');
                     } else {
-                      console.log('Lightframe was not open');
+                        console.log('Lightframe was not open');
                     }
                 }
             }
         </script>
         
-        
-        <script type="text/javascript">
-      // Customizing the activation of Lightframes
-      FH.autoLightframe({
-        className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbor'
-        callback: function(linkElement){
-          console.log('FareHarbor link was clicked');
-        }
-      });
-    
-      // Example function to manually open the Lightframe
-      function openFareHarborLightframe(shortname) {
-        FH.open({
-          shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
-          // Add other options as needed, like 'flow', 'language', etc.
-        });
-      }
-    
-      // Function to close the Lightframe
-      function closeFareHarborLightframe() {
-        if (FH.close()) {
-          console.log('Lightframe closed');
-        } else {
-          console.log('Lightframe was not open');
-        }
-      }
-        </script>
+
         
         <!--Map Dynamic-->
         <script async>

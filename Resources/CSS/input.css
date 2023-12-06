@@ -93,6 +93,15 @@ p {
     }
 }
 
+blockquote {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 200;
+    text-rendering: optimizeSpeed;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 li {
     text-align: center;
     font-size: 1.5rem;
@@ -197,11 +206,11 @@ button {
     button {
         padding: 1rem;
         border-radius: 5px;
-        width: 100%;
         position: relative;
         top: -4px;
         opacity: 0.9;  
         font-size: 2rem;
+        max-width: 200px;
     }
 }
 

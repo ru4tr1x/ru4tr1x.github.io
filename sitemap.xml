@@ -1,59 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <url>
-        <loc>https://scotlandscanyons.com</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/aboutus.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/discovercanyoning.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/giftvouchers.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/privatecanyoning.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-     <url>
-        <loc>https://scotlandscanyons.com/adventurepathway.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/calendar.html</loc>
-        <lastmod>2023-04-12</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/map.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://scotlandscanyons.com/blog.html</loc>
-        <lastmod>2023-08-11</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
+<url>
+  <loc>https://scotlandscanyons.com/</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/aboutus.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/discovercanyoning.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/privatecanyoning.html</loc>
+  <lastmod>2023-12-07T21:13:03+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/giftvouchers.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/adventurepathway.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/calendar.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/map.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://scotlandscanyons.com/blog.html</loc>
+  <lastmod>2023-12-07T21:13:02+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>

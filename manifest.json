@@ -1,0 +1,16 @@
+{
+    "name": "Scotland's Canyons",
+    "short_name": "Scotland's Canyons",
+    "description": "Canyoning in Scotland, Explore breathtaking natural beauty.",
+    "start_url": "/",
+    "background_color": "#000925",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "icon500",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  

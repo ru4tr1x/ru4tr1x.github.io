@@ -309,7 +309,6 @@ header {
     position: relative;
     top: 140px;
     text-align: center;
-
 }
 
 .title {
@@ -322,8 +321,6 @@ header {
     position: relative;
     height: 100px;
     text-shadow: 2px 2px 5px whitesmoke;
- 
-
 }
 
 .textbox {
@@ -404,7 +401,7 @@ button {
         top: -4px;
         opacity: 0.9;  
         font-size: 2rem;
-        max-width: 200px;
+        max-width: 250px;
     }
 }
 
@@ -417,6 +414,10 @@ button {
 }
 
 /* Specific Styling*/
+
+.heading {
+    padding: 0 2rem;
+}
 
 .subtitle {
     font-size: 1.4rem;

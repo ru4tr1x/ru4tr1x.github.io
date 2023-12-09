@@ -276,7 +276,6 @@ header {
 .topbox { 
     display: flex;
     justify-content: center;
-    background-image: url(https://scotlandscanyons.com/Resources/Images/happy-small-group-leap-for-joy-in-scottish-canyoning-adventure-533kb.webp);
     background-attachment: fixed;
     background-color: rgba(255,255,255,0.1);
     background-blend-mode: lighten;
@@ -328,14 +327,17 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 8rem;
+}
+
+.nobottompad {
+    padding-bottom: 0 !important;
 }
 
 .abox {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 90%;
     padding: 4rem 0;
 }
 
@@ -421,11 +423,13 @@ button {
 
 .subheading {
     font-size: 1.5rem;
+    padding: 0 2rem;
 }
 
 .subtitle {
     font-size: 1.4rem;
     font-style: italic;
+    padding: 0 2rem;
 }
 
 .keyword {
@@ -439,6 +443,10 @@ button {
 .headline {
     color: green;
     font-size: 1.7rem;
+}
+
+.spaced {
+    line-height: 2;
 }
 
 .bigstar {

@@ -419,6 +419,10 @@ button {
     padding: 0 2rem;
 }
 
+.subheading {
+    font-size: 1.5rem;
+}
+
 .subtitle {
     font-size: 1.4rem;
     font-style: italic;

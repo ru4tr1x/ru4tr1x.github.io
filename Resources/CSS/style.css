@@ -499,9 +499,9 @@ footer {
         display: block !important;
     }
     .ftbox{
-        width: 100% !important;
-  text-align: center !important;
-  padding:1rem !important;
+      width: 100% !important;
+      text-align: center !important;
+      padding:1rem !important;
     }
 
 }
@@ -522,8 +522,9 @@ footer {
     flex-shrink: 2;
     line-height: 1.8;
     flex-wrap: wrap;
-    width: 33.33%;
-    min-height: 360px;
+    width: 33.33vw;
+    min-height: 500px;
+    margin-bottom: 50px;
 }
 
 .bottom-footer{

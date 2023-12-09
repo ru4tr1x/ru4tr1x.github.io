@@ -109,14 +109,122 @@ a {
     text-decoration: underline;
     cursor: pointer;
     text-align: center;
-    text-rendering: geometricPrecision;
-    
+    text-rendering: geometricPrecision;    
 }
     
 a:hover {
     text-shadow: none;
     color: aquamarine;
 }
+
+button:hover {
+    background-color: aquamarine;
+    transition: background-color .15s, font-size .15s;
+}
+
+button:active {
+    border-color: #fff;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 10px 20px;
+    color: #000925;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: limegreen;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 1px black;
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (max-width: 1000px) {
+    button {
+        padding: 1rem;
+        border-radius: 5px;
+        position: relative;
+        top: -4px;
+        opacity: 0.9;  
+        font-size: 2rem;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    button {
+        padding: 0.8rem;
+        border-radius: 5px;
+        font-size: 1.4rem;
+    }
+}
+
+/*Fareharbour*/
+
+.fareharbour {
+    position: fixed;
+    bottom: 12px;
+    right: 15px;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1000px) {
+    .fareharbour {
+        display: flex;
+        align-self: center;
+        right: auto;
+    }
+
+}
+
+a.fareharbour {
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    color: #000925;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: limegreen;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    box-shadow: 0 0 1px black;
+    text-rendering: optimizeLegibility;
+}
+
+/* Hover effect */
+a.fareharbour:hover {
+    background-color: aquamarine;
+    font-size: 2.6rem;
+    transition: background-color 0.15s, font-size 0.15s;
+}
+
+/* Active state */
+a.fareharbour:active {
+    border-color: #fff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1000px) {
+    a.fareharbour {
+        padding: 1rem;
+        font-size: 2rem;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    a.fareharbour {
+        padding: 0.8rem;
+        font-size: 1.4rem;
+    }
+}
+
+
 
 /*---------header-------------*/
 
@@ -370,51 +478,6 @@ header {
     height: auto;
 }
 
-button:hover {
-    background-color: aquamarine;
-    transition: background-color .15s, font-size .15s;
-}
-
-button:active {
-    border-color: #fff;
-}
-
-button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    font-size: 2.4rem;
-    padding: 10px 20px;
-    color: #000925;
-    border-radius: 5px;
-    margin: 0 auto;
-    background-color: limegreen;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 0 1px black;
-    text-rendering: optimizeLegibility;
-}
-
-@media screen and (max-width: 1000px) {
-    button {
-        padding: 1rem;
-        border-radius: 5px;
-        position: relative;
-        top: -4px;
-        opacity: 0.9;  
-        font-size: 2rem;
-        max-width: 250px;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    button {
-        padding: 0.8rem;
-        border-radius: 5px;
-        font-size: 1.4rem;
-    }
-}
-
 /* Specific Styling*/
 
 .heading {
@@ -561,25 +624,6 @@ footer {
 .weak {
     font-weight: lighter;
     font-size: large;
-}
-
-
-/*Fareharbour*/
-
-.fareharbour {
-    position: fixed;
-    bottom: 12px;
-    right: 15px;
-    z-index: 3;
-}
-
-@media screen and (max-width: 1000px) {
-    .fareharbour {
-        display: flex;
-        align-self: center;
-        right: auto;
-    }
-
 }
 
 /*Mobile screen Generic*/

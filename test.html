@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* Style the link as a button */
+a.fareharbour {
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 10px 20px;
+    color: #000925;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: limegreen;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 1px black;
+    text-rendering: optimizeLegibility;
+}
+
+/* Hover effect */
+a.fareharbour:hover {
+    background-color: aquamarine;
+    color: aquamarine;
+    transition: background-color 0.15s, font-size 0.15s;
+}
+
+/* Active state */
+a.fareharbour:active {
+    border-color: #fff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1000px) {
+    a.fareharbour {
+        padding: 1rem;
+        font-size: 2rem;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    a.fareharbour {
+        padding: 0.8rem;
+        font-size: 1.4rem;
+    }
+}
+
+</style>    
+<a id="bookNowLink" class="fareharbour" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>
+    
+</html>

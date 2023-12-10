@@ -472,6 +472,11 @@ header {
     max-width: 275px;
 }
 
+.portrait {
+    border: 5px solid white; 
+    border-radius: 100px;
+}
+
 .icon {
     width: 15%; 
     max-width: 75px;

@@ -278,7 +278,7 @@ header {
 .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 21px;
-    color: green;
+    color: #00C04B;
     padding: 10px 10px 10px 10px;
   }
   
@@ -300,7 +300,7 @@ header {
     display: inline-block;
     padding: 8px 10px 8px 10px;
     text-decoration: none;
-    color: green;
+    color: #00C04B;
   }
 .active{
         
@@ -310,7 +310,7 @@ header {
   }
 .nav > .nav-links > a:hover {
     
-    color: green;
+    color: #00C04B;
     border-radius: 5px !important;
   }
 .en-btn{
@@ -513,7 +513,7 @@ header {
 }
 
 .headline {
-    color: green;
+    color: #00C04B;
     font-size: 1.7rem;
 }
 

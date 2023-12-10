@@ -5,12 +5,6 @@
     "start_url": "/",
     "background_color": "#000925",
     "theme_color": "#ffffff",
-    "icons": [
-      {
-        "src": "icon500.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
+    "icons":[{"src":"https://scotlandscanyons.com/icon192.png","sizes":"192x192","type":"image/png"},{"src":"https://scotlandscanyons.com//icon500.png","sizes":"512x512","type":"image/png"}]
   }
   

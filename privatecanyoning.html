@@ -200,26 +200,23 @@
 
                 <!--Calendar Button-->
      
-                
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <br><h3>Book Your Canyoning Adventure: Live Availability</h3>
                     <p>Available throughout the year, our private canyoning experiences can be tailored to your schedule. Contact us anytime to start planning your adventure. We offer guidance on weather conditions and assist in selecting the ideal canyon location for your experience. For added convenience, our local pickup service ensures easy access to your canyoning adventure. For our most popular canyons, check live availability and easily book your preferred date online.</p>
                     
                     <p style="font-style: italic;">For families and groups larger than 6, or for more information on our pickup service, please reach out to us directly to discuss availability and options.</p>
                     <!-- Button to load the FareHarbor calendar -->
-<button id="loadCalendarButton">Load Calendar</button>
+                    <button id="loadCalendarButton">Load Calendar</button>
 
-<div class="calendar">
-<!-- Container for the text and FareHarbor iframe -->
-<div id="fareHarborCalendarContainer" style="position: relative;">
-    <!-- Text to be displayed above the calendar -->
-    <p class="subtitle">Ready to explore? Click a date in the calendar to book your adventure online now!</p>
-    <!-- The iframe will be appended here -->
-  </div></div>
-            </section>
-                
+                    <article class="abox calendar">
+                        <!-- Container for the text and FareHarbor iframe -->
+                        <div id="fareHarborCalendarContainer" style="position: relative;">
+                            <!-- Text to be displayed above the calendar -->
+                            <h3 class="subtitle">Ready to explore? Click a date in the calendar to book your adventure online now!</h3>
+                            <!-- The iframe will be appended here -->
+                        </div>
+                    </article>
 
-            <section>     
                 <article class="abox">
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h3><span class="star bigstar">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h3>
@@ -228,13 +225,10 @@
                     <div class="container">
                         <p class="content">
                             <span class="star">&#9733;</span>&nbsp;<span class="headline">Personalised Advice and Support:</span>&nbsp;Before you book we like to offer personalised advice and answer any questions you may have. Our information and booking office can be contacted every day for any request. We want to make sure that you are going to book the experience that is right for you.
-                    
                             <input type="checkbox" id="learn-more-toggle-1" class="learn-more-checkbox">
                             <label for="learn-more-toggle-1" class="learn-more-btn">Contact Us &darr;</label>
                             <span class="hidden-content">We'd love to hear from you! Give us a <a href="tel:07868367180">call</a>, send us an <a href="mailto:info@scotlandscanyons.com">email</a> or message us on <a class="whatsapp" href="https://wa.me/447868367180?text=My%20Question%20is" target="_blank">whatsapp.</a>
-                    
-                                <label for="learn-more-toggle-1" class="collapse-btn">Show Less &uarr;</label></span>
-                       
+                            <label for="learn-more-toggle-1" class="collapse-btn">Show Less &uarr;</label></span>
                         </p>
                     </div>    
                     <br>
@@ -285,13 +279,13 @@
 
             <!--Youtube Channel-->
 
-            <div class="elfsight-app-e6238450-300e-43e7-a7c6-9520cfdc9388 bottomelf" data-elfsight-app-lazy></div>
+            <div class="elfsight-app-e6238450-300e-43e7-a7c6-9520cfdc9388 bottomelf bottomelf" data-elfsight-app-lazy></div>
 
             <!--Social Icons-->
-            <div class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91 bottomelf" data-elfsight-app-lazy></div>
+            <div class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91 bottomelf bottomelf" data-elfsight-app-lazy></div>
 
             <!--Back to Top-->
-            <div class="elfsight-app-9ffa329d-f876-4df2-bd25-9237e5f317c7 bottomelf" data-elfsight-app-lazy></div>
+            <div class="elfsight-app-9ffa329d-f876-4df2-bd25-9237e5f317c7 bottomelf bottomelf" data-elfsight-app-lazy></div>
   
         </main>
   
@@ -354,7 +348,7 @@
             }
             });
             });
-            </script>
+        </script>
         
         <!--FH Button-->
         <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
@@ -407,9 +401,9 @@
            }
         </script>
 
-    <!--??-->
+        <!--Calendar-->
 
-    <script>
+        <script>
         document.getElementById('loadCalendarButton').addEventListener('click', function() {
             var container = document.getElementById('fareHarborCalendarContainer');
             var button = this;
@@ -427,7 +421,7 @@
                 button.style.display = 'none';
             }
         });
-    </script>
+        </script>
 
         <!--Map Dynamic-->
         <script>

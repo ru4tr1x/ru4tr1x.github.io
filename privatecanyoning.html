@@ -4,7 +4,6 @@
     
     <head>
         <title>Exclusive Canyoning Experiences, Scotland's Best Adventures</title>
-        
         <meta charset="UTF-8">
         <meta name="description" content="Experience private canyoning in Scotland. Uniquely Tailored adventures for individuals, families, and groups. Discover Scotland's best adventure locations.">
         <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
@@ -79,7 +78,7 @@
                 <div class="nav-header">      
                     <div class="nav-title">     
             
-                        <a href="/"><img width="412" height="97" class="logok"  src="Resources/Images/scotlands-canyons-logo-portrait-white.webp" srcset="Resources/Images/scotlands-canyons-logo-portrait-white-313.webp 313w,  Resources/Images/scotlands-canyons-logo-portrait-white-375.webp 375w," sizes="(max-width: 660px) 400px, 500px" alt="Scotland's Canyons Logo"></a>
+                        <a href="/"><img width="412" height="97" class="logok"  src="Resources/Images/scotlands-canyons-logo-portrait-white.webp" srcset="Resources/Images/scotlands-canyons-logo-portrait-white-313.webp 313w,  Resources/Images/scotlands-canyons-logo-portrait-white-375.webp 375w" sizes="(max-width: 660px) 400px, 500px" alt="Scotland's Canyons Logo"></a>
 
                     </div>    
                 </div>
@@ -165,12 +164,12 @@
             </section>   
             
             <!--Gallery-->
-            <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" alt="Gallery of the most recent photos taken on Scotland's Canyons adventures" data-elfsight-app-lazy></div>
+            <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" data-elfsight-app-lazy></div>
 
-            <section class="textbox">    
-                <article class="abox">
+            <section class="textbox">   
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
-                    <h3>Your Adventure at a Glance</h3>
+                    <h3>Your Adventure at a Glance</h3> 
+                <article class="abox">
                     <h3><span class="star">&#9734;</span><strong class="headline"> Duration</strong></h3>
                     <p>Choose from a half-day adventure lasting 4 hours or a full-day experience spanning 6 to 8 hours, complete with a delightful picnic lunch.</p>
                     <h3><span class="star">&#9734;</span><strong class="headline"> The Welcome</strong></h3>
@@ -185,7 +184,7 @@
    
                 <article class="abox">
                     
-                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
+                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <br><h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
                     <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for canyoning enthusiasts of all skill levels.</p>
                     <button style="max-width: 250px;" id="loadElfsightWidget">Search Map</button>
@@ -201,19 +200,28 @@
 
                 <!--Calendar Button-->
      
-                <article class="abox" title="Booking and Availability Information">
-                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
+                
+                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <br><h3>Book Your Canyoning Adventure: Live Availability</h3>
                     <p>Available throughout the year, our private canyoning experiences can be tailored to your schedule. Contact us anytime to start planning your adventure. We offer guidance on weather conditions and assist in selecting the ideal canyon location for your experience. For added convenience, our local pickup service ensures easy access to your canyoning adventure. For our most popular canyons, check live availability and easily book your preferred date online.</p>
                     
                     <p style="font-style: italic;">For families and groups larger than 6, or for more information on our pickup service, please reach out to us directly to discuss availability and options.</p>
-                    <a id="loadfareharborcalendar" href="calendar.html"><button>Go to Calendar</button></a>
-                </article>
+                    <!-- Button to load the FareHarbor calendar -->
+<button id="loadCalendarButton">Load Calendar</button>
 
-                <div id="fareharborcalendar"></div>
-                    
+<div class="calendar">
+<!-- Container for the text and FareHarbor iframe -->
+<div id="fareHarborCalendarContainer" style="position: relative;">
+    <!-- Text to be displayed above the calendar -->
+    <p class="subtitle">Ready to explore? Click a date in the calendar to book your adventure online now!</p>
+    <!-- The iframe will be appended here -->
+  </div></div>
+            </section>
+                
+
+            <section>     
                 <article class="abox">
-                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp, 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
+                    <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">
                     <h3><span class="star bigstar">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h3>
                     <p>Discover some of the aspects that help make our adventures truly unforgettable:<br></p>
                     <br>
@@ -277,13 +285,13 @@
 
             <!--Youtube Channel-->
 
-            <div class="elfsight-app-e6238450-300e-43e7-a7c6-9520cfdc9388 bottomelf" data-elfsight-app-lazy=""></div>
+            <div class="elfsight-app-e6238450-300e-43e7-a7c6-9520cfdc9388 bottomelf" data-elfsight-app-lazy></div>
 
             <!--Social Icons-->
             <div class="elfsight-app-650f176e-5aee-40be-82c5-7d7a25e1ce91 bottomelf" data-elfsight-app-lazy></div>
 
             <!--Back to Top-->
-            <div class="elfsight-app-9ffa329d-f876-4df2-bd25-9237e5f317c7 bottomelf" data-elfsight-app-lazy=""></div>
+            <div class="elfsight-app-9ffa329d-f876-4df2-bd25-9237e5f317c7 bottomelf" data-elfsight-app-lazy></div>
   
         </main>
   
@@ -349,7 +357,7 @@
             </script>
         
         <!--FH Button-->
-        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
+        <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
 
         <script type="text/javascript">
            document.getElementById("bookNowLink").addEventListener("click", function(event) {
@@ -398,6 +406,28 @@
                }
            }
         </script>
+
+    <!--??-->
+
+    <script>
+        document.getElementById('loadCalendarButton').addEventListener('click', function() {
+            var container = document.getElementById('fareHarborCalendarContainer');
+            var button = this;
+            
+            // Check if the iframe already exists
+            if (container.getElementsByTagName('iframe').length === 0) {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?full-items=yes";
+                iframe.width = "100%";
+                iframe.height = "700px"; // Set this to the desired height
+                iframe.frameBorder = "0";
+                container.appendChild(iframe);
+ 
+                // Hide the button
+                button.style.display = 'none';
+            }
+        });
+    </script>
 
         <!--Map Dynamic-->
         <script>

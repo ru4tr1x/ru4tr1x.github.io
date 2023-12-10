@@ -180,7 +180,11 @@ button {
 
 }
 
-a.fareharbour {
+#button {
+    position: relative;
+}
+
+a.button {
     padding: 10px 20px;
     font-size: 2.5rem;
     color: #000925;
@@ -191,26 +195,25 @@ a.fareharbour {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    position: fixed;
     box-shadow: 0 0 1px black;
     text-rendering: optimizeLegibility;
 }
 
 /* Hover effect */
-a.fareharbour:hover {
+a.button:hover {
     background-color: aquamarine;
     font-size: 2.6rem;
     transition: background-color 0.15s, font-size 0.15s;
 }
 
 /* Active state */
-a.fareharbour:active {
+a.button:active {
     border-color: #fff;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 1000px) {
-    a.fareharbour {
+    a.button {
         padding: 1rem;
         font-size: 2rem;
         max-width: 250px;
@@ -218,13 +221,15 @@ a.fareharbour:active {
 }
 
 @media screen and (max-width: 660px) {
-    a.fareharbour {
+    a.button {
         padding: 0.8rem;
         font-size: 1.4rem;
     }
 }
 
-
+.calendar {
+    max-width: 600px;
+}
 
 /*---------header-------------*/
 

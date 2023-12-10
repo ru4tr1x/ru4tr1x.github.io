@@ -178,38 +178,41 @@
             <section class="textbox">
                     
                     <img loading="lazy" class="icon" width="262" height="206" src="Resources/Images/transparent-white-no-txt.webp" srcset="Resources/Images/transparent-white-no-txt-150.webp 130w, Resources/Images/transparent-white-no-txt-100.webp 90w" sizes="(max-width: 660px) 50px, 75px" alt="Scotland's Canyons Icon">            
-                    <h2>Check Live Availability</h2>                             
-                    <p class="subtitle">Families and groups with more than 6 people please contact us directly for availability</p>
+                    <h2>Check Live Availability in Dollar Glen</h2>                             
+                    <p class="subtitle">For other locations, families and groups with more than 6 people please contact us directly for availability</p>
                     <!-- Button to load the FareHarbor calendar -->
-                    <button id="loadFareHarborCalendar">View Calendar</button>
-
+                    <button id="loadCalendarButton">Load Calendar</button>
+            <!-- Container for the FareHarbor calendar -->
+            <div class="calendar">               
+                <!-- Container for the text and FareHarbor iframe -->    
+                <div id="fareHarborCalendarContainer" style="position: relative">        
+                    <!-- Text to be displayed above the calendar -->
+                    <p style="position: relative; top: -10px; left: 0; width: 100%; text-align: center;">Ready to explore? Click a date in the calendar to book your adventure online now!</p>
+                    <!-- The iframe will be appended here -->
+                </div>  
             </section>
 
-            <!-- Container for the FareHarbor calendar -->
-            <div id="fareHarborCalendarContainer"></div>
-
             <script>
-        document.getElementById('loadFareHarborCalendar').addEventListener('click', function() {
-            var container = document.getElementById('fareHarborCalendarContainer');
-            var button = this;
-
-            // Check if the iframe is already created
-            if (container.getElementsByTagName('iframe').length === 0) {
-                var iframe = document.createElement('iframe');
-                iframe.style.width = "100%";
-                iframe.style.height = "600px"; // Adjust the height as needed
-                iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
-                
-                // Add the iframe to the container
-                container.appendChild(iframe);
-
-                // Event listener to hide the button once the iframe is loaded
-                iframe.onload = function() {
-                    button.style.display = 'none';
-                };
-            }
-        });
+                document.getElementById('loadCalendarButton').addEventListener('click', function() {
+                    var container = document.getElementById('fareHarborCalendarContainer');
+                    var button = this;
+                    
+                    // Check if the iframe already exists
+                    if (container.getElementsByTagName('iframe').length === 0) {
+                        var iframe = document.createElement('iframe');
+                        iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
+                        iframe.width = "100%";
+                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.frameBorder = "0";
+                        container.appendChild(iframe);
+         
+                        // Hide the button
+                        button.style.display = 'none';
+                    }
+                });
             </script>
+
+            
 
             <section class="textbox">
                                 
@@ -317,7 +320,7 @@
             </script>
         
         <!--FH Button-->
-        <a id="bookNowLink" class=fareharbour href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
+        <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
         
         <script type="text/javascript">
             document.getElementById("bookNowLink").addEventListener("click", function(event) {

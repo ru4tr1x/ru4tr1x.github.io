@@ -114,11 +114,11 @@ a {
     
 a:hover {
     text-shadow: none;
-    color: aquamarine;
+    color: lime;
 }
 
 button:hover {
-    background-color: aquamarine;
+    background-color: lime;
     transition: background-color .15s, font-size .15s;
 }
 

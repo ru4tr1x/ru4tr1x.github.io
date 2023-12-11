@@ -392,16 +392,16 @@ header {
           justify-content: space-between; /* Distribute links evenly horizontally */
           align-content: space-between; /* Distribute links evenly vertically */
           margin-top: 20px; /* Add spacing between content and links */
-          width: 80%;
+          width: 95%;
           background-color: #000925; /* Set the background color */
       }
   
       .toplink {
           width: calc(33.33% - 10px); /* Adjust the width to make them square and add margin */
-          height: 100px; /* Same as the width to make them square */
+          height: 110px; /* Same as the width to make them square */
           background-color: #1a1a1a; /* Change the link background color */
           overflow: hidden; /* Hide the overflow */
-          margin: 0 5px 10px; /* Margin for spacing between links */
+          margin: 0 0px 15px; /* Margin for spacing between links */
           display: flex; /* Add display flex to center image vertically and horizontally */
           align-items: center;
           justify-content: center;

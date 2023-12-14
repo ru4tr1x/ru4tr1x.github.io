@@ -10,7 +10,7 @@
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="canyoning Scotland, adventure tours, Scotland canyons, outdoor activities, nature experiences">
         <meta name="author" content="Scotland's Canyons Team">
-        <meta name="publisher" content="Adventure Logic Ltd">       
+        <meta name="publisher" content="Adventure Logic Ltd">     
         <meta property="og:site_name" content="Scotland's Canyons">
         <meta property="fb:app_id" content="1664968410589846">
         <meta property="og:url" content="https://scotlandscanyons.com/">
@@ -69,10 +69,6 @@
         </script>        
     </head>
     <body class="page-content">
-    
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQZ4VTW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
  
         <!--Main Menu--> 
         <header class="header">   
@@ -118,7 +114,7 @@
         <main>
             
             <!--Box 1 HEADELINE IMAGE-->
-            <section class="topbox" style="background-image: url(Resources/Images/happy-small-group-leap-for-joy-in-scottish-canyoning-adventure-533kb.webp);">
+            <section class="topbox">
                  <div class="titlebox">
                     <div class="abox">
                         <h1>Adventure Beyond The Ordinary<br><span class="subtitle keyword">Canyoning In Scotland</span></h1>
@@ -443,12 +439,34 @@
     }
 });
         </script>
+
+        <!--GTM Event listner load on scroll-->
+        <script>
+            window.onscroll = function() {
+                // Check if the GTM script is already loaded
+                if (!window.gtmScriptLoaded) {
+                    // Create the GTM script tag
+                    var gtmScript = document.createElement('script');
+                    gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
+                    gtmScript.async = true;
+        
+                    // Append the script tag to the head
+                    document.head.appendChild(gtmScript);
+        
+                    // Set a flag to indicate the script is loaded
+                    window.gtmScriptLoaded = true;
+        
+                    // Remove the scroll event listener since it's no longer needed
+                    window.onscroll = null;
+                }
+            };
+        </script>
         
         <!--cookieyes banner --> 
         <script id="cookieyes" src="https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js" async></script>
     
         <!--GTM-->
-        <script src="https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW" async></script>
+        <!--<script src="https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW" async></script>-->
 
         <!--Elfsight Apps-->
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

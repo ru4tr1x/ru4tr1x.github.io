@@ -1,3 +1,7 @@
+.topbox {
+    background-image: url(https://scotlandscanyons.com/Resources/Images/happy-small-group-leap-for-joy-in-scottish-canyoning-adventure-533kb.webp);
+}
+
 .link-container {
     display: flex;
     flex-wrap: wrap;

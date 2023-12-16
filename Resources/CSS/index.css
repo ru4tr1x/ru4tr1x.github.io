@@ -8,8 +8,14 @@
     justify-content: space-between; /* Distribute links evenly horizontally */
     align-content: space-between; /* Distribute links evenly vertically */
     margin-top: 20px; /* Add spacing between content and links */
-    width: 95%;
+    width: 80%;
     background-color: #000925; /* Set the background color */
+}
+
+@media screen and (max-width: 660px) {
+    .link-container {
+        width: 95%;
+    }
 }
 
 .toplink {

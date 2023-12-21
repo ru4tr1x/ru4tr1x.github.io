@@ -9,7 +9,9 @@ layout: null
     {% unless page.sitemap == false %}
       <url>
         <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
+        <lastmod>{% if page.last_modified_at or page.date %}
+<lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
+{% endif %}</lastmod>jekyll
         <changefreq>{{ page.changefreq | default: 'weekly' }}</changefreq>
         <priority>{{ page.priority | default: 0.5 }}</priority>
         {% if page.image %}

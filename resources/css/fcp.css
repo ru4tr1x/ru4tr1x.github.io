@@ -72,7 +72,7 @@ header {
   }
 .active{
         
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: limegreen !important;
         border-radius: 5px !important;
   }
@@ -123,7 +123,6 @@ header {
       display: block;
       width: 100%;
       background-color: #000925;
-      opacity: 0.98;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;

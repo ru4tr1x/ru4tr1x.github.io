@@ -1,21 +1,11 @@
-.topbox {
-    background-image: url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/e0dba64a-4c31-4d88-3c77-aed2a0f59600/w=1920,fit=cover);
-}
-
 .link-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distribute links evenly horizontally */
     align-content: space-between; /* Distribute links evenly vertically */
     margin-top: 20px; /* Add spacing between content and links */
-    width: 80%;
+    width: 95%;
     background-color: #000925; /* Set the background color */
-}
-
-@media screen and (max-width: 660px) {
-    .link-container {
-        width: 95%;
-    }
 }
 
 .toplink {

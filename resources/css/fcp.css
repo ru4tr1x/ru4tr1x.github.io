@@ -145,6 +145,7 @@ header {
   
       header a {
           color: white !important;
+          text-decoration: none;
         
       }
       .nav-links{
@@ -161,6 +162,6 @@ header {
     
     ul li {
         margin: 0;
-        padding: 0;
+        padding: 10px;
     }
     

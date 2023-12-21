@@ -73,8 +73,10 @@ meta_description: "Canyoning in Scotland Blog: Discover a wild, unique and exper
         {% for post in site.posts %}
         <article class="abox">  
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-        </article>
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">read&nbsp;full&nbsp;article</a></p>
+            
+        </article> 
+        
         {% endfor %}
     </section>
 </main>

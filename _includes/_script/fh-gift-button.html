@@ -1,0 +1,32 @@
+<!--FH Button-->
+
+<a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes&flow=660908">Order online</a>  
+
+<script type="text/javascript">
+document.getElementById("bookNowLink").addEventListener("click", function(event) {
+event.preventDefault(); // Prevent the default action of the link
+
+// Check if the script is already loaded
+if (!window.FH) {
+    // Create the script element for FareHarbor Lightframe API
+    var script = document.createElement('script');
+    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+    script.defer = true;
+    script.onload = function() {
+        // Once the script is loaded, open the Lightframe with specific flow
+        FH.open({
+            shortname: 'scotlandscanyons',
+            flow: 660908 // Add the specific flow ID here
+        });
+    };
+
+    document.body.appendChild(script);
+} else {
+    // If the script is already loaded, open the Lightframe with specific flow
+    FH.open({
+        shortname: 'scotlandscanyons',
+        flow: 660908 // Add the specific flow ID here
+    });
+}
+});
+</script>

@@ -1,0 +1,57 @@
+<!--Main Menu--> 
+<header class="header">   
+
+    <nav class="nav">
+        
+        <input type="checkbox" id="nav-check">
+    
+        <div class="nav-header">      
+                   
+            <div class="nav-title">     
+        
+                <!--<a href="/"><img width="412" height="97" class="logok" href="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/91e6d326-1cff-247f5557-4afe-4c37-91c2-8c1973f49d00/w=250,fit=scale-down" alt="Canyoning in Scotland, Scotland's Canyons Logo"></a>-->
+                <a href="/">{% include _images/logo-portrait.html %}</a>
+
+            </div>    
+        
+        </div>
+        
+        <div class="nav-btn">
+            <label for="nav-check" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>     
+
+        <ul class="nav-links">
+            <a {% if page.url == '/' %}class="active"{% endif %} href="/">Home<br>Canyoning in Scotland</a> 
+            <a {% if page.url == '/aboutus' %}class="active"{% endif %} href="/about-us">About us<br>Friendly & professional</a>
+            <a {% if page.url == '/disovercanyoning' %}class="active"{% endif %} href="/discover-canyoning">Discover<br>First time canyoning?</a> 
+            <a {% if page.url == '/privatecanyoning' %}class="active"{% endif %} href="/private-canyoning">Private<br>Groups & families</a>    
+            <a {% if page.url == '/giftvouchers' %}class="active"{% endif %} href="/gift-vouchers">Gift certificate<br>Gift experiences</a>    
+            <a {% if page.url == '/adventurepathway]' %}class="active"{% endif %} href="/adventure-pathway">Training<br>The adventure pathway</a>   
+            <a {% if page.url == '/calendar' %}class="active"{% endif %} href="/calendar">Calendar<br>Live availability</a>   
+            <a {% if page.url == '/map' %}class="active"{% endif %} href="/map">Map<br>Find a location</a>     
+            <a {% if page.url == '/blog' %}class="active"{% endif %} href="/blog">Blog<br>Discover more</a>
+        </ul>
+    
+    </nav>
+
+</header>
+
+<!--Menu Close-->
+<script>
+    // JavaScript to close the navigation menu when clicking outside
+    document.addEventListener("DOMContentLoaded", function () {
+    const navCheckbox = document.getElementById("nav-check");
+    const pageContent = document.querySelector(".page-content");
+    
+    pageContent.addEventListener("click", function (event) {
+    if (navCheckbox.checked && !event.target.closest(".nav")) {
+    // If the menu is open and a click occurs outside the menu, close the menu
+    navCheckbox.checked = false;
+    }
+    });
+    });
+</script>

@@ -1,0 +1,22 @@
+ <!--Event Listner Scroll-->
+ <script>
+    function loadScripts() {
+        // Load CookieYes Script
+        var script1 = document.createElement('script');
+        script1.src = 'https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js';
+        script1.async = true;
+        document.body.appendChild(script1);
+
+        // Load Google Tag Manager Script
+        var script2 = document.createElement('script');
+        script2.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
+        script2.async = true;
+        document.body.appendChild(script2);
+
+        // Remove the event listener after loading the scripts
+        window.removeEventListener('scroll', loadScripts);
+    }
+
+    // Attach the loadScripts function to the scroll event
+    window.addEventListener('scroll', loadScripts, { once: true });
+    </script>

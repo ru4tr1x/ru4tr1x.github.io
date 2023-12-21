@@ -1,0 +1,39 @@
+           
+<div class="middle">
+<button id="loadElfsightWidget">Search Map</button> 
+</div>
+
+<div id="elfsightWidgetContainer"></div>
+
+<script>
+    document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+var container = document.getElementById("elfsightWidgetContainer");
+
+// Check if the widget has already been loaded
+if (container.children.length === 0) {
+// Create the message element
+var message = document.createElement('p');
+message.style.fontStyle = "italic";
+message.className = "mobilehide";
+message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+message.style.marginBottom = "20px"; // 20px space above the widget
+
+// Create the script element for Elfsight Platform
+var script = document.createElement('script');
+script.src = "https://static.elfsight.com/platform/platform.js";
+script.defer = true;
+
+// Create the div container for the widget
+var widgetDiv = document.createElement('div');
+widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
+
+// Append the message, script, and div to the container
+container.appendChild(message);
+container.appendChild(script);
+container.appendChild(widgetDiv);
+
+// Hide the button after loading the widget
+this.style.display = "none";
+}
+});
+</script>

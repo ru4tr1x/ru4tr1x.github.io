@@ -1,0 +1,39 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {% for page in site.html_pages %}
+    {% unless page.sitemap == false %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
+        <lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>{{ page.changefreq | default: 'weekly' }}</changefreq>
+        <priority>{{ page.priority | default: 0.5 }}</priority>
+        {% if page.image %}
+          <image:image>
+            <image:loc>{{ site.url }}{{ page.image }}</image:loc>
+          </image:image>
+        {% endif %}
+        {% if page.lang %}
+          <xhtml:link rel="alternate" hreflang="{{ page.lang }}" href="{{ site.url }}{{ page.url }}" />
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+      <changefreq>{{ post.changefreq | default: 'monthly' }}</changefreq>
+      <priority>{{ post.priority | default: 0.5 }}</priority>
+      {% for image in post.images %}
+        <image:image>
+          <image:loc>{{ site.url }}{{ image }}</image:loc>
+        </image:image>
+      {% endfor %}
+    </url>
+  {% endfor %}
+</urlset>

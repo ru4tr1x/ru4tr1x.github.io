@@ -1,0 +1,72 @@
+
+.topbox {
+    background-image: url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/69251f4f-c4e6-4174-81f0-aaa01f1f6b00/w=1920,fit=cover); 
+}
+    
+      .link-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between; /* Distribute links evenly horizontally */
+          align-content: space-between; /* Distribute links evenly vertically */
+          margin-top: 20px; /* Add spacing between content and links */
+          width: 80%;
+          background-color: #000925; /* Set the background color */
+      }
+  
+      .toplink {
+          width: calc(50% - 10px); /* Adjust the width to make them square and add margin */
+          height: 110px; /* Same as the width to make them square */
+          background-color: #1a1a1a; /* Change the link background color */
+          overflow: hidden; /* Hide the overflow */
+          margin: 0 0px 15px; /* Margin for spacing between links */
+          display: flex; /* Add display flex to center image vertically and horizontally */
+          align-items: center;
+          justify-content: center;
+          position: relative; /* Required for absolute positioning */
+      }
+  
+      .image-container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+      }
+  
+      .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Maintain aspect ratio and fit inside the container */
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a drop shadow to the image */
+          border-radius: 5px;
+      }
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0); /* Initial transparent background */
+          transition: background-color 0.1s; /* Add a transition for background color */
+      }
+
+
+      .toplink:hover .overlay {
+          background-color: rgba(255, 255, 255, 0.1); /* Lighten the overlay on hover */
+      }
+
+  
+      .link-title {
+          position: absolute; /* Position the title absolutely within the link */
+          top: 75%; /* Center vertically */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Center the title precisely */
+          background-color: rgba(0, 0, 0, 0.7); /* Background color for the title */
+          color: white; /* Text color for the title */
+          padding: 5px 10px; /* Add padding to the title for better visibility */
+          font-size: 16px; /* Adjust font size for legibility */
+          
+      }
+ 

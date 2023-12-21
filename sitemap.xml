@@ -9,14 +9,14 @@ layout: null
     {% unless page.sitemap == false %}
       <url>
         <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-        <lastmod>{% if page.last_modified_at or page.date %}
-<lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
-{% endif %}</lastmod>jekyll
+        {% if page.last_modified_at or page.date %}
+          <lastmod>{{ page.last_modified_at | default: page.date | date: "%Y-%m-%d" }}</lastmod>
+        {% endif %}
         <changefreq>{{ page.changefreq | default: 'weekly' }}</changefreq>
         <priority>{{ page.priority | default: 0.5 }}</priority>
         {% if page.image %}
           <image:image>
-            <image:loc>{{ site.url }}{{ page.image }}</image:loc>
+            <image:loc>{{ page.image }}</image:loc>
           </image:image>
         {% endif %}
         {% if page.lang %}
@@ -39,3 +39,4 @@ layout: null
     </url>
   {% endfor %}
 </urlset>
+

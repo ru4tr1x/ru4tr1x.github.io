@@ -20,6 +20,10 @@ header {
     }
 }
 
+.sublink {
+  font-size: 1.3rem;
+}
+
 .nav {
     height: 50px;
     width: 100%;

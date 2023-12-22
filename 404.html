@@ -2,25 +2,18 @@
 permalink: /404.html
 layout: default
 sitemap: false
+css_file: index.css
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
+<div class="textbox nobottompad">
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <h2><strong>Page not found :(</strong></h2>
+  <p>Sorry the requested page could not be found, please check the URL or use the navigation menu</p>
 </div>
+
+<div class="textbox">
+    {% include page-nav.html%}
+</div>
+
+

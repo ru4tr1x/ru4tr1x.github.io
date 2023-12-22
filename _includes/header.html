@@ -32,20 +32,3 @@
     
     </nav>
 </header>
-
-
-<!--Menu Close-->
-<script>
-    // JavaScript to close the navigation menu when clicking outside
-    document.addEventListener("DOMContentLoaded", function () {
-    const navCheckbox = document.getElementById("nav-check");
-    const pageContent = document.querySelector(".page-content");
-    
-    pageContent.addEventListener("click", function (event) {
-    if (navCheckbox.checked && !event.target.closest(".nav")) {
-    // If the menu is open and a click occurs outside the menu, close the menu
-    navCheckbox.checked = false;
-    }
-    });
-    });
-</script>

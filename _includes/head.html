@@ -1,12 +1,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    <title>
-        {% if page.title %}
-          {{ page.title }}
-        {% else %}
-        Canyoning in Scotland, Adventure Beyond The Ordinary
-        {% endif %}
-      </title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Canyoning in Scotland, Adventure Beyond The Ordinary{% endif %}</title>
        
     {% if page.meta_description %}
     <meta name="description" content="{{ page.meta_description | escape }}">
@@ -85,19 +79,6 @@
         }
       }
       </script>
-      <!-- ... other elements you may want to include ... -->
-    
-    <!--{% if page.schema_organization %}
-    <script type="application/ld+json">
-    {{ page.schema_organization | jsonify }}
-    </script>
-    {% endif %}
-
-    {% if page.schema_image %}
-    <script type="application/ld+json">
-    {{ page.schema_image | jsonify }}
-    </script>
-    {% endif %}-->
 
     <!--Elfsight Apps-->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

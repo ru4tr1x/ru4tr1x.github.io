@@ -46,7 +46,48 @@
     <link rel="canonical" href="{{ page.canonical_url }}" />
     {% endif %}       
 
-    {% if page.schema_organization %}
+    <script type="application/ld+json">
+      {
+        "@context": "{{ page.context }}",
+        "@type": "{{ page.type }}",
+        "name": "{{ page.name }}",
+        "url": "{{ page.url }}",
+        "logo": "{{ page.logo }}",
+        "sameAs": {{ page.sameAs | jsonify }},
+        "contactPoint": {
+          "@type": "{{ page.contactPoint.type }}",
+          "telephone": "{{ page.contactPoint.telephone }}",
+          "contactType": "{{ page.contactPoint.contactType }}"
+        },
+        "address": {
+          "@type": "{{ page.address.type }}",
+          "streetAddress": {{ page.address.streetAddress }}
+          "addressLocality": {{ page.address.addressLocality }}
+          "addressRegion": {{ page.address.addressRegion }}
+          "postalCode": {{ page.address.postalCode }}
+          "addressCountry": "{{ page.address.addressCountry }}"
+        },
+        "image": {
+          "@context": "{{ page.schema_image.context }}",
+          "@type": "{{ page.schema_image.type }}",
+          "contentUrl": "{{ page.schema_image.contentUrl }}",
+          "description": "{{ page.schema_image.description }}",
+          "name": "{{ page.schema_image.name }}",
+          "author": {
+            "@type": "{{ page.schema_image.author.type }}",
+            "name": "{{ page.schema_image.author.name }}"
+          },
+          "copyrightHolder": {
+            "@type": "{{ page.schema_image.copyrightHolder.type }}",
+            "name": "{{ page.schema_image.copyrightHolder.name }}"
+          },
+          "uploadDate": "{{ page.schema_image.uploadDate }}"
+        }
+      }
+      </script>
+      <!-- ... other elements you may want to include ... -->
+    
+    <!--{% if page.schema_organization %}
     <script type="application/ld+json">
     {{ page.schema_organization | jsonify }}
     </script>
@@ -56,7 +97,7 @@
     <script type="application/ld+json">
     {{ page.schema_image | jsonify }}
     </script>
-    {% endif %}
+    {% endif %}-->
 
     <!--Elfsight Apps-->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

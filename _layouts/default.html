@@ -159,6 +159,26 @@ if (!window.FH) {
     // Attach the loadGTMScript function to the scroll event
     window.addEventListener('scroll', loadGTMScript, { once: true });
                 </script>
+            {% when 'dc' %}
+            <script>
+                document.getElementById('loadCalendarButton').addEventListener('click', function() {
+                    var container = document.getElementById('fareHarborCalendarContainer');
+                    var button = this;
+                    
+                    // Check if the iframe already exists
+                    if (container.getElementsByTagName('iframe').length === 0) {
+                        var iframe = document.createElement('iframe');
+                        iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
+                        iframe.width = "100%";
+                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.frameBorder = "0";
+                        container.appendChild(iframe);
+         
+                        // Hide the button
+                        button.style.display = 'none';
+                    }
+                });
+            </script>    
             {% endcase %}
         {% endfor %}
        <!--Event Listener CookieYes On Scroll-->

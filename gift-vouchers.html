@@ -1,6 +1,10 @@
 ---
-layout: "default"
-title: The ultimate gift experience, unique and clever gift idea.
+layout: default
+scripts:
+  - map
+  - fhgift
+  - gtm
+title: Gift Vouchers for Unforgettable Adventures In Scotland
 date: 2023-12-21
 permalink: /gift-vouchers
 redirect_from:
@@ -52,23 +56,14 @@ schema_image:
     type: "Organization"
     name: "Scotland's Canyons"
   uploadDate: "2023-12-15"  
-image: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/b252687c-8af5-4254-c08d-8f638cebe600/w=1200,fit=scale-down"
+image: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/b252687c-8af5-4254-c08d-8f638cebe600/w=1920,fit=scale-down"
 description: "Experience the thrill of canyoning in Scotland's stunning natural landscapes with our small-group tours. Led by experienced guides, you'll explore waterfalls, gorges, and rapids in a safe and fun environment."
 meta_description: "Gift an extraordinary canyoning adventure with Scotland's Canyons. Offering half or full-day vouchers for uniquely personalised experiences, order online now!"
-
 ---
 
 <main>
 
-    <section class="topbox">
-                        
-            <div class="titlebox">
-                     
-                <h1>Gift The Thrill Of Canyoning In Scotland<br><span class="subtitle">Adventure Gift Experience</span></h1>
-
-            </div>
-          
-    </section>
+    {% include topbox.html %}
 
     <section class="textbox nobottompad">
 
@@ -77,8 +72,8 @@ meta_description: "Gift an extraordinary canyoning adventure with Scotland's Can
         <p>Exploring the breathtaking beauty of Scotland's Canyons is an extraordinary gift. Our certificates unlock genuine adventure and unforgettable memories. Our expert guides offer tailor-made experiences, each carefully crafted to fulfill every wish. At Scotland's Canyons, we don't just sell experiences; we create immersive, personalised adventures that become lifelong tales to tell.</p> 
         <img class="img" src="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/83c3496e-55b5-4131-794d-2821170c3c00/w=1500,fit=cover" alt="Scotland's Canyons gift experience certificate/voucher">
         <br>
-        <!--Box 3 Reviews-->
-        <div class="elfsight-app-98040958-23d3-4ac0-bd86-0eade56084b6" data-elfsight-app-lazy></div>
+        {% include _widgets/all-in-one-reviews.html %}
+        
         
         <article class="abox">
             <div class="icon"></div>
@@ -86,16 +81,10 @@ meta_description: "Gift an extraordinary canyoning adventure with Scotland's Can
             <p>At Scotland's Canyons, we believe in the power of intimate experiences. Whether you're gifting an adventure to an individual, a couple, or a group of up to 6 guests, we're here to make it extraordinary. Small groups are our specialty, ensuring that every adventure we craft is as unique and personalized as the bond you share. You can trust us to turn your gift into an unforgettable and tailor-made experience.
             <br><br><span class="subtitle">Guests must be over 18 years of age or accompanied by a parent or legal guardian.</span></p>
         </article>
-        
-        <article class="abox">  
-            <div class="icon"></div>
-            <h2>Gallery<br><span class="subheading">Photos from recent adventures</span></h2>
-        </article>
-
+    
     </section>    
-
-    <!--Gallery-->
-    <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" data-elfsight-app-lazy></div>
+        
+       {% include _gallery/main.html %}
 
     <section class="textbox nobottompad">
         
@@ -128,7 +117,7 @@ meta_description: "Gift an extraordinary canyoning adventure with Scotland's Can
     
     </section>
 
-    {% include _script/dynamic-map.html %}
+    {% include map-button.html %}
 
     <section class="textbox">
 
@@ -193,37 +182,3 @@ meta_description: "Gift an extraordinary canyoning adventure with Scotland's Can
     </section>
 
 </main>
-
-<!--FH Button-->
-
-<a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes&flow=660908">Order online</a>  
-
-<script type="text/javascript">
-document.getElementById("bookNowLink").addEventListener("click", function(event) {
-event.preventDefault(); // Prevent the default action of the link
-
-// Check if the script is already loaded
-if (!window.FH) {
-    // Create the script element for FareHarbor Lightframe API
-    var script = document.createElement('script');
-    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
-    script.defer = true;
-    script.onload = function() {
-        // Once the script is loaded, open the Lightframe with specific flow
-        FH.open({
-            shortname: 'scotlandscanyons',
-            flow: 660908 // Add the specific flow ID here
-        });
-    };
-
-    document.body.appendChild(script);
-} else {
-    // If the script is already loaded, open the Lightframe with specific flow
-    FH.open({
-        shortname: 'scotlandscanyons',
-        flow: 660908 // Add the specific flow ID here
-    });
-}
-});
-</script>
-{% include _script/scroll-event.html %}

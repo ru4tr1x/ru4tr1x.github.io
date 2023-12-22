@@ -1,5 +1,9 @@
 ---
 layout: "default"
+scripts:
+  - map
+  - fh
+  - gtm
 title: Exclusive Canyoning Experiences, Scotland's Best Adventures
 permalink: /private-canyoning
 date: 2023-12-21
@@ -52,7 +56,7 @@ schema_image:
     type: "Organization"
     name: "Scotland's Canyons"
   uploadDate: "2023-12-15"  
-image: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/1df7efac-fc74-4d67-d891-39616a080400/w=1200,fit=scale-down"
+image: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/1df7efac-fc74-4d67-d891-39616a080400/w=1920,fit=scale-down"
 description: "Experience the thrill of canyoning in Scotland's stunning natural landscapes with our small-group tours. Led by experienced guides, you'll explore waterfalls, gorges, and rapids in a safe and fun environment."
 meta_description: "Experience private canyoning in Scotland. Uniquely Tailored adventures for individuals, families, and groups. Discover Scotland's best adventure locations."
 
@@ -60,19 +64,7 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
 
 <main>
 
-    <section class="topbox">
-        
-        <div class="titlebox">
-                                
-            <div class="abox">        
-                
-                <h1>Tailor-Made Canyoning Adventures<br><span class="subtitle">Discover Scotland's Wild & Hidden Gems</span></h1>
-                    
-            </div>
-        
-        </div>
-        
-    </section>
+    {% include topbox.html %}
     
     <section class="textbox nobottompad">    
 
@@ -83,11 +75,7 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
             <p>More and more people are choosing to go private. Exclusive trips offer a unique, tailored adventure where every detail is focused on providing you with an unforgettable experience. Our approach to private trips is deeply personal and highly flexible, ensuring your adventure is crafted to perfectly align with your preferences. From planning to execution, we are dedicated to maximizing your enjoyment and making the most of your time in Scotland's breathtaking canyons.</p>
             <br><br>
             <div class="icon"></div>
-            <h3>What our guests say</h3>
-            <p>Read these randomly selected reviews from recent adventures</p>
-            <br>
-            <!--Box 3 Reviews-->
-            <div class="elfsight-app-98040958-23d3-4ac0-bd86-0eade56084b6" data-elfsight-app-lazy></div>
+            {% include random-reviews.html %}
         
         </article>
 
@@ -107,41 +95,10 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
             </p>
             
         </article>
-            
-        <article class="abox nobottompad">
-
-            <div class="icon"></div>
-            <h3>Shot Of The Day</h3>
-            <br>
-            <div class="container">
-                <p class="content">Our photos illustrate why private canyoning is one of the best adventure activities in Scotland. Whether it's your first time or if you are a seasoned adventurer, Scotland has an ideal canyoning location for everyone. 
-                    <input type="checkbox" id="learn-more-toggle-6" class="learn-more-checkbox">
-                    <label for="learn-more-toggle-6" class="learn-more-btn">Read More &darr;</label>
-                    <span class="hidden-content"><br><br>Discover the excitement of prvate canyoning through these recent action shots from our adventures inlcuding...<br>
-                        <br><br>
-                        &#9733; Beginner canyoning experiences near Edinburgh, Glasgow, and Fife,
-                        <br><br>
-                        &#9733; Fun family canyoning adventures in Dollar Glen and across Scotland,
-                        <br><br>
-                        &#9733; Wild, adrenaline-filled adventures in Perthshire and the Highlands,
-                        <br><br>
-                        &#9733; Skills training and team building for all levels in Scotland's canyoning classroom,
-                        <br> <br>
-                        &#9733; Unique adventures for solo travellers, couples, or families, 
-                        <br><br>
-                        &#9733; Ideal activity experiences for groups, team building, stag, and hen parties.
-                        <br><br>
-                        On your adventure we'll happily take as many photos for you as you like, sharing them straight after the trip.
-                    <label for="learn-more-toggle-6" class="collapse-btn">Show Less &uarr;</label></span>
-                </p>
-                <br>
-            </div>
-        </article>
     
-    </section>   
+    </section>
     
-    <!--Gallery-->
-    <div class="elfsight-app-7d68714f-e79c-42da-bc34-31c00f1ef9f7" data-elfsight-app-lazy></div>
+    {% include _gallery/main.html %}
 
     <section class="textbox nobottompad">   
             <div class="icon"></div>
@@ -168,20 +125,18 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
         <article class="abox">
             
             <div class="icon"></div>
-            <br><h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
+            <h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
             <br>
             <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for canyoning enthusiasts of all skill levels.</p>
             
-        </article>
-            
+        </article> 
 
     </section>
-        {% include _script/dynamic-map.html %}
+        {% include map-button.html %}
     
     <section class="textbox">
 
         <div class="icon"></div>
-        <br>
         <h3>Check Live Availability and Book Your Canyoning Adventure</h3>
         <br>
         <p>Available throughout the year, our private canyoning experiences can be tailored to your schedule. Contact us anytime to start planning your adventure. We offer guidance on weather conditions and assist in selecting the ideal canyon location for your experience. For added convenience, our local pickup service ensures easy access to your canyoning adventure. For our most popular canyons, check live availability and easily book your preferred date online.</p>        
@@ -198,10 +153,7 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
 
         <article class="abox">
             <div class="icon"></div>
-            <h3><span class="star bigstar">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h3>
-            
-            {% include _widgets/review-mini.html %}
-            
+            <h3><span class="star bigstar">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>Our Five Star Service</h3>    
             <p>Discover some of the aspects that help make our adventures truly unforgettable:<br></p>
             <br>
             <div class="container">
@@ -269,6 +221,3 @@ meta_description: "Experience private canyoning in Scotland. Uniquely Tailored a
     </section>
     
 </main>
-
-{% include _script/fh-button.html %}
-{% include _script/scroll-event.html %}

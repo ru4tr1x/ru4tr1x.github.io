@@ -1,5 +1,9 @@
 ---
 layout: default
+scripts:
+  - fh
+  - map
+  - gtm
 title: Achieve Your Adventure Goals with Our Learning Pathway.
 date: 2023-12-21
 permalink: /adventure-pathway
@@ -58,12 +62,8 @@ meta_description: "Master canyoning skills with expert guides on Scotland's Cany
 ---
 
 <main>
-
-    <section class="topbox">                            
-        <div class="titlebox">
-            <h1>Canyoning Training In Scotland<br><span class="subtitle">Train To Be An Adventure Leader</span></h1>              
-        </div>    
-    </section>
+    
+    {% include topbox.html %}
 
     <section class="textbox nobottompad">
         
@@ -138,8 +138,4 @@ meta_description: "Master canyoning skills with expert guides on Scotland's Cany
         <br>
     </section>
 
-    {% include _script/dynamic-map.html %}
-
 </main>
-
-{% include _script/fh-button.html %}

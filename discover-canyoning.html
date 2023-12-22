@@ -1,6 +1,10 @@
 ---
 layout: default
-title: Beginner Canyoning in Dollar Glen, Small Group Adventure.
+scripts:
+  - fh
+  - gtm
+  - dc
+title: "Dollar Glen Canyoning: Enchanting Small group Adventure"
 permalink: /discover-canyoning
 date: 2023-12-21
 redirect_from:
@@ -11,33 +15,33 @@ canonical_url: https://www.scotlandscanyons.com/discover-canyoning
 priority: 0.8
 changefreq: weekly
 schema_organization:
-  context: "https://schema.org"
-  type: "Organization"
-  name: "Scotland's Canyons"
-  url: "https://www.scotlandscanyons.com"
-  logo: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/8c86e5da-8b2c-48bf-302d-617f6d0afd00/w=800,fit=scale-down"
-  sameAs:
-    - "https://www.youtube.com/@scotlandscanyons"
-    - "https://www.facebook.com/scotlandscanyons/"
-    - "https://www.instagram.com/scotlandscanyons/"
-    - "https://www.tiktok.com/@scotlandscanyons"
-    - "https://www.visitscotland.com/info/see-do/scotlands-canyons-p2831561"
-    - "https://business.google.com/n/5753756304371722257/searchprofile?hl=en-GB"
-    - "https://business.google.com/n/14575729591246117293/searchprofile?hl=en-GB" #dollar
-    - "https://www.visitscotland.com/info/see-do/scotlands-canyons-p2831561" #dollar
-    - "https://www.visitscotland.com/info/see-do/discover-canyoning-p2542171"
-    - "https://www.visitscotland.com/info/tours/discover-canyoning-in-dollar-glen-bd8c6112"
-  contactPoint:
-    type: "ContactPoint"
-    telephone: "+44 7868 367180"
-    contactType: "customer service"
-  address:
-    type: "PostalAddress"
-    streetAddress: "Glen"
-    addressLocality: "Dollar"
-    addressRegion: "Clackmannanshire"
-    postalCode: "FK14 7PP"
-    addressCountry: "Scotland"
+context: "https://schema.org"
+type: "Organization"
+name: "Scotland's Canyons"
+url: "https://www.scotlandscanyons.com"
+logo: "https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/8c86e5da-8b2c-48bf-302d-617f6d0afd00/w=800,fit=scale-down"
+sameAs:
+  - "https://www.youtube.com/@scotlandscanyons"
+  - "https://www.facebook.com/scotlandscanyons/"
+  - "https://www.instagram.com/scotlandscanyons/"
+  - "https://www.tiktok.com/@scotlandscanyons"
+  - "https://www.visitscotland.com/info/see-do/scotlands-canyons-p2831561"
+  - "https://business.google.com/n/5753756304371722257/searchprofile?hl=en-GB"
+  - "https://business.google.com/n/14575729591246117293/searchprofile?hl=en-GB" #dollar
+  - "https://www.visitscotland.com/info/see-do/scotlands-canyons-p2831561" #dollar
+  - "https://www.visitscotland.com/info/see-do/discover-canyoning-p2542171"
+  - "https://www.visitscotland.com/info/tours/discover-canyoning-in-dollar-glen-bd8c6112"
+contactPoint:
+  type: "ContactPoint"
+  telephone: "+44 7868 367180"
+  contactType: "customer service"
+address:
+  type: "PostalAddress"
+  streetAddress: "Glen"
+  addressLocality: "Dollar"
+  addressRegion: "Clackmannanshire"
+  postalCode: "FK14 7PP"
+  addressCountry: "Scotland"
 schema_image:
   context: "http://schema.org"
   type: "ImageObject"
@@ -60,18 +64,12 @@ meta_description: "Explore beginner-friendly canyoning at Dollar Glen with Scotl
 
     <!--Box 1 headline image-->
 
-    <section class="topbox">
-                             
-        <div class="titlebox">
-            <h1>Scotland's Beginner Canyoning Experience<br><span class="subtitle">Small Groups, Big Adventures</span></h1>   
-        </div>    
-        
-    </section>
+    {% include topbox.html %}
 
     <!--Box Two Description-->
 
     <section class="textbox">
-        <div class="icon"></div>
+        {% include _images/logo.html %}
         <h2 class="heading">Discover Canyoning in Scotland</h2>
         <p class="subheading">Join us for an unforgettable journey through the enchanting landscapes of Scotland's Dollar Burn, where each step reveals the timeless beauty of a 400 million-year-old volcanic landscape. Experience canyoning in a magical setting that blends ancient wonders with exhilarating adventure.</p>
     </section>
@@ -113,26 +111,6 @@ meta_description: "Explore beginner-friendly canyoning at Dollar Glen with Scotl
             
             </div>  
     </section>
-
-    <script>
-        document.getElementById('loadCalendarButton').addEventListener('click', function() {
-            var container = document.getElementById('fareHarborCalendarContainer');
-            var button = this;
-            
-            // Check if the iframe already exists
-            if (container.getElementsByTagName('iframe').length === 0) {
-                var iframe = document.createElement('iframe');
-                iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
-                iframe.width = "100%";
-                iframe.height = "500px"; // Set this to the desired height
-                iframe.frameBorder = "0";
-                container.appendChild(iframe);
- 
-                // Hide the button
-                button.style.display = 'none';
-            }
-        });
-    </script>
     
     <!--At a Glance-->
     <section class="textbox">
@@ -182,8 +160,3 @@ meta_description: "Explore beginner-friendly canyoning at Dollar Glen with Scotl
     </section>        
 
 </main>
-
-
-
-{# include _script/fh-button.html #}
-{% include _script/scroll-event.html %}

@@ -49,17 +49,17 @@
         "logo": "{{ page.logo }}",
         "sameAs": {{ page.sameAs | jsonify }},
         "contactPoint": {
-          "@type": "{{ page.contactPoint.type }}",
-          "telephone": "{{ page.contactPoint.telephone }}",
-          "contactType": "{{ page.contactPoint.contactType }}"
+          "@type": "{{ page.contactPoint.type | escape }}",
+          "telephone": "{{ page.contactPoint.telephone | escape }}",
+          "contactType": "{{ page.contactPoint.contactType | escape }}"
         },
         "address": {
           "@type": "{{ page.address.type }}",
-          "streetAddress": "{{ page.address.streetAddress }}",
-          "addressLocality": "{{ page.address.addressLocality }}",
-          "addressRegion": "{{ page.address.addressRegion }}",
-          "postalCode": "{{ page.address.postalCode }}",
-          "addressCountry": "{{ page.address.addressCountry }}"
+          {% if page.address.streetAddress %}"streetAddress": "{{ page.address.streetAddress | escape }}",{% endif %}
+          {% if page.address.addressLocality %}"addressLocality": "{{ page.address.addressLocality | escape }}",{% endif %}
+          {% if page.address.addressRegion %}"addressRegion": "{{ page.address.addressRegion | escape }}",{% endif %}
+          {% if page.address.postalCode %}"postalCode": "{{ page.address.postalCode | escape }}",{% endif %}
+          {% if page.address.addressCountry %}"addressCountry": "{{ page.address.addressCountry | escape }}"{% endif %}
         },
         "image": {
           "@context": "{{ page.schema_image.context }}",

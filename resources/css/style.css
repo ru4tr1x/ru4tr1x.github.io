@@ -321,9 +321,13 @@ a.button:active {
     margin: 0 auto;
 }
 
-#canyonlogo {
-   width: 15%;
-   min-width: 150px;
+.canyonlogo {
+    width: 15%;
+    min-width: 150px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    opacity: 0.95;
+    margin: 0 auto;
+    height: auto;
 }
 
 .portrait {

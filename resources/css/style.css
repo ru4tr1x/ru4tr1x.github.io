@@ -299,6 +299,16 @@ a.button:active {
     width: 80%; height: auto;
 }
 
+.postimg {
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    opacity: 1;
+    box-shadow: 0 0 5px black;
+    border: 5px solid white;
+    width: 30%; height: auto;
+}
+
 .logo {
     width: 50%; 
     height: auto;
@@ -399,6 +409,12 @@ a.button:active {
     font-size: 1rem;    
     display: block; 
     margin-top: 10px;
+}
+
+
+.featured-post {
+    display: flex;
+    flex-direction: column;
 }
 
 .backtotop {

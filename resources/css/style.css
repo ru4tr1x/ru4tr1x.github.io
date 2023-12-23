@@ -308,8 +308,9 @@ a.button:active {
     margin: 0 auto;
 }
 
-#canyon {
+#canyonlogo {
    width: 15%;
+   min-width: 150px;
 }
 
 .portrait {

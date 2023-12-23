@@ -6,12 +6,12 @@
     <meta name="description" content="{{ page.meta_description | escape }}">
     {% endif %}
     
-    <link rel="preload" href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" as="style">
-    <link href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" rel="stylesheet">
-    <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | relative_url }}" as="style">
-    <link rel="preload" href="{{ '/resources/css/style.css?v=3' | relative_url }}" as="style">
-    <link href="{{ '/resources/css/' | append: page.css_file | relative_url }}" rel="stylesheet">
-    <link href="{{ '/resources/css/style.css?v=3' | relative_url }}" rel="stylesheet">
+    <link rel="preload" href="{{ '/resources/css/fcp.css' | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" as="style">
+    <link href="{{ '/resources/css/fcp.css' | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" rel="stylesheet">
+    <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" as="style">
+    <link rel="preload" href="{{ '/resources/css/style.css' | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" as="style">
+    <link href="{{ '/resources/css/' | append: page.css_file | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" rel="stylesheet">
+    <link href="{{ '/resources/css/style.css' | relative_url }}?v={{site.time | date: '%Y%m%d%H%M%S'}}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    
     <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">

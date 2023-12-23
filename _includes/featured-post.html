@@ -18,7 +18,7 @@
   <br>
   <!-- Include the image here -->
   {% if featured-post.image %}
-    <img loading="lazy" class="postimg" src="{{ featured-post.image | relative_url }}" alt="{{ featured-post.title }}">
+    <img loading="lazy" width="{{ featured-post.imagewidth}}" height="{{ featured-post.imageheight }}" class="postimg" src="{{ featured-post.image | relative_url }}" alt="{{ featured-post.title }}">
   {% endif %}
   <br>
   

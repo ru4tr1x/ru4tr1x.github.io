@@ -71,7 +71,7 @@ meta_description: "Canyoning in Scotland Blog: Discover a wild, unique and exper
 
             <!-- Include the image here -->
   {% if post.image %}
-  <img loading="lazy" class="postimg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+  <img loading="lazy" width="{{ post.imagewidth }}" height="{{ post.imageheight}}" class="postimg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
 {% endif %} 
             <p>{{ post.excerpt | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">read&nbsp;full&nbsp;article</a></p>
             

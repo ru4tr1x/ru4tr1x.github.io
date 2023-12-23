@@ -63,7 +63,7 @@
   
       .link-title {
           position: absolute; /* Position the title absolutely within the link */
-          top: 75%; /* Center vertically */
+          top: 80%; /* Center vertically */
           left: 50%; /* Center horizontally */
           transform: translate(-50%, -50%); /* Center the title precisely */
           background-color: #000925; /* Background color for the title */

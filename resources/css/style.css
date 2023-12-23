@@ -307,7 +307,10 @@ a.button:active {
     box-shadow: 0 0 5px black;
     border: 5px solid white;
     width: 30%; height: auto;
+    max-width: 350px;
+    width: calc(100% - 5rem);
 }
+
 
 .logo {
     width: 50%; 

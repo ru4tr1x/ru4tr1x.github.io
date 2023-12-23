@@ -40,6 +40,8 @@
 
 .overlay {
     position: absolute;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,14 +57,16 @@
 
 
 .link-title {
-    position: absolute; /* Position the title absolutely within the link */
-    top: 75%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the title precisely */
-    background-color: rgba(0, 0, 0, 0.7); /* Background color for the title */
-    color: white; /* Text color for the title */
-    padding: 5px 10px; /* Add padding to the title for better visibility */
-    font-size: 16px; /* Adjust font size for legibility */
-    
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000925;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0.8;
+    font-weight: 600;
 }
 

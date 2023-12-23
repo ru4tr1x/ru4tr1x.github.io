@@ -209,162 +209,6 @@ a.button:active {
     max-width: 600px;
 }
 
-/*---------header-------------
-
-header {
-    position: fixed;
-    top: 45px;
-    z-index: 1001;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;  
-    }
-
-@media screen and (max-width: 1000px) {
-
-    header {
-        width: 100%;
-        justify-content: center;
-        height: 82px;
-    }
-
-    .header p {
-        display: none;
-    }
-}
-
-.nav {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
-    color: green;
-    position: relative;
-  }
-  
-
-.nav > .nav-header {
-    display: inline;
-  }
-
-.logok {
-      margin-top: -10px;
-      margin-left: 10px;
-      width: 25vw; height: auto;
-      max-width: 175px;
-  }
-
-.nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 21px;
-    color: #00C04B;
-    padding: 10px 10px 10px 10px;
-  }
-  
-.nav > .nav-btn {
-    display: none;
-  }
-  
-.nav > .nav-links {
-    display: flex;
-    float: right;
-    font-size: 17px;
-    position: relative;
-    top: -3px;
-    justify-content: space-evenly;
-    width: 80%;
-  }
-  
-.nav > .nav-links > a {
-    display: inline-block;
-    padding: 8px 10px 8px 10px;
-    text-decoration: none;
-    color: #00C04B;
-  }
-.active{
-        
-        font-size: 1.2rem;
-        color: limegreen !important;
-        border-radius: 5px !important;
-  }
-.nav > .nav-links > a:hover {
-    
-    color: #00C04B;
-    border-radius: 5px !important;
-  }
-.en-btn{
-       background-color: rgba(0,23,92,1) !important;
-       color: white !important; 
-       padding:10px 20px !important;
-       font-size: 21px !important;
-       border-radius: 10px;
-  }
-  
-.nav > #nav-check {
-    display: none;
-  }
-
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      margin-right: 20px !important;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 55px;
-      height: 55px;
-      cursor: pointer;
-    }
-
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: transparent;
-      opacity: 0.7;
-      border-radius: 8px;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 35px;
-      height: 15px;
-      border-top: 5px solid white;
-    }
-    .nav > .nav-links {
-      position: fixed;
-      display: block;
-      width: 100%;
-      background-color: #000925;
-      opacity: 0.98;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 80px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-      padding: 12px;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-      border: 5px solid white;
-    }
-  
-      header a {
-          color: white !important;
-        
-      }
-      .nav-links{
-            margin-top: 30px !important;
-            border-radius: 10px;
-            max-height: 300px;
-      }*/
-
-/*---Main---*/
 .topbox { 
     display: flex;
     justify-content: center;
@@ -462,6 +306,10 @@ header {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
     opacity: 0.95;
     margin: 0 auto;
+}
+
+#canyon {
+   width: 15%;
 }
 
 .portrait {

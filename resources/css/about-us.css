@@ -15,7 +15,8 @@
   
       .toplink {
           width: calc(50% - 10px); /* Adjust the width to make them square and add margin */
-          height: 110px; /* Same as the width to make them square */
+          aspect-ratio: 1 / 1;
+          max-height: 200px;
           background-color: #1a1a1a; /* Change the link background color */
           overflow: hidden; /* Hide the overflow */
           margin: 0 0px 15px; /* Margin for spacing between links */
@@ -23,6 +24,8 @@
           align-items: center;
           justify-content: center;
           position: relative; /* Required for absolute positioning */
+          border: 5px solid white;
+          border-radius: 5px;
       }
   
       .image-container {
@@ -63,10 +66,14 @@
           top: 75%; /* Center vertically */
           left: 50%; /* Center horizontally */
           transform: translate(-50%, -50%); /* Center the title precisely */
-          background-color: rgba(0, 0, 0, 0.7); /* Background color for the title */
+          background-color: #000925; /* Background color for the title */
+          opacity: 0.8;
           color: white; /* Text color for the title */
           padding: 5px 10px; /* Add padding to the title for better visibility */
           font-size: 16px; /* Adjust font size for legibility */
+          width: 90%;
+          border: 1px solid white;
+          border-radius: 5px;
           
       }
  

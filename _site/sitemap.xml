@@ -7,7 +7,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/about-us</loc>
+        <loc>https://scotlandscanyons.com/about-us</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -24,7 +24,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/adventure-pathway</loc>
+        <loc>https://scotlandscanyons.com/adventure-pathway</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -41,7 +41,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/blog</loc>
+        <loc>https://scotlandscanyons.com/blog</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -58,7 +58,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/calendar</loc>
+        <loc>https://scotlandscanyons.com/calendar</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -75,7 +75,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/discover-canyoning</loc>
+        <loc>https://scotlandscanyons.com/discover-canyoning</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -92,7 +92,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/gift-vouchers</loc>
+        <loc>https://scotlandscanyons.com/gift-vouchers</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -109,7 +109,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/</loc>
+        <loc>https://scotlandscanyons.com/</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -126,7 +126,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/map</loc>
+        <loc>https://scotlandscanyons.com/map</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -143,7 +143,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/private-canyoning</loc>
+        <loc>https://scotlandscanyons.com/private-canyoning</loc>
         
           <lastmod>2023-12-21</lastmod>
         
@@ -160,7 +160,7 @@
   
     
       <url>
-        <loc>http://localhost:4000/reviews</loc>
+        <loc>https://scotlandscanyons.com/reviews</loc>
         
           <lastmod>2023-12-23</lastmod>
         
@@ -201,7 +201,7 @@
   
   
     <url>
-      <loc>http://localhost:4000/three-epic-west-coast-canyoning-descents</loc>
+      <loc>https://scotlandscanyons.com/three-epic-west-coast-canyoning-descents</loc>
       <lastmod>2023-12-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>

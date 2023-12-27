@@ -6,10 +6,13 @@
         {% else %}
           Scotland's Canyons - The Best Canyoning Adventures in Scotland
         {% endif %}
-      </title>
+    </title>
        
-    {% if page.meta_description %}
-    <meta name="description" content="{{ page.meta_description | escape }}">
+    <meta name="description" content="{{ page.meta_description | default: 'Canyoning in Scotland: Discover a wild, unique and expert-led outdoor adventure activity. Perfect for a couple, family, team or small group experience day.' | escape }}">
+
+    
+    {% if page.image %}
+    <link rel="preload" href="page.image" as="image">
     {% endif %}
     
     <link rel="preload" href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" as="style">

@@ -54,7 +54,7 @@ header {
 }
 
 h1, h2, h3, h4 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     max-width: 50ch;
     letter-spacing: 0.05em;
     opacity: 0.9;

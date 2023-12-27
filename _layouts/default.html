@@ -178,8 +178,29 @@ if (!window.FH) {
                         button.style.display = 'none';
                     }
                 });
-            </script>    
+            </script>
+            {% when 'mainc' %}
+            <script>
+                document.getElementById('loadCalendarButton').addEventListener('click', function() {
+                    var container = document.getElementById('fareHarborCalendarContainer');
+                    var button = this;
+                    
+                    // Check if the iframe already exists
+                    if (container.getElementsByTagName('iframe').length === 0) {
+                        var iframe = document.createElement('iframe');
+                        iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/all/2023/12/?language=en-gb&full-items=yes";
+                        iframe.width = "100%";
+                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.frameBorder = "0";
+                        container.appendChild(iframe);
+         
+                        // Hide the button
+                        button.style.display = 'none';
+                    }
+                });
+            </script>      
             {% endcase %}
+            
         {% endfor %}
        <!--Event Listener CookieYes On Scroll-->
        <script>

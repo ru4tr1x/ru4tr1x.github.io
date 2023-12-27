@@ -12,8 +12,9 @@
 
     
     {% if page.image %}
-    <link rel="preload" href="page.image" as="image">
+    <link rel="preload" href="{{ page.image }}" as="image">
     {% endif %}
+
     
     <link rel="preload" href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" as="style">
     <link href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">

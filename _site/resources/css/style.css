@@ -358,6 +358,7 @@
   }
   
   .subheading {
+      font-size: 1.5rem;
       padding: 0 2rem;
   }
   
@@ -367,6 +368,7 @@
   
   .headline {
       color: #00C04B;
+      font-size: 1.7rem;
       font-weight: 400;
   }
   

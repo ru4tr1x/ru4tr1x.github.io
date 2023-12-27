@@ -14,9 +14,13 @@
     
     <link rel="preload" href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" as="style">
     <link href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    {% if page.css_file %}
     <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | relative_url }}" as="style">
-    <link rel="preload" href="{{ '/resources/css/style.css?v=3' | relative_url }}" as="style">
     <link href="{{ '/resources/css/' | append: page.css_file | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    {% endif %}
+    
+    <link rel="preload" href="{{ '/resources/css/style.css?v=3' | relative_url }}" as="style">
     <link href="{{ '/resources/css/style.css?v=3' | relative_url }}" rel="stylesheet">
     <!--<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;ital,wght@0,300;1,300&amp;display=swap" as="style">-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" media="print" onload="this.media='all'">

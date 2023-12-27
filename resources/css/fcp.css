@@ -127,14 +127,12 @@ a:hover {
 }
 
 .titlebox {
-    flex-direction: column;
-    margin: 0rem;
-    padding: 3rem;
-    height: 100vh;
-    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85vh;
+    width: 100%;
     position: relative;
-    top: 300px;
     line-height: 1.2;
 }
 

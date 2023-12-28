@@ -130,7 +130,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     position: relative;
 }

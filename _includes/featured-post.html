@@ -16,10 +16,19 @@
   <div class="icon"></div> 
   <h2><a href="{{ featured-post.url }}"><strong>{{ featured-post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ featured-post.title | split: ":" | last }}</span></a></h2>
   <br>
-  <!-- Include the image here -->
   {% if featured-post.image %}
-    <img loading="lazy" width="{{ featured-post.imagewidth}}" height="{{ featured-post.imageheight }}" class="postimg" src="{{ featured-post.image | relative_url }}" alt="{{ featured-post.title }}">
-  {% endif %}
+  <img loading="lazy"
+       width="{{ featured-post.imagewidth }}"
+       height="{{ featured-post.imageheight }}"
+       class="postimg"
+       src="{{ featured-post.image | split: 'w=' | first }}w=400,fit=scale-down"
+       srcset="{{ featured-post.image | split: 'w=' | first }}w=320,fit=scale-down 320w,
+               {{ featured-post.image | split: 'w=' | first }}w=480,fit=scale-down 480w,
+               {{ featured-post.image | split: 'w=' | first }}w=640,fit=scale-down 640w"
+       sizes="(max-width: 768px) 100vw, 768px"
+       alt="{{ featured-post.title }}">
+{% endif %}
+
   <br>
   
   <p>{{ featured-post.content | strip_html | truncatewords: 50 }}<a class="middle" href="{{ featured-post.url }}">go to full blog article...</a></p>

@@ -16,26 +16,21 @@
     {% endif %}
 
     
-    <link rel="preload" href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" as="style">
-    <link href="{{ '/resources/css/fcp.css?v=2' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" href="{{ '/resources/css/fcp.css?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/fcp.css?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
     
     {% if page.css_file %}
-    <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | relative_url }}" as="style">
-    <link href="{{ '/resources/css/' | append: page.css_file | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
     {% endif %}
     
-    <link rel="preload" href="{{ '/resources/css/style.css?v=3' | relative_url }}" as="style">
-    <link href="{{ '/resources/css/style.css?v=3' | relative_url }}" rel="stylesheet">
-  
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" as="style">
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" media="print" onload="this.media='all'">
-
-
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"></noscript>
-
-   
+    <link rel="preload" href="{{ '/resources/css/style.css?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/style.css?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" media="print" onload="this.media='all'"> 
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"></noscript>
+        
     <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
     <meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
     <meta name="robots" content="index, follow">

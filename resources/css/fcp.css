@@ -117,14 +117,14 @@ a:hover {
     height: 100vh; /* Make the body height cover the whole viewport */
 }
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
     .topbox {    
     overflow: hidden;
     align-items: center;
     background-size: cover;
     background-attachment: scroll;
     }
-}
+}*/
 
 .titlebox {
     display: flex;

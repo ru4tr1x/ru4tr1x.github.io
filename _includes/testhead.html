@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <title>
+        {% if page.title %}
+          {{ page.title }} | Scotland's Canyons
+        {% else %}
+          Scotland's Canyons - The Best Canyoning Adventures in Scotland
+        {% endif %}
+    </title>
+       
+    <meta name="description" content="{{ page.meta_description | default: 'Canyoning in Scotland: Discover a wild, unique and expert-led outdoor adventure activity. Perfect for a couple, family, team or small group experience day.' | escape }}">
+
+    
+    {% if page.image %}
+    <link rel="preload" href="{{ page.image }}" as="image">
+    {% endif %}
+
+    
+    <link rel="preload" href="{{ '/resources/css/testfcp.css?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/testfcp.css?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    {% if page.css_file %}
+    <link rel="preload" href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    {% endif %}
+    
+    <link rel="preload" href="{{ '/resources/css/style.css?v=' | append: 'now' | date: '%s' | relative_url }}" as="style">
+    <link href="{{ '/resources/css/style.css?v=' | append: 'now' | date: '%s' | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
+    <meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="canyoning Scotland, adventure tours, Scotland canyons, outdoor activities, nature experiences">
+    <meta name="author" content="Scotland's Canyons Team">
+    <meta name="publisher" content="Adventure Logic Ltd">     
+   
+    <meta property="og:site_name" content="Scotland's Canyons">
+    <meta property="fb:app_id" content="1664968410589846">
+    <meta property="og:type" content="website">
+    
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.meta_description | escape }}">
+    <meta property="og:image" content="{{ page.og_image | absolute_url }}">
+    <meta property="og:locale" content="en_GB">
+     
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}" />
+    {% endif %}       
+
+    {% if page.schema_organization %}
+    <script type="application/ld+json">
+    {{ page.schema_organization | jsonify }}
+    </script>
+    {% endif %}
+
+    {% if page.schema_image %}
+    <script type="application/ld+json">
+    {{ page.schema_image | jsonify }}
+    </script>
+    {% endif %}
+
+    <!--Elfsight Apps-->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

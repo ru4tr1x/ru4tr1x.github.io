@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include testhead.html %}
+    </head>
+    <body class="page-content content">
+        {% include header.html %}
+        {{ content }}
+        {% include _widgets/social-icons.html %}
+        {% include _widgets/back-to-top.html %}
+        {% include footer.html %}
+        {% include end-body.html %}
+        <!--Menu Close-->
+        <script>
+    // JavaScript to close the navigation menu when clicking outside
+    document.addEventListener("DOMContentLoaded", function () {
+    const navCheckbox = document.getElementById("nav-check");
+    const pageContent = document.querySelector(".page-content");
+    
+    pageContent.addEventListener("click", function (event) {
+    if (navCheckbox.checked && !event.target.closest(".nav")) {
+    // If the menu is open and a click occurs outside the menu, close the menu
+    navCheckbox.checked = false;
+    }
+    });
+    });
+        </script>
+        {% for script in page.scripts %}
+          {% case script %}
+            {% when 'map' %}
+                <!--Dynamic Map-->
+                <script>
+            document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+        var container = document.getElementById("elfsightWidgetContainer");
+        
+        // Check if the widget has already been loaded
+        if (container.children.length === 0) {
+        // Create the message element
+        var message = document.createElement('p');
+        message.style.fontStyle = "italic";
+        message.className = "mobilehide";
+        message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+        message.style.marginBottom = "20px"; // 20px space above the widget
+        
+        // Create the script element for Elfsight Platform
+        var script = document.createElement('script');
+        script.src = "https://static.elfsight.com/platform/platform.js";
+        script.defer = true;
+        
+        // Create the div container for the widget
+        var widgetDiv = document.createElement('div');
+        widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
+        
+        // Append the message, script, and div to the container
+        container.appendChild(message);
+        container.appendChild(script);
+        container.appendChild(widgetDiv);
+        
+        // Hide the button after loading the widget
+        this.style.display = "none";
+        }
+        });
+                </script>
+            {% when 'fh' %}
+                <!--FH Button-->
+                <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
+                <script>
+    document.getElementById("bookNowLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default action of the link
+
+        // Function to open the Lightframe
+        function openFareHarborLightframe() {
+            FH.open({
+                shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                fallback: 'simple'
+            });
+        }
+
+        // Check if the script is already loaded
+        if (!window.FH) {
+            // Create the script element for FareHarbor Lightframe API
+            var script = document.createElement('script');
+            script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+            script.onload = function() {
+                // Set up FH methods and open the Lightframe
+                setupFareHarborMethods();
+                openFareHarborLightframe();
+            };
+            document.body.appendChild(script);
+        } else {
+            // If the script is already loaded, just open the Lightframe
+            openFareHarborLightframe();
+        }
+    });
+
+    function setupFareHarborMethods() {
+        FH.autoLightframe({
+            className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
+            callback: function(linkElement){
+                console.log('FareHarbor link was clicked');
+            }
+        });
+
+        // Function to close the Lightframe
+        function closeFareHarborLightframe() {
+            if (FH.close()) {
+                console.log('Lightframe closed');
+            } else {
+                console.log('Lightframe was not open');
+            }
+        }
+    }
+                </script>
+            {% when 'fhgift' %}
+                <!--FH Gift Button-->
+                <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes&flow=660908">Order&nbsp;online</a>
+                <script type="text/javascript">
+document.getElementById("bookNowLink").addEventListener("click", function(event) {
+event.preventDefault(); // Prevent the default action of the link
+
+// Check if the script is already loaded
+if (!window.FH) {
+    // Create the script element for FareHarbor Lightframe API
+    var script = document.createElement('script');
+    script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+    script.defer = true;
+    script.onload = function() {
+        // Once the script is loaded, open the Lightframe with specific flow
+        FH.open({
+            shortname: 'scotlandscanyons',
+            flow: 660908 // Add the specific flow ID here
+        });
+    };
+
+    document.body.appendChild(script);
+} else {
+    // If the script is already loaded, open the Lightframe with specific flow
+    FH.open({
+        shortname: 'scotlandscanyons',
+        flow: 660908 // Add the specific flow ID here
+    });
+}
+});
+                </script>
+            {% when 'gtm' %}
+                <!--Event Listener Scroll for GTM-->
+                <script>
+    function loadGTMScript() {
+        // Create the script element for Google Tag Manager
+        var gtmScript = document.createElement('script');
+        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
+        gtmScript.async = true;
+        document.body.appendChild(gtmScript);
+
+        // Remove the event listener after loading the script
+        window.removeEventListener('scroll', loadGTMScript);
+    }
+
+    // Attach the loadGTMScript function to the scroll event
+    window.addEventListener('scroll', loadGTMScript, { once: true });
+                </script>
+            {% when 'dc' %}
+            <script>
+                document.getElementById('loadCalendarButton').addEventListener('click', function() {
+                    var container = document.getElementById('fareHarborCalendarContainer');
+                    var button = this;
+                    
+                    // Check if the iframe already exists
+                    if (container.getElementsByTagName('iframe').length === 0) {
+                        var iframe = document.createElement('iframe');
+                        iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
+                        iframe.width = "100%";
+                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.frameBorder = "0";
+                        container.appendChild(iframe);
+         
+                        // Hide the button
+                        button.style.display = 'none';
+                    }
+                });
+            </script>
+            {% when 'mainc' %}
+            <script>
+                document.getElementById('loadCalendarButton').addEventListener('click', function() {
+                    var container = document.getElementById('fareHarborCalendarContainer');
+                    var button = this;
+                    
+                    // Check if the iframe already exists
+                    if (container.getElementsByTagName('iframe').length === 0) {
+                        var iframe = document.createElement('iframe');
+                        iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/all/2023/12/?language=en-gb&full-items=yes";
+                        iframe.width = "100%";
+                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.frameBorder = "0";
+                        container.appendChild(iframe);
+         
+                        // Hide the button
+                        button.style.display = 'none';
+                    }
+                });
+            </script>      
+            {% endcase %}
+            
+        {% endfor %}
+       <!--Event Listener CookieYes On Scroll-->
+       <script>
+        function loadScripts() {
+            // Load CookieYes Script
+            var script1 = document.createElement('script');
+            script1.src = 'https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js';
+            script1.async = true;
+            document.body.appendChild(script1);
+    
+            // Remove the event listener after loading the scripts
+            window.removeEventListener('scroll', loadScripts);
+        }
+    
+        // Attach the loadScripts function to the scroll event
+        window.addEventListener('scroll', loadScripts, { once: true });
+        </script>
+    </body>
+</html>

@@ -107,23 +107,28 @@ a:hover {
 }
 
 .topbox { 
-    contain: layout size style;
-    background-attachment: fixed;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden;
     background-color: rgba(255,255,255,0.1);
     background-blend-mode: lighten;
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    height: 100vh; /* Make the body height cover the whole viewport */
 }
 
-@media screen and (max-width: 1000px) {
-    .topbox {    
-    overflow: hidden;
-    align-items: center;
-    background-size: cover;
-    background-attachment: scroll;
-    }
+.fixed-image {
+    position: fixed;
+    width: 100%;
+    height: 100vh; /* Adjust height as necessary */
+    object-fit: cover; /* Ensures the image covers the full area */
+    top: 0; /* Align top of the image to the top of the viewport */
+    left: 0; /* Align left of the image to the left of the viewport */
+    z-index: -1; /* Ensures the image stays behind the content */
+    will-change: transform; /* Optimization for smoother performance */
+    opacity: 0.9;
+}
+
+.content {
+    position: relative; /* Ensures the content is positioned in the flow of the document */
+    z-index: 2; /* Ensures the content is above the image */
 }
 
 .titlebox {
@@ -133,7 +138,9 @@ a:hover {
     height: 75vh;
     width: 100%;
     position: relative;
+    z-index: 2; /* Ensures the title box is above the image */
 }
+
 
 .img {
     overflow: hidden;

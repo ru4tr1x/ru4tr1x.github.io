@@ -3,7 +3,7 @@
   /*-------Global---------*/
   main {
     background-color: #000925;
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
   h2 {
@@ -312,6 +312,7 @@
       position: relative;
       top: 4rem;
       padding: 55px 0px;
+      opacity: 0.9;
   }
   @media (max-width: 867px){
       footer{

@@ -273,7 +273,7 @@ menu li {
     padding: 0 1rem;
     color: white;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.8rem;
 }
      
@@ -308,7 +308,6 @@ menu li {
       
   a {
       color: limegreen;
-      font-weight: 400;
       text-decoration: underline;
       cursor: pointer;
       text-align: center;
@@ -335,7 +334,7 @@ menu li {
   
   button {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 2.4rem;
       padding: 10px 20px;
       color: #000925;
@@ -376,7 +375,7 @@ menu li {
   a.button {
       padding: 5px 20px;
       font-size: 2rem;
-      font-weight: 400;
+      font-weight: 700;
       color: #000925;
       border-radius: 5px;
       margin: 0 auto;
@@ -628,3 +627,9 @@ menu li {
           display: none;
       }
   } 
+
+.img {
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 15px;
+}

@@ -135,30 +135,22 @@ a:hover {
     font-weight: 300;
 }
 
-.sublink {
-    font-size: 1.3rem;
-}
+
 
 */
 
-.nav {
-    height: 50px;
-    width: 100%;
-    background-color: transparent;
-    color: green;
-    position: relative;
-}
+
 
 .nav > .nav-header {
     display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+/*.nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 21px;
     color: #00C04B;
     padding: 10px;
-}
+}*/
 
 .nav > .nav-btn {
     display: none;
@@ -181,12 +173,6 @@ a:hover {
     color: #00C04B;
 }
 
-.active {
-    font-size: 1.5rem;
-    color: limegreen !important;
-    border-radius: 5px !important;
-}
-
 .nav > #nav-check {
     display: none;
 }
@@ -199,24 +185,10 @@ a:hover {
     top: 0px;
 }
 
-.nav > .nav-btn > label {
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-}
-
 .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
     background-color: transparent;
     opacity: 0.7;
     border-radius: 8px;
-}
-
-.nav > .nav-btn > label > span {
-    display: block;
-    width: 35px;
-    height: 15px;
-    border-top: 5px solid white;
 }
 
 .nav > .nav-links {
@@ -306,19 +278,6 @@ menu li {
       font-size: 1.5rem;
   }
       
-  a {
-      color: limegreen;
-      text-decoration: underline;
-      cursor: pointer;
-      text-align: center;
-      text-rendering: geometricPrecision;    
-      font-size: 1.5rem;
-      letter-spacing: 0.05em;
-      opacity: 0.9;
-      font-weight: 300;
-  
-  }
-      
   a:hover {
       text-shadow: none;
       color: lime;
@@ -370,26 +329,10 @@ menu li {
       position: relative;
   }
   
-  a.button {
-      padding: 5px 20px;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #000925;
-      border-radius: 5px;
-      margin: 0 auto;
-      background-color: limegreen;
-      border: none;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      box-shadow: 0 0 1px black;
-      text-rendering: optimizeLegibility;
-  }
-  
   /* Hover effect */
   a.button:hover {
       background-color: lime;
-      font-size: 2.1rem;
+      color: #00175c;
       transition: background-color 0.15s, font-size 0.15s;
   }
   
@@ -398,13 +341,6 @@ menu li {
       border-color: #fff;
   }
   
-  /* Responsive adjustments */
-  @media screen and (max-width: 1000px) {
-      a.button {
-          max-width: 250px;
-          font-size: 1.7rem;
-      }
-  }
   
   .calendar {
       max-width: 600px;

@@ -10,6 +10,10 @@
        
     <meta name="description" content="{{ page.meta_description | default: 'Canyoning in Scotland: Discover a wild, unique and expert-led outdoor adventure activity. Perfect for a couple, family, team or small group experience day.' | escape }}">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
     {% assign cache_busting_timestamp = site.time | date: '%s' %}
 
     <link rel="preload" href="{{ '/resources/css/fcp.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">

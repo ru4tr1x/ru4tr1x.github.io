@@ -262,8 +262,8 @@ menu li {
   
   /*-------Global---------*/
   main {
-    background-color: #000925;
-    opacity: 0.9;
+    background-color: rgba(0, 9, 37, 0.9);
+   
 }
 
   h2, h3, h4 {

@@ -1,4 +1,4 @@
-* {
+/** {
     box-sizing: border-box;
     letter-spacing: 0.05em;
 }
@@ -47,15 +47,6 @@ header {
     height: auto;
     max-width: 175px;
     opacity: 0.95;
-}
-
-h1, h2, h3, h4 {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    max-width: 50ch;
-    margin: 0 auto;
-    padding: 0 1rem;
-    color: white;
-    text-align: center;
 }
 
 h1 {
@@ -147,6 +138,8 @@ a:hover {
 .sublink {
     font-size: 1.3rem;
 }
+
+*/
 
 .nav {
     height: 50px;
@@ -273,20 +266,16 @@ menu li {
     opacity: 0.9;
 }
 
-  h2 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
-      
-  h3 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
-      
-  h4 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
+  h2, h3, h4 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    max-width: 50ch;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
      
   p {
       font-weight: 300;
@@ -471,7 +460,6 @@ menu li {
       width: 50%; 
       height: auto;
       max-width: 275px;
-      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
       opacity: 0.95;
       margin: 0 auto;
   }
@@ -479,7 +467,6 @@ menu li {
   .canyonlogo {
       width: 15%;
       min-width: 150px;
-      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
       opacity: 0.95;
       margin: 0 auto;
       height: auto;

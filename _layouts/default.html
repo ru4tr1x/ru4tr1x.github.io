@@ -162,22 +162,20 @@ if (!window.FH) {
 });
                 </script>
             {% when 'gtm' %}
-                <!--Event Listener Scroll for GTM-->
-                <script>
+               <!-- Timeout Trigger for GTM -->
+<script>
     function loadGTMScript() {
         // Create the script element for Google Tag Manager
         var gtmScript = document.createElement('script');
         gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
         gtmScript.async = true;
         document.body.appendChild(gtmScript);
-
-        // Remove the event listener after loading the script
-        window.removeEventListener('scroll', loadGTMScript);
     }
 
-    // Attach the loadGTMScript function to the scroll event
-    window.addEventListener('scroll', loadGTMScript, { once: true });
-                </script>
+    // Trigger the GTM script after a set timeout (e.g., 2000 milliseconds or 2 seconds)
+    setTimeout(loadGTMScript, 4000); // Adjust the time as needed for your site
+</script>
+
             {% when 'dc' %}
             <script>
                 document.getElementById('loadCalendarButton').addEventListener('click', function() {
@@ -221,22 +219,20 @@ if (!window.FH) {
             {% endcase %}
             
         {% endfor %}
-       <!--Event Listener CookieYes On Scroll-->
-       <script>
-        function loadScripts() {
-            // Load CookieYes Script
-            var script1 = document.createElement('script');
-            script1.src = 'https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js';
-            script1.async = true;
-            document.body.appendChild(script1);
-    
-            // Remove the event listener after loading the scripts
-            window.removeEventListener('scroll', loadScripts);
-        }
-    
-        // Attach the loadScripts function to the scroll event
-        window.addEventListener('scroll', loadScripts, { once: true });
-        </script>
+       <!-- Timeout Trigger for CookieYes -->
+<script>
+    function loadScripts() {
+        // Load CookieYes Script
+        var script1 = document.createElement('script');
+        script1.src = 'https://cdn-cookieyes.com/client_data/d24238bdad647dc6e9b42956/script.js';
+        script1.async = true;
+        document.body.appendChild(script1);
+    }
+
+    // Trigger the CookieYes script after a set timeout (e.g., 2000 milliseconds or 2 seconds)
+    setTimeout(loadScripts, 4000); // Adjust the time as needed for your site
+</script>
+
         <!--Elfsight Apps-->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     </body>

@@ -1,4 +1,13 @@
-<section class="topbox">
+<div class="topbox">  
+    <div class="titlebox content">
+        
+    <div class="icon"></div>
+    <h1><strong>{{ page.title | split: ":" | first }}
+ </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
+ </span></h1>
+
+</div>    
+</div>
     
     <img class="fixed-image" style="object-position: top;" height="3600" width="2880" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
     srcset="
@@ -15,12 +24,4 @@
            (max-width: 1920px) 1920px,
            100vw" alt="{{ page.description }}"> 
     
-    <div class="titlebox content">
-        
-            <div class="icon"></div>
-            <h1><strong>{{ page.title | split: ":" | first }}
-         </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
-         </span></h1>
-        
-    </div>    
- </section>
+  

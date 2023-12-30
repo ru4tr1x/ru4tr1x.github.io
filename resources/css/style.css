@@ -175,12 +175,10 @@ a:hover {
     border: 5px solid white;
 }
 
-  
-  /*
-  main {
+main {
     background-color: rgba(0, 9, 37, 0.9);
-   
-}*/
+    z-index: 1;
+}
 
   h2, h3, h4 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
@@ -479,6 +477,7 @@ a:hover {
   .bottompad {
       background-color: black; 
       height: 125px;
+      z-index: 1;
   }
   
   

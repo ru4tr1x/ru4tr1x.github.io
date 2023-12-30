@@ -1,5 +1,9 @@
 <!--Box 1 HEADELINE IMAGE-->
-<section class="topbox">
+<div class="topbox"><div class="titlebox content">  
+        <h1><strong>{{ page.title | split: ":" | first }}
+        </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
+        </span></h1> 
+   </div>    </div>
    <img class="fixed-image" width="{{ page.imagewidth }}"height="{{ page.imageheight }}" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
    srcset="
 {{ page.image | split: 'w=' | first }}w=400,fit=scale-down 400w,
@@ -16,12 +20,8 @@ sizes="(max-width: 400px) 400px,
        100vw"
 alt="{{ page.description }}">
    
-   <div class="titlebox content">  
-        <h1><strong>{{ page.title | split: ":" | first }}
-        </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
-        </span></h1> 
-   </div>    
-</section>
+   
+
 
 <!-- srcset="
        {{ page.image | split: 'w=' | first }}w=480,fit=scale-down 480w,

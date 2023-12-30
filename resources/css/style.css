@@ -351,14 +351,6 @@ a:hover {
   
   /* Specific Styling*/
   
-  .heading {
-      padding: 0 2rem;
-  }
-  
-  .subheading {
-      font-size: 1.5rem;
-      padding: 0 2rem;
-  }
   
   .star {
       color: goldenrod;

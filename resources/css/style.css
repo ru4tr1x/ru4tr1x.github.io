@@ -175,11 +175,6 @@ a:hover {
     border: 5px solid white;
 }
 
-main {
-    background-color: rgba(0, 9, 37, 0.9);
-    z-index: 1;
-}
-
   h2, h3, h4 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     max-width: 50ch;
@@ -287,13 +282,7 @@ main {
     background-color: rgba(0, 9, 37, 0.9);
   }
   
-  .textbox {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin: 6rem 0;
-  }
+  
   
   .nobottompad {
       margin-bottom: 0 !important;

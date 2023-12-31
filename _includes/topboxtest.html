@@ -4,7 +4,7 @@
         </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
         </span></h1> 
    </div>    </div>
-   <img src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
+   <img class="fixed-image" src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
    srcset="
    {{ page.image | split: 'w=' | first }}w=480,fit=scale-down 480w,
    {{ page.image | split: 'w=' | first }}w=720,fit=scale-down 720w,

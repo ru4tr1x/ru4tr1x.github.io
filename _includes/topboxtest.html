@@ -15,15 +15,15 @@
 {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,
 {{ page.image | split: 'w=' | first }}w=640,fit=cover 640w,
 {{ page.image | split: 'w=' | first }}w=800,fit=cover 800w,
-{{ page.image | split: 'w=' | first }}w=1000,fit=cover 1000w,
+
 {{ page.image | split: 'w=' | first }}w=1280,fit=cover 1280w,
-{{ page.image | split: 'w=' | first }}w=1600,fit=cover 1600w"
+
 sizes="(max-width: 400px) 400px,
        (max-width: 640px) 640px,
        (max-width: 800px) 800px,
-       (max-width: 1000px) 1000px,
+      
        (max-width: 1280px) 1280px,
-       (max-width: 1600px) 1600px,
+       
        100vw"
 alt="{{ page.description }}">
    

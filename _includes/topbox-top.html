@@ -9,19 +9,21 @@
 </div>    
 </div>
     
-    <img class="fixed-image" style="object-position: top;" height="3600" width="2880" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
+    <img class="fixed-image" style="object-position: top;" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
     srcset="
-        {{ page.image | split: 'w=' | first }}w=480,fit=scale-down 480w,
-        {{ page.image | split: 'w=' | first }}w=720,fit=scale-down 720w,
-        {{ page.image | split: 'w=' | first }}w=1080,fit=scale-down 1080w,
-        {{ page.image | split: 'w=' | first }}w=1440,fit=scale-down 1440w,
-        {{ page.image | split: 'w=' | first }}w=1920,fit=scale-down 1920w,
-        {{ page.image | split: 'w=' | first }}w=2880,fit=scale-down 2880w"
-    sizes="(max-width: 480px) 480px,
-           (max-width: 720px) 720px,
-           (max-width: 1080px) 1080px,
-           (max-width: 1440px) 1440px,
-           (max-width: 1920px) 1920px,
-           100vw" alt="{{ page.description }}"> 
+   {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,
+   {{ page.image | split: 'w=' | first }}w=640,fit=cover 640w,
+   {{ page.image | split: 'w=' | first }}w=800,fit=cover 800w,
+   {{ page.image | split: 'w=' | first }}w=1000,fit=cover 1000w,
+   {{ page.image | split: 'w=' | first }}w=1280,fit=cover 1280w,
+   {{ page.image | split: 'w=' | first }}w=1600,fit=cover 1600w"
+sizes="(max-width: 400px) 400px,
+       (max-width: 640px) 640px,
+       (max-width: 800px) 800px,
+       (max-width: 1000px) 1000px,
+       (max-width: 1280px) 1280px,
+       (max-width: 1600px) 1600px,
+       100vw"
+alt="{{ page.description }}">
     
   

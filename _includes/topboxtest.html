@@ -10,11 +10,11 @@
     height: 100vh;
     object-fit: cover;
     top: 0;
-    left: 0;" width="{{ page.imagewidth }}"height="{{ page.imageheight }}" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
+    left: 0;" width="{{ page.imagewidth }}"height="{{ page.imageheight }}" src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
    srcset="
 {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,
 {{ page.image | split: 'w=' | first }}w=640,fit=cover 640w,
-{{ page.image | split: 'w=' | first }}w=800,fit=cover 800w
+{{ page.image | split: 'w=' | first }}w=800,fit=cover 800w,
 {{ page.image | split: 'w=' | first }}w=1000,fit=cover 1000w,
 {{ page.image | split: 'w=' | first }}w=1280,fit=cover 1280w,
 {{ page.image | split: 'w=' | first }}w=1600,fit=cover 1600w"

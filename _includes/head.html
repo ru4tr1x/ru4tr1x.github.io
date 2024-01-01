@@ -59,10 +59,10 @@
     [
       {% if page.context %}
       {
-        "@context": "{{ page.context }}",
+        "@context": "https://schema.org",
         "@type": "{{ page.type }}",
-        "name": "{{ page.name1 }}",
-        "url": "https://www.scotlandscanyons.com",
+        "name": "Scotland's Canyons",
+        "url": "page.canonical_url",
         "logo": "{{ page.logo }}",
         "sameAs": {{ page.sameAs | jsonify }},
         "contactPoint": {
@@ -79,7 +79,7 @@
       
       {% if page.schema_image %}
       {
-        "@context": "{{ page.schema_image.context }}",
+        "@context": "https://schema.org",
         "@type": "{{ page.schema_image.type }}",
         "contentUrl": "{{ page.schema_image.contentUrl }}",
         "description": "{{ page.schema_image.description }}",

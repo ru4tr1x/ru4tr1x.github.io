@@ -80,6 +80,19 @@ h1{
     text-align:center;
     font-size:2rem;
     line-height:1.2}
+
+    p {
+        font-weight: 300;
+        text-rendering: optimizeSpeed;
+        text-align: center;
+        font-size: 1.4rem;
+        color: white;
+        padding: 0 20px;
+        max-width: 60ch;
+        opacity: 0.9;
+        letter-spacing: 0.05em;
+        margin: 0 auto;
+    }
     
 .fareharbour{
     position:fixed;
@@ -127,3 +140,24 @@ a.button{text-rendering:optimizeSpeed;padding:5px 20px;font-size:1.7rem;font-wei
 .textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0}
         
 main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw;}
+
+.canyonlogo {
+    width: 15%;
+    min-width: 150px;
+    opacity: 0.95;
+    margin: 0 auto;
+    height: auto;
+}
+
+button {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 20px;
+    color: #000925;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: limegreen;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }

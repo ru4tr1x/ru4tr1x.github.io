@@ -25,7 +25,7 @@
 }
 
   h2, h3, h4 {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0.0625rem 0.0625rem 0.3125rem rgba(0,0,0,.7);
     max-width: 50ch;
     margin: 0 auto;
     padding: 0 1rem;
@@ -34,20 +34,6 @@
     font-weight: 700;
     font-size: 1.8rem;
 }
-     
-  p {
-      font-weight: 300;
-      text-rendering: optimizeLegibility;
-      text-align: center;
-      font-size: 1.4rem;
-      color: white;
-      padding: 0 20px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      max-width: 60ch;
-      opacity: 0.9;
-      letter-spacing: 0.05em;
-      margin: 0 auto;
-  }
   
   blockquote {
       font-family: 'Roboto', sans-serif;
@@ -73,38 +59,7 @@
       border-color: #fff;
   }
   
-  button {
-    font-weight: 700;
-    font-size: 2rem;
-    padding: 10px 20px;
-    color: #000925;
-    border-radius: 5px;
-    margin: 0 auto;
-    background-color: limegreen;
-    border: none;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  @media screen and (max-width: 1000px) {
-      button {
-          padding: 1rem;
-          border-radius: 5px;
-          position: relative;
-          top: -4px;
-          opacity: 0.9;  
-          font-size: 2rem;
-          max-width: 250px;
-      }
-  }
-  
-  @media screen and (max-width: 660px) {
-      button {
-          padding: 0.8rem;
-          border-radius: 5px;
-          font-size: 1.4rem;
-      }
-  }
+ 
   
   #button {
       position: relative;
@@ -176,13 +131,7 @@
       margin: 0 auto;
   }
   
-  .canyonlogo {
-      width: 15%;
-      min-width: 150px;
-      opacity: 0.95;
-      margin: 0 auto;
-      height: auto;
-  }
+  
   
   .portrait {
       border: 5px solid white; 

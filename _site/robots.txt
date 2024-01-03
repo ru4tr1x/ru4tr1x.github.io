@@ -1,1 +1,3 @@
 Sitemap: https://scotlandscanyons.com/sitemap.xml
+User-agent: *
+Disallow: /test.html

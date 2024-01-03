@@ -1,153 +1,39 @@
-.sublink {
-    font-size: 1.3rem;
-  }
-  
-  .nav {
-      height: 50px;
-      width: 100%;
-      background-color: transparent;
-      color: green;
-      position: relative;
-    }
-    
-  
-  .nav > .nav-header {
-      display: inline;
-    }
-  
-  .nav > .nav-header > .nav-title {
-      display: inline-block;
-      font-size: 21px;
-      color: #00C04B;
-      padding: 10px 10px 10px 10px;
-    }
-    
-  .nav > .nav-btn {
-      display: none;
-    }
-    
-  .nav > .nav-links {
-      display: flex;
-      float: right;
-      font-size: 17px;
-      position: relative;
-      top: -3px;
-      justify-content: space-evenly;
-      width: 80%;
-    }
-    
-  .nav > .nav-links > a {
-      display: inline-block;
-      padding: 8px 10px 8px 10px;
-      text-decoration: none;
-      color: #00C04B;
-    }
-  .active{
-          
-          font-size: 1.5rem;
-          color: limegreen !important;
-          border-radius: 5px !important;
-    }
-  .nav > .nav-links > a:hover li:hover {
-      
-      color: #00C04B;
-      border-radius: 5px !important;
-    }
-    
-  .nav > #nav-check {
-      display: none;
-    }
-  
-      .nav > .nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        margin-right: 20px !important;
-        top: 0px;
-      }
-      .nav > .nav-btn > label {
-        display: inline-block;
-        width: 55px;
-        height: 55px;
-        cursor: pointer;
-      }
-  
-      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-        background-color: transparent;
-        opacity: 0.7;
-        border-radius: 8px;
-      }
-      .nav > .nav-btn > label > span {
-        display: block;
-        width: 35px;
-        height: 15px;
-        border-top: 5px solid white;
-      }
-      .nav > .nav-links {
-        position: fixed;
-        display: block;
-        width: 100%;
-        background-color: #000925;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 80px;
-        left: 0px;
-      }
-      .nav > .nav-links > a {
-        display: block;
-        width: 100%;
-        padding: 12px;
-      }
-      .nav > #nav-check:not(:checked) ~ .nav-links {
-        height: 0px;
-      }
-      .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-        border: 5px solid white;
-      }
-    
-        header a {
-            color: white !important;
-            text-decoration: none;
-          
-        }
-        .nav-links{
-              margin-top: 30px !important;
-              border-radius: 10px;
-              max-height: 300px;
-        }
-  
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style-type: none;
-      }
-      
-      ul li {
-          margin: 0;
-          padding: 15px;
-          line-height: 1.2;
-      }
-      /*end fcp*/  
-  
-  /*-------Global---------*/
-  
-  h2 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
-      
-  h3 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
-      
-  h4 {
-      font-weight: 400;
-      font-size: 1.8rem;
-  }
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #00C04B;
+}
+
+
+.nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: transparent;
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+.nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+}
+
+.nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    border: 5px solid white;
+}
+
+  h2, h3, h4 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    max-width: 50ch;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
      
   p {
       font-weight: 300;
@@ -172,24 +58,6 @@
       font-size: 1.5rem;
       margin: 0 8px;
   }
-  
-  li {
-      text-align: center;
-      font-size: 1.5rem;
-  }
-      
-  a {
-      color: limegreen;
-      font-weight: 400;
-      text-decoration: underline;
-      cursor: pointer;
-      text-align: center;
-      text-rendering: geometricPrecision;    
-      font-size: 1.5rem;
-      letter-spacing: 0.05em;
-      opacity: 0.9;
-  
-  }
       
   a:hover {
       text-shadow: none;
@@ -206,19 +74,16 @@
   }
   
   button {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-weight: 400;
-      font-size: 2.4rem;
-      padding: 10px 20px;
-      color: #000925;
-      border-radius: 5px;
-      margin: 0 auto;
-      background-color: limegreen;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      box-shadow: 0 0 1px black;
-      text-rendering: optimizeLegibility;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 10px 20px;
+    color: #000925;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: limegreen;
+    border: none;
+    cursor: pointer;
+    position: relative;
   }
   
   @media screen and (max-width: 1000px) {
@@ -245,26 +110,10 @@
       position: relative;
   }
   
-  a.button {
-      padding: 5px 20px;
-      font-size: 2rem;
-      font-weight: 400;
-      color: #000925;
-      border-radius: 5px;
-      margin: 0 auto;
-      background-color: limegreen;
-      border: none;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      box-shadow: 0 0 1px black;
-      text-rendering: optimizeLegibility;
-  }
-  
   /* Hover effect */
   a.button:hover {
       background-color: lime;
-      font-size: 2.1rem;
+      color: #00175c;
       transition: background-color 0.15s, font-size 0.15s;
   }
   
@@ -273,25 +122,16 @@
       border-color: #fff;
   }
   
-  /* Responsive adjustments */
-  @media screen and (max-width: 1000px) {
-      a.button {
-          max-width: 250px;
-          font-size: 1.7rem;
-      }
-  }
   
   .calendar {
       max-width: 600px;
   }
-  
-  .textbox {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin: 8rem 0;
+
+  .bluebox {
+    background-color: rgba(0, 9, 37, 0.9);
   }
+  
+  
   
   .nobottompad {
       margin-bottom: 0 !important;
@@ -332,7 +172,6 @@
       width: 50%; 
       height: auto;
       max-width: 275px;
-      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
       opacity: 0.95;
       margin: 0 auto;
   }
@@ -340,7 +179,6 @@
   .canyonlogo {
       width: 15%;
       min-width: 150px;
-      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
       opacity: 0.95;
       margin: 0 auto;
       height: auto;
@@ -353,23 +191,9 @@
   
   /* Specific Styling*/
   
-  .heading {
-      padding: 0 2rem;
-  }
-  
-  .subheading {
-      font-size: 1.5rem;
-      padding: 0 2rem;
-  }
   
   .star {
       color: goldenrod;
-  }
-  
-  .headline {
-      color: #00C04B;
-      font-size: 1.7rem;
-      font-weight: 400;
   }
   
   .bigstar {
@@ -440,6 +264,7 @@
       position: relative;
       top: 4rem;
       padding: 55px 0px;
+      opacity: 0.9;
   }
   @media (max-width: 867px){
       footer{
@@ -490,6 +315,7 @@
   .bottompad {
       background-color: black; 
       height: 125px;
+      z-index: 1;
   }
   
   
@@ -501,3 +327,9 @@
           display: none;
       }
   } 
+
+.img {
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 15px;
+}

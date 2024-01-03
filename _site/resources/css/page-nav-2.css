@@ -4,9 +4,7 @@
           flex-wrap: wrap;
           justify-content: space-between; /* Distribute links evenly horizontally */
           align-content: space-between; /* Distribute links evenly vertically */
-          margin-top: 20px; /* Add spacing between content and links */
-          width: 80%;
-          background-color: #000925; /* Set the background color */
+          width: 80%; 
           margin: 0 auto;
       }
   
@@ -69,7 +67,6 @@
           width: 90%;
           border: 1px solid white;
           border-radius: 5px;
-          font-weight: 700;
           
       }
  

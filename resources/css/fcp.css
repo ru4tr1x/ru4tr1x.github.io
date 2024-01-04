@@ -78,7 +78,7 @@ h1{
     padding:0 1rem;
     color:#fff;
     text-align:center;
-    font-size:2rem;
+    font-size:1.8rem;
     line-height:1.2}
 
     p {
@@ -119,7 +119,7 @@ h1{
     
 .titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:75vh;min-width:100vw;position:relative;z-index:2}
     
-.icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=200,fit=scale-down);background-size:cover;background-position:center;opacity:.95;margin:0 auto;height:4rem;width:3rem;min-width:100px;}
+.icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=200,fit=scale-down);background-size:cover;background-position:center;opacity:.95;margin:0 auto;height:4rem;width:3rem;min-width:7rem;}
     
 .subtitle{font-size:1.4rem;font-weight:300}.sublink{font-weight:300}
 
@@ -137,13 +137,13 @@ a.button{text-rendering:optimizeSpeed;padding:5px 20px;font-size:1.7rem;font-wei
         
 .collapse-btn{color:silver;font-size:1rem;display:block;margin-top:10px}
         
-.textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0}
+.textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0;min-width:100%;}
         
 main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw;}
 
 .canyonlogo {
     width: 15%;
-    min-width: 150px;
+    min-width: 10rem;
     opacity: 0.95;
     margin: 0 auto;
     height: auto;

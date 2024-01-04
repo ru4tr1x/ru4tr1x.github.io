@@ -6,6 +6,9 @@
     <body class="page-content">
         {% include header.html %}
         {{ content }}
+        {% if 'fh' %}
+        <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
+        {% endif %}
         {% include _widgets/social-icons.html %}
         {% include _widgets/back-to-top.html %}
         {% include footer.html %}
@@ -82,7 +85,6 @@
                 </script>
             {% when 'fh' %}
                 <!--FH Button-->
-                <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
                 <script>
     document.getElementById("bookNowLink").addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default action of the link

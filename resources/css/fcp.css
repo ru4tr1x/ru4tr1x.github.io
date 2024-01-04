@@ -117,7 +117,7 @@ h1{
     top:0;
     left:0;}
     
-.titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:75vh;min-width:100vw;position:relative;z-index:2}
+.titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:75vh;min-width:100vw;position:absolute;top:0;z-index:2}
     
 .icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=200,fit=scale-down);background-size:cover;background-position:center;opacity:.95;margin:0 auto;height:4rem;width:3rem;min-width:7rem;}
     

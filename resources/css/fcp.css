@@ -12,8 +12,7 @@ body,html{
     justify-content:center;
     align-content:center;
     background-color: rgba(0, 9, 37, 0.9);
-    line-height:1.6;
-    letter-spacing:.05em}
+    }
 
 header{
     position: fixed;
@@ -127,7 +126,7 @@ h1{
         
 a{color:#32cd32;font-weight:700;opacity:0.9;text-align:center;text-rendering:geometricPrecision;font-size:1.5rem;letter-spacing:.05em;opacity:.9}
         
-a.button{text-rendering:optimizeSpeed;padding:5px 20px;font-size:1.7rem;font-weight:700;color:#000925;border-radius:5px;margin:0 auto;background-color:#32cd32;text-decoration:none}
+a.button{text-rendering:optimizeSpeed;padding:.5rem 1rem;font-size:1.7rem;font-weight:700;color:#000925;border-radius:5px;margin:0 auto;background-color:#32cd32;text-decoration:none}
         
 .headline{color:#00c04b;font-size:1.5rem;font-weight:700}
         
@@ -139,7 +138,7 @@ a.button{text-rendering:optimizeSpeed;padding:5px 20px;font-size:1.7rem;font-wei
         
 .textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0;min-width:100%;}
         
-main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw;}
+main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw;line-height:1.6}
 
 .canyonlogo {
     width: 15%;

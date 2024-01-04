@@ -1,11 +1,6 @@
 <!--Box 1 HEADELINE IMAGE-->
-<div class="topbox"></div>
-<div style="position: absolute; top: 0" class="titlebox content">
-   <div class="icon"></div>  
-    <h1><strong>{{ page.title | split: ":" | first }}
-    </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
-    </span></h1> 
-   </div>
+
+
 <img class="fixed-image" src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
    srcset="
    {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,
@@ -23,4 +18,11 @@ sizes="(max-width: 400px) 100vw,
        100vw"
 alt="{{ page.description }}">
 
-   
+<div style="position: absolute; top: 0" class="titlebox content">
+   <div class="icon"></div>  
+    <h1><strong>{{ page.title | split: ":" | first }}
+    </strong><br><span class="subtitle">{{ page.title | split: ":" | last }}
+    </span></h1> 
+</div>
+
+<div class="topbox"></div>   

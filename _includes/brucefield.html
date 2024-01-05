@@ -1,0 +1,27 @@
+<section class="textbox">
+
+    {% assign desired_title = "Brucefield Estate: Recommended Stay Near Dollar or Alva" %}
+
+    {% for post in site.posts %}
+      {% if post.title == desired_title %}
+        <div class="featured-post">
+          <div class="icon"></div>
+          <h2><a href="{{ post.url }}"><strong>{{ post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ post.title | split: ":" | last }}</span></a></h2>
+          <br>
+          {% if post.image %}
+          <img loading="lazy"
+               width="{{ post.imagewidth }}"
+               height="{{ post.imageheight }}"
+               class="postimg"
+               src="{{ post.image | split: 'w=' | first }}w=400,fit=scale-down"
+               alt="{{ post.title }}">
+          {% endif %}
+          
+          <br>
+          
+          <p>{{ post.content | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">go to full blog article...</a></p>
+          
+        </div>
+      {% endif %}
+    {% endfor %}
+</section>

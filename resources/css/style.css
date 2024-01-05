@@ -84,9 +84,9 @@
       align-items: center;
       flex-direction: column;
       margin-top: 4rem;
+      min-width: 100%;
   }
 
-  
   .postimg {
       overflow: hidden;
       border-radius: 15px;

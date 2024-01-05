@@ -161,3 +161,7 @@ button {
     cursor: pointer;
     position: relative;
   }
+
+  .buttonbox {
+   display: flex; justify-content: center; min-width: 100%;
+  }

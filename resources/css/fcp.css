@@ -91,6 +91,7 @@ h1{
         opacity: 0.9;
         letter-spacing: 0.05em;
         margin: 0 auto;
+        line-height: 1.6;
     }
     
 .fareharbour{
@@ -138,7 +139,7 @@ a.button{text-rendering:optimizeSpeed;padding:.5rem 1rem;font-size:1.7rem;font-w
         
 .textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0;min-width:100%;}
         
-main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw;line-height:1.6}
+main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw}
 
 .canyonlogo {
     width: 15%;

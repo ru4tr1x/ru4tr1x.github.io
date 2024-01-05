@@ -1,13 +1,4 @@
-<!--{% assign featured_post = site.posts | where: "featured", true | first %}
-{% if featured_post %}
-<br><br>
-<div class="featured-post">
-  <div class="icon"></div> 
-  <h2><a href="{{ featured_post.url }}">{{ featured_post.title }}</a></h2>
-  <p>{{ featured_post.content | strip_html | truncatewords: 50 }}<a class="middle" href="{{ featured_post.url }}">go to full blog article...</a></p>
-  
-</div>
-{% endif %}-->
+<section class="textbox">
 
 {% assign featured-post = site.posts | where: "featured", true | first %}
 {% if featured-post %}
@@ -37,4 +28,4 @@
 {% endif %}
 
 
-
+</section>

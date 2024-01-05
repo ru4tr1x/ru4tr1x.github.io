@@ -137,7 +137,7 @@ a.button{text-rendering:optimizeSpeed;padding:.5rem 1rem;font-size:1.7rem;font-w
         
 .collapse-btn{color:silver;font-size:1rem;display:block;margin-top:10px}
         
-.textbox{display:flex;flex-direction:column;align-items:center;margin:6rem 0;min-width:100%;}
+.textbox{display:flex;flex-direction:column;align-items:center;margin-top:6rem;min-width:100%;}
         
 main{background-color:rgba(0, 9, 37, 0.9);z-index: 1;min-width: 100vw}
 

@@ -7,7 +7,7 @@
         <div class="featured-post">
           <div class="icon"></div>
           <h2><a href="{{ post.url }}"><strong>{{ post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ post.title | split: ":" | last }}</span></a></h2>
-          <br>
+          
           {% if post.image %}
           <img loading="lazy"
                width="{{ post.imagewidth }}"

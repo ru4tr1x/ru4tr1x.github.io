@@ -1,0 +1,16 @@
+<article class="textbox">
+{% for post in site.posts %}
+        <article class="abox">  
+          <h2><a href="{{ post.url }}"><strong>{{ post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ post.title | split: ":" | last }}</span></a></h2>
+
+            <!-- Include the image here -->
+  {% if post.image %}
+  <img loading="lazy" width="{{ post.imagewidth }}" height="{{ post.imageheight}}" class="postimg" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+{% endif %} 
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">read&nbsp;full&nbsp;article</a></p>
+            
+        </article> 
+        
+        {% endfor %}
+
+    </article>

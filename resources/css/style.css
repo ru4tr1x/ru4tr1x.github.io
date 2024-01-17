@@ -105,6 +105,7 @@
       max-width: 275px;
       opacity: 0.95;
       margin: 0 auto;
+      min-width: 13rem;
   }
   
   .portrait {
@@ -220,6 +221,20 @@
       min-height: 500px;
       margin-bottom: 50px;
   }
+
+  .ftbox p {
+    font-size: .9rem;
+    
+  }
+
+  .ftbox a {
+    font-size: .9rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
   
   .bottom-footer{
        background-color: black;
@@ -255,3 +270,4 @@
     border: 5px solid white;
     border-radius: 15px;
 }
+

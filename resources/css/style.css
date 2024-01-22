@@ -35,7 +35,9 @@
     letter-spacing: .05em;
     line-height: 1.2;
 }
-  
+
+
+
   blockquote {
       font-family: 'Roboto', sans-serif;
       color: white;
@@ -170,81 +172,100 @@
       z-index: 0;
   }
   
-  /* footer */
-  
   footer {
-      border-radius: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-content: center;
-      align-items: center;
-      align-self: center;
-      width: 100%;
-      background-color: black;
-      flex-wrap: wrap;
-      z-index: 0;
-      position: relative;
-      top: 4rem;
-      padding: 55px 0px;
-      opacity: 0.9;
+    background-color: black; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    padding: 2rem 0; /* Padding for spacing */
+    font-family: Arial, sans-serif; /* Modern, readable font */
+    z-index: 1;
+    opacity: 0.8;
   }
-  @media (max-width: 867px){
-      footer{
-          display: block !important;
-      }
-      .ftbox{
-        width: 100% !important;
-        text-align: center !important;
-        padding:1rem !important;
-      }
-  
-  }
-  
+
   .ftcontainer {
-      display: flex; 
-      flex-wrap: wrap; 
-      justify-content: space-evenly; 
-      align-items: center;
-      min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items for better alignment */
+    max-width: 1200px; /* Limit maximum width for readability */
+    margin: auto; /* Center the container */
+    padding: 0 1rem; /* Padding for inner spacing */
   }
-  
+
   .ftbox {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-shrink: 2;
-      line-height: 1.8;
-      flex-wrap: wrap;
-      width: 33.33vw;
-      min-height: 500px;
-      margin-bottom: 50px;
+    flex: 1; /* Flex grow for equal distribution */
+    min-width: 250px; /* Minimum width for smaller screens */
+    max-width: 33%; /* Maximum width for larger screens */
+    padding: 1rem; /* Padding for inner spacing */
+    
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   }
 
   .ftbox p {
-    font-size: .9rem;
-    
+  font-weight: 300;
+  text-rendering: optimizeSpeed;
+  padding: 0;
+  text-align: left;
+  font-size: 0.9rem;
+  color: white;
+  max-width: 60ch;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  }
+
+  .ftbox h5 {
+    color: #f2f2f2; /* Lighter color for headings */
+    margin-bottom: 0.5rem; /* Spacing below headings */
+    font-size: 1.2rem; /* Slightly larger font for headings */
+  }
+
+  .ftbox ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .ftbox ul li {
+    margin-bottom: 0.25rem; /* Spacing between list items */
   }
 
   .ftbox a {
-    font-size: .9rem;
+    color: #b8daff; /* Light blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9rem; /* Adjust font size */
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
+  .ftbox a:hover {
+    text-decoration: underline; /* Underline on hover for interaction */
   }
+
   
-  .bottom-footer{
-       background-color: black;
-       border-top: 1px solid gray;
-       padding: 50px 0px;
-       text-align: center;
-       position: relative;
-       top: 0px;
+
+  @media (max-width: 768px) {
+    .ftcontainer {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center; /* Align items in the center */
+    }
+    .ftbox {
+      max-width: 100%;
+     margin-bottom: 1rem;
+     min-width: 100%;
+     padding-left: 2rem;
+    }
+    .ftbox img {
+      margin-bottom: 3rem;
   }
-  
+  }
+
+  .bottom-footer {
+    background-color: black; /* Slightly darker background */
+    text-align: center; /* Center the text */
+    padding: 1rem 0; /* Padding for spacing */
+    font-size: 0.9rem; /* Adjust font size */
+    z-index: 1;
+  }
+
   .bottom-footer p {
       font-size: 1rem;
   }

@@ -227,7 +227,7 @@
   }
 
   .ftbox ul li {
-    margin-bottom: 0.25rem; /* Spacing between list items */
+    margin: 0.25rem; /* Spacing between list items */
   }
 
   .ftbox a {

@@ -1,0 +1,33 @@
+<div class="" data-elfsight-app-lazy></div>
+<script>
+    document.getElementById("loadElfsightWidget").addEventListener("click", function() {
+var container = document.getElementById("elfsightWidgetContainer");
+
+// Check if the widget has already been loaded
+if (container.children.length === 0) {
+// Create the message element
+var message = document.createElement('p');
+message.style.fontStyle = "italic";
+message.className = "mobilehide";
+message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
+message.style.marginBottom = "20px"; // 20px space above the widget
+
+// Create the script element for Elfsight Platform
+var script = document.createElement('script');
+script.src = "https://static.elfsight.com/platform/platform.js";
+script.defer = true;
+
+// Create the div container for the widget
+var widgetDiv = document.createElement('div');
+widgetDiv.className = "elfsight-app-2c872160-009d-4a24-a719-bbd8c361ec0d";
+
+// Append the message, script, and div to the container
+container.appendChild(message);
+container.appendChild(script);
+container.appendChild(widgetDiv);
+
+// Hide the button after loading the widget
+this.style.display = "none";
+}
+});
+</script>

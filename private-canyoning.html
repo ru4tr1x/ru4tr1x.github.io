@@ -4,12 +4,14 @@ scripts:
   - map
   - fh
   - gtm
+  - mainc
 title: "Exclusive Canyoning Experiences: Scotland's Best Adventures"
 permalink: /private-canyoning
 date: 2023-12-21
 redirect_from:
   - /privatecanyoning
   - /privatecanyoning.html
+css_file: "page-nav-2.css"  
 canonical_url: https://www.scotlandscanyons.com/private-canyoning
 priority: 0.8
 changefreq: weekly
@@ -76,9 +78,22 @@ meta_description: "Exclusive canyoning experiences in Scotland. Unique, tailor-m
             <br><br>
             <div class="icon"></div>
             {% include random-reviews.html %}
+
+            <article class="abox">
+            
+                <div class="icon"></div>
+                <h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
+                <br>
+                <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for canyoning enthusiasts of all skill levels.</p>
+                
+            </article> 
+    </section>
+    {% include map-button.html %}        
+
         
      
-
+    <section>
+        {% include canyon-menu.html %}
         <article class="abox">
             
             <div class="icon"></div>
@@ -121,17 +136,10 @@ meta_description: "Exclusive canyoning experiences in Scotland. Unique, tailor-m
 
         <!--Map Search-->
 
-        <article class="abox">
-            
-            <div class="icon"></div>
-            <h3>Discover the Thrill of Canyoning in Scotland's Top Locations</h3>
-            <br>
-            <p>From the rugged, sandstone cliffs of Ardessie Falls in the North to the cascading beauty of Gray Mare's Tail in the West, each canyon offers a unique adventure. Whether it's exploring the ancient volcanic gorges of Alva and Dollar Glen or embracing the adrenaline rush at Bruar's famous jumping spots, Scotland's diverse canyons are perfect for canyoning enthusiasts of all skill levels.</p>
-            
-        </article> 
+        
 
     </section>
-        {% include map-button.html %}
+        
     
     <section class="textbox">
 

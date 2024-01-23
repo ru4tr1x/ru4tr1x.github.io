@@ -1,0 +1,74 @@
+<section class="textbox">
+    <div class="icon"></div>
+    <h2>Discover Your Ideal Adventure in Scotland</h2>
+    <p>We recommend these as the best canyons and experiences for both beginners and enthusiasts alike. Click on the link to find out more.</p>
+    <nav class="link-container">    
+        {% assign dollar_glen_image = "" %}
+{% for page in site.pages %}
+  {% if page.title == "Dollar Glen Canyoning: Enchanting Small group Adventure" %}
+    {% assign dollar_glen_image = page.image %}
+  {% endif %}
+{% endfor %}
+
+<a class="toplink" href="locations/dollar-glen">
+    <div class="image-container">
+        <img loading="lazy"
+        width="624" height="370" 
+             src="{{ dollar_glen_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+             srcset="{{ dollar_glen_image | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                     {{ dollar_glen_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+             sizes="(max-width: 768px) 50vw, 33.33vw"
+             alt="Happy canyoning group enjoy splashing in Dolar Glen wild swimming pool">
+        <div class="overlay"></div>
+        <div class="link-title">Dollar Glen</div>
+    </div>
+</a>
+{% assign bruar_image = "" %}
+{% for page in site.pages %}
+  {% if page.title == "Bruar Canyoning: Exciting Outdoor Adventure In Scotland" %}
+    {% assign bruar_image = page.image %}
+  {% endif %}
+{% endfor %}
+
+        <a class="toplink" href="locations/bruar">
+            <div class="image-container">
+                <img loading="lazy"
+                height="563" width="1000" 
+                src="{{ bruar_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+                srcset="{{ bruar_image | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                        {{ bruar_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Canyoning guide jumps into falls of bruar on private canyoning adventure in perthshire scotland uk">
+                <div class="overlay"></div>
+                <div class="link-title">Bruar</div>
+            </div>
+        </a>
+        <a class="toplink" href="/adventure-pathway">
+            <div class="image-container">
+                <img loading="lazy" 
+                height="2400" width="1920"
+                     src="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/5067fff4-a427-40d0-29b7-e798e0728300/w=400,fit=cover" 
+                     srcset="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/5067fff4-a427-40d0-29b7-e798e0728300/w=200,fit=cover 200w,
+                             https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/5067fff4-a427-40d0-29b7-e798e0728300/w=400,fit=cover 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Guide abseils down waterfall at falls of bruar canyon in scotland uk">
+                <div class="overlay"></div>
+                <div class="link-title">Training</div>
+            </div>
+        </a>
+        <a class="toplink" href="/map">
+            <div class="image-container">
+                <img loading="lazy" 
+                height="370" width="679"
+                     src="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/8ea34cb1-fcc0-467e-c32b-6abae9704e00/w=400,fit=cover" 
+                     srcset="https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/8ea34cb1-fcc0-467e-c32b-6abae9704e00/w=200,fit=cover 200w,
+                             https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/8ea34cb1-fcc0-467e-c32b-6abae9704e00/w=400,fit=cover 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Map that shows the best canyoning locations in scotland">
+                <div class="overlay"></div>
+                <div class="link-title">Map</div>
+            </div>
+        </a> 
+    </nav>
+    
+</section>

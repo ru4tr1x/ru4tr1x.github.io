@@ -260,9 +260,9 @@
     }
     .ftbox a {
         font-size: 1.1rem;
-    }
-    .ftbox ul li {
         height: 48px;
+        display: flex;
+        width: 100%;
     }
   }
 

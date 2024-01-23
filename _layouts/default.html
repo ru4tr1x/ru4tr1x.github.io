@@ -134,28 +134,28 @@
                 <a id="bookNowLink" class="fareharbour button" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes&flow=660908">Order&nbsp;online</a>
                 <script type="text/javascript">
 document.getElementById("bookNowLink").addEventListener("click", function(event) {
-event.preventDefault(); // Prevent the default action of the link
+event.preventDefault(); 
 
-// Check if the script is already loaded
+
 if (!window.FH) {
-    // Create the script element for FareHarbor Lightframe API
+    
     var script = document.createElement('script');
     script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
     script.defer = true;
     script.onload = function() {
-        // Once the script is loaded, open the Lightframe with specific flow
+        
         FH.open({
             shortname: 'scotlandscanyons',
-            flow: 660908 // Add the specific flow ID here
+            flow: 660908 
         });
     };
 
     document.body.appendChild(script);
 } else {
-    // If the script is already loaded, open the Lightframe with specific flow
+    
     FH.open({
         shortname: 'scotlandscanyons',
-        flow: 660908 // Add the specific flow ID here
+        flow: 660908 
     });
 }
 });
@@ -164,15 +164,15 @@ if (!window.FH) {
                <!-- Timeout Trigger for GTM -->
 <script>
     function loadGTMScript() {
-        // Create the script element for Google Tag Manager
+        
         var gtmScript = document.createElement('script');
         gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
         gtmScript.async = true;
         document.body.appendChild(gtmScript);
     }
 
-    // Trigger the GTM script after a set timeout (e.g., 2000 milliseconds or 2 seconds)
-    setTimeout(loadGTMScript, 4000); // Adjust the time as needed for your site
+   
+    setTimeout(loadGTMScript, 4000); 
 </script>
 
             {% when 'dc' %}
@@ -239,7 +239,7 @@ if (!window.FH) {
             {% endcase %}
             
         {% endfor %}
-       <!-- Timeout Trigger for CookieYes 
+       <!-- Timeout Trigger for CookieYes -->
 <script>
     function loadScripts() {
         // Load CookieYes Script
@@ -249,9 +249,9 @@ if (!window.FH) {
         document.body.appendChild(script1);
     }
 
-    // Trigger the CookieYes script after a set timeout (e.g., 2000 milliseconds or 2 seconds)
-    setTimeout(loadScripts, 2000); // Adjust the time as needed for your site
-</script>-->
+    
+    setTimeout(loadScripts, 2000); 
+</script>
 
         <!--Elfsight Apps-->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>

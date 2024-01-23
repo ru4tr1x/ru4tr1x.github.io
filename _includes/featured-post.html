@@ -5,7 +5,7 @@
 <br><br>
 <div class="featured-post">
   <div class="icon"></div> 
-  <h2><a href="{{ featured-post.url }}"><strong>{{ featured-post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ featured-post.title | split: ":" | last }}</span></a></h2>
+  <h4><a href="{{ featured-post.url }}"><strong>{{ featured-post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ featured-post.title | split: ":" | last }}</span></a></h4>
   
   {% if featured-post.image %}
   <img loading="lazy"

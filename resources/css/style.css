@@ -221,23 +221,23 @@
   }
 
   .ftbox ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
   }
 
   .ftbox ul li {
-    margin: 0.25rem; /* Spacing between list items */
+    margin: 0.25rem; 
   }
 
   .ftbox a {
-    color: #b8daff; /* Light blue color for links */
-    text-decoration: none; /* Remove underline */
-    font-size: 0.9rem; /* Adjust font size */
+    color: #b8daff; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
   }
 
   .ftbox a:hover {
-    text-decoration: underline; /* Underline on hover for interaction */
+    text-decoration: underline; 
   }
 
   
@@ -260,7 +260,7 @@
         font-size: 1.1rem;
     }
     .ftbox ul li {
-        margin: .5rem 0;
+        margin: 1rem 0;
     }
   }
 

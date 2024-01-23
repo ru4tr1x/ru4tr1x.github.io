@@ -242,10 +242,10 @@
 
   
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .ftcontainer {
-      flex-direction: column; /* Stack items on smaller screens */
-      align-items: center; /* Align items in the center */
+      flex-direction: column; 
+      align-items: center; 
     }
     .ftbox {
       max-width: 100%;
@@ -255,7 +255,13 @@
     }
     .ftbox img {
       margin-bottom: 3rem;
-  }
+    }
+    .ftbox a {
+        font-size: 1.1rem;
+    }
+    .ftbox ul li {
+        margin: .5rem 0;
+    }
   }
 
   .bottom-footer {

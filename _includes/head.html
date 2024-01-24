@@ -6,21 +6,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" onload="this.media='all'">
+   
 
-    {% assign cache_busting_timestamp = site.time | date: '%s' %}
+{% assign cache_busting_timestamp = site.time | date: '%s' %}
 
-    <link rel="preload" href="{{ '/resources/css/fcp.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
-    <link href="{{ '/resources/css/fcp.css?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" onload="this.media='all'">
-    
+<link rel="preload" href="{{ '/resources/css/fcp.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
+<link href="{{ '/resources/css/fcp.css?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" onload="this.media='all'">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" onload="this.media='all'">
   
-    <link href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
-    <link href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
-    
-    {% if page.css_file %}
-    <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
-    <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="print" onload="this.media='all'">
-    {% endif %}
+<!--<link rel="preload" href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">-->
+<link href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
+
+{% if page.css_file %}
+<!-- <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" as="style">-->
+<link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
+{% endif %}
+
 
     <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
     <meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   

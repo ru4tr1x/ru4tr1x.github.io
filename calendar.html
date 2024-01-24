@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "no-topbox"
 scripts:
   - gtm
   - fh
@@ -59,12 +59,15 @@ meta_description: "Live Scottish canyoning availability calendar. Search unique 
 
 ---
 
-<main class="textbox">
+<main>
+
+  <section class="textbox">
 
         {% include _images/logo.html %}
         <h1>{{ page.title }}</h1>
         <p>Our live calendar showcases available time slots for our most popular canyons. For availability in other locations, please reach out to us directly. Note: Private tour timings are flexible to suit your transportation requirements.</p>
         <br><br>
+      
         <button id="loadCalendarButton">Load Calendar</button>
 
         <div style="max-width: 600px;">               
@@ -75,11 +78,12 @@ meta_description: "Live Scottish canyoning availability calendar. Search unique 
             </div>
         
         </div>
-            <br><br><br>
+      </section>
+           <section class="textbox">
             <div class="icon"></div>
             <h2>Why Canyoning in Scotland?</h2>
             <p>We think canyoning is the best adventure activity in Scotland. Whether you are new to canyoning or a seasoned adventurer, Scotland has an ideal canyoning location and the perfect experience. From beginner and family canyoning experiences near Edinburgh, Glasgow, and Fife to wild adrenaline-filled action in Perthshire and the Highlands, we offer everything from private trips for couples to team building, stag, and hen parties. Scotland's canyons offer a unique and tailor-made adventure.</p>
-            <br><br>
+            </section>
             {% include page-nav.html %}
 
             {% include why-scot-can.html %}
@@ -87,5 +91,7 @@ meta_description: "Live Scottish canyoning availability calendar. Search unique 
         
 
             {% include featured-post.html %}
+
+          
 
 </main>

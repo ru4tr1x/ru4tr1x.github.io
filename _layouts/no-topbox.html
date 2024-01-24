@@ -3,7 +3,8 @@
     <head>
         {% include head.html %}
     </head>
-    <body class="page-content">
+    <body class="page-content no-topbox">
+        
         {% include header.html %}
         {{ content }}
         {% if 'fh' %}
@@ -11,21 +12,23 @@
         {% endif %}
         {% include _widgets/social-icons.html %}
         {% include _widgets/back-to-top.html %}
-        {% include footer.html %}
+        
+        {% include no-topbox-footer.html %}
         {% include end-body.html %}
+       
         <!--Menu Close-->
         <script>
-            // JavaScript to close the navigation menu when clicking outside, but only after the checkbox is clicked
+           
             document.addEventListener("DOMContentLoaded", function () {
-                const navCheckbox = document.getElementById("nav-check"); // Your navigation checkbox
-                const pageContent = document.querySelector(".page-content"); // The main content of the page
+                const navCheckbox = document.getElementById("nav-check"); 
+                const pageContent = document.querySelector(".page-content"); 
         
-                // Add click event listener to the navigation checkbox
+              
                 navCheckbox.addEventListener("click", function () {
-                    // Now, add the click listener to the page content only after the checkbox is clicked
+                  
                     pageContent.addEventListener("click", function (event) {
                         if (navCheckbox.checked && !event.target.closest(".nav")) {
-                            // If the menu is open and a click occurs outside the menu, close the menu
+                            
                             navCheckbox.checked = false;
                         }
                     });
@@ -33,20 +36,7 @@
             });
         </script>
         
-       <!---- <script>
-    // JavaScript to close the navigation menu when clicking outside
-    document.addEventListener("DOMContentLoaded", function () {
-    const navCheckbox = document.getElementById("nav-check");
-    const pageContent = document.querySelector(".page-content");
-    
-    pageContent.addEventListener("click", function (event) {
-    if (navCheckbox.checked && !event.target.closest(".nav")) {
-    // If the menu is open and a click occurs outside the menu, close the menu
-    navCheckbox.checked = false;
-    }
-    });
-    });
-        </script>-->
+      
         {% for script in page.scripts %}
           {% case script %}
             {% when 'map' %}
@@ -55,30 +45,30 @@
             document.getElementById("loadElfsightWidget").addEventListener("click", function() {
         var container = document.getElementById("elfsightWidgetContainer");
         
-        // Check if the widget has already been loaded
+        
         if (container.children.length === 0) {
-        // Create the message element
+        
         var message = document.createElement('p');
         message.style.fontStyle = "italic";
         message.className = "mobilehide";
         message.textContent = "Double click on the map to zoom, then click on the stamp to learn more";
-        message.style.marginBottom = "20px"; // 20px space above the widget
+        message.style.marginBottom = "20px"; 
         
-        // Create the script element for Elfsight Platform
+        
         var script = document.createElement('script');
         script.src = "https://static.elfsight.com/platform/platform.js";
         script.defer = true;
         
-        // Create the div container for the widget
+       
         var widgetDiv = document.createElement('div');
         widgetDiv.className = "elfsight-app-a2bae3e4-0f86-4389-984e-f94f27fd6849";
         
-        // Append the message, script, and div to the container
+       
         container.appendChild(message);
         container.appendChild(script);
         container.appendChild(widgetDiv);
         
-        // Hide the button after loading the widget
+        
         this.style.display = "none";
         }
         });
@@ -86,43 +76,43 @@
             {% when 'fh' %}
             <!--FH Button-->
             <script>
-                // Function to open the Lightframe
+                
                 function openFareHarborLightframe() {
                     FH.open({
-                        shortname: 'scotlandscanyons', // Replace with your company's FareHarbor shortname
+                        shortname: 'scotlandscanyons', 
                         fallback: 'simple'
                     });
                 }
             
-                // Function to set up FareHarbor methods
+                
                 function setupFareHarborMethods() {
                     FH.autoLightframe({
-                        className: 'fareharbour', // Activates Lightframe only for links with class 'fareharbour'
+                        className: 'fareharbour', 
                         callback: function(linkElement){
                             console.log('FareHarbor link was clicked');
                         }
                     });
                 }
             
-                // Adding event listener to each element with class 'bookNowLink'
+                
                 var bookNowLinks = document.getElementsByClassName("bookNowLink");
                 for (var i = 0; i < bookNowLinks.length; i++) {
                     bookNowLinks[i].addEventListener("click", function(event) {
-                        event.preventDefault(); // Prevent the default action of the link
+                        event.preventDefault(); 
             
-                        // Check if the script is already loaded
+                       
                         if (!window.FH) {
-                            // Create the script element for FareHarbor Lightframe API
+                            
                             var script = document.createElement('script');
                             script.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
                             script.onload = function() {
-                                // Set up FH methods and open the Lightframe
+                               
                                 setupFareHarborMethods();
                                 openFareHarborLightframe();
                             };
                             document.body.appendChild(script);
                         } else {
-                            // If the script is already loaded, just open the Lightframe
+                           
                             openFareHarborLightframe();
                         }
                     });
@@ -160,29 +150,7 @@ if (!window.FH) {
 }
 });
                 </script>
-          <!-- Google Analytics 4 script 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41HGCCBDCY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-41HGCCBDCY');
-    </script>-->
-         <!--   {% when 'gtm' %}
-                Timeout Trigger for GTM 
-<script>
-    function loadGTMScript() {
-        
-        var gtmScript = document.createElement('script');
-        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
-        gtmScript.async = true;
-        document.body.appendChild(gtmScript);
-    }
-
-   
-    setTimeout(loadGTMScript, 4000); 
-</script>-->
+         
 
             {% when 'dc' %}
             <script>
@@ -190,16 +158,16 @@ if (!window.FH) {
                     var container = document.getElementById('fareHarborCalendarContainer');
                     var button = this;
                     
-                    // Check if the iframe already exists
+                   
                     if (container.getElementsByTagName('iframe').length === 0) {
                         var iframe = document.createElement('iframe');
                         iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/?flow=939034&full-items=yes";
                         iframe.width = "100%";
-                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.height = "500px"; 
                         iframe.frameBorder = "0";
                         container.appendChild(iframe);
          
-                        // Hide the button
+                     
                         button.style.display = 'none';
                     }
                 });
@@ -210,16 +178,16 @@ if (!window.FH) {
                     var container = document.getElementById('fareHarborCalendarContainer');
                     var button = this;
                     
-                    // Check if the iframe already exists
+                 
                     if (container.getElementsByTagName('iframe').length === 0) {
                         var iframe = document.createElement('iframe');
                         iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/all/2023/12/?language=en-gb&full-items=yes";
                         iframe.width = "100%";
-                        iframe.height = "500px"; // Set this to the desired height
+                        iframe.height = "500px"; 
                         iframe.frameBorder = "0";
                         container.appendChild(iframe);
          
-                        // Hide the button
+                       
                         button.style.display = 'none';
                     }
                 });
@@ -230,16 +198,16 @@ if (!window.FH) {
                       var container = document.getElementById('fareHarborCalendarContainer');
                       var button = this;
                       
-                      // Check if the iframe already exists
+                      
                       if (container.getElementsByTagName('iframe').length === 0) {
                           var iframe = document.createElement('iframe');
                           iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/2024/01/?flow=939047&full-items=yes";
                           iframe.width = "100%";
-                          iframe.height = "500px"; // Set this to the desired height
+                          iframe.height = "500px"; 
                           iframe.frameBorder = "0";
                           container.appendChild(iframe);
            
-                          // Hide the button
+                       
                           button.style.display = 'none';
                       }
                   });

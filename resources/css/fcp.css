@@ -68,17 +68,16 @@ header{
 
 
 h1{
-    text-rendering:optimizeSpeed;
     text-shadow:0.0625rem 0.0625rem 0.3125rem rgba(0,0,0,.7);
-    max-width:50ch;
     letter-spacing:.05em;
     margin:0 auto;
     padding:0 1rem;
-    color:#fff;
+    color: whitesmoke;
     text-align:center;
     font-size:1.8rem;
-    line-height:1.2}
-
+    line-height:1.2;
+    min-height: calc(1.8rem * 1.2);
+   }
     p {
         font-weight: 300;
         text-rendering: optimizeSpeed;
@@ -90,6 +89,7 @@ h1{
         letter-spacing: 0.05em;
         margin: 0 auto;
         line-height: 1.6;
+        opacity: .9;
     }
     
 .fareharbour{
@@ -103,9 +103,7 @@ h1{
     min-width:100%;
     position:relative;
     overflow:hidden;
-    background-color: rgba(255,255,255,.1);
-    background-blend-mode: lighten;
-    z-index:1;}
+}
 
 .fixed-image{
     position:fixed;
@@ -113,13 +111,14 @@ h1{
     height:100vh;
     object-fit:cover;
     top:0;
-    left:0;}
+    left:0;
+ opacity: .9;}
     
-.titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:35rem;min-width:100%;position:absolute;top:0;z-index:2}
+.titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:32rem;min-width:100%;position:absolute;top:0;z-index:2}
     
 .icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=150,fit=scale-down);background-size:cover;background-position:center;margin:0 auto;height:4rem;width:3rem;min-width:5rem;}
     
-.subtitle{font-size:1.4rem;font-weight:300}.sublink{font-weight:300}
+.subtitle{font-size:1.3rem;font-weight:300}.sublink{font-weight:300}
 
 
         

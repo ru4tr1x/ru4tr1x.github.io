@@ -33,20 +33,6 @@
             });
         </script>
         
-       <!---- <script>
-    // JavaScript to close the navigation menu when clicking outside
-    document.addEventListener("DOMContentLoaded", function () {
-    const navCheckbox = document.getElementById("nav-check");
-    const pageContent = document.querySelector(".page-content");
-    
-    pageContent.addEventListener("click", function (event) {
-    if (navCheckbox.checked && !event.target.closest(".nav")) {
-    // If the menu is open and a click occurs outside the menu, close the menu
-    navCheckbox.checked = false;
-    }
-    });
-    });
-        </script>-->
         {% for script in page.scripts %}
           {% case script %}
             {% when 'map' %}
@@ -160,29 +146,6 @@ if (!window.FH) {
 }
 });
                 </script>
-          <!-- Google Analytics 4 script 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41HGCCBDCY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-41HGCCBDCY');
-    </script>-->
-         <!--   {% when 'gtm' %}
-                Timeout Trigger for GTM 
-<script>
-    function loadGTMScript() {
-        
-        var gtmScript = document.createElement('script');
-        gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MQZ4VTW';
-        gtmScript.async = true;
-        document.body.appendChild(gtmScript);
-    }
-
-   
-    setTimeout(loadGTMScript, 4000); 
-</script>-->
 
             {% when 'dc' %}
             <script>
@@ -230,16 +193,16 @@ if (!window.FH) {
                       var container = document.getElementById('fareHarborCalendarContainer');
                       var button = this;
                       
-                      // Check if the iframe already exists
+                      
                       if (container.getElementsByTagName('iframe').length === 0) {
                           var iframe = document.createElement('iframe');
                           iframe.src = "https://fareharbor.com/embeds/calendar/scotlandscanyons/2024/01/?flow=939047&full-items=yes";
                           iframe.width = "100%";
-                          iframe.height = "500px"; // Set this to the desired height
+                          iframe.height = "500px"; 
                           iframe.frameBorder = "0";
                           container.appendChild(iframe);
            
-                          // Hide the button
+                         
                           button.style.display = 'none';
                       }
                   });

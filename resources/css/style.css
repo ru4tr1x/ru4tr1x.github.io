@@ -27,7 +27,7 @@
     background-color: #000925;
 }
 
-  h2, h3, h4 {
+  h2 {
     text-shadow: 0.0625rem 0.0625rem 0.3125rem rgba(0,0,0,.7);
     max-width: 50ch;
     margin: 0 auto;
@@ -219,7 +219,7 @@
   margin: 0;
   }
 
-  .ftbox h5 {
+  .ftbox h3 {
     color: #f2f2f2; 
     margin-bottom: 0.5rem; 
     font-size: 1.2rem; 

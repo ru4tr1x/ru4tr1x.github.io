@@ -15,11 +15,11 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" onload="this.media='all'">
   
-<!--<link rel="preload" href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">-->
+<link rel="preload" href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
 <link href="{{ '/resources/css/style.css?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
 
 {% if page.css_file %}
-<!-- <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" as="style">-->
+<link rel="preload" href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
 <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
 {% endif %}
 

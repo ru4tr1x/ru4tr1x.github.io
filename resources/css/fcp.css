@@ -70,7 +70,6 @@ header{
 h1{
     text-shadow:0.0625rem 0.0625rem 0.3125rem rgba(0,0,0,.7);
     letter-spacing:.05em;
-    margin:0 auto;
     padding:0 1rem;
     color: whitesmoke;
     text-align:center;
@@ -115,9 +114,9 @@ h1{
     left:0;
  opacity: .9;}
     
-.titlebox{display:flex;flex-direction:column;justify-content:flex-end;height:32rem;min-width:100%;position:absolute;top:0;z-index:2}
+.titlebox{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:32rem;min-width:100%;position:absolute;top:0;z-index:2}
     
-.icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=150,fit=scale-down);background-size:cover;background-position:center;margin:0 auto;height:4rem;width:3rem;min-width:5rem;}
+.icon{background-image:url(https://imagedelivery.net/U2IC6mrT6VB6UTYuhB74NA/c3650fc8-1b21-4173-9f7b-2b9276724000/w=150,fit=scale-down);background-size:cover;height:4rem;width:3rem;min-width:5rem;margin: 0 auto;}
     
 .subtitle{font-size:1.3rem;font-weight:300}.sublink{font-weight:300}
 

@@ -44,7 +44,8 @@
     <meta property="og:image:height" content="{{ page.imageheight | escape }}"> 
     <meta property="og:image:alt" content="{{ page.description | escape }}">
     <meta property="og:image:type" content="image/webp"> 
-    <meta property="og:updated_time" content="{{ page.last_modified_at | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+    <meta property="og:updated_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+
 
      
     <link rel="icon" type="image/x-icon" href="../favicon.ico">

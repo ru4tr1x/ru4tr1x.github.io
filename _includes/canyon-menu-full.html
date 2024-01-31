@@ -1,7 +1,7 @@
-<section class="textbox">
+<section class="textbox" id="canyon-menu-full">
     <div class="icon"></div>
     <h2>Discover Your Ideal Adventure in Scotland</h2>
-    <p>We recommend these as some of the finest canyons and experiences, suitable for both beginners and enthusiasts alike. Click on the link to learn more."</p>
+    <p>We recommend these as the best canyons and experiences for both beginners and enthusiasts alike. Click on the link to find out more.</p>
     <nav class="link-container">    
         {% assign dollar_glen_image = "" %}
 {% for page in site.pages %}
@@ -41,6 +41,46 @@
                      alt="Canyoning guide jumps into falls of bruar on private canyoning adventure in perthshire scotland uk">
                 <div class="overlay"></div>
                 <div class="link-title">Bruar</div>
+            </div>
+        </a>
+        {% assign alva_glen_image = "" %}
+{% for page in site.pages %}
+  {% if page.permalink == "locations/alva-glen" %}
+    {% assign alva_glen_image = page.image %}
+  {% endif %}
+{% endfor %}
+
+        <a class="toplink" href="locations/alva-glen">
+            <div class="image-container">
+                <img loading="lazy"
+                height="563" width="1000" 
+                src="{{ alva_glen_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+                srcset="{{ alva_glen_image | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                        {{ alva_glen_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Canyoning guide jumps into falls of bruar on private canyoning adventure in perthshire scotland uk">
+                <div class="overlay"></div>
+                <div class="link-title">Alva Glen</div>
+            </div>
+        </a>
+        {% assign gmt_image = "" %}
+{% for page in site.pages %}
+  {% if page.permalink == "/blog" %}
+    {% assign gmt_image = page.image %}
+  {% endif %}
+{% endfor %}
+
+        <a class="toplink" href="locations/grey-mares-tail">
+            <div class="image-container">
+                <img loading="lazy"
+                height="563" width="1000" 
+                src="{{ gmt_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+                srcset="{{ gmt_image | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                        {{ gmt_image | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Canyoning guide jumps into falls of bruar on private canyoning adventure in perthshire scotland uk">
+                <div class="overlay"></div>
+                <div class="link-title">Grey Mare's Tail</div>
             </div>
         </a>
         <a class="toplink" href="/adventure-pathway">

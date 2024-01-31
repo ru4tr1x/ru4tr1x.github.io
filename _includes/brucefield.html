@@ -7,19 +7,19 @@
         <div class="featured-post">
           <div class="icon"></div>
           <h2><a href="{{ post.url }}"><strong>{{ post.title | split: ":" | first }}</strong><br><span class="subtitle">{{ post.title | split: ":" | last }}</span></a></h2>
-         
+         <div class="featured-post-image-container">
           {% if post.image %}
           <img loading="lazy"
                width="{{ post.imagewidth }}"
                height="{{ post.imageheight }}"
-               class="postimg"
+               class="featured-post-image"
                src="{{ post.image | split: 'w=' | first }}w=400,fit=scale-down"
                alt="{{ post.title }}">
           {% endif %}
-          
+        </div>
           <br>
           
-          <p>{{ post.content | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">go to full blog article...</a></p>
+          <p>{{ post.excerpt | strip_html | truncatewords: 50 }}<a href="{{ post.url }}">Read Full Article</a></p>
           
         </div>
       {% endif %}

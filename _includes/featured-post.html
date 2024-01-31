@@ -8,7 +8,7 @@
           <br>
           <div class="featured-post-image-container">
               {% if featured_post.image %}
-              <img src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" class="featured-post-image">
+              <img width="{{ featured_post.imagewidth }}" height="{{ featured_post.imageheight }}" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" class="featured-post-image">
               {% endif %}
           </div>
           <br>

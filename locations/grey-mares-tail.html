@@ -115,13 +115,52 @@ meta_description: “Adrenaline spiking canyoning adventure in the Scottish High
           <p><span class="star">&#9733;</span><span class="headline"> Relax and Reflect:</span> Conclude your journey with a delightful touch. After the descent, we gather back at the meeting point for home-baked snacks and drinks. It's a chance to relax, share stories, and enjoy the camaraderie of fellow canyoners.</p>       
         </article> 
       </section>  
-       <div class="iframe-vid textbox">
+      <!----<div class="iframe-vid textbox">
         <div class="icon"></div>
         <h2>Check out some action from the Grey Mare's Tail</h2>
         <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Hy8HAqMKE2w?si=Jo4BKoZAzIN0bO76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br>
         <a href="https://www.youtube.com/@scotlandscanyons" target="_blank">Visit Scotland's Canyons on Youtube</a> 
-      </div>  
+      </div>  -->
+
+      
+      <!--<button id="loadYoutubeButton">Watch Video</button>-->
+     <section class="textbox">
+      <div class="icon"></div>
+      <h2>Check out some action from the Grey Mare's Tail</h2>
+      <button id="loadYoutubeButton" style="background:none; border:none; padding:0; margin:0;">
+        <img style="aspect-ratio: 1.7; width: 100%;" width="100%" height="auto" src="/resources/images/YoutubeThumbGMT.webp">
+    </button>
+  </section>
+      <div class="iframe-vid" style="display: flex; justify-content: center;">
+       
+        <!-- The anchor tag is now a button for the click event -->
+       
+        <div id="YoutubeVideoContainer"></div>
+    </div>
+    <script>
+        document.getElementById('loadYoutubeButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            var container = document.getElementById('YoutubeVideoContainer');
+            var button = this;
+            
+            // Check if the iframe already exists
+            if (container.getElementsByTagName('iframe').length === 0) {
+                var iframe = document.createElement('iframe');
+                iframe.src = "https://www.youtube.com/embed/Hy8HAqMKE2w?autoplay=1"; // Enable autoplay and remove incorrect parameter
+                iframe.width = "560";
+                iframe.height = "315"; // Set this to the desired height
+                iframe.frameBorder = "0";
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+                iframe.setAttribute("allowfullscreen", ""); // Correct way to set allowfullscreen
+                container.appendChild(iframe);
+    
+                // Hide the button
+                button.style.display = 'none';
+            }
+        });
+    </script>
+    
        <section class="textbox">
         <article class="abox">
             <div class="icon"></div>

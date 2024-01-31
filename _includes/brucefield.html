@@ -13,7 +13,7 @@
                width="{{ post.imagewidth }}"
                height="{{ post.imageheight }}"
                class="featured-post-image"
-               src="{{ post.image | split: 'w=' | first }}w=400,fit=scale-down"
+               src="{{ post.image | split: 'w=' | first }}w=400,fit=cover"
                alt="{{ post.title }}">
           {% endif %}
         </div>

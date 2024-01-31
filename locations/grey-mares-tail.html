@@ -139,27 +139,25 @@ meta_description: “Adrenaline spiking canyoning adventure in the Scottish High
         <div id="YoutubeVideoContainer"></div>
     </div>
     <script>
-        document.getElementById('loadYoutubeButton').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default anchor behavior
-            var container = document.getElementById('YoutubeVideoContainer');
-            var button = this;
-            
-            // Check if the iframe already exists
-            if (container.getElementsByTagName('iframe').length === 0) {
-                var iframe = document.createElement('iframe');
-                iframe.src = "https://www.youtube.com/embed/Hy8HAqMKE2w?autoplay=1"; // Enable autoplay and remove incorrect parameter
-                iframe.width = "560";
-                iframe.height = "315"; // Set this to the desired height
-                iframe.frameBorder = "0";
-                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-                iframe.setAttribute("allowfullscreen", ""); // Correct way to set allowfullscreen
-                container.appendChild(iframe);
-    
-                // Hide the button
-                button.style.display = 'none';
-            }
-        });
-    </script>
+      document.getElementById('loadYoutubeButton').addEventListener('click', function(event) {
+          event.preventDefault();
+          var container = document.getElementById('YoutubeVideoContainer');
+          var button = this;
+  
+          if (container.getElementsByTagName('iframe').length === 0) {
+              var iframe = document.createElement('iframe');
+              iframe.src = "https://www.youtube.com/embed/Hy8HAqMKE2w?autoplay=1&mute=1"; // Start video muted
+              iframe.width = "560";
+              iframe.height = "315";
+              iframe.frameBorder = "0";
+              iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+              iframe.setAttribute("allowfullscreen", "");
+              container.appendChild(iframe);
+  
+              button.style.display = 'none';
+          }
+      });
+  </script>
     
        <section class="textbox">
         <article class="abox">

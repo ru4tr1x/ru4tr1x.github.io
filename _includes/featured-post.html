@@ -2,7 +2,7 @@
   <!-- Featured Post -->
   {% assign featured_post = site.posts | where: "featured", true | first %}
   {% if featured_post %}
-      <article class="featured-post">
+      <div class="featured-post">
           <div class="icon"></div>
           <h2><a href="{{ featured_post.url }}">{{ featured_post.title | split: ':' | first }}<br><span class="subtitle">{{ featured_post.title | split: ':' | last }}</span></a></h2>
           <br>
@@ -13,9 +13,8 @@
           </div>
           <br>
           <p>{{ featured_post.excerpt | strip_html | truncatewords: 20 }}<a href="{{ featured_post.url }}">Read Full Article</a></p>
-      </article>
+        </div>
   {% endif %}
-</div>
 
 
 </section>

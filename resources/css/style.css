@@ -177,7 +177,7 @@
     color: white; /* White text for readability */
     padding: 2rem 0; /* Padding for spacing */
     font-family: Arial, sans-serif; /* Modern, readable font */
-    z-index: 1;
+    z-index: 0;
     opacity: 0.8;
   }
 

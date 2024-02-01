@@ -145,7 +145,7 @@ a.button{text-rendering:optimizeSpeed;padding:.5rem 1rem;font-size:1.7rem;font-w
         
 .textbox{display:flex;flex-direction:column;align-items:center;margin-top:6rem;min-width:100%;}
         
-main{background-color:rgba(0, 6, 30, 0.85);z-index: 1;min-width: 100vw}
+main{background-color:rgba(0, 6, 30, 0.85);z-index: 0;min-width: 100vw}
 
 .canyonlogo {
     width: 15%;

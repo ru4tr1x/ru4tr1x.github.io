@@ -81,7 +81,28 @@
     }
     
   },
-  "review": {
+ 
+  {% if page.schema_image %},{% endif %}
+  {% endif %}
+  {% if page.schema_image %}
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "contentUrl": "{{ page.image }}",
+    "creditText": "Adventure Logic Ltd",
+      "creator": {
+        "@type": "Person",
+        "name": "{{ page.schema_image.author.name }}"
+       },
+      "copyrightNotice": "Adventure Logic Ltd"
+    }
+  {% endif %}
+  ]
+</script>
+{% endif %}
+    
+<!--
+   "review": {
     "@type": "Review",
     "reviewRating": {
       "@type": "Rating",
@@ -103,22 +124,4 @@
   "description": "{{ page.meta_description }}"", 
 
 {% endif %}
-  {% if page.schema_image %},{% endif %}
-  {% endif %}
-  {% if page.schema_image %}
-  {
-    "@context": "https://schema.org",
-    "@type": "ImageObject",
-    "contentUrl": "{{ page.image }}",
-    "creditText": "Adventure Logic Ltd",
-      "creator": {
-        "@type": "Person",
-        "name": "{{ page.schema_image.author.name }}"
-       },
-      "copyrightNotice": "Adventure Logic Ltd"
-    }
-  {% endif %}
-  ]
-</script>
-{% endif %}
-    
+-->

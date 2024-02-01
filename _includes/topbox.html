@@ -6,7 +6,7 @@
     </span></h1> 
 </div>
 
-<img class="fixed-image" src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
+<img class="fixed-image" width="{{ page.imagewidth }}" height="{{ page.imageheight }}" src="{{ page.image | split: 'w=' | first }}w=1200,fit=cover"
    srcset="
    {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,
    {{ page.image | split: 'w=' | first }}w=640,fit=cover 640w,

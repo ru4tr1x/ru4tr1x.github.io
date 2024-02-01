@@ -284,8 +284,7 @@
   
   .bottompad {
       background-color: black; 
-      height: 125px;
-      z-index: 1;
+      height: 0;
   }
   
   

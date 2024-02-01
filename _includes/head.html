@@ -1,11 +1,9 @@
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    <title>{% if page.title %}{{ page.title }}{% else %}Canyoning in Scotland: Adventure Beyond The Ordinary{% endif %}</title>
-    
-    <meta name="description" content="{{ page.meta_description | default: 'Canyoning in Scotland: Discover a wild, unique and expert-led outdoor adventure activity. Perfect for a couple, family, team or small group experience day.' | escape }}">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+<title>{% if page.title %}{{ page.title }}{% else %}Canyoning in Scotland: Adventure Beyond The Ordinary{% endif %}</title>
+<meta name="description" content="{{ page.meta_description | default: 'Canyoning in Scotland: Discover a wild, unique and expert-led outdoor adventure activity. Perfect for a couple, family, team or small group experience day.' | escape }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    
 {% assign cache_busting_timestamp = site.time | date: '%s' %}
 
@@ -22,83 +20,85 @@
 <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
 {% endif %}
 
-
-    <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
-    <meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="canyoning Scotland, adventure tours, Scotland canyons, outdoor activities, nature experiences">
-    <meta name="author" content="Scotland's Canyons Team">
-    <meta name="publisher" content="Adventure Logic Ltd">     
+<meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
+<meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="canyoning Scotland, adventure tours, Scotland canyons, outdoor activities, nature experiences">
+<meta name="author" content="Scotland's Canyons Team">
+<meta name="publisher" content="Adventure Logic Ltd">     
    
-    <meta property="og:site_name" content="Scotland's Canyons">
-    <meta property="fb:app_id" content="1664968410589846">
-    <meta property="og:type" content="website">
+<meta property="og:site_name" content="Scotland's Canyons">
+<meta property="fb:app_id" content="1664968410589846">
+<meta property="og:type" content="website">
     
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:title" content="{{ page.title | escape }}">
-    <meta property="og:description" content="{{ page.meta_description | escape }}">
-    <meta property="og:image" content="{{ page.image | absolute_url }}">
-    <meta property="og:locale" content="en_GB">
-    <meta property="og:site_name" content="Scotland's Canyons">
-    <meta property="og:image:width" content="{{ page.imagewidth | escape }}"> 
-    <meta property="og:image:height" content="{{ page.imageheight | escape }}"> 
-    <meta property="og:image:alt" content="{{ page.description | escape }}">
-    <meta property="og:image:type" content="image/webp"> 
-    <meta property="og:updated_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.meta_description | escape }}">
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Scotland's Canyons">
+<meta property="og:image:width" content="{{ page.imagewidth | escape }}"> 
+<meta property="og:image:height" content="{{ page.imageheight | escape }}"> 
+<meta property="og:image:alt" content="{{ page.description | escape }}">
+<meta property="og:image:type" content="image/webp"> 
+<meta property="og:updated_time" content="{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
 
-
-     
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../manifest.json">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
     
-    {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}       
-
-    {% if page.context or page.schema_image %}
-    <script type="application/ld+json">
-    [
-      {% if page.context %}
-      {
-        "@context": "https://schema.org",
-        "@type": "{{ page.type }}",
-        "name": "Scotland's Canyons",
-        "areaServed": "Scotland",
-        "url": "{{ page.canonical_url }}",
-        "logo": "{{ page.logo }}",
-        "sameAs": {{ page.sameAs | jsonify }},
-        "contactPoint": {
-          "@type": "{{ page.contactPoint.type }}",
-          "telephone": "{{ page.contactPoint.telephone }}",
-          "contactType": "{{ page.contactPoint.contactType }}"
-        },
-        "address": {
-          "@type": "{{ page.address.type }}",
-          "addressCountry": "{{ page.address.addressCountry }}"
-        }
-      }{% if page.schema_image %},{% endif %}
-      {% endif %}
-      
-      {% if page.schema_image %}
-      {
-        "@context": "https://schema.org",
-        "@type": "{{ page.schema_image.type }}",
-        "contentUrl": "{{ page.image }}",
-        "description": "{{ page.description }}",
-        "name": "{{ page.schema_image.name }}",
-        "author": {
-          "@type": "{{ page.schema_image.author.type }}",
-          "name": "{{ page.schema_image.author.name }}"
-        },
-        "copyrightHolder": {
-          "@type": "{{ page.schema_image.copyrightHolder.type }}",
-          "name": "{{ page.schema_image.copyrightHolder.name }}"
-        },
-        "uploadDate": "{{ page.schema_image.uploadDate }}"
-      }
-      {% endif %}
-    ]
-    </script>
-    {% endif %}
+{% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}       
+{% if page.context or page.schema_image %}
+<script type="application/ld+json">
+  [
+  {% if page.context %}
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ page.type }}",
+    "name": "Scotland's Canyons",
+    "areaServed": "Scotland",
+    "url": "{{ page.canonical_url }}",
+    "logo": "{{ page.logo }}",
+    "sameAs": {{ page.sameAs | jsonify }},
+    "contactPoint": 
+    {
+      "@type": "{{ page.contactPoint.type }}",
+      "telephone": "{{ page.contactPoint.telephone }}",
+      "contactType": "{{ page.contactPoint.contactType }}"
+    },
+    "address": {
+      "@type": "{{ page.address.type | default: 'PostalAddress' }}",
+      "streetAddress": "{{ page.address.streetAddress | default: 'Hartridge' }}",
+      "addressLocality": "{{ page.address.addressLocality | default: 'Cupar' }}",
+      "addressRegion": "{{ page.address.addressRegion | default: 'Fife' }}",
+      "postalCode": "{{ page.address.postalCode | default: 'KY157UP' }}",      
+      "addressCountry": "{{ page.address.addressCountry | default: 'Scotland' }}"      
+    }
+    
+  }
+  {% if page.schema_image %},{% endif %}
+  {% endif %}
+  {% if page.schema_image %}
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ page.schema_image.type }}",
+    "contentUrl": "{{ page.image }}",
+    "description": "{{ page.description }}",
+    "name": "{{ page.schema_image.name }}",
+    "author": {
+      "@type": "{{ page.schema_image.author.type }}",
+      "name": "{{ page.schema_image.author.name }}"
+    },
+    "copyrightHolder": {
+      "@type": "{{ page.schema_image.copyrightHolder.type }}",
+      "name": "{{ page.schema_image.copyrightHolder.name }}"
+    },
+    "uploadDate": "{{ page.schema_image.uploadDate }}"
+  }
+  {% endif %}
+  ]
+</script>
+{% endif %}
     

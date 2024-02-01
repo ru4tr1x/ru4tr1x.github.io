@@ -115,7 +115,7 @@ h1{
     left:0;
  opacity: .9;}
     
-.titlebox{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:32rem;min-width:100%;position:absolute;top:0;z-index:2}
+.titlebox{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:32rem;min-width:100%;position:absolute;top:0;z-index:1}
     
 .topicon {    
     height: 30rem;

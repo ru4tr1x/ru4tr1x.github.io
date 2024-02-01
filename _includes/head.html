@@ -56,7 +56,7 @@
   {% if page.context %}
   {
     "@context": "https://schema.org",
-    "@type": "{{ page.type }}",
+    "@type": "{{ page.type | default: 'LocalBusiness' }}",
     "name": "Scotland's Canyons",
     "image": "{{ page.image }}",
     "telephone": "{{ page.contactPoint.telephone }}",
@@ -80,7 +80,29 @@
       "addressCountry": "{{ page.address.addressCountry | default: 'Scotland' }}"      
     }
     
-  }
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Anna-Carina Schmidt"
+    }
+  },
+  {% if page.geo %}
+  
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ page.geo.lat }}",
+    "longitude": "{{ page.geo.long }}"
+  },
+  "description": "{{ page.meta_description }}"", 
+
+{% endif %}
   {% if page.schema_image %},{% endif %}
   {% endif %}
   {% if page.schema_image %}

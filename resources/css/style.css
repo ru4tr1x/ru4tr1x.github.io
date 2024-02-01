@@ -408,3 +408,9 @@
     height: 100%;
 }
 }
+
+.YoutubeThumbnail {
+    aspect-ratio: 10 / 5; 
+    width: 100%;
+    height: auto;
+}

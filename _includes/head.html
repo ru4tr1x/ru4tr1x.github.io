@@ -86,20 +86,15 @@
   {% if page.schema_image %}
   {
     "@context": "https://schema.org",
-    "@type": "{{ page.schema_image.type }}",
+    "@type": "ImageObject",
     "contentUrl": "{{ page.image }}",
-    "description": "{{ page.description }}",
-    "name": "{{ page.schema_image.name }}",
-    "author": {
-      "@type": "{{ page.schema_image.author.type }}",
-      "name": "{{ page.schema_image.author.name }}"
-    },
-    "copyrightHolder": {
-      "@type": "{{ page.schema_image.copyrightHolder.type }}",
-      "name": "{{ page.schema_image.copyrightHolder.name }}"
-    },
-    "uploadDate": "{{ page.schema_image.uploadDate }}"
-  }
+    "creditText": "Adventure Logic Ltd",
+      "creator": {
+        "@type": "Person",
+        "name": "{{ page.schema_image.author.name }}"
+       },
+      "copyrightNotice": "Adventure Logic Ltd"
+    }
   {% endif %}
   ]
 </script>

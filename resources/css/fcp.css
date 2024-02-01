@@ -16,7 +16,7 @@ body,html{
 header{
     position: fixed;
     top: 6vh;
-    z-index: 3;
+    z-index: 1;
     display: flex;
     min-width: 100%;
     justify-content: center;}

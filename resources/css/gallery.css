@@ -12,8 +12,16 @@
 
       .gallery-container {
         max-width: 90%;
+
       }
-      
+
+      .gallery-img-container {
+        max-height: 250px;
+      }
+      .gallery-container img {
+        max-height: 250px;
+      }
+
     }
     
     /* Style for each gallery item (anchor tag) */

@@ -1,0 +1,32 @@
+ /* Style for the gallery container - always showing 2 images for mobile by default */
+ .gallery-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents items from wrapping */
+    max-width: 65vw;
+    gap: 10px;
+    justify-content: center;
+    overflow-x: hidden; /* Hides any items that overflow horizontally */
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .gallery-container {
+        max-width: 90%;
+      }
+      
+    }
+    
+    /* Style for each gallery item (anchor tag) */
+    .gallery-img-container {
+      flex: 0 0 31%; /* Occupy as much space as needed up to 48% of the container's width */
+      height: 400px; /* Maintain a fixed height */
+      position: relative;
+      overflow-y: hidden;
+    }
+    
+    /* Adjustments for images */
+    .gallery-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

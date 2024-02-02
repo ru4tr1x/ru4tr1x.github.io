@@ -2,3 +2,4 @@ Sitemap: https://www.scotlandscanyons.com/sitemap.xml
 User-agent: *
 Disallow: /test.html
 Disallow: /testblog.html
+Disallow: /event-booking

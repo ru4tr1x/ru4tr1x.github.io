@@ -3,12 +3,14 @@
     <head>
         {% include head.html %}
     </head>
-    <body class="page-content">
+    <body class="page-content {% if page.no-topbox %} no-topbox {% endif %}">
         {% include header.html %}
+        {% if page.scripts contains 'fh' %}
+        <a class="fareharbour button bookNowLink" href="https://fareharbour.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a> 
+        {% endif %}
+    
         {{ content }}
-        
-        <a class="fareharbour button bookNowLink" href="https://fareharbor.com/embeds/book/scotlandscanyons/?full-items=yes">Book online</a>  
- 
+
         {% include _widgets/social-icons.html %}
         {% include _widgets/back-to-top.html %}
         {% include footer.html %}

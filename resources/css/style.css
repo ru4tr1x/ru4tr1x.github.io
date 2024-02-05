@@ -329,9 +329,14 @@
     width: 80%;
 }
 
-.post h2 a {
+.post h2 {
     color: white;
     opacity: .9;
+    max-width: 24ch;
+}
+
+.post a {
+    text-decoration: none;
 }
 
 .post-image {

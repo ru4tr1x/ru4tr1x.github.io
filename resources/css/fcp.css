@@ -105,7 +105,9 @@ h1{
     position:relative;
     overflow:hidden;
 }
-
+.topbox-50-30 {
+object-position: 50% 30%
+}
 .fixed-image{
     position:fixed;
     width:100%;

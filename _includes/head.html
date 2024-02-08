@@ -94,11 +94,29 @@
         "@type": "Person",
         "name": "{{ page.schema_image.author.name }}"
        },
-      "copyrightNotice": "Adventure Logic Ltd"
+      "copyrightNotice": "Adventure Logic Ltd",
+      "acquireLicensePage": "{{ page.acquireLicensePage | default: 'https://www.rossmurrayphotography.com/'' }}",
+      "license": "{{ page.license | default: 'https://www.rossmurrayphotography.com/' }}" 
     }
   {% endif %}
   ]
+
+ 
 </script>
+ <!--
+    {
+      "@context": "http://schema.org",
+      "@type": "ImageGallery",
+      "name": "Sample Image Carousel",
+      "description": "A collection of images in a carousel format",
+      "image": [
+        "https://example.com/image1.jpg",
+        "https://example.com/image2.jpg",
+        "https://example.com/image3.jpg"
+      ]
+    }
+    
+  -->
 {% endif %}
     
 <!--

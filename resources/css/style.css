@@ -332,7 +332,7 @@
 .post h2 {
     color: white;
     opacity: .9;
-    max-width: 24ch;
+    max-width: calc(24ch - 10px);
 }
 
 .post a {

@@ -398,7 +398,9 @@
     border-radius: 15px;
 }
 
-
+.dark-logo {
+    background-color: whitesmoke; border-radius: 15px; display: flex; justify-content: center;
+}
 
 
 .iframe-vid {

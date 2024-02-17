@@ -57,4 +57,3 @@ plugins:
 collections:
   itineraries:
     output: true
-   

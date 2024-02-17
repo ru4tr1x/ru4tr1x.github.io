@@ -1,0 +1,44 @@
+
+<div class="itineraries-content textbox">
+      
+ 
+ <div class="icon"></div> 
+    <h2>Featured Itineraries in Clackmannanshire</h2>
+  
+
+
+  <div class="itineraries-grid">
+
+    {% for item in site.itineraries %}
+
+    <article class="post">
+
+      <div class="icon"></div>
+
+      <a href="{{ item.url }}"><h2>{{ item.title | split: ':' | first }}<br><span class="subtitle">{{ item.title | split: ':' | last }}</span></h2>
+
+        <br>
+
+        <div class="post-image-container">
+
+          {% if item.image %}
+
+          <img loading="lazy" src="{{ item.image | split: 'w=' | first | relative_url }}w=400,fit=cover" alt="{{ item.title }}" class="item-image">
+
+          {% endif %}
+
+        </div>
+      </a>
+    
+      <br>
+    
+      <p>{{ item.excerpt | strip_html | truncatewords: 20 }}<a href="{{ item.url }}"> Read Full Article</a></p>
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+</div>
+

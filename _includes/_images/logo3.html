@@ -1,0 +1,20 @@
+<img 
+    loading="lazy" 
+    class="canyonlogo" 
+    width="400"
+    height="220"
+    src="{{ page.logo3 | split: 'w=' | first }}w=200" 
+    srcset="
+        {{ page.logo3 | split: 'w=' | first }}w=200 200w,
+        {{ page.logo3 | split: 'w=' | first }}w=400 400w,
+        {{ page.logo3 | split: 'w=' | first }}w=600 600w,
+        {{ page.logo3 | split: 'w=' | first }}w=800 800w,
+        {{ page.logo3 | split: 'w=' | first }}w=1200 1200w"
+    sizes="
+        (max-width: 320px) 48px,
+        (max-width: 480px) 72px,  
+        (max-width: 768px) 115px, 
+        (max-width: 1024px) 153px,
+        180px" 
+    alt="Scotland's Canyons Logo">
+<br>

@@ -20,6 +20,11 @@
 <link href="{{ '/resources/css/' | append: page.css_file | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
 {% endif %}
 
+{% if page.css_file2 %}
+<link rel="preload" href="{{ '/resources/css/' | append: page.css_file2 | append: '?v=' | append: cache_busting_timestamp | relative_url }}" as="style">
+<link href="{{ '/resources/css/' | append: page.css_file2 | append: '?v=' | append: cache_busting_timestamp | relative_url }}" rel="stylesheet" media="screen" onload="this.media='all'">
+{% endif %}
+
 <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
 <meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
 <meta name="robots" content="index, follow">

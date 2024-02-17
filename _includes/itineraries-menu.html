@@ -1,0 +1,58 @@
+<section class="textbox">
+    <div class="icon"></div>
+    <h2>Discover Your Ideal Adventure Itinerary in Scotland</h2>
+    <p>We recommend these as some of the finest three day itineraries, suitable for both beginners and enthusiasts alike. Click on the link to learn more."</p>
+    <nav class="link-container">    
+        {% assign itin_image_1 = "" %}
+        {% assign itin_image_2 = "" %}
+        {% assign itin_image_3 = "" %}
+        {% assign itin_image_4 = "" %}
+        {% for page in site.pages %}
+          {% if page.permalink == "/itineraries/couples-adventure-break-clackmannanshire" %}
+            {% assign itin_image_1 = page.image %}
+          {% endif %}
+          {% if page.permalink == "locations/bruar" %}
+            {% assign itin_image_2 = page.image %}
+          {% endif %}
+          {% if page.permalink == "locations/bruar" %}
+            {% assign itin_image_3 = page.image %}
+          {% endif %}
+          {% if page.permalink == "locations/bruar" %}
+            {% assign itin_image_4 = page.image %}
+          {% endif %}
+        {% endfor %}
+
+<a class="toplink" href="/itineraries/couples-adventure-break-clackmannanshire">
+    <div class="image-container">
+        <img loading="lazy"
+        width="624" height="370" 
+             src="{{ itin_image_1 | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+             srcset="{{ itin_image_1 | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                     {{ itin_image_1 | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+             sizes="(max-width: 768px) 50vw, 33.33vw"
+             alt="Happy canyoning group enjoy splashing in Dolar Glen wild swimming pool">
+        <div class="overlay"></div>
+        <div class="link-title">Couples 3 Night</div>
+    </div>
+</a>
+
+
+        <a class="toplink" href="/itineraries/">
+            <div class="image-container">
+                <img loading="lazy"
+                height="563" width="1000" 
+                src="{{ itin_image_2 | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }}" 
+                srcset="{{ itin_image_2 | replace: 'w=1200', 'w=200' | replace: 'fit=scale-down', 'fit=cover' }} 200w,
+                        {{ itin_image_2 | replace: 'w=1200', 'w=400' | replace: 'fit=scale-down', 'fit=cover' }} 400w"
+                             sizes="(max-width: 768px) 50vw, 33.33vw"
+                     alt="Canyoning guide jumps into falls of bruar on private canyoning adventure in perthshire scotland uk">
+                <div class="overlay"></div>
+                <div class="link-title">Family 3 night</div>
+            </div>
+        </a>
+
+       
+      
+      
+    
+</section>

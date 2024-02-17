@@ -360,6 +360,12 @@
     border-radius: 15px;
 }
 
+.post-image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px; }
+
 /*featured post*/
 
 .featured-post {
@@ -413,4 +419,20 @@
     aspect-ratio: 16 / 9; 
     width: 100%;
     height: auto;
+}
+
+.itineraries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    align-items: start;
+    width: 100vw;
+}
+
+/* Ensure .blog-content directly affects only the layout container */
+.itineraries-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
 }

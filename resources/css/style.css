@@ -303,6 +303,7 @@
 
 .img {
     width: 80%;
+    height: auto;
     border: 5px solid white;
     border-radius: 15px;
 }

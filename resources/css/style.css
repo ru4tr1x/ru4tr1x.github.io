@@ -280,6 +280,7 @@
     padding: 1rem 0; /* Padding for spacing */
     font-size: 0.9rem; /* Adjust font size */
     z-index: 1;
+    min-height: 8rem;
   }
 
   .bottom-footer p {

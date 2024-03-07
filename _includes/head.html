@@ -26,8 +26,12 @@
 {% endif %}
 
 <meta name="google-site-verification" content="SmiIQK02nRN_UFDt9mY7i-rpNHM7erbARga6XHgvH4g">
-<meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">   
+<meta name="facebook-domain-verification" content="pq7zxgqfpa77apy53oqmjlfbp28c37">
+{% if page.robots %}
+<meta name="robots" content="{{ page.robots }}">
+{% else %}
 <meta name="robots" content="index, follow">
+{% endif %}
 <meta name="keywords" content="canyoning Scotland, adventure tours, Scotland canyons, outdoor activities, nature experiences">
 <meta name="author" content="Scotland's Canyons Team">
 <meta name="publisher" content="Adventure Logic Ltd">     

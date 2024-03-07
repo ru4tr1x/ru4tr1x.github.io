@@ -3,5 +3,4 @@ User-agent: *
 Disallow: /test.html
 Disallow: /testblog.html
 Disallow: /event-booking.html
-Disallow: /trade.html
 Disallow: /wild-scotland-meet-up.html

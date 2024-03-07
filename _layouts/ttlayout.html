@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="page-content {% if page.no-topbox %} no-topbox {% endif %}">
+        {% include header.html %}
+        {{ content }}
+
+        {% include _widgets/social-icons.html %}
+        {% include _widgets/back-to-top.html %}
+        {% include footer.html %}
+        {% include end-body-tt.html %}
+        <!--Menu Close-->
+        <script>
+            // JavaScript to close the navigation menu when clicking outside, but only after the checkbox is clicked
+            document.addEventListener("DOMContentLoaded", function () {
+                const navCheckbox = document.getElementById("nav-check"); // Your navigation checkbox
+                const pageContent = document.querySelector(".page-content"); // The main content of the page
+        
+                // Add click event listener to the navigation checkbox
+                navCheckbox.addEventListener("click", function () {
+                    // Now, add the click listener to the page content only after the checkbox is clicked
+                    pageContent.addEventListener("click", function (event) {
+                        if (navCheckbox.checked && !event.target.closest(".nav")) {
+                            // If the menu is open and a click occurs outside the menu, close the menu
+                            navCheckbox.checked = false;
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <!--Elfsight Apps-->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    </body>
+</html>

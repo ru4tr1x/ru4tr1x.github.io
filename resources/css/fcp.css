@@ -44,14 +44,6 @@ header{
         
     .nav>#nav-check{display:none}
 
-    .nav-btn label {
-        display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 4rem;
-    align-items: center;
-}
-
             
     .nav>.nav-btn>label>span {
         display: flex;

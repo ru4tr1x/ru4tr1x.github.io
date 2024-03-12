@@ -4,3 +4,4 @@ Disallow: /test.html
 Disallow: /testblog.html
 Disallow: /event-booking.html
 Disallow: /wild-scotland-meet-up.html
+Disallow: /canyon-geeks-pro-deal-order

@@ -174,3 +174,27 @@ button {
   .buttonbox {
    display: flex; justify-content: center; min-width: 100%; margin-top: 1rem;
   }
+
+  .social-proof {
+    position: relative;
+    
+}
+
+  .lnt-pp {
+    position: absolute;
+    z-index: 3;
+    top: 14vh;
+    left: calc(6% - 3vw);
+    background-color: whitesmoke;
+    border-radius: 5%;
+    width: 20%;
+    height: auto;
+    max-width: 100px;
+    opacity: .9;
+  }
+
+ 
+
+ 
+
+ 

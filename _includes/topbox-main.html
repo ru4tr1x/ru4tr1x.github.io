@@ -3,8 +3,10 @@
     <div class="icon"></div>
     <h1><strong>{{ page.title | split: ":" | first }}</strong><br>
         <span class="subtitle">{{ page.title | split: ":" | last }}</span></h1>
+       
     
 </div>
+{% include _images/lnt-pp.html %}
 <img class="fixed-image" width="{{ page.imagewidth }}" height="{{ page.imageheight }}" style="object-position: 50% 30%;" src="{{ page.image | split: 'w=' | first }}w=1200,fit=scale-down"
 srcset="
 {{ page.image | split: 'w=' | first }}w=400,fit=cover 400w,

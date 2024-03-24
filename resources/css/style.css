@@ -156,10 +156,25 @@
   }
   
   .learn-more-btn {
-      cursor: pointer;
-      color: silver;
-      font-size: 1rem;
-  }
+    display: inline-block;
+    background-color: transparent; /* No background for subtlety */
+    color: limegreen; /* Soft blue for visibility and subtlety */
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none; /* No border for a more subtle look */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+
+
+
+.learn-more-btn:hover {
+    color: lime; /* A darker shade of blue on hover for subtle interactivity */
+    text-decoration: underline; /* Adds underlining on hover for additional hint of interactivity */
+}
+
+ 
   
   .collapse-btn { 
       cursor: pointer;    
@@ -238,7 +253,7 @@
     color: #f2f2f2; 
     margin-bottom: 0.5rem; 
     font-size: 1.2rem; 
-    height: 48px;
+    height: 35px;
     max-width: 25ch;
   }
 
@@ -454,3 +469,40 @@
     align-items: center;
     margin-top: 6rem;
 }
+
+.negheadline {color:red;font-size:1.5rem;font-weight:700}
+
+.lnt {
+    background-color: rgba(255, 255, 255, 200);
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.page-menu ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Displays the menu items inline */
+    justify-content: center; /* Centers the menu items */
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+}
+
+.page-menu li {
+    margin: 15px; /* Adds space between menu items */
+}
+
+.page-menu a {
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 15px; /* Padding for larger clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.page-menu a:hover, .page-menu a:focus {
+    background-color: limegreen; /* Blue background on hover/focus */
+    color: #ffffff; /* White text on hover/focus */
+}
+

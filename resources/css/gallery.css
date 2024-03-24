@@ -38,3 +38,11 @@
       height: 100%;
       object-fit: cover;
     }
+     
+    .wildlife-img {
+    border-radius: 15px;
+    border: white solid 5px;
+    max-width: 280px;
+    max-height: 280px;
+    margin: 2rem;
+    }

@@ -183,15 +183,43 @@ button {
   .lnt-pp {
     position: absolute;
     z-index: 1;
-    top: 14vh;
+    top: 17vh;
     left: calc(6% - 3vw);
     background-color: whitesmoke;
     border-radius: 5%;
-    width: 20%;
+    width: 30%;
     height: auto;
-    max-width: 100px;
+    max-width: 110px;
     opacity: .9;
   }
+
+
+  @media screen and (max-width: 1000px) {
+    .lnt-pp {
+        top: 16vh;
+    }
+}
+
+  @media screen and (max-width: 600px) {
+    .lnt-pp {
+        top: 15vh;
+    }
+}
+  
+  @media screen and (max-width: 500px) {
+        .lnt-pp {
+            top: 14vh;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .lnt-pp {
+            top: 13vh;
+        }
+    }
+
+
+
 
  
 

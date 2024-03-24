@@ -182,7 +182,7 @@ button {
 
   .lnt-pp {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     top: 14vh;
     left: calc(6% - 3vw);
     background-color: whitesmoke;
